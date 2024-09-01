@@ -1,0 +1,3 @@
+/home/luka/lchess/CMakeFiles/main.dir
+/home/luka/lchess/CMakeFiles/edit_cache.dir
+/home/luka/lchess/CMakeFiles/rebuild_cache.dir
