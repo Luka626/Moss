@@ -164,7 +164,7 @@ std::vector<Move> Position::generate_pseudo_legal_moves(Colors side_to_play) {
   std::vector<Move> output = {};
 
   // iterates through each piece bb of the person who's turn it is to play
-  for (int piece = PAWN + side_to_play; piece < NPIECES; piece += 2) {
+  for (int piece = PAWN; piece < NPIECES; piece += 2) {
     bitboard bb = pieces_bitboards[piece];
 
     switch (piece) {
