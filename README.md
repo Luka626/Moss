@@ -14,6 +14,10 @@
   - [ ] Bishops
   - [ ] Rooks
   - [ ] Pawns
+
+### Longer term
+- [ ] Zoboroist hashing??? idk
+- [ ] Endgame transposition table
 - [ ] Implement minimax search with AB-pruning
 - [ ] Implement a perft function, since we're kinda close to testing move generation
 
