@@ -31,19 +31,23 @@ public:
   friend std::ostream &operator<<(std::ostream &os, const Position &pos);
 
   // useful getters
-  bitboard inline get_occupied_bitboard() {
-    return color_bitboards[WHITE] & color_bitboards[BLACK];
+  bitboard inline get_occupied() {
+    return color_bitboards[WHITE] | color_bitboards[BLACK];
+  }
+  bitboard inline get_empty() { return ~get_occupied(); }
+
+  bitboard inline get_enemy(Colors side) {
+    return color_bitboards[~side];
+  }
+  bitboard inline get_enemy() {
+    return color_bitboards[~(Colors)side_to_play];
   }
 
-  template <class Colors> bitboard inline get_enemy(Colors side_to_play) {
-    return color_bitboards[~side_to_play];
+  bitboard inline get_bitboard(Colors color, Pieces piece) {
+    return color_bitboards[color] & pieces_bitboards[piece];
   }
-
-  bitboard inline get_bitboard(Colors color, Pieces piece){
-      return color_bitboards[color] & pieces_bitboards[piece];
-  }
-  bitboard inline get_bitboard(Pieces piece){
-      return color_bitboards[side_to_play] & pieces_bitboards[piece];
+  bitboard inline get_bitboard(Pieces piece) {
+    return color_bitboards[side_to_play] & pieces_bitboards[piece];
   }
 };
 #endif

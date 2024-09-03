@@ -1,8 +1,14 @@
 file(REMOVE_RECURSE
-  "../bin/main"
-  "../bin/main.pdb"
   "CMakeFiles/main.dir/src/main.cpp.o"
   "CMakeFiles/main.dir/src/main.cpp.o.d"
+  "CMakeFiles/main.dir/src/move_generator.cpp.o"
+  "CMakeFiles/main.dir/src/move_generator.cpp.o.d"
+  "CMakeFiles/main.dir/src/position.cpp.o"
+  "CMakeFiles/main.dir/src/position.cpp.o.d"
+  "CMakeFiles/main.dir/src/utils.cpp.o"
+  "CMakeFiles/main.dir/src/utils.cpp.o.d"
+  "main"
+  "main.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -3,7 +3,6 @@
 
 #include "datatypes.hpp"
 #include "position.hpp"
-#include "utils.hpp"
 #include <memory>
 #include <vector>
 
@@ -18,6 +17,9 @@ public:
   void generate_rook_moves(std::vector<Move> &moves_list, bitboard bb);
   void generate_queen_moves(std::vector<Move> &moves_list, bitboard bb);
   void generate_king_moves(std::vector<Move> &moves_list, bitboard bb);
+
+  void add_quiet_moves(std::vector<Move>& moves_list, bitboard bb, Pieces piece, Square origin);
+  void add_capture_moves(std::vector<Move>& moves_list, bitboard bb, Pieces piece, Square origin);
 
 private:
   std::shared_ptr<Position> position;

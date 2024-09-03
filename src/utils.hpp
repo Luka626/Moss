@@ -1,5 +1,5 @@
-#ifndef Utils_HPP_
-#define Utils_HPP_
+#ifndef UTILS_HPP_
+#define UTILS_HPP_
 
 #include "datatypes.hpp"
 #include <iostream>
@@ -24,8 +24,16 @@ const std::string STARTING_FEN_POSITION =
 extern bitboard knight_attacks[64];
 extern int knight_jumps[8];
 
+extern int king_jumps[8];
+extern bitboard king_attacks[64];
+
 // Init function where we define all the extern attributes
 void init();
+
+void generate_knight_jumps();
+void generate_king_jumps();
+void generate_knight_attacks();
+void generate_king_attacks();
 
 // Functions to do bit operations on bitboards
 inline bitboard get_bit(bitboard bitboard, int index) {
@@ -35,6 +43,7 @@ inline bitboard get_bit(bitboard bitboard, int index) {
 inline void set_bit(bitboard &bitboard, int index) {
   bitboard |= (1ULL << index);
 }
+inline bitboard set_bit(int index){ return 1ULL << index;}
 
 inline Square lsb(bitboard bb) {
   return static_cast<Square>(__builtin_ctzll(bb));

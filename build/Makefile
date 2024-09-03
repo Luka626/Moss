@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lib
-
-# Build rule for target.
-lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib
-.PHONY : lib
-
-# fast build rule for target.
-lib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/build
-.PHONY : lib/fast
-
-#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -171,7 +158,7 @@ src/move_generator.o: src/move_generator.cpp.o
 
 # target to build an object file
 src/move_generator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/move_generator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/move_generator.cpp.o
 .PHONY : src/move_generator.cpp.o
 
 src/move_generator.i: src/move_generator.cpp.i
@@ -179,7 +166,7 @@ src/move_generator.i: src/move_generator.cpp.i
 
 # target to preprocess a source file
 src/move_generator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/move_generator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/move_generator.cpp.i
 .PHONY : src/move_generator.cpp.i
 
 src/move_generator.s: src/move_generator.cpp.s
@@ -187,7 +174,7 @@ src/move_generator.s: src/move_generator.cpp.s
 
 # target to generate assembly for a file
 src/move_generator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/move_generator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/move_generator.cpp.s
 .PHONY : src/move_generator.cpp.s
 
 src/position.o: src/position.cpp.o
@@ -195,7 +182,7 @@ src/position.o: src/position.cpp.o
 
 # target to build an object file
 src/position.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/position.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/position.cpp.o
 .PHONY : src/position.cpp.o
 
 src/position.i: src/position.cpp.i
@@ -203,7 +190,7 @@ src/position.i: src/position.cpp.i
 
 # target to preprocess a source file
 src/position.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/position.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/position.cpp.i
 .PHONY : src/position.cpp.i
 
 src/position.s: src/position.cpp.s
@@ -211,7 +198,7 @@ src/position.s: src/position.cpp.s
 
 # target to generate assembly for a file
 src/position.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/position.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/position.cpp.s
 .PHONY : src/position.cpp.s
 
 src/utils.o: src/utils.cpp.o
@@ -219,7 +206,7 @@ src/utils.o: src/utils.cpp.o
 
 # target to build an object file
 src/utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/utils.cpp.o
 .PHONY : src/utils.cpp.o
 
 src/utils.i: src/utils.cpp.i
@@ -227,7 +214,7 @@ src/utils.i: src/utils.cpp.i
 
 # target to preprocess a source file
 src/utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/utils.cpp.i
 .PHONY : src/utils.cpp.i
 
 src/utils.s: src/utils.cpp.s
@@ -235,7 +222,7 @@ src/utils.s: src/utils.cpp.s
 
 # target to generate assembly for a file
 src/utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/utils.cpp.s
 .PHONY : src/utils.cpp.s
 
 # Help Target
@@ -246,7 +233,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lib"
 	@echo "... main"
 	@echo "... src/main.o"
 	@echo "... src/main.i"

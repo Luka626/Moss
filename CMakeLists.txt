@@ -1,11 +1,15 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(lchess)
+project(lchess VERSION 0.1)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/bin)
+include_directories(${PROJECT_SOURCE_DIR}/src)
 
-add_library(lib src/position.cpp src/move_generator.cpp src/utils.cpp)
+set(SOURCES
+    src/main.cpp
+    src/move_generator.cpp
+    src/position.cpp
+    src/utils.cpp
+    )
 
-add_executable(main src/main.cpp)
+add_executable(main ${SOURCES})
 
-target_link_libraries(main lib)

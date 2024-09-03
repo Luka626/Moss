@@ -1,5 +1,4 @@
 #include "position.hpp"
-#include "datatypes.hpp"
 #include "utils.hpp"
 #include <sstream>
 #include <string>
@@ -10,6 +9,7 @@ Position::Position() { set_board(Utils::STARTING_FEN_POSITION); };
 Position::Position(const std::string &fen) { set_board(fen); }
 
 int Position::set_board(const std::string &fen) {
+    Utils::init();
   for (auto &bb : pieces_bitboards) {
     bb = 0ULL;
   };

@@ -83,22 +83,69 @@ CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luka/lchess/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
+CMakeFiles/main.dir/src/move_generator.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/move_generator.cpp.o: ../src/move_generator.cpp
+CMakeFiles/main.dir/src/move_generator.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luka/lchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/move_generator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/move_generator.cpp.o -MF CMakeFiles/main.dir/src/move_generator.cpp.o.d -o CMakeFiles/main.dir/src/move_generator.cpp.o -c /home/luka/lchess/src/move_generator.cpp
+
+CMakeFiles/main.dir/src/move_generator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/move_generator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luka/lchess/src/move_generator.cpp > CMakeFiles/main.dir/src/move_generator.cpp.i
+
+CMakeFiles/main.dir/src/move_generator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/move_generator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luka/lchess/src/move_generator.cpp -o CMakeFiles/main.dir/src/move_generator.cpp.s
+
+CMakeFiles/main.dir/src/position.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/position.cpp.o: ../src/position.cpp
+CMakeFiles/main.dir/src/position.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luka/lchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/position.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/position.cpp.o -MF CMakeFiles/main.dir/src/position.cpp.o.d -o CMakeFiles/main.dir/src/position.cpp.o -c /home/luka/lchess/src/position.cpp
+
+CMakeFiles/main.dir/src/position.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/position.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luka/lchess/src/position.cpp > CMakeFiles/main.dir/src/position.cpp.i
+
+CMakeFiles/main.dir/src/position.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/position.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luka/lchess/src/position.cpp -o CMakeFiles/main.dir/src/position.cpp.s
+
+CMakeFiles/main.dir/src/utils.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/utils.cpp.o: ../src/utils.cpp
+CMakeFiles/main.dir/src/utils.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luka/lchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/utils.cpp.o -MF CMakeFiles/main.dir/src/utils.cpp.o.d -o CMakeFiles/main.dir/src/utils.cpp.o -c /home/luka/lchess/src/utils.cpp
+
+CMakeFiles/main.dir/src/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luka/lchess/src/utils.cpp > CMakeFiles/main.dir/src/utils.cpp.i
+
+CMakeFiles/main.dir/src/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luka/lchess/src/utils.cpp -o CMakeFiles/main.dir/src/utils.cpp.s
+
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/src/main.cpp.o"
+"CMakeFiles/main.dir/src/main.cpp.o" \
+"CMakeFiles/main.dir/src/move_generator.cpp.o" \
+"CMakeFiles/main.dir/src/position.cpp.o" \
+"CMakeFiles/main.dir/src/utils.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-../bin/main: CMakeFiles/main.dir/src/main.cpp.o
-../bin/main: CMakeFiles/main.dir/build.make
-../bin/main: liblib.a
-../bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luka/lchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/main"
+main: CMakeFiles/main.dir/src/main.cpp.o
+main: CMakeFiles/main.dir/src/move_generator.cpp.o
+main: CMakeFiles/main.dir/src/position.cpp.o
+main: CMakeFiles/main.dir/src/utils.cpp.o
+main: CMakeFiles/main.dir/build.make
+main: CMakeFiles/main.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luka/lchess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/main.dir/build: ../bin/main
+CMakeFiles/main.dir/build: main
 .PHONY : CMakeFiles/main.dir/build
 
 CMakeFiles/main.dir/clean:
