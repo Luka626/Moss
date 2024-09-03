@@ -5,7 +5,7 @@
 - Full FEN notation support
 
 ## To-Do
-- [ ] Refactor code, implementing a better object-oriented approach and RAII
+- [x] Refactor code, implementing a better object-oriented approach and RAII
 - [ ] Set up a move encoding system (quiet moves, captures, promotions, etc.)
 - [ ] Finish move generation for:
   - [ ] Knights
