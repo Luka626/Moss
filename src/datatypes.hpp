@@ -12,6 +12,13 @@ enum Colors: int {
     WHITE,
     BLACK,
 };
+inline Colors operator~(Colors& color){
+    if (color == WHITE){
+        return BLACK;
+    } else {
+        return WHITE;
+    }
+}
 
 
 const int NPIECES = 6;

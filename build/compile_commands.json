@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/luka/lchess/build",
+  "command": "/usr/bin/c++    -o CMakeFiles/lib.dir/src/position.cpp.o -c /home/luka/lchess/src/position.cpp",
+  "file": "/home/luka/lchess/src/position.cpp"
+},
+{
+  "directory": "/home/luka/lchess/build",
+  "command": "/usr/bin/c++    -o CMakeFiles/lib.dir/src/move_generator.cpp.o -c /home/luka/lchess/src/move_generator.cpp",
+  "file": "/home/luka/lchess/src/move_generator.cpp"
+},
+{
+  "directory": "/home/luka/lchess/build",
+  "command": "/usr/bin/c++    -o CMakeFiles/lib.dir/src/utils.cpp.o -c /home/luka/lchess/src/utils.cpp",
+  "file": "/home/luka/lchess/src/utils.cpp"
+},
+{
+  "directory": "/home/luka/lchess/build",
+  "command": "/usr/bin/c++    -o CMakeFiles/main.dir/src/main.cpp.o -c /home/luka/lchess/src/main.cpp",
+  "file": "/home/luka/lchess/src/main.cpp"
+}
+]

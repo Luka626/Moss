@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblib.a CMakeFiles/lib.dir/src/position.cpp.o CMakeFiles/lib.dir/src/move_generator.cpp.o CMakeFiles/lib.dir/src/utils.cpp.o
+/usr/bin/ranlib liblib.a
