@@ -7,9 +7,19 @@ bitboard knight_attacks[64];
 
 int king_jumps[8];
 bitboard king_attacks[64];
+
+int wpawn_jumps[2];
+int bpawn_jumps[2];
+bitboard wpawn_attacks[64];
+bitboard bpawn_attacks[64];
 }
 
 void Utils::init() {
+    generate_bpawn_jumps();
+    generate_wpawn_jumps();
+    generate_bpawn_attacks();
+    generate_wpawn_attacks();
+
     generate_knight_jumps();
     generate_knight_attacks();
 
@@ -39,9 +49,16 @@ void Utils::generate_king_jumps(){
   king_jumps[5] = NE;
   king_jumps[6] = N;
   king_jumps[7] = NW;
-
 }
 
+void Utils::generate_wpawn_jumps(){
+  wpawn_jumps[0] = NW;
+  wpawn_jumps[1] = NE;
+}
+void Utils::generate_bpawn_jumps(){
+  wpawn_jumps[0] = SW;
+  wpawn_jumps[1] = SE;
+}
 void Utils::generate_knight_attacks(){
   // generate a bitboard array containing all valid knight moves from all
   // squares
@@ -83,6 +100,50 @@ void Utils::generate_king_attacks(){
         continue;
       };
       set_bit(king_attacks[i], target_square);
+    };
+  };
+}
+
+void Utils::generate_wpawn_attacks(){
+  for (size_t i = a1; i <= NSQUARES; i++) {
+    int starting_rank = rank((Square)i);
+    int starting_file = file((Square)i);
+
+
+    for (int j = 0; j < 2; j++) {
+      int target_square = i + wpawn_jumps[j];
+      if ((target_square < a1) || (target_square > h8)) {
+        continue;
+      };
+      int end_rank = rank((Square)target_square);
+      int end_file = file((Square)target_square);
+      if ((abs(end_rank - starting_rank) > 2) ||
+          abs(end_file - starting_file) > 2) {
+        continue;
+      };
+      set_bit(wpawn_attacks[i], target_square);
+    };
+  };
+}
+
+void Utils::generate_bpawn_attacks(){
+  for (size_t i = a1; i <= NSQUARES; i++) {
+    int starting_rank = rank((Square)i);
+    int starting_file = file((Square)i);
+
+
+    for (int j = 0; j < 2; j++) {
+      int target_square = i + bpawn_jumps[j];
+      if ((target_square < a1) || (target_square > h8)) {
+        continue;
+      };
+      int end_rank = rank((Square)target_square);
+      int end_file = file((Square)target_square);
+      if ((abs(end_rank - starting_rank) > 2) ||
+          abs(end_file - starting_file) > 2) {
+        continue;
+      };
+      set_bit(bpawn_attacks[i], target_square);
     };
   };
 }

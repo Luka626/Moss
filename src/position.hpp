@@ -13,7 +13,7 @@ public:
 
   // Encoded in FEN string, needed to establish state of play beyond piece
   // arrangement
-  size_t side_to_play;
+  Colors side_to_play;
   std::string en_passant_square;
   std::string castling_flags;
   size_t halfmove_clock;
@@ -26,7 +26,7 @@ public:
 
   void make_move(Move &move);
   void undo_move(Move &move);
-  void remove_piece(const Pieces piece, const Square location);
+  void remove_piece(const Square location);
 
   friend std::ostream &operator<<(std::ostream &os, const Position &pos);
 

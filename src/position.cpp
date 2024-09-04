@@ -1,4 +1,5 @@
 #include "position.hpp"
+#include "datatypes.hpp"
 #include "utils.hpp"
 #include <sstream>
 #include <string>
@@ -9,7 +10,7 @@ Position::Position() { set_board(Utils::STARTING_FEN_POSITION); };
 Position::Position(const std::string &fen) { set_board(fen); }
 
 int Position::set_board(const std::string &fen) {
-    Utils::init();
+  Utils::init();
   for (auto &bb : pieces_bitboards) {
     bb = 0ULL;
   };
@@ -125,11 +126,24 @@ int Position::set_board(const std::string &fen) {
 
 void Position::make_move(Move &move) {
   ply++;
-  bitboard from_bitboard = 1ULL << move.from;
-  bitboard to_bitboard = 1ULL << move.to;
+  bitboard from_bitboard = Utils::set_bit(move.from);
+  bitboard to_bitboard = Utils::set_bit(move.to);
   bitboard from_to_bitboard = from_bitboard ^ to_bitboard;
+  if (move.is_capture) {
+    remove_piece(move.to);
+  }
 
   pieces_bitboards[move.piece] ^= from_to_bitboard;
+
+  color_bitboards[side_to_play] ^= from_to_bitboard;
+}
+
+void Position::remove_piece(Square sq) {
+  bitboard to_remove = Utils::set_bit(sq);
+  for (bitboard &piece_bb : pieces_bitboards) {
+    piece_bb &= ~to_remove;
+  };
+  color_bitboards[~side_to_play] &= ~to_remove;
 }
 
 // overrides << operator to "pretty" print chess position

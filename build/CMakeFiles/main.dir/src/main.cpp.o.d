@@ -1,6 +1,6 @@
 CMakeFiles/main.dir/src/main.cpp.o: /home/luka/lchess/src/main.cpp \
- /usr/include/stdc-predef.h /home/luka/lchess/src/move_generator.hpp \
- /home/luka/lchess/src/datatypes.hpp /usr/include/c++/11/cstdint \
+ /usr/include/stdc-predef.h /home/luka/lchess/src/datatypes.hpp \
+ /usr/include/c++/11/cstdint \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -20,6 +20,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/luka/lchess/src/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /home/luka/lchess/src/move_generator.hpp \
  /home/luka/lchess/src/position.hpp /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
