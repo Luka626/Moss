@@ -21,6 +21,10 @@
 - [ ] Implement a recursive minimax search
 - [ ] Try alpha-beta pruning
 
+### Refactors I'd like to do:
+- [ ] separate utils into tables/masks and bit magic
+- [ ] redo pawn move generation entirely
+
 ## Helpful Links
 - https://pages.cs.wisc.edu/~psilord/blog/data/chess-pages/nonsliding.html
 - https://www.chessprogramming.org/Main_Page
