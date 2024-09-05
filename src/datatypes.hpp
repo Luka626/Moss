@@ -2,6 +2,7 @@
 #define DATATYPES_H_
 
 #include <cstdint>
+#include <ostream>
 
 typedef uint64_t bitboard;
 
@@ -96,11 +97,28 @@ enum Square : int {
   g8,
   h8
 };
-
+std::ostream inline &operator<<(std::ostream &os, const Square &sq) {
+  int file = sq & 7;
+  int rank = sq >> 3;
+  char rank_ch = '0' + rank + 1;
+  char file_ch = 'a' + file;
+  os << file_ch << rank_ch;
+  return os;
+};
 struct Move {
   Pieces piece;
   Square from;
   Square to;
   bool is_capture;
+  Pieces captured_piece;
+  bool is_double_push;
+  bool is_castle;
+  bool is_en_passant;
+  Pieces promotion;
 };
+std::ostream inline &operator<<(std::ostream &os, const Move &mv) {
+  os << mv.from << mv.to;
+  return os;
+}
+
 #endif

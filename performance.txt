@@ -1,0 +1,1 @@
+first working perft: ~450,000 nps, starting position divide(4)

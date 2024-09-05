@@ -6,22 +6,14 @@
 - Hyperbolic quintessence move gen
 
 ## To-Do Big Picture
-- [ ] handle edge cases:
-    - [ ] en passant
-    - [ ] promotion
-    - [ ] castling
-    - [ ] checks
-    - [ ] pins
     - [ ] 50 move rule
     - [ ] 3-fold repitition
-- [ ] implement perft function
-
 
 ## To-Do Immediate Work
-- [ ] Handle en-passant ?? *MEDIUM*
-- [ ] add a legality checker to prune pseudo legal moves down to legal moves *MEDIUM*
-- [ ] handle checks *EASY*
-- [ ] handle pins *MEDIUM*
+- [x] Handle en-passant ?? *MEDIUM*
+- [x] add a legality checker to prune pseudo legal moves down to legal moves *MEDIUM*
+- [x] handle checks *EASY*
+- [x] handle pins *MEDIUM*
 
 ### Longer term
 - [ ] Zoboroist hashing??? idk
@@ -32,7 +24,6 @@
 ## Helpful Links
 - https://pages.cs.wisc.edu/~psilord/blog/data/chess-pages/nonsliding.html
 - https://www.chessprogramming.org/Main_Page
-
 
 #### Done (to-do graveyard)
 - [x] Refactor code, implementing a better object-oriented approach and RAII
@@ -47,3 +38,10 @@
 - [x] hyperbolic quintessence to handle sliding piece move generation
 - [x] Implement pawn attack tables *EASY*
 - [x] implement captures in make_move *EASY*
+- [x] handle edge cases:
+    - [x] en passant
+    - [x] promotion
+    - [x] castling
+    - [x] checks
+    - [x] pins
+- [x] implement perft function

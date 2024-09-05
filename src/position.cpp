@@ -1,8 +1,10 @@
 #include "position.hpp"
 #include "datatypes.hpp"
 #include "utils.hpp"
+#include <cstring>
 #include <sstream>
 #include <string>
+#include <vector>
 
 // default constructor of a starting position
 Position::Position() { set_board(Utils::STARTING_FEN_POSITION); };
@@ -10,7 +12,15 @@ Position::Position() { set_board(Utils::STARTING_FEN_POSITION); };
 Position::Position(const std::string &fen) { set_board(fen); }
 
 int Position::set_board(const std::string &fen) {
+    DEBUG_CAPTURES= 0;
+    DEBUG_PROMOTIONS= 0;
+    DEBUG_EP= 0;
+    DEBUG_CASTLES= 0;
   Utils::init();
+  en_passant_history = {};
+  castling_flags.resize(4, false);
+  castling_history = {};
+
   for (auto &bb : pieces_bitboards) {
     bb = 0ULL;
   };
@@ -108,11 +118,31 @@ int Position::set_board(const std::string &fen) {
   };
 
   std::getline(iss, fen_token, ' ');
-  castling_flags = fen_token;
+  for (int i = 0; i < std::strlen(fen_token.c_str()); i++) {
+    char ch = fen_token[i];
+    switch (ch) {
+    case ('K'):
+      castling_flags[0] = true;
+      break;
+    case ('Q'):
+      castling_flags[1] = true;
+      break;
+    case ('k'):
+      castling_flags[2] = true;
+      break;
+    case ('q'):
+      castling_flags[3] = true;
+      break;
+    }
+  }
 
   std::getline(iss, fen_token, ' ');
-  if (fen_token != "-") {
-    en_passant_square = fen_token;
+  if (fen_token == "-") {
+    en_passant_square = (Square)0;
+  } else {
+    size_t file = fen_token.at(0) - 'a';
+    size_t rank = fen_token.at(1) - '1';
+    en_passant_square = Utils::get_square(rank, file);
   };
 
   std::getline(iss, fen_token, ' ');
@@ -126,29 +156,142 @@ int Position::set_board(const std::string &fen) {
 
 void Position::make_move(Move &move) {
   ply++;
+
   bitboard from_bitboard = Utils::set_bit(move.from);
   bitboard to_bitboard = Utils::set_bit(move.to);
   bitboard from_to_bitboard = from_bitboard ^ to_bitboard;
-  if (move.is_capture) {
-    remove_piece(move.to);
+  en_passant_history.push(en_passant_square);
+
+  if (move.is_en_passant) {
+    if (side_to_play == WHITE) {
+      move.captured_piece = remove_piece((Square)(move.to + S));
+    } else {
+      move.captured_piece = remove_piece((Square)(move.to + N));
+    }
   }
 
-  pieces_bitboards[move.piece] ^= from_to_bitboard;
+  castling_history.push(castling_flags);
+  update_castling_rights(move.from, move.to, move.is_capture);
 
+  if (move.is_castle) {
+    bitboard rook_from = 0ULL;
+    bitboard rook_to = 0ULL;
+    bitboard rook_from_to = 0ULL;
+    if (move.to == g1) {
+      rook_from = Utils::set_bit(h1);
+      rook_to = Utils::set_bit(f1);
+    } else if (move.to == c1) {
+      rook_from = Utils::set_bit(a1);
+      rook_to = Utils::set_bit(d1);
+    } else if (move.to == g8) {
+      rook_from = Utils::set_bit(h8);
+      rook_to = Utils::set_bit(f8);
+    } else if (move.to == c8) {
+      rook_from = Utils::set_bit(a8);
+      rook_to = Utils::set_bit(d8);
+    }
+    rook_from_to = rook_from ^ rook_to;
+    color_bitboards[side_to_play] ^= rook_from_to;
+    pieces_bitboards[Pieces::ROOK] ^= rook_from_to;
+  }
+
+  if (!move.is_en_passant && move.is_capture) {
+    move.captured_piece = remove_piece(move.to);
+  }
+  if (move.is_double_push) {
+    en_passant_square = (Square)((move.to + move.from) / 2);
+  } else {
+    en_passant_square = (Square)-1;
+  }
+
+  if (!move.promotion){
+  pieces_bitboards[move.piece] ^= from_to_bitboard;
+  } else {
+      pieces_bitboards[move.piece] &= ~from_bitboard;
+      pieces_bitboards[move.promotion] |= to_bitboard;
+  }
   color_bitboards[side_to_play] ^= from_to_bitboard;
+  side_to_play = ~side_to_play;
 }
 
-void Position::remove_piece(Square sq) {
+void Position::undo_move(Move &move) {
+  ply--;
+  bitboard from_bitboard = Utils::set_bit(move.to);
+  bitboard to_bitboard = Utils::set_bit(move.from);
+  bitboard from_to_bitboard = from_bitboard ^ to_bitboard;
+
+  if (move.is_castle) {
+    bitboard rook_from = 0ULL;
+    bitboard rook_to = 0ULL;
+    bitboard rook_from_to = 0ULL;
+    if (move.to == g1) {
+      rook_to = Utils::set_bit(h1);
+      rook_from = Utils::set_bit(f1);
+    } else if (move.to == c1) {
+      rook_to = Utils::set_bit(a1);
+      rook_from = Utils::set_bit(d1);
+    } else if (move.to == g8) {
+      rook_to = Utils::set_bit(h8);
+      rook_from = Utils::set_bit(f8);
+    } else if (move.to == c8) {
+      rook_to = Utils::set_bit(a8);
+      rook_from = Utils::set_bit(d8);
+    }
+    rook_from_to = rook_from ^ rook_to;
+    color_bitboards[~side_to_play] ^= rook_from_to;
+    pieces_bitboards[Pieces::ROOK] ^= rook_from_to;
+  }
+
+  if (!move.promotion){
+  pieces_bitboards[move.piece] ^= from_to_bitboard;
+  } else{
+      pieces_bitboards[move.piece] ^= to_bitboard;
+      pieces_bitboards[move.promotion] ^= from_bitboard;
+  }
+  color_bitboards[~side_to_play] ^= from_to_bitboard;
+
+  Square captured_square = move.to;
+  if (move.is_en_passant) {
+    if (side_to_play == BLACK) {
+      captured_square = (Square)(captured_square + S);
+    } else {
+      captured_square = (Square)(captured_square + N);
+    }
+  }
+  if (move.is_capture) {
+    Utils::set_bit(pieces_bitboards[move.captured_piece], captured_square);
+    Utils::set_bit(color_bitboards[side_to_play], captured_square);
+  }
+  en_passant_square = en_passant_history.top();
+  en_passant_history.pop();
+  castling_flags = castling_history.top();
+  castling_history.pop();
+  side_to_play = ~side_to_play;
+}
+
+
+Pieces Position::remove_piece(Square sq) {
   bitboard to_remove = Utils::set_bit(sq);
-  for (bitboard &piece_bb : pieces_bitboards) {
-    piece_bb &= ~to_remove;
-  };
-  color_bitboards[~side_to_play] &= ~to_remove;
+  for (size_t piece = 0; piece < NPIECES; piece++) {
+    bitboard piece_bb = pieces_bitboards[piece];
+    if (piece_bb & to_remove) {
+      pieces_bitboards[piece] &= ~to_remove;
+      color_bitboards[~side_to_play] &= ~to_remove;
+      return (Pieces)piece;
+    };
+    // todo: add NOPIECE piecetype and return it here instead of a PAWN
+  }
+  return Pieces::PAWN;
 }
 
 // overrides << operator to "pretty" print chess position
 std::ostream &operator<<(std::ostream &os, const Position &pos) {
-  os << "\nMove: " << pos.ply << "\n\n";
+  os << "\nMove: " << pos.ply << ", " << pos.side_to_play << " to play\n";
+  os << pos.castling_flags[0] << pos.castling_flags[1] << pos.castling_flags[2]
+     << pos.castling_flags[3] << "\n"
+     << pos.en_passant_square << "\n"
+     << pos.halfmove_clock << "\n"
+     << std::endl;
   for (int rank = 7; rank >= 0; rank--) {
     os << " " << rank + 1 << "  ";
     for (int file = 0; file <= 7; file++) {

@@ -19,7 +19,7 @@ const bitboard FILE_MASK[8] = {0x0101010101010101, 0x202020202020202,
 // Navigate [Index] <-> [Rank, File]
 inline size_t rank(Square sq) { return sq >> 3; }
 inline size_t file(Square sq) { return sq & 7; }
-inline size_t get_square(size_t rank, size_t file) { return 8 * rank + file; }
+inline Square get_square(size_t rank, size_t file) { return (Square) (8 * rank + file); }
 
 // Functions to return sliding piece masks from a given square
 const inline bitboard diagonal_mask(Square square) {
@@ -53,6 +53,8 @@ extern int wpawn_jumps[2];
 extern int bpawn_jumps[2];
 extern bitboard wpawn_attacks[64];
 extern bitboard bpawn_attacks[64];
+
+extern bitboard IN_BETWEEN[64][64];
 // Init function where we define all the extern attributes
 void init();
 
@@ -64,6 +66,8 @@ void generate_bpawn_attacks();
 void generate_wpawn_attacks();
 void generate_knight_attacks();
 void generate_king_attacks();
+
+void generate_in_between();
 
 // Functions to do bit operations on bitboards
 inline bitboard get_bit(bitboard bitboard, int index) {
