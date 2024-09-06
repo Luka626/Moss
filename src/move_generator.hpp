@@ -5,6 +5,7 @@
 #include "position.hpp"
 #include "utils.hpp"
 #include <array>
+#include <sstream>
 
 class MoveGenerator {
 public:
@@ -77,6 +78,19 @@ void inline add_capture_moves(MoveList &move_list, bitboard bb,
   }
 }
   void add_castling_moves(MoveList &moves_list);
+
+inline Move move_from_string(const std::string &str) {
+  MoveList moves = generate_pseudo_legal_moves();
+  for (size_t i = 0; i < moves.size(); i++) {
+    std::stringstream ss;
+    ss << moves.at(i);
+    std::string move_str = ss.str();
+    if (move_str == str) {
+      return moves.at(i);
+    }
+  }
+  return Move();
+}
 
 private:
     

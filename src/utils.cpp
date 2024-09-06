@@ -14,6 +14,8 @@ bitboard wpawn_attacks[64];
 bitboard bpawn_attacks[64];
 
 bitboard IN_BETWEEN[64][64];
+
+int MATERIAL_VALUE[NPIECES];
 } // namespace Utils
 
 void Utils::init() {
@@ -29,6 +31,13 @@ void Utils::init() {
   generate_king_attacks();
 
   generate_in_between();
+
+  MATERIAL_VALUE[PAWN] = 100;
+  MATERIAL_VALUE[KNIGHT] = 300;
+  MATERIAL_VALUE[BISHOP] = 325;
+  MATERIAL_VALUE[ROOK] = 500;
+  MATERIAL_VALUE[QUEEN] = 800;
+  MATERIAL_VALUE[KING] = 0;
 }
 
 void Utils::generate_in_between() {

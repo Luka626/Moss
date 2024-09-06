@@ -19,7 +19,9 @@ const bitboard FILE_MASK[8] = {0x0101010101010101, 0x202020202020202,
 // Navigate [Index] <-> [Rank, File]
 inline size_t rank(Square sq) { return sq >> 3; }
 inline size_t file(Square sq) { return sq & 7; }
-inline Square get_square(size_t rank, size_t file) { return (Square) (8 * rank + file); }
+inline Square get_square(size_t rank, size_t file) {
+  return (Square)(8 * rank + file);
+}
 
 // Functions to return sliding piece masks from a given square
 const inline bitboard diagonal_mask(Square square) {
@@ -55,6 +57,8 @@ extern bitboard wpawn_attacks[64];
 extern bitboard bpawn_attacks[64];
 
 extern bitboard IN_BETWEEN[64][64];
+
+extern int MATERIAL_VALUE[NPIECES];
 // Init function where we define all the extern attributes
 void init();
 
@@ -83,12 +87,25 @@ inline Square lsb(bitboard bb) {
   return static_cast<Square>(__builtin_ctzll(bb));
 }
 
+inline size_t pop_count(bitboard bb){
+    // Brian Kernighan's Way
+   size_t count = 0;
+   while (bb) {
+       count++;
+       bb &= bb - 1; // reset LS1B
+   }
+   return count;
+}
+
 // reverse bitboard by rotation, credit Antonin GAVREL on stackoverflow
 // https://stackoverflow.com/questions/2602823/in-c-c-whats-the-simplest-way-to-reverse-the-order-of-bits-in-a-byte
 inline bitboard reverse(bitboard bb) {
-  bb = ((bb >> 8) & 0x00FF00FF00FF00FFULL) | ((bb << 8) & 0xFF00FF00FF00FF00ULL);
-  bb = ((bb >> 16) & 0x0000FFFF0000FFFFULL) | ((bb << 16) & 0xFFFF0000FFFF0000ULL);
-  bb = ((bb >> 32) & 0x00000000FFFFFFFFULL) | ((bb << 32) & 0xFFFFFFFF00000000ULL);
+  bb =
+      ((bb >> 8) & 0x00FF00FF00FF00FFULL) | ((bb << 8) & 0xFF00FF00FF00FF00ULL);
+  bb = ((bb >> 16) & 0x0000FFFF0000FFFFULL) |
+       ((bb << 16) & 0xFFFF0000FFFF0000ULL);
+  bb = ((bb >> 32) & 0x00000000FFFFFFFFULL) |
+       ((bb << 32) & 0xFFFFFFFF00000000ULL);
   return bb;
 }
 

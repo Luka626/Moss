@@ -17,6 +17,11 @@ inline Colors operator~(Colors color) {
 
 const int NPIECES = 6;
 enum Pieces : int { PAWN, KNIGHT, BISHOP, ROOK, QUEEN, KING };
+std::ostream inline &operator<<(std::ostream &os, const Pieces &pc) {
+    char pc_ch[6] = {'p', 'n', 'b', 'r', 'q', 'k'};
+  os << pc_ch[pc]; 
+  return os;
+};
 
 const int NDIRECTIONS = 8;
 enum Compass : int {
@@ -118,6 +123,9 @@ struct Move {
 };
 std::ostream inline &operator<<(std::ostream &os, const Move &mv) {
   os << mv.from << mv.to;
+  if (mv.promotion){
+      os << mv.promotion;
+  }
   return os;
 }
 

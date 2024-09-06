@@ -9,6 +9,9 @@ set(SOURCES
     src/move_generator.cpp
     src/position.cpp
     src/utils.cpp
+    src/uci.cpp
+    src/search.cpp
+    src/eval.cpp
     )
 
 add_executable(main ${SOURCES})
