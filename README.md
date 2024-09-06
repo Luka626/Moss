@@ -5,33 +5,37 @@
 - Full FEN notation support
 - ~5 million node/second move generation
 - Hyperbolic quintessence sliding piece attack generation
+- Negamax depth-first search with alpha/beta pruning
 
-## To-Do Immediate Work
-- [ ] Set up some way to play against it (through command line)
-- [ ] create new eval class (random)
+## To-Do Search
 - [ ] hash positions into trans table
-- [ ] implement piece values
-- [ ] positional piece values?
+- [ ] quiscense search
+- [ ] search extension
+- [ ] killer moves
 
-## To-Do Big Picture
-- [ ] implement zobrist hashing (faster and necessary for trans. tables)
-- [ ] 50 move rule
-- [ ] 3-fold repitition
-- [ ] encoding moves into a single int (faster move gen)
-- [ ] replace undo_move with a copy from hash
+## To-Do Performance
+- [ ] hashing
+- [ ] fix legal_move_generation (right now it loops over all moves)
+- [ ] encode moves in a single INT
+- [ ] perform another round of profiling
 
+## To-Do Evaluation
+- [ ] positional piece values
+- [ ] piece mobility calculation
+- [ ] early game v. late game piece positions
 
-### Longer term
-- [ ] Zoboroist hashing??? idk
-- [ ] Endgame transposition table
-- [ ] Implement a recursive minimax search
-- [ ] Try alpha-beta pruning
 
 ## Helpful Links
 - https://pages.cs.wisc.edu/~psilord/blog/data/chess-pages/nonsliding.html
 - https://www.chessprogramming.org/Main_Page
 
 #### Done (to-do graveyard)
+- [x] implement piece values
+- [x] Implement a recursive minimax search
+- [x] Try alpha-beta pruning
+- [x] Minimax -> Negamax
+- [x] Set up some way to play against it (through command line)
+- [x] create new eval class (random)
 - [x] ~5,000,000 node per second move search
 - [x] use valgrind/kcachegrind for profiling and optimization, for 17x speed up
 - [x] Refactor code, implementing a better object-oriented approach and RAII
