@@ -121,4 +121,21 @@ std::ostream inline &operator<<(std::ostream &os, const Move &mv) {
   return os;
 }
 
+class MoveList {
+private:
+  Move moves[128];
+  size_t count;
+
+public:
+  inline MoveList() { count = 0; }
+  inline size_t clear() {
+    count = 0;
+    return count;
+  }
+  inline void push_back(const Move &mv) { moves[count++] = mv; }
+  inline Move &at(const size_t index) { return moves[index]; }
+  inline size_t size() const { return count; }
+  inline bool empty() const { return count == 0; }
+};
+
 #endif

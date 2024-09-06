@@ -3,17 +3,23 @@
 ## Features
 - Bitboard representation
 - Full FEN notation support
-- Hyperbolic quintessence move gen
-
-## To-Do Big Picture
-    - [ ] 50 move rule
-    - [ ] 3-fold repitition
+- ~5 million node/second move generation
+- Hyperbolic quintessence sliding piece attack generation
 
 ## To-Do Immediate Work
-- [x] Handle en-passant ?? *MEDIUM*
-- [x] add a legality checker to prune pseudo legal moves down to legal moves *MEDIUM*
-- [x] handle checks *EASY*
-- [x] handle pins *MEDIUM*
+- [ ] Set up some way to play against it (through command line)
+- [ ] create new eval class (random)
+- [ ] hash positions into trans table
+- [ ] implement piece values
+- [ ] positional piece values?
+
+## To-Do Big Picture
+- [ ] implement zobrist hashing (faster and necessary for trans. tables)
+- [ ] 50 move rule
+- [ ] 3-fold repitition
+- [ ] encoding moves into a single int (faster move gen)
+- [ ] replace undo_move with a copy from hash
+
 
 ### Longer term
 - [ ] Zoboroist hashing??? idk
@@ -21,15 +27,13 @@
 - [ ] Implement a recursive minimax search
 - [ ] Try alpha-beta pruning
 
-### Refactors I'd like to do:
-- [ ] separate utils into tables/masks and bit magic
-- [ ] redo pawn move generation entirely
-
 ## Helpful Links
 - https://pages.cs.wisc.edu/~psilord/blog/data/chess-pages/nonsliding.html
 - https://www.chessprogramming.org/Main_Page
 
 #### Done (to-do graveyard)
+- [x] ~5,000,000 node per second move search
+- [x] use valgrind/kcachegrind for profiling and optimization, for 17x speed up
 - [x] Refactor code, implementing a better object-oriented approach and RAII
 - [x] Set up a move encoding system (quiet moves, captures, promotions, etc.)
 - [x] Finish move generation for:
@@ -49,3 +53,8 @@
     - [x] checks
     - [x] pins
 - [x] implement perft function
+- [x] implement divide function and test against stockfish
+- [x] Handle en-passant ?? *MEDIUM*
+- [x] add a legality checker to prune pseudo legal moves down to legal moves *MEDIUM*
+- [x] handle checks *EASY*
+- [x] handle pins *MEDIUM*

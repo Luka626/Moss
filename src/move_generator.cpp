@@ -3,33 +3,33 @@
 #include "utils.hpp"
 #include <ios>
 
-MoveGenerator::MoveGenerator(std::shared_ptr<Position> position_ptr) {
+MoveGenerator::MoveGenerator(Position *position_ptr) {
   position = position_ptr;
   initiate_rank_attacks();
 };
 
 double MoveGenerator::divide(size_t depth) {
-    std::cout << std::fixed;
-    std::vector<Move> move_list;
-    double nodes;
-    double all_nodes;
+  std::cout << std::fixed;
+  MoveList move_list = MoveList();
+  double nodes;
+  double all_nodes;
 
-    move_list = generate_pseudo_legal_moves();
-    for (size_t i = 0; i < move_list.size(); i++){
-        position->make_move(move_list[i]);
-        if (validate_gamestate()){
-        nodes = perft(depth-1);
-        all_nodes += nodes;
-        std::cout << move_list[i] <<  ": " << nodes << "\n";
-        }
-        position->undo_move(move_list[i]);
+  move_list = generate_pseudo_legal_moves();
+  for (size_t i = 0; i < move_list.size(); i++) {
+    position->make_move(move_list.at(i));
+    nodes = perft(depth - 1);
+    all_nodes += nodes;
+    if (nodes > 0) {
+      std::cout << move_list.at(i) << ": " << nodes << "\n";
     }
-    std::cout << std::scientific;
-    return all_nodes;
+    position->undo_move(move_list.at(i));
+  }
+  std::cout << std::scientific;
+  return all_nodes;
 }
 
 double MoveGenerator::perft(size_t depth) {
-  std::vector<Move> move_list;
+  MoveList move_list = MoveList();
   double nodes = 0;
 
   if (!validate_gamestate()) {
@@ -43,12 +43,11 @@ double MoveGenerator::perft(size_t depth) {
   move_list = generate_pseudo_legal_moves();
 
   for (size_t i = 0; i < move_list.size(); i++) {
-    //getchar();
-    position->make_move(move_list[i]);
-    //std::cout << *position << std::endl;
-
+    // getchar();
+    position->make_move(move_list.at(i));
+    // std::cout << *position << std::endl;
     nodes += perft(depth - 1);
-    position->undo_move(move_list[i]);
+    position->undo_move(move_list.at(i));
   }
   return nodes;
 }
@@ -61,7 +60,7 @@ bool MoveGenerator::validate_gamestate() {
   bool king_in_check = generate_attackers(king_square) &
                        position->color_bitboards[position->side_to_play];
 
-  bool pinned_pieces = generate_pinned_pieces();
+  // bool pinned_pieces = generate_pinned_pieces();
   return !king_in_check;
 }
 int MoveGenerator::generate_rank_attack(int occupancy, size_t file) {
@@ -147,9 +146,8 @@ bitboard MoveGenerator::generate_pinned_pieces() {
   return pinned;
 }
 
-
-std::vector<Move> MoveGenerator::generate_pseudo_legal_moves() {
-  std::vector<Move> pseudo_legal_moves = {};
+MoveList MoveGenerator::generate_pseudo_legal_moves() {
+  MoveList pseudo_legal_moves = MoveList();
 
   bitboard pawn_bb = position->get_bitboard(Pieces::PAWN);
   bitboard knight_bb = position->get_bitboard(Pieces::KNIGHT);
@@ -168,9 +166,9 @@ std::vector<Move> MoveGenerator::generate_pseudo_legal_moves() {
   return pseudo_legal_moves;
 }
 
-void MoveGenerator::generate_pawn_moves(std::vector<Move> &move_list,
-                                        bitboard bb) {
+void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
 
+  Pieces promotion_pieces[4] = {QUEEN, KNIGHT, ROOK, BISHOP};
   if (position->side_to_play == WHITE) {
     bitboard single_pawn_push = bb << N;
     single_pawn_push &= ~position->get_occupied();
@@ -188,7 +186,6 @@ void MoveGenerator::generate_pawn_moves(std::vector<Move> &move_list,
       psudeo_legal_move.from = (Square)(psudeo_legal_move.to + S);
 
       if (Utils::rank(psudeo_legal_move.to) == 7) {
-        std::vector<Pieces> promotion_pieces = {QUEEN, KNIGHT, ROOK, BISHOP};
         for (const auto &promotion_piece : promotion_pieces) {
           psudeo_legal_move.promotion = promotion_piece;
           move_list.push_back(psudeo_legal_move);
@@ -208,15 +205,12 @@ void MoveGenerator::generate_pawn_moves(std::vector<Move> &move_list,
 
       move_list.push_back(psudeo_legal_move);
     }
-    std::vector<Move> capture_moves = {};
 
     bitboard origin_bb = bb;
     while (origin_bb) {
       Square origin_square = Utils::pop_bit(origin_bb);
       bitboard pawn_attacks = Utils::wpawn_attacks[origin_square];
-
       bitboard capture_moves_bb = pawn_attacks & position->get_enemy();
-      std::vector<Pieces> promotion_pieces = {QUEEN, KNIGHT, ROOK, BISHOP};
       while (capture_moves_bb) {
         Square destination_square = Utils::pop_bit(capture_moves_bb);
         Move capture = {};
@@ -224,36 +218,33 @@ void MoveGenerator::generate_pawn_moves(std::vector<Move> &move_list,
         capture.from = origin_square;
         capture.to = destination_square;
         capture.is_capture = true;
-
         if (Utils::rank(capture.to) == 7) {
           for (const auto &promotion_piece : promotion_pieces) {
             capture.promotion = promotion_piece;
             move_list.push_back(capture);
           }
         } else {
-          capture_moves.push_back(capture);
+          move_list.push_back(capture);
         }
       }
 
-      add_capture_moves(capture_moves, capture_moves_bb, Pieces::PAWN,
+      add_capture_moves(move_list, capture_moves_bb, Pieces::PAWN,
                         origin_square);
-
-      bitboard en_passant_moves_bb =
-          pawn_attacks & Utils::set_bit(position->en_passant_square);
-      while (en_passant_moves_bb) {
-        Square destination_square = Utils::pop_bit(en_passant_moves_bb);
-        Move en_passant = {};
-        en_passant.piece = PAWN;
-        en_passant.from = origin_square;
-        en_passant.to = destination_square;
-        en_passant.is_capture = true;
-        en_passant.is_en_passant = true;
-        move_list.push_back(en_passant);
+      if (position->en_passant_square > 0) {
+        bitboard en_passant_moves_bb =
+            pawn_attacks & Utils::set_bit(position->en_passant_square);
+        while (en_passant_moves_bb) {
+          Square destination_square = Utils::pop_bit(en_passant_moves_bb);
+          Move en_passant = {};
+          en_passant.piece = PAWN;
+          en_passant.from = origin_square;
+          en_passant.to = destination_square;
+          en_passant.is_capture = true;
+          en_passant.is_en_passant = true;
+          move_list.push_back(en_passant);
+        }
       }
     }
-
-    move_list.insert(std::end(move_list), std::begin(capture_moves),
-                     std::end(capture_moves));
 
   } else if (position->side_to_play == BLACK) {
     bitboard single_pawn_push = bb >> N;
@@ -272,7 +263,6 @@ void MoveGenerator::generate_pawn_moves(std::vector<Move> &move_list,
       psudeo_legal_move.to = Utils::pop_bit(single_pawn_push);
       psudeo_legal_move.from = (Square)(psudeo_legal_move.to + N);
       if (Utils::rank(psudeo_legal_move.to) == 0) {
-        std::vector<Pieces> promotion_pieces = {QUEEN, KNIGHT, ROOK, BISHOP};
         for (const auto &promotion_piece : promotion_pieces) {
           psudeo_legal_move.promotion = promotion_piece;
           move_list.push_back(psudeo_legal_move);
@@ -291,15 +281,15 @@ void MoveGenerator::generate_pawn_moves(std::vector<Move> &move_list,
       psudeo_legal_move.is_double_push = true;
       move_list.push_back(psudeo_legal_move);
     }
-    std::vector<Move> capture_moves = {};
 
     bitboard origin_bb = bb;
     while (origin_bb) {
       Square origin_square = Utils::pop_bit(origin_bb);
       bitboard pawn_attacks = Utils::bpawn_attacks[origin_square];
+      if (pawn_attacks) {
+      };
 
       bitboard capture_moves_bb = pawn_attacks & position->get_enemy();
-      std::vector<Pieces> promotion_pieces = {QUEEN, KNIGHT, ROOK, BISHOP};
       while (capture_moves_bb) {
         Square destination_square = Utils::pop_bit(capture_moves_bb);
         Move capture = {};
@@ -314,36 +304,27 @@ void MoveGenerator::generate_pawn_moves(std::vector<Move> &move_list,
             move_list.push_back(capture);
           }
         } else {
-          capture_moves.push_back(capture);
+          move_list.push_back(capture);
         }
       }
-
-      add_capture_moves(capture_moves, capture_moves_bb, Pieces::PAWN,
-                        origin_square);
-
-      bitboard en_passant_moves_bb =
-          pawn_attacks & Utils::set_bit(position->en_passant_square);
-      while (en_passant_moves_bb) {
-        Square destination_square = Utils::pop_bit(en_passant_moves_bb);
-        Move en_passant = {};
-        en_passant.piece = PAWN;
-        en_passant.from = origin_square;
-        en_passant.to = destination_square;
-        en_passant.is_capture = true;
-        en_passant.is_en_passant = true;
-        move_list.push_back(en_passant);
+      if (position->en_passant_square > 0) {
+        bitboard en_passant_moves_bb =
+            pawn_attacks & Utils::set_bit(position->en_passant_square);
+        while (en_passant_moves_bb) {
+          Square destination_square = Utils::pop_bit(en_passant_moves_bb);
+          Move en_passant = {};
+          en_passant.piece = PAWN;
+          en_passant.from = origin_square;
+          en_passant.to = destination_square;
+          en_passant.is_capture = true;
+          en_passant.is_en_passant = true;
+          move_list.push_back(en_passant);
+        }
       }
     }
-
-    move_list.insert(std::end(move_list), std::begin(capture_moves),
-                     std::end(capture_moves));
   }
 }
-void MoveGenerator::generate_knight_moves(std::vector<Move> &move_list,
-                                          bitboard bb) {
-
-  std::vector<Move> quiet_moves = {};
-  std::vector<Move> capture_moves = {};
+void MoveGenerator::generate_knight_moves(MoveList &move_list, bitboard bb) {
 
   while (bb) {
     Square origin_square = Utils::pop_bit(bb);
@@ -352,47 +333,25 @@ void MoveGenerator::generate_knight_moves(std::vector<Move> &move_list,
     bitboard quiet_moves_bb = knight_moves & position->get_empty();
     bitboard capture_moves_bb = knight_moves & position->get_enemy();
 
-    add_quiet_moves(quiet_moves, quiet_moves_bb, Pieces::KNIGHT, origin_square);
-    add_capture_moves(capture_moves, capture_moves_bb, Pieces::KNIGHT,
+    add_quiet_moves(move_list, quiet_moves_bb, Pieces::KNIGHT, origin_square);
+    add_capture_moves(move_list, capture_moves_bb, Pieces::KNIGHT,
                       origin_square);
   }
-
-  move_list.insert(std::end(move_list), std::begin(quiet_moves),
-                   std::end(quiet_moves));
-  move_list.insert(std::end(move_list), std::begin(capture_moves),
-                   std::end(capture_moves));
 }
 
-void MoveGenerator::generate_king_moves(std::vector<Move> &move_list,
-                                        bitboard bb) {
-  std::vector<Move> quiet_moves = {};
-  std::vector<Move> capture_moves = {};
-  std::vector<Move> castling_moves = {};
-
+void MoveGenerator::generate_king_moves(MoveList &move_list, bitboard bb) {
   Square origin_square = Utils::pop_bit(bb);
   bitboard king_moves = Utils::king_attacks[origin_square];
 
   bitboard quiet_moves_bb = king_moves & position->get_empty();
   bitboard capture_moves_bb = king_moves & position->get_enemy();
 
-  add_castling_moves(castling_moves);
-  add_quiet_moves(quiet_moves, quiet_moves_bb, Pieces::KING, origin_square);
-  add_capture_moves(capture_moves, capture_moves_bb, Pieces::KING,
-                    origin_square);
-
-  move_list.insert(std::end(move_list), std::begin(quiet_moves),
-                   std::end(quiet_moves));
-  move_list.insert(std::end(move_list), std::begin(capture_moves),
-                   std::end(capture_moves));
-  move_list.insert(std::end(move_list), std::begin(castling_moves),
-                   std::end(castling_moves));
+  add_castling_moves(move_list);
+  add_quiet_moves(move_list, quiet_moves_bb, Pieces::KING, origin_square);
+  add_capture_moves(move_list, capture_moves_bb, Pieces::KING, origin_square);
 }
 
-void MoveGenerator::generate_rook_moves(std::vector<Move> &move_list,
-                                        bitboard bb) {
-  std::vector<Move> quiet_moves = {};
-  std::vector<Move> capture_moves = {};
-
+void MoveGenerator::generate_rook_moves(MoveList &move_list, bitboard bb) {
   while (bb) {
     Square origin_square = Utils::pop_bit(bb);
     bitboard occupancy = position->get_occupied();
@@ -402,21 +361,11 @@ void MoveGenerator::generate_rook_moves(std::vector<Move> &move_list,
     bitboard quiet_moves_bb = rook_moves & position->get_empty();
     bitboard capture_moves_bb = rook_moves & position->get_enemy();
 
-    add_quiet_moves(quiet_moves, quiet_moves_bb, Pieces::ROOK, origin_square);
-    add_capture_moves(capture_moves, capture_moves_bb, Pieces::ROOK,
-                      origin_square);
+    add_quiet_moves(move_list, quiet_moves_bb, Pieces::ROOK, origin_square);
+    add_capture_moves(move_list, capture_moves_bb, Pieces::ROOK, origin_square);
   }
-
-  move_list.insert(std::end(move_list), std::begin(quiet_moves),
-                   std::end(quiet_moves));
-  move_list.insert(std::end(move_list), std::begin(capture_moves),
-                   std::end(capture_moves));
 }
-void MoveGenerator::generate_bishop_moves(std::vector<Move> &move_list,
-                                          bitboard bb) {
-  std::vector<Move> quiet_moves = {};
-  std::vector<Move> capture_moves = {};
-
+void MoveGenerator::generate_bishop_moves(MoveList &move_list, bitboard bb) {
   while (bb) {
     Square origin_square = Utils::pop_bit(bb);
     bitboard occupancy = position->get_occupied();
@@ -425,22 +374,13 @@ void MoveGenerator::generate_bishop_moves(std::vector<Move> &move_list,
     bitboard quiet_moves_bb = bishop_moves & position->get_empty();
     bitboard capture_moves_bb = bishop_moves & position->get_enemy();
 
-    add_quiet_moves(quiet_moves, quiet_moves_bb, Pieces::BISHOP, origin_square);
-    add_capture_moves(capture_moves, capture_moves_bb, Pieces::BISHOP,
+    add_quiet_moves(move_list, quiet_moves_bb, Pieces::BISHOP, origin_square);
+    add_capture_moves(move_list, capture_moves_bb, Pieces::BISHOP,
                       origin_square);
   }
-
-  move_list.insert(std::end(move_list), std::begin(quiet_moves),
-                   std::end(quiet_moves));
-  move_list.insert(std::end(move_list), std::begin(capture_moves),
-                   std::end(capture_moves));
 }
 
-void MoveGenerator::generate_queen_moves(std::vector<Move> &move_list,
-                                         bitboard bb) {
-  std::vector<Move> quiet_moves = {};
-  std::vector<Move> capture_moves = {};
-
+void MoveGenerator::generate_queen_moves(MoveList &move_list, bitboard bb) {
   while (bb) {
     Square origin_square = Utils::pop_bit(bb);
     bitboard occupancy = position->get_occupied();
@@ -451,15 +391,10 @@ void MoveGenerator::generate_queen_moves(std::vector<Move> &move_list,
     bitboard quiet_moves_bb = queen_moves & position->get_empty();
     bitboard capture_moves_bb = queen_moves & position->get_enemy();
 
-    add_quiet_moves(quiet_moves, quiet_moves_bb, Pieces::QUEEN, origin_square);
-    add_capture_moves(capture_moves, capture_moves_bb, Pieces::QUEEN,
+    add_quiet_moves(move_list, quiet_moves_bb, Pieces::QUEEN, origin_square);
+    add_capture_moves(move_list, capture_moves_bb, Pieces::QUEEN,
                       origin_square);
   }
-
-  move_list.insert(std::end(move_list), std::begin(quiet_moves),
-                   std::end(quiet_moves));
-  move_list.insert(std::end(move_list), std::begin(capture_moves),
-                   std::end(capture_moves));
 }
 
 bitboard MoveGenerator::generate_rectilinear_attacks(bitboard occupancy,
@@ -480,19 +415,7 @@ bitboard MoveGenerator::generate_diagonal_attacks(bitboard occupancy,
          hyperbola_quintessence(occupancy, sq, Utils::anti_diagonal_mask(sq));
 }
 
-// https://www.chessprogramming.org/Subtracting_a_Rook_from_a_Blocking_Piece
-bitboard MoveGenerator::hyperbola_quintessence(bitboard occupancy, Square sq,
-                                               bitboard mask) {
-  // exclude the slider from the mask
-  mask = mask & (~Utils::set_bit(sq));
-  bitboard x = Utils::set_bit(sq);
-  bitboard o = occupancy & mask;
-  return ((o - x) ^
-          Utils::reverse(Utils::reverse(o) - (0x8000000000000000ull >> sq))) &
-         mask;
-}
-
-void MoveGenerator::add_castling_moves(std::vector<Move> &move_list) {
+void MoveGenerator::add_castling_moves(MoveList &move_list) {
   if (position->side_to_play == WHITE) {
     if (position->castling_flags[0]) {
       Square rook_square = h1;
@@ -633,29 +556,5 @@ void MoveGenerator::add_castling_moves(std::vector<Move> &move_list) {
         move_list.push_back(w_kingside_castle);
       }
     }
-  }
-}
-void MoveGenerator::add_quiet_moves(std::vector<Move> &move_list, bitboard bb,
-                                    Pieces piece, Square origin) {
-  while (bb) {
-    Square destination_square = Utils::pop_bit(bb);
-    Move quiet_move = {};
-    quiet_move.piece = piece;
-    quiet_move.from = origin;
-    quiet_move.to = destination_square;
-    move_list.push_back(quiet_move);
-  }
-}
-
-void MoveGenerator::add_capture_moves(std::vector<Move> &move_list, bitboard bb,
-                                      Pieces piece, Square origin) {
-  while (bb) {
-    Square destination_square = Utils::pop_bit(bb);
-    Move capture = {};
-    capture.piece = piece;
-    capture.from = origin;
-    capture.to = destination_square;
-    capture.is_capture = true;
-    move_list.push_back(capture);
   }
 }

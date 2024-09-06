@@ -1,1 +1,9 @@
-first working perft: ~450,000 nps, starting position divide(4)
+starting position divide(4)
+first working perft: 450,000nps
+inlining everything and a bit of profiling: 630,000nps
+implemented custom MoveList class over std::vector and removed shared_ptrs: 775,000nps
+implemented arrays for castling/enpassant history instead of std::vectors and: 3.5mnps
+general cleanup, removed some more dynamically allocated data structures: 4.0 mnps
+
+new benchmark:
+perft(5) from starting position: 4.9mnps

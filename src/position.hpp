@@ -2,12 +2,9 @@
 #define POSITION_HPP_
 
 #include "datatypes.hpp"
-#include <memory>
-#include <stack>
 #include <string>
-#include <vector>
 
-class Position : public std::enable_shared_from_this<Position> {
+class Position {
 public:
   // 6 piece and 2 color bitboards describe piece arrangement
   bitboard pieces_bitboards[NPIECES];
@@ -16,17 +13,13 @@ public:
   // Encoded in FEN string, needed to establish state of play beyond piece
   // arrangement
   Colors side_to_play;
-  std::stack<Square> en_passant_history;
+  Square en_passant_history[256];
   Square en_passant_square;
-  std::stack<std::vector<bool>> castling_history;
-  std::vector<bool> castling_flags;
+  bool castling_history[256][4];
+  bool castling_flags[4];
   size_t halfmove_clock;
   size_t ply;
 
-  size_t DEBUG_PROMOTIONS;
-  size_t DEBUG_CASTLES;
-  size_t DEBUG_EP;
-  size_t DEBUG_CAPTURES;
 
   Position();
   Position(const std::string &fen);
@@ -35,7 +28,19 @@ public:
 
   void make_move(Move &move);
   void undo_move(Move &move);
-  Pieces remove_piece(const Square location);
+Pieces inline remove_piece(Square sq) {
+  bitboard to_remove = 1ULL << sq;
+  for (size_t piece = 0; piece < NPIECES; piece++) {
+    bitboard piece_bb = pieces_bitboards[piece];
+    if (piece_bb & to_remove) {
+      pieces_bitboards[piece] &= ~to_remove;
+      color_bitboards[~side_to_play] &= ~to_remove;
+      return (Pieces)piece;
+    };
+    // todo: add NOPIECE piecetype and return it here instead of a PAWN
+  }
+  return Pieces::PAWN;
+}
 
 
 void inline update_castling_rights(Square from, Square to, bool is_capture) {

@@ -4,7 +4,6 @@
 #include <cstring>
 #include <sstream>
 #include <string>
-#include <vector>
 
 // default constructor of a starting position
 Position::Position() { set_board(Utils::STARTING_FEN_POSITION); };
@@ -12,14 +11,12 @@ Position::Position() { set_board(Utils::STARTING_FEN_POSITION); };
 Position::Position(const std::string &fen) { set_board(fen); }
 
 int Position::set_board(const std::string &fen) {
-    DEBUG_CAPTURES= 0;
-    DEBUG_PROMOTIONS= 0;
-    DEBUG_EP= 0;
-    DEBUG_CASTLES= 0;
+  ply = 1;
+  for (int i = 0; i < 4; i++) {
+    castling_flags[i] = false;
+    castling_history[ply][i] = false;
+  };
   Utils::init();
-  en_passant_history = {};
-  castling_flags.resize(4, false);
-  castling_history = {};
 
   for (auto &bb : pieces_bitboards) {
     bb = 0ULL;
@@ -123,22 +120,26 @@ int Position::set_board(const std::string &fen) {
     switch (ch) {
     case ('K'):
       castling_flags[0] = true;
+      castling_history[1][0] = true;
       break;
     case ('Q'):
       castling_flags[1] = true;
+      castling_history[1][1] = true;
       break;
     case ('k'):
       castling_flags[2] = true;
+      castling_history[1][1] = true;
       break;
     case ('q'):
       castling_flags[3] = true;
+      castling_history[1][3] = true;
       break;
     }
   }
 
   std::getline(iss, fen_token, ' ');
   if (fen_token == "-") {
-    en_passant_square = (Square)0;
+    en_passant_square = (Square)-1;
   } else {
     size_t file = fen_token.at(0) - 'a';
     size_t rank = fen_token.at(1) - '1';
@@ -155,12 +156,16 @@ int Position::set_board(const std::string &fen) {
 };
 
 void Position::make_move(Move &move) {
+  en_passant_history[ply] = en_passant_square;
+  for (int i = 0; i < 4; i++) {
+    castling_history[ply][i] = castling_flags[i];
+  }
+
   ply++;
 
   bitboard from_bitboard = Utils::set_bit(move.from);
   bitboard to_bitboard = Utils::set_bit(move.to);
   bitboard from_to_bitboard = from_bitboard ^ to_bitboard;
-  en_passant_history.push(en_passant_square);
 
   if (move.is_en_passant) {
     if (side_to_play == WHITE) {
@@ -170,7 +175,6 @@ void Position::make_move(Move &move) {
     }
   }
 
-  castling_history.push(castling_flags);
   update_castling_rights(move.from, move.to, move.is_capture);
 
   if (move.is_castle) {
@@ -204,17 +208,21 @@ void Position::make_move(Move &move) {
     en_passant_square = (Square)-1;
   }
 
-  if (!move.promotion){
-  pieces_bitboards[move.piece] ^= from_to_bitboard;
+  if (!move.promotion) {
+    pieces_bitboards[move.piece] ^= from_to_bitboard;
   } else {
-      pieces_bitboards[move.piece] &= ~from_bitboard;
-      pieces_bitboards[move.promotion] |= to_bitboard;
+    pieces_bitboards[move.piece] &= ~from_bitboard;
+    pieces_bitboards[move.promotion] |= to_bitboard;
   }
   color_bitboards[side_to_play] ^= from_to_bitboard;
   side_to_play = ~side_to_play;
 }
 
 void Position::undo_move(Move &move) {
+  en_passant_square = en_passant_history[ply-1];
+  for (int i = 0; i < 4; i++) {
+    castling_flags[i] = castling_history[ply-1][i];
+  }
   ply--;
   bitboard from_bitboard = Utils::set_bit(move.to);
   bitboard to_bitboard = Utils::set_bit(move.from);
@@ -242,11 +250,11 @@ void Position::undo_move(Move &move) {
     pieces_bitboards[Pieces::ROOK] ^= rook_from_to;
   }
 
-  if (!move.promotion){
-  pieces_bitboards[move.piece] ^= from_to_bitboard;
-  } else{
-      pieces_bitboards[move.piece] ^= to_bitboard;
-      pieces_bitboards[move.promotion] ^= from_bitboard;
+  if (!move.promotion) {
+    pieces_bitboards[move.piece] ^= from_to_bitboard;
+  } else {
+    pieces_bitboards[move.piece] ^= to_bitboard;
+    pieces_bitboards[move.promotion] ^= from_bitboard;
   }
   color_bitboards[~side_to_play] ^= from_to_bitboard;
 
@@ -262,26 +270,7 @@ void Position::undo_move(Move &move) {
     Utils::set_bit(pieces_bitboards[move.captured_piece], captured_square);
     Utils::set_bit(color_bitboards[side_to_play], captured_square);
   }
-  en_passant_square = en_passant_history.top();
-  en_passant_history.pop();
-  castling_flags = castling_history.top();
-  castling_history.pop();
   side_to_play = ~side_to_play;
-}
-
-
-Pieces Position::remove_piece(Square sq) {
-  bitboard to_remove = Utils::set_bit(sq);
-  for (size_t piece = 0; piece < NPIECES; piece++) {
-    bitboard piece_bb = pieces_bitboards[piece];
-    if (piece_bb & to_remove) {
-      pieces_bitboards[piece] &= ~to_remove;
-      color_bitboards[~side_to_play] &= ~to_remove;
-      return (Pieces)piece;
-    };
-    // todo: add NOPIECE piecetype and return it here instead of a PAWN
-  }
-  return Pieces::PAWN;
 }
 
 // overrides << operator to "pretty" print chess position
