@@ -12,6 +12,7 @@ public:
   MoveGenerator(Position * position_ptr);
   double perft(size_t depth);
   MoveList generate_pseudo_legal_moves();
+  MoveList generate_legal_moves();
   double divide(size_t depth);
   bool validate_gamestate();
 

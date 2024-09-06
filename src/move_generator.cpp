@@ -166,6 +166,19 @@ MoveList MoveGenerator::generate_pseudo_legal_moves() {
   return pseudo_legal_moves;
 }
 
+MoveList MoveGenerator::generate_legal_moves(){
+    MoveList ps = generate_pseudo_legal_moves();
+    MoveList l = MoveList();
+    for (int i = 0; i<ps.size(); i++){
+        position->make_move(ps.at(i));
+        if (validate_gamestate()){
+            l.push_back(ps.at(i));
+        }
+        position->undo_move(ps.at(i));
+    }
+    return l;
+}
+
 void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
 
   Pieces promotion_pieces[4] = {QUEEN, KNIGHT, ROOK, BISHOP};

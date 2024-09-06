@@ -3,6 +3,7 @@
 #include "move_generator.hpp"
 #include "search.hpp"
 #include "utils.hpp"
+#include <climits>
 #include <sstream>
 #include <string>
 
@@ -36,17 +37,17 @@ void Uci::loop() {
       std::getline(iss, word, ' ');
       if (word == "startpos") {
         pos->set_board(Utils::STARTING_FEN_POSITION);
-      } else if (word == "fen"){
-          pos->set_board(word);
+      } else if (word == "fen") {
+        std::getline(iss, word, ' ');
+        pos->set_board(word);
       }
-      while (std::getline(iss, word, ' ')){
-              if (word == "moves"){
-              continue;
-              }
-              Move mv = move_gen->move_from_string(word);
-              pos->make_move(mv);
+      while (std::getline(iss, word, ' ')) {
+        if (word == "moves") {
+          continue;
+        }
+        Move mv = move_gen->move_from_string(word);
+        pos->make_move(mv);
       }
-
     }
     if (word == "go") {
       std::getline(iss, word);
@@ -61,12 +62,34 @@ void Uci::loop() {
   }
 }
 
-void Uci::parse_go(const std::string &go){
-    std::istringstream iss(go);
+void Uci::parse_go(const std::string &go) {
+  std::istringstream iss(go);
+  std::string token;
+  std::getline(iss, token, ' ');
+  int time;
+  int moves_remaining;
+  if (token == "wtime") {
+    std::getline(iss, token, ' ');
+    if (pos->side_to_play == WHITE) {
+      time = std::stoi(token);
+    }
+  }
+  std::getline(iss, token, ' ');
+  if (token == "btime") {
+    std::getline(iss, token, ' ');
+    if (pos->side_to_play == BLACK) {
+      time = std::stoi(token);
+    }
+  }
+  std::getline(iss, token, ' ');
+  if (token == "movestogo") {
+    std::getline(iss, token, ' ');
+    moves_remaining = std::stoi(token);
+  }
 
-    Search search = Search(pos);
-    Move best_move = search.simple_search();
+  Search search = Search(pos);
+  int eval = search.negamax_root(5);
 
-    std::cout << "bestmove " << best_move << std::endl;
+  std::cout << "besteval: " << eval << std::endl;
+  std::cout << "bestmove " << search.get_best_move() << std::endl;
 }
-
