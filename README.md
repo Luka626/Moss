@@ -1,4 +1,4 @@
-# Lchess -  A Homemade Chess Engine
+# Moss - C++ Chess Engine
 
 ## Features
 - Bitboard representation
