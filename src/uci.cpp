@@ -1,5 +1,6 @@
 #include "uci.hpp"
 #include "datatypes.hpp"
+#include "eval.hpp"
 #include "move_generator.hpp"
 #include "search.hpp"
 #include "utils.hpp"
@@ -38,7 +39,7 @@ void Uci::loop() {
       if (word == "startpos") {
         pos->set_board(Utils::STARTING_FEN_POSITION);
       } else if (word == "fen") {
-        std::getline(iss, word, ' ');
+        std::getline(iss, word);
         pos->set_board(word);
       }
       while (std::getline(iss, word, ' ')) {
@@ -68,28 +69,41 @@ void Uci::parse_go(const std::string &go) {
   std::getline(iss, token, ' ');
   int time;
   int moves_remaining;
-  if (token == "wtime") {
-    std::getline(iss, token, ' ');
-    if (pos->side_to_play == WHITE) {
-      time = std::stoi(token);
-    }
-  }
-  std::getline(iss, token, ' ');
-  if (token == "btime") {
-    std::getline(iss, token, ' ');
-    if (pos->side_to_play == BLACK) {
-      time = std::stoi(token);
-    }
-  }
-  std::getline(iss, token, ' ');
-  if (token == "movestogo") {
-    std::getline(iss, token, ' ');
-    moves_remaining = std::stoi(token);
-  }
 
-  Search search = Search(pos);
-  int eval = search.negamax_root(5);
+  if (token == "perft"){
+      std::getline(iss, token, ' ');
+      move_gen->divide(std::stoi(token));
+  }
+  else {
 
-  std::cout << "besteval: " << eval << std::endl;
-  std::cout << "bestmove " << search.get_best_move() << std::endl;
+
+      if (token == "wtime") {
+        std::getline(iss, token, ' ');
+        if (pos->side_to_play == WHITE) {
+          time = std::stoi(token);
+        }
+      }
+      std::getline(iss, token, ' ');
+      if (token == "btime") {
+        std::getline(iss, token, ' ');
+        if (pos->side_to_play == BLACK) {
+          time = std::stoi(token);
+        }
+      }
+      std::getline(iss, token, ' ');
+      if (token == "movestogo") {
+        std::getline(iss, token, ' ');
+        moves_remaining = std::stoi(token);
+      }
+
+
+      Evaluator evaluator = Evaluator(pos);
+      int evaluation = evaluator.evaluate();
+      std::cout << "Straight up eval: " << evaluation << std::endl;
+      Search search = Search(pos);
+      int eval = search.negamax_root(5);
+
+      std::cout << "besteval: " << eval << std::endl;
+      std::cout << "bestmove " << search.get_best_move() << std::endl;
+  }
 }

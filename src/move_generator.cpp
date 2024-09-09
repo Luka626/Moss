@@ -1,6 +1,7 @@
 #include "move_generator.hpp"
 #include "datatypes.hpp"
 #include "utils.hpp"
+#include <iomanip>
 #include <ios>
 
 MoveGenerator::MoveGenerator(Position *position_ptr) {
@@ -10,11 +11,12 @@ MoveGenerator::MoveGenerator(Position *position_ptr) {
 
 double MoveGenerator::divide(size_t depth) {
   std::cout << std::fixed;
+  std::cout << std::setprecision(0);
   MoveList move_list = MoveList();
   double nodes;
   double all_nodes;
 
-  move_list = generate_pseudo_legal_moves();
+  move_list = generate_legal_moves();
   for (size_t i = 0; i < move_list.size(); i++) {
     position->make_move(move_list.at(i));
     nodes = perft(depth - 1);
@@ -24,6 +26,7 @@ double MoveGenerator::divide(size_t depth) {
     }
     position->undo_move(move_list.at(i));
   }
+  std::cout << "Nodes searched: " << all_nodes << std::endl;
   std::cout << std::scientific;
   return all_nodes;
 }
@@ -40,12 +43,10 @@ double MoveGenerator::perft(size_t depth) {
     return 1ULL;
   }
 
-  move_list = generate_pseudo_legal_moves();
+  move_list = generate_legal_moves();
 
   for (size_t i = 0; i < move_list.size(); i++) {
-    // getchar();
     position->make_move(move_list.at(i));
-    // std::cout << *position << std::endl;
     nodes += perft(depth - 1);
     position->undo_move(move_list.at(i));
   }
@@ -53,16 +54,14 @@ double MoveGenerator::perft(size_t depth) {
 }
 
 bool MoveGenerator::validate_gamestate() {
-  // check for king in check
-  bitboard king_bb =
-      position->get_bitboard(~position->side_to_play, Pieces::KING);
-  Square king_square = Utils::pop_bit(king_bb);
-  bool king_in_check = generate_attackers(king_square) &
-                       position->color_bitboards[position->side_to_play];
-
-  // bool pinned_pieces = generate_pinned_pieces();
-  return !king_in_check;
+  return !king_in_check(~position->side_to_play);
 }
+bool MoveGenerator::king_in_check(Colors side){
+    bitboard king_bb = position->get_bitboard(side, Pieces::KING);
+    Square king_square = Utils::pop_bit(king_bb);
+    return generate_attackers(king_square) & position->color_bitboards[~side]; 
+}
+
 int MoveGenerator::generate_rank_attack(int occupancy, size_t file) {
   int b;
   int x;
@@ -171,7 +170,7 @@ MoveList MoveGenerator::generate_legal_moves(){
     MoveList l = MoveList();
     for (int i = 0; i<ps.size(); i++){
         position->make_move(ps.at(i));
-        if (validate_gamestate()){
+        if (!king_in_check(~position->side_to_play)){
             l.push_back(ps.at(i));
         }
         position->undo_move(ps.at(i));

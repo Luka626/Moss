@@ -6,9 +6,20 @@
 - ~5 million node/second move generation
 - Hyperbolic quintessence sliding piece attack generation
 - Negamax depth-first search with alpha/beta pruning
+- Piece-square evaluation
+
+## To-Do, Priority:
+- [ ] Zobrist hashing
+- [ ] Transposition tables
+- [ ] iterative deepening
+- [ ] move ordering
+- [ ] quiscense search
+- [ ] piece mobility
+- [ ] PSQ tables blending based on total material
+- [ ] speed up move gen a little further
 
 ## To-Do Search
-- [ ] hash positions into trans table
+- [ ] hash positions into trans table (https://www.chessprogramming.org/Zobrist_Hashing, https://www.chessprogramming.org/Transposition_Table)
 - [ ] quiscense search
 - [ ] search extension
 - [ ] killer moves
@@ -30,6 +41,8 @@
 - https://www.chessprogramming.org/Main_Page
 
 #### Done (to-do graveyard)
+- [x] cutechess-cli for version testing
+- [x] piece-square evaluation
 - [x] implement piece values
 - [x] Implement a recursive minimax search
 - [x] Try alpha-beta pruning

@@ -58,6 +58,13 @@ extern bitboard bpawn_attacks[64];
 
 extern bitboard IN_BETWEEN[64][64];
 
+extern int WPAWN_POSITIONAL[NSQUARES];
+extern int WKNIGHT_POSITIONAL[NSQUARES];
+extern int WBISHOP_POSITIONAL[NSQUARES];
+extern int WROOK_POSITIONAL[NSQUARES];
+extern int WQUEEN_POSITIONAL[NSQUARES];
+extern int WKING_POSITIONAL[NSQUARES];
+
 extern int MATERIAL_VALUE[NPIECES];
 // Init function where we define all the extern attributes
 void init();

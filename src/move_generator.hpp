@@ -15,6 +15,7 @@ public:
   MoveList generate_legal_moves();
   double divide(size_t depth);
   bool validate_gamestate();
+  bool king_in_check(Colors color);
 
   void generate_pawn_moves(MoveList &moves_list, bitboard bb);
   void generate_knight_moves(MoveList &moves_list, bitboard bb);
