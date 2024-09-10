@@ -4,7 +4,6 @@
 #include "move_generator.hpp"
 #include "search.hpp"
 #include "utils.hpp"
-#include <climits>
 #include <sstream>
 #include <string>
 
@@ -70,40 +69,35 @@ void Uci::parse_go(const std::string &go) {
   int time;
   int moves_remaining;
 
-  if (token == "perft"){
+  time = 10000;
+  moves_remaining = 40;
+
+  if (token == "perft") {
+    std::getline(iss, token, ' ');
+    move_gen->divide(std::stoi(token));
+  } else {
+
+    if (token == "wtime") {
       std::getline(iss, token, ' ');
-      move_gen->divide(std::stoi(token));
-  }
-  else {
-
-
-      if (token == "wtime") {
-        std::getline(iss, token, ' ');
-        if (pos->side_to_play == WHITE) {
-          time = std::stoi(token);
-        }
+      if (pos->side_to_play == WHITE) {
+        time = std::stoi(token);
       }
+    }
+    std::getline(iss, token, ' ');
+    if (token == "btime") {
       std::getline(iss, token, ' ');
-      if (token == "btime") {
-        std::getline(iss, token, ' ');
-        if (pos->side_to_play == BLACK) {
-          time = std::stoi(token);
-        }
+      if (pos->side_to_play == BLACK) {
+        time = std::stoi(token);
       }
+    }
+    std::getline(iss, token, ' ');
+    if (token == "movestogo") {
       std::getline(iss, token, ' ');
-      if (token == "movestogo") {
-        std::getline(iss, token, ' ');
-        moves_remaining = std::stoi(token);
-      }
+      moves_remaining = std::stoi(token);
+    }
 
-
-      Evaluator evaluator = Evaluator(pos);
-      int evaluation = evaluator.evaluate();
-      std::cout << "Straight up eval: " << evaluation << std::endl;
-      Search search = Search(pos);
-      int eval = search.negamax_root(5);
-
-      std::cout << "besteval: " << eval << std::endl;
-      std::cout << "bestmove " << search.get_best_move() << std::endl;
+    Search search = Search(pos);
+    search.iterative_deepening(time, moves_remaining);
+    std::cout << "bestmove " << search.get_best_move() << std::endl;
   }
 }

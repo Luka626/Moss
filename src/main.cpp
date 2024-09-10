@@ -1,4 +1,3 @@
-#include "move_generator.hpp"
 #include "uci.hpp"
 
 int main() {

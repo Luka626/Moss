@@ -1,9 +1,7 @@
 #include "position.hpp"
-#include "datatypes.hpp"
 #include "utils.hpp"
 #include <cstring>
 #include <sstream>
-#include <string>
 
 // default constructor of a starting position
 Position::Position() { set_board(Utils::STARTING_FEN_POSITION); };

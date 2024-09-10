@@ -1,0 +1,1 @@
+cutechess-cli -engine cmd=moss-v0.2-piece-square-tables name=moss-v0.2 -engine cmd=moss-v0.3-quiscense name=moss-v0.3 -each proto=uci tc=40/60 -rounds 100 >v0.2_v0.3_results.txt

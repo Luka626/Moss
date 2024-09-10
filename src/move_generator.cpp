@@ -1,8 +1,5 @@
 #include "move_generator.hpp"
-#include "datatypes.hpp"
-#include "utils.hpp"
 #include <iomanip>
-#include <ios>
 
 MoveGenerator::MoveGenerator(Position *position_ptr) {
   position = position_ptr;

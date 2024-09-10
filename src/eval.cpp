@@ -1,5 +1,4 @@
 #include "eval.hpp"
-#include "datatypes.hpp"
 #include "utils.hpp"
 
 Evaluator::Evaluator(Position *position_ptr) { pos = position_ptr; }

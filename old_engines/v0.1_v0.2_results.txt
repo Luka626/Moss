@@ -1,0 +1,1484 @@
+Started game 1 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 1 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 1 - 0 - 0  [1.000] 1
+Started game 2 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 2 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 1 - 0 - 1  [0.750] 2
+Started game 3 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 3 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 2 - 0 - 1  [0.833] 3
+Started game 4 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 4 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 2 - 0 - 2  [0.750] 4
+Started game 5 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 5 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 3 - 0 - 2  [0.800] 5
+Started game 6 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 6 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 3 - 0 - 3  [0.750] 6
+Started game 7 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 7 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 4 - 0 - 3  [0.786] 7
+Started game 8 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 8 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 4 - 0 - 4  [0.750] 8
+Started game 9 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 9 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 5 - 0 - 4  [0.778] 9
+Started game 10 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 10 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 5 - 0 - 5  [0.750] 10
+Started game 11 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 11 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 6 - 0 - 5  [0.773] 11
+Started game 12 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 12 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 6 - 0 - 6  [0.750] 12
+Started game 13 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 13 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 7 - 0 - 6  [0.769] 13
+Started game 14 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 14 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 7 - 0 - 7  [0.750] 14
+Started game 15 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 15 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 8 - 0 - 7  [0.767] 15
+Started game 16 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 16 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 8 - 0 - 8  [0.750] 16
+Started game 17 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 17 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 9 - 0 - 8  [0.765] 17
+Started game 18 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 18 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 9 - 0 - 9  [0.750] 18
+Started game 19 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 19 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 10 - 0 - 9  [0.763] 19
+Started game 20 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 20 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 10 - 0 - 10  [0.750] 20
+Started game 21 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 21 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 11 - 0 - 10  [0.762] 21
+Started game 22 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 22 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 11 - 0 - 11  [0.750] 22
+Started game 23 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 23 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 12 - 0 - 11  [0.761] 23
+Started game 24 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 24 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 12 - 0 - 12  [0.750] 24
+Started game 25 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 25 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 13 - 0 - 12  [0.760] 25
+Started game 26 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 26 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 13 - 0 - 13  [0.750] 26
+Started game 27 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 27 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 14 - 0 - 13  [0.759] 27
+Started game 28 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 28 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 14 - 0 - 14  [0.750] 28
+Started game 29 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 29 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 15 - 0 - 14  [0.759] 29
+Started game 30 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 30 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 15 - 0 - 15  [0.750] 30
+Started game 31 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 31 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 16 - 0 - 15  [0.758] 31
+Started game 32 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 32 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 16 - 0 - 16  [0.750] 32
+Started game 33 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 33 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 17 - 0 - 16  [0.758] 33
+Started game 34 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 34 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 17 - 0 - 17  [0.750] 34
+Started game 35 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 35 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 18 - 0 - 17  [0.757] 35
+Started game 36 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 36 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 18 - 0 - 18  [0.750] 36
+Started game 37 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 37 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 19 - 0 - 18  [0.757] 37
+Started game 38 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 38 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 19 - 0 - 19  [0.750] 38
+Started game 39 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 39 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 20 - 0 - 19  [0.756] 39
+Started game 40 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 40 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 20 - 0 - 20  [0.750] 40
+Started game 41 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 41 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 21 - 0 - 20  [0.756] 41
+Started game 42 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 42 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 21 - 0 - 21  [0.750] 42
+Started game 43 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 43 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 22 - 0 - 21  [0.756] 43
+Started game 44 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 44 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 22 - 0 - 22  [0.750] 44
+Started game 45 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 45 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 23 - 0 - 22  [0.756] 45
+Started game 46 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 46 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 23 - 0 - 23  [0.750] 46
+Started game 47 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 47 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 24 - 0 - 23  [0.755] 47
+Started game 48 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 48 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 24 - 0 - 24  [0.750] 48
+Started game 49 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 49 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 25 - 0 - 24  [0.755] 49
+Started game 50 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 50 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 25 - 0 - 25  [0.750] 50
+Started game 51 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 51 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 26 - 0 - 25  [0.755] 51
+Started game 52 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 52 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 26 - 0 - 26  [0.750] 52
+Started game 53 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 53 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 27 - 0 - 26  [0.755] 53
+Started game 54 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 54 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 27 - 0 - 27  [0.750] 54
+Started game 55 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 55 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 28 - 0 - 27  [0.755] 55
+Started game 56 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 56 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 28 - 0 - 28  [0.750] 56
+Started game 57 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 57 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 29 - 0 - 28  [0.754] 57
+Started game 58 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 58 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 29 - 0 - 29  [0.750] 58
+Started game 59 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 59 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 30 - 0 - 29  [0.754] 59
+Started game 60 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 60 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 30 - 0 - 30  [0.750] 60
+Started game 61 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 61 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 31 - 0 - 30  [0.754] 61
+Started game 62 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 62 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 31 - 0 - 31  [0.750] 62
+Started game 63 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 63 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 32 - 0 - 31  [0.754] 63
+Started game 64 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 64 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 32 - 0 - 32  [0.750] 64
+Started game 65 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 65 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 33 - 0 - 32  [0.754] 65
+Started game 66 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 66 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 33 - 0 - 33  [0.750] 66
+Started game 67 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 67 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 34 - 0 - 33  [0.754] 67
+Started game 68 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 68 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 34 - 0 - 34  [0.750] 68
+Started game 69 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 69 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 35 - 0 - 34  [0.754] 69
+Started game 70 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 70 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 35 - 0 - 35  [0.750] 70
+Started game 71 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 71 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 36 - 0 - 35  [0.754] 71
+Started game 72 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 72 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 36 - 0 - 36  [0.750] 72
+Started game 73 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 73 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 37 - 0 - 36  [0.753] 73
+Started game 74 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 74 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 37 - 0 - 37  [0.750] 74
+Started game 75 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 75 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 38 - 0 - 37  [0.753] 75
+Started game 76 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 76 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 38 - 0 - 38  [0.750] 76
+Started game 77 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 77 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 39 - 0 - 38  [0.753] 77
+Started game 78 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 78 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 39 - 0 - 39  [0.750] 78
+Started game 79 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 79 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 40 - 0 - 39  [0.753] 79
+Started game 80 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 80 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 40 - 0 - 40  [0.750] 80
+Started game 81 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 81 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 41 - 0 - 40  [0.753] 81
+Started game 82 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 82 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 41 - 0 - 41  [0.750] 82
+Started game 83 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 83 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 42 - 0 - 41  [0.753] 83
+Started game 84 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 84 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 42 - 0 - 42  [0.750] 84
+Started game 85 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 85 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 43 - 0 - 42  [0.753] 85
+Started game 86 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 86 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 43 - 0 - 43  [0.750] 86
+Started game 87 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 87 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 44 - 0 - 43  [0.753] 87
+Started game 88 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 88 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 44 - 0 - 44  [0.750] 88
+Started game 89 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 89 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 45 - 0 - 44  [0.753] 89
+Started game 90 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 90 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 45 - 0 - 45  [0.750] 90
+Started game 91 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 91 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 46 - 0 - 45  [0.753] 91
+Started game 92 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 92 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 46 - 0 - 46  [0.750] 92
+Started game 93 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 93 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 47 - 0 - 46  [0.753] 93
+Started game 94 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 94 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 47 - 0 - 47  [0.750] 94
+Started game 95 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 95 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 48 - 0 - 47  [0.753] 95
+Started game 96 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 96 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 48 - 0 - 48  [0.750] 96
+Started game 97 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 97 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 49 - 0 - 48  [0.753] 97
+Started game 98 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 98 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 49 - 0 - 49  [0.750] 98
+Started game 99 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 99 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 50 - 0 - 49  [0.753] 99
+Started game 100 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 100 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 50 - 0 - 50  [0.750] 100
+Started game 101 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 101 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 51 - 0 - 50  [0.752] 101
+Started game 102 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 102 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 51 - 0 - 51  [0.750] 102
+Started game 103 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 103 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 52 - 0 - 51  [0.752] 103
+Started game 104 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 104 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 52 - 0 - 52  [0.750] 104
+Started game 105 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 105 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 53 - 0 - 52  [0.752] 105
+Started game 106 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 106 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 53 - 0 - 53  [0.750] 106
+Started game 107 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 107 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 54 - 0 - 53  [0.752] 107
+Started game 108 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 108 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 54 - 0 - 54  [0.750] 108
+Started game 109 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 109 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 55 - 0 - 54  [0.752] 109
+Started game 110 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 110 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 55 - 0 - 55  [0.750] 110
+Started game 111 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 111 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 56 - 0 - 55  [0.752] 111
+Started game 112 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 112 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 56 - 0 - 56  [0.750] 112
+Started game 113 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 113 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 57 - 0 - 56  [0.752] 113
+Started game 114 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 114 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 57 - 0 - 57  [0.750] 114
+Started game 115 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 115 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 58 - 0 - 57  [0.752] 115
+Started game 116 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 116 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 58 - 0 - 58  [0.750] 116
+Started game 117 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 117 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 59 - 0 - 58  [0.752] 117
+Started game 118 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 118 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 59 - 0 - 59  [0.750] 118
+Started game 119 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 119 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 60 - 0 - 59  [0.752] 119
+Started game 120 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 120 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 60 - 0 - 60  [0.750] 120
+Started game 121 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 121 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 61 - 0 - 60  [0.752] 121
+Started game 122 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 122 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 61 - 0 - 61  [0.750] 122
+Started game 123 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 123 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 62 - 0 - 61  [0.752] 123
+Started game 124 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 124 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 62 - 0 - 62  [0.750] 124
+Started game 125 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 125 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 63 - 0 - 62  [0.752] 125
+Started game 126 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 126 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 63 - 0 - 63  [0.750] 126
+Started game 127 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 127 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 64 - 0 - 63  [0.752] 127
+Started game 128 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 128 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 64 - 0 - 64  [0.750] 128
+Started game 129 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 129 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 65 - 0 - 64  [0.752] 129
+Started game 130 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 130 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 65 - 0 - 65  [0.750] 130
+Started game 131 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 131 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 66 - 0 - 65  [0.752] 131
+Started game 132 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 132 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 66 - 0 - 66  [0.750] 132
+Started game 133 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 133 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 67 - 0 - 66  [0.752] 133
+Started game 134 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 134 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 67 - 0 - 67  [0.750] 134
+Started game 135 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 135 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 68 - 0 - 67  [0.752] 135
+Started game 136 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 136 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 68 - 0 - 68  [0.750] 136
+Started game 137 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 137 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 69 - 0 - 68  [0.752] 137
+Started game 138 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 138 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 69 - 0 - 69  [0.750] 138
+Started game 139 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 139 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 70 - 0 - 69  [0.752] 139
+Started game 140 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 140 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 70 - 0 - 70  [0.750] 140
+Started game 141 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 141 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 71 - 0 - 70  [0.752] 141
+Started game 142 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 142 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 71 - 0 - 71  [0.750] 142
+Started game 143 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 143 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 72 - 0 - 71  [0.752] 143
+Started game 144 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 144 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 72 - 0 - 72  [0.750] 144
+Started game 145 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 145 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 73 - 0 - 72  [0.752] 145
+Started game 146 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 146 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 73 - 0 - 73  [0.750] 146
+Started game 147 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 147 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 74 - 0 - 73  [0.752] 147
+Started game 148 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 148 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 74 - 0 - 74  [0.750] 148
+Started game 149 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 149 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 75 - 0 - 74  [0.752] 149
+Started game 150 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 150 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 75 - 0 - 75  [0.750] 150
+Started game 151 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 151 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 76 - 0 - 75  [0.752] 151
+Started game 152 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 152 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 76 - 0 - 76  [0.750] 152
+Started game 153 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 153 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 77 - 0 - 76  [0.752] 153
+Started game 154 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 154 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 77 - 0 - 77  [0.750] 154
+Started game 155 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 155 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 78 - 0 - 77  [0.752] 155
+Started game 156 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 156 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 78 - 0 - 78  [0.750] 156
+Started game 157 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 157 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 79 - 0 - 78  [0.752] 157
+Started game 158 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 158 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 79 - 0 - 79  [0.750] 158
+Started game 159 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 159 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 80 - 0 - 79  [0.752] 159
+Started game 160 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 160 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 80 - 0 - 80  [0.750] 160
+Started game 161 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 161 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 81 - 0 - 80  [0.752] 161
+Started game 162 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 162 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 81 - 0 - 81  [0.750] 162
+Started game 163 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 163 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 82 - 0 - 81  [0.752] 163
+Started game 164 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 164 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 82 - 0 - 82  [0.750] 164
+Started game 165 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 165 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 83 - 0 - 82  [0.752] 165
+Started game 166 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 166 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 83 - 0 - 83  [0.750] 166
+Started game 167 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 167 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 84 - 0 - 83  [0.751] 167
+Started game 168 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 168 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 84 - 0 - 84  [0.750] 168
+Started game 169 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 169 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 85 - 0 - 84  [0.751] 169
+Started game 170 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 170 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 85 - 0 - 85  [0.750] 170
+Started game 171 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 171 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 86 - 0 - 85  [0.751] 171
+Started game 172 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 172 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 86 - 0 - 86  [0.750] 172
+Started game 173 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 173 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 87 - 0 - 86  [0.751] 173
+Started game 174 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 174 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 87 - 0 - 87  [0.750] 174
+Started game 175 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 175 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 88 - 0 - 87  [0.751] 175
+Started game 176 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 176 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 88 - 0 - 88  [0.750] 176
+Started game 177 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 177 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 89 - 0 - 88  [0.751] 177
+Started game 178 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 178 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 89 - 0 - 89  [0.750] 178
+Started game 179 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 179 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 90 - 0 - 89  [0.751] 179
+Started game 180 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 180 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 90 - 0 - 90  [0.750] 180
+Started game 181 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 181 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 91 - 0 - 90  [0.751] 181
+Started game 182 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 182 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 91 - 0 - 91  [0.750] 182
+Started game 183 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 183 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 92 - 0 - 91  [0.751] 183
+Started game 184 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 184 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 92 - 0 - 92  [0.750] 184
+Started game 185 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 185 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 93 - 0 - 92  [0.751] 185
+Started game 186 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 186 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 93 - 0 - 93  [0.750] 186
+Started game 187 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 187 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 94 - 0 - 93  [0.751] 187
+Started game 188 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 188 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 94 - 0 - 94  [0.750] 188
+Started game 189 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 189 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 95 - 0 - 94  [0.751] 189
+Started game 190 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 190 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 95 - 0 - 95  [0.750] 190
+Started game 191 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 191 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 96 - 0 - 95  [0.751] 191
+Started game 192 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 192 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 96 - 0 - 96  [0.750] 192
+Started game 193 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 193 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 97 - 0 - 96  [0.751] 193
+Started game 194 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 194 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 97 - 0 - 97  [0.750] 194
+Started game 195 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 195 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 98 - 0 - 97  [0.751] 195
+Started game 196 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 196 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 98 - 0 - 98  [0.750] 196
+Started game 197 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 197 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 99 - 0 - 98  [0.751] 197
+Started game 198 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 198 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 99 - 0 - 99  [0.750] 198
+Started game 199 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 199 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 100 - 0 - 99  [0.751] 199
+Started game 200 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 200 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 100 - 0 - 100  [0.750] 200
+Started game 201 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 201 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 101 - 0 - 100  [0.751] 201
+Started game 202 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 202 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 101 - 0 - 101  [0.750] 202
+Started game 203 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 203 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 102 - 0 - 101  [0.751] 203
+Started game 204 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 204 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 102 - 0 - 102  [0.750] 204
+Started game 205 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 205 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 103 - 0 - 102  [0.751] 205
+Started game 206 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 206 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 103 - 0 - 103  [0.750] 206
+Started game 207 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 207 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 104 - 0 - 103  [0.751] 207
+Started game 208 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 208 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 104 - 0 - 104  [0.750] 208
+Started game 209 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 209 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 105 - 0 - 104  [0.751] 209
+Started game 210 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 210 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 105 - 0 - 105  [0.750] 210
+Started game 211 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 211 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 106 - 0 - 105  [0.751] 211
+Started game 212 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 212 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 106 - 0 - 106  [0.750] 212
+Started game 213 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 213 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 107 - 0 - 106  [0.751] 213
+Started game 214 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 214 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 107 - 0 - 107  [0.750] 214
+Started game 215 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 215 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 108 - 0 - 107  [0.751] 215
+Started game 216 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 216 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 108 - 0 - 108  [0.750] 216
+Started game 217 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 217 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 109 - 0 - 108  [0.751] 217
+Started game 218 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 218 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 109 - 0 - 109  [0.750] 218
+Started game 219 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 219 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 110 - 0 - 109  [0.751] 219
+Started game 220 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 220 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 110 - 0 - 110  [0.750] 220
+Started game 221 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 221 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 111 - 0 - 110  [0.751] 221
+Started game 222 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 222 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 111 - 0 - 111  [0.750] 222
+Started game 223 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 223 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 112 - 0 - 111  [0.751] 223
+Started game 224 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 224 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 112 - 0 - 112  [0.750] 224
+Started game 225 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 225 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 113 - 0 - 112  [0.751] 225
+Started game 226 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 226 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 113 - 0 - 113  [0.750] 226
+Started game 227 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 227 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 114 - 0 - 113  [0.751] 227
+Started game 228 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 228 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 114 - 0 - 114  [0.750] 228
+Started game 229 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 229 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 115 - 0 - 114  [0.751] 229
+Started game 230 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 230 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 115 - 0 - 115  [0.750] 230
+Started game 231 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 231 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 116 - 0 - 115  [0.751] 231
+Started game 232 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 232 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 116 - 0 - 116  [0.750] 232
+Started game 233 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 233 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 117 - 0 - 116  [0.751] 233
+Started game 234 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 234 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 117 - 0 - 117  [0.750] 234
+Started game 235 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 235 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 118 - 0 - 117  [0.751] 235
+Started game 236 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 236 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 118 - 0 - 118  [0.750] 236
+Started game 237 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 237 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 119 - 0 - 118  [0.751] 237
+Started game 238 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 238 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 119 - 0 - 119  [0.750] 238
+Started game 239 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 239 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 120 - 0 - 119  [0.751] 239
+Started game 240 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 240 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 120 - 0 - 120  [0.750] 240
+Started game 241 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 241 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 121 - 0 - 120  [0.751] 241
+Started game 242 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 242 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 121 - 0 - 121  [0.750] 242
+Started game 243 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 243 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 122 - 0 - 121  [0.751] 243
+Started game 244 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 244 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 122 - 0 - 122  [0.750] 244
+Started game 245 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 245 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 123 - 0 - 122  [0.751] 245
+Started game 246 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 246 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 123 - 0 - 123  [0.750] 246
+Started game 247 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 247 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 124 - 0 - 123  [0.751] 247
+Started game 248 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 248 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 124 - 0 - 124  [0.750] 248
+Started game 249 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 249 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 125 - 0 - 124  [0.751] 249
+Started game 250 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 250 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 125 - 0 - 125  [0.750] 250
+Started game 251 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 251 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 126 - 0 - 125  [0.751] 251
+Started game 252 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 252 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 126 - 0 - 126  [0.750] 252
+Started game 253 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 253 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 127 - 0 - 126  [0.751] 253
+Started game 254 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 254 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 127 - 0 - 127  [0.750] 254
+Started game 255 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 255 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 128 - 0 - 127  [0.751] 255
+Started game 256 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 256 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 128 - 0 - 128  [0.750] 256
+Started game 257 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 257 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 129 - 0 - 128  [0.751] 257
+Started game 258 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 258 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 129 - 0 - 129  [0.750] 258
+Started game 259 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 259 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 130 - 0 - 129  [0.751] 259
+Started game 260 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 260 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 130 - 0 - 130  [0.750] 260
+Started game 261 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 261 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 131 - 0 - 130  [0.751] 261
+Started game 262 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 262 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 131 - 0 - 131  [0.750] 262
+Started game 263 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 263 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 132 - 0 - 131  [0.751] 263
+Started game 264 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 264 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 132 - 0 - 132  [0.750] 264
+Started game 265 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 265 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 133 - 0 - 132  [0.751] 265
+Started game 266 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 266 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 133 - 0 - 133  [0.750] 266
+Started game 267 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 267 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 134 - 0 - 133  [0.751] 267
+Started game 268 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 268 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 134 - 0 - 134  [0.750] 268
+Started game 269 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 269 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 135 - 0 - 134  [0.751] 269
+Started game 270 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 270 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 135 - 0 - 135  [0.750] 270
+Started game 271 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 271 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 136 - 0 - 135  [0.751] 271
+Started game 272 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 272 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 136 - 0 - 136  [0.750] 272
+Started game 273 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 273 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 137 - 0 - 136  [0.751] 273
+Started game 274 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 274 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 137 - 0 - 137  [0.750] 274
+Started game 275 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 275 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 138 - 0 - 137  [0.751] 275
+Started game 276 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 276 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 138 - 0 - 138  [0.750] 276
+Started game 277 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 277 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 139 - 0 - 138  [0.751] 277
+Started game 278 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 278 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 139 - 0 - 139  [0.750] 278
+Started game 279 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 279 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 140 - 0 - 139  [0.751] 279
+Started game 280 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 280 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 140 - 0 - 140  [0.750] 280
+Started game 281 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 281 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 141 - 0 - 140  [0.751] 281
+Started game 282 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 282 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 141 - 0 - 141  [0.750] 282
+Started game 283 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 283 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 142 - 0 - 141  [0.751] 283
+Started game 284 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 284 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 142 - 0 - 142  [0.750] 284
+Started game 285 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 285 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 143 - 0 - 142  [0.751] 285
+Started game 286 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 286 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 143 - 0 - 143  [0.750] 286
+Started game 287 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 287 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 144 - 0 - 143  [0.751] 287
+Started game 288 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 288 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 144 - 0 - 144  [0.750] 288
+Started game 289 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 289 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 145 - 0 - 144  [0.751] 289
+Started game 290 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 290 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 145 - 0 - 145  [0.750] 290
+Started game 291 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 291 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 146 - 0 - 145  [0.751] 291
+Started game 292 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 292 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 146 - 0 - 146  [0.750] 292
+Started game 293 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 293 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 147 - 0 - 146  [0.751] 293
+Started game 294 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 294 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 147 - 0 - 147  [0.750] 294
+Started game 295 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 295 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 148 - 0 - 147  [0.751] 295
+Started game 296 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 296 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 148 - 0 - 148  [0.750] 296
+Started game 297 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 297 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 149 - 0 - 148  [0.751] 297
+Started game 298 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 298 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 149 - 0 - 149  [0.750] 298
+Started game 299 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 299 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 150 - 0 - 149  [0.751] 299
+Started game 300 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 300 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 150 - 0 - 150  [0.750] 300
+Started game 301 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 301 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 151 - 0 - 150  [0.751] 301
+Started game 302 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 302 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 151 - 0 - 151  [0.750] 302
+Started game 303 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 303 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 152 - 0 - 151  [0.751] 303
+Started game 304 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 304 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 152 - 0 - 152  [0.750] 304
+Started game 305 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 305 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 153 - 0 - 152  [0.751] 305
+Started game 306 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 306 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 153 - 0 - 153  [0.750] 306
+Started game 307 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 307 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 154 - 0 - 153  [0.751] 307
+Started game 308 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 308 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 154 - 0 - 154  [0.750] 308
+Started game 309 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 309 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 155 - 0 - 154  [0.751] 309
+Started game 310 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 310 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 155 - 0 - 155  [0.750] 310
+Started game 311 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 311 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 156 - 0 - 155  [0.751] 311
+Started game 312 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 312 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 156 - 0 - 156  [0.750] 312
+Started game 313 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 313 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 157 - 0 - 156  [0.751] 313
+Started game 314 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 314 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 157 - 0 - 157  [0.750] 314
+Started game 315 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 315 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 158 - 0 - 157  [0.751] 315
+Started game 316 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 316 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 158 - 0 - 158  [0.750] 316
+Started game 317 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 317 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 159 - 0 - 158  [0.751] 317
+Started game 318 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 318 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 159 - 0 - 159  [0.750] 318
+Started game 319 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 319 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 160 - 0 - 159  [0.751] 319
+Started game 320 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 320 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 160 - 0 - 160  [0.750] 320
+Started game 321 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 321 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 161 - 0 - 160  [0.751] 321
+Started game 322 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 322 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 161 - 0 - 161  [0.750] 322
+Started game 323 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 323 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 162 - 0 - 161  [0.751] 323
+Started game 324 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 324 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 162 - 0 - 162  [0.750] 324
+Started game 325 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 325 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 163 - 0 - 162  [0.751] 325
+Started game 326 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 326 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 163 - 0 - 163  [0.750] 326
+Started game 327 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 327 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 164 - 0 - 163  [0.751] 327
+Started game 328 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 328 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 164 - 0 - 164  [0.750] 328
+Started game 329 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 329 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 165 - 0 - 164  [0.751] 329
+Started game 330 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 330 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 165 - 0 - 165  [0.750] 330
+Started game 331 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 331 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 166 - 0 - 165  [0.751] 331
+Started game 332 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 332 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 166 - 0 - 166  [0.750] 332
+Started game 333 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 333 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 167 - 0 - 166  [0.751] 333
+Started game 334 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 334 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 167 - 0 - 167  [0.750] 334
+Started game 335 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 335 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 168 - 0 - 167  [0.751] 335
+Started game 336 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 336 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 168 - 0 - 168  [0.750] 336
+Started game 337 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 337 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 169 - 0 - 168  [0.751] 337
+Started game 338 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 338 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 169 - 0 - 169  [0.750] 338
+Started game 339 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 339 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 170 - 0 - 169  [0.751] 339
+Started game 340 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 340 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 170 - 0 - 170  [0.750] 340
+Started game 341 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 341 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 171 - 0 - 170  [0.751] 341
+Started game 342 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 342 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 171 - 0 - 171  [0.750] 342
+Started game 343 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 343 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 172 - 0 - 171  [0.751] 343
+Started game 344 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 344 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 172 - 0 - 172  [0.750] 344
+Started game 345 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 345 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 173 - 0 - 172  [0.751] 345
+Started game 346 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 346 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 173 - 0 - 173  [0.750] 346
+Started game 347 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 347 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 174 - 0 - 173  [0.751] 347
+Started game 348 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 348 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 174 - 0 - 174  [0.750] 348
+Started game 349 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 349 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 175 - 0 - 174  [0.751] 349
+Started game 350 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 350 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 175 - 0 - 175  [0.750] 350
+Started game 351 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 351 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 176 - 0 - 175  [0.751] 351
+Started game 352 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 352 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 176 - 0 - 176  [0.750] 352
+Started game 353 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 353 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 177 - 0 - 176  [0.751] 353
+Started game 354 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 354 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 177 - 0 - 177  [0.750] 354
+Started game 355 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 355 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 178 - 0 - 177  [0.751] 355
+Started game 356 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 356 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 178 - 0 - 178  [0.750] 356
+Started game 357 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 357 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 179 - 0 - 178  [0.751] 357
+Started game 358 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 358 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 179 - 0 - 179  [0.750] 358
+Started game 359 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 359 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 180 - 0 - 179  [0.751] 359
+Started game 360 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 360 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 180 - 0 - 180  [0.750] 360
+Started game 361 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 361 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 181 - 0 - 180  [0.751] 361
+Started game 362 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 362 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 181 - 0 - 181  [0.750] 362
+Started game 363 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 363 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 182 - 0 - 181  [0.751] 363
+Started game 364 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 364 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 182 - 0 - 182  [0.750] 364
+Started game 365 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 365 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 183 - 0 - 182  [0.751] 365
+Started game 366 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 366 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 183 - 0 - 183  [0.750] 366
+Started game 367 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 367 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 184 - 0 - 183  [0.751] 367
+Started game 368 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 368 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 184 - 0 - 184  [0.750] 368
+Started game 369 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 369 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 185 - 0 - 184  [0.751] 369
+Started game 370 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 370 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 185 - 0 - 185  [0.750] 370
+Started game 371 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 371 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 186 - 0 - 185  [0.751] 371
+Started game 372 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 372 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 186 - 0 - 186  [0.750] 372
+Started game 373 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 373 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 187 - 0 - 186  [0.751] 373
+Started game 374 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 374 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 187 - 0 - 187  [0.750] 374
+Started game 375 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 375 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 188 - 0 - 187  [0.751] 375
+Started game 376 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 376 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 188 - 0 - 188  [0.750] 376
+Started game 377 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 377 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 189 - 0 - 188  [0.751] 377
+Started game 378 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 378 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 189 - 0 - 189  [0.750] 378
+Started game 379 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 379 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 190 - 0 - 189  [0.751] 379
+Started game 380 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 380 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 190 - 0 - 190  [0.750] 380
+Started game 381 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 381 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 191 - 0 - 190  [0.751] 381
+Started game 382 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 382 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 191 - 0 - 191  [0.750] 382
+Started game 383 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 383 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 192 - 0 - 191  [0.751] 383
+Started game 384 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 384 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 192 - 0 - 192  [0.750] 384
+Started game 385 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 385 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 193 - 0 - 192  [0.751] 385
+Started game 386 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 386 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 193 - 0 - 193  [0.750] 386
+Started game 387 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 387 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 194 - 0 - 193  [0.751] 387
+Started game 388 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 388 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 194 - 0 - 194  [0.750] 388
+Started game 389 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 389 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 195 - 0 - 194  [0.751] 389
+Started game 390 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 390 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 195 - 0 - 195  [0.750] 390
+Started game 391 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 391 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 196 - 0 - 195  [0.751] 391
+Started game 392 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 392 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 196 - 0 - 196  [0.750] 392
+Started game 393 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 393 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 197 - 0 - 196  [0.751] 393
+Started game 394 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 394 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 197 - 0 - 197  [0.750] 394
+Started game 395 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 395 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 198 - 0 - 197  [0.751] 395
+Started game 396 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 396 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 198 - 0 - 198  [0.750] 396
+Started game 397 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 397 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 199 - 0 - 198  [0.751] 397
+Started game 398 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 398 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 199 - 0 - 199  [0.750] 398
+Started game 399 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 399 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 200 - 0 - 199  [0.751] 399
+Started game 400 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 400 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 200 - 0 - 200  [0.750] 400
+Started game 401 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 401 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 201 - 0 - 200  [0.751] 401
+Started game 402 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 402 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 201 - 0 - 201  [0.750] 402
+Started game 403 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 403 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 202 - 0 - 201  [0.751] 403
+Started game 404 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 404 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 202 - 0 - 202  [0.750] 404
+Started game 405 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 405 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 203 - 0 - 202  [0.751] 405
+Started game 406 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 406 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 203 - 0 - 203  [0.750] 406
+Started game 407 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 407 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 204 - 0 - 203  [0.751] 407
+Started game 408 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 408 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 204 - 0 - 204  [0.750] 408
+Started game 409 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 409 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 205 - 0 - 204  [0.751] 409
+Started game 410 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 410 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 205 - 0 - 205  [0.750] 410
+Started game 411 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 411 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 206 - 0 - 205  [0.751] 411
+Started game 412 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 412 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 206 - 0 - 206  [0.750] 412
+Started game 413 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 413 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 207 - 0 - 206  [0.751] 413
+Started game 414 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 414 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 207 - 0 - 207  [0.750] 414
+Started game 415 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 415 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 208 - 0 - 207  [0.751] 415
+Started game 416 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 416 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 208 - 0 - 208  [0.750] 416
+Started game 417 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 417 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 209 - 0 - 208  [0.751] 417
+Started game 418 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 418 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 209 - 0 - 209  [0.750] 418
+Started game 419 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 419 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 210 - 0 - 209  [0.751] 419
+Started game 420 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 420 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 210 - 0 - 210  [0.750] 420
+Started game 421 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 421 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 211 - 0 - 210  [0.751] 421
+Started game 422 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 422 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 211 - 0 - 211  [0.750] 422
+Started game 423 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 423 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 212 - 0 - 211  [0.751] 423
+Started game 424 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 424 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 212 - 0 - 212  [0.750] 424
+Started game 425 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 425 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 213 - 0 - 212  [0.751] 425
+Started game 426 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 426 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 213 - 0 - 213  [0.750] 426
+Started game 427 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 427 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 214 - 0 - 213  [0.751] 427
+Started game 428 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 428 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 214 - 0 - 214  [0.750] 428
+Started game 429 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 429 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 215 - 0 - 214  [0.751] 429
+Started game 430 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 430 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 215 - 0 - 215  [0.750] 430
+Started game 431 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 431 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 216 - 0 - 215  [0.751] 431
+Started game 432 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 432 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 216 - 0 - 216  [0.750] 432
+Started game 433 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 433 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 217 - 0 - 216  [0.751] 433
+Started game 434 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 434 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 217 - 0 - 217  [0.750] 434
+Started game 435 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 435 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 218 - 0 - 217  [0.751] 435
+Started game 436 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 436 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 218 - 0 - 218  [0.750] 436
+Started game 437 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 437 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 219 - 0 - 218  [0.751] 437
+Started game 438 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 438 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 219 - 0 - 219  [0.750] 438
+Started game 439 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 439 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 220 - 0 - 219  [0.751] 439
+Started game 440 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 440 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 220 - 0 - 220  [0.750] 440
+Started game 441 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 441 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 221 - 0 - 220  [0.751] 441
+Started game 442 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 442 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 221 - 0 - 221  [0.750] 442
+Started game 443 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 443 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 222 - 0 - 221  [0.751] 443
+Started game 444 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 444 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 222 - 0 - 222  [0.750] 444
+Started game 445 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 445 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 223 - 0 - 222  [0.751] 445
+Started game 446 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 446 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 223 - 0 - 223  [0.750] 446
+Started game 447 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 447 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 224 - 0 - 223  [0.751] 447
+Started game 448 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 448 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 224 - 0 - 224  [0.750] 448
+Started game 449 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 449 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 225 - 0 - 224  [0.751] 449
+Started game 450 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 450 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 225 - 0 - 225  [0.750] 450
+Started game 451 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 451 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 226 - 0 - 225  [0.751] 451
+Started game 452 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 452 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 226 - 0 - 226  [0.750] 452
+Started game 453 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 453 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 227 - 0 - 226  [0.751] 453
+Started game 454 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 454 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 227 - 0 - 227  [0.750] 454
+Started game 455 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 455 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 228 - 0 - 227  [0.751] 455
+Started game 456 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 456 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 228 - 0 - 228  [0.750] 456
+Started game 457 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 457 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 229 - 0 - 228  [0.751] 457
+Started game 458 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 458 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 229 - 0 - 229  [0.750] 458
+Started game 459 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 459 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 230 - 0 - 229  [0.751] 459
+Started game 460 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 460 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 230 - 0 - 230  [0.750] 460
+Started game 461 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 461 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 231 - 0 - 230  [0.751] 461
+Started game 462 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 462 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 231 - 0 - 231  [0.750] 462
+Started game 463 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 463 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 232 - 0 - 231  [0.751] 463
+Started game 464 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 464 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 232 - 0 - 232  [0.750] 464
+Started game 465 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 465 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 233 - 0 - 232  [0.751] 465
+Started game 466 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 466 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 233 - 0 - 233  [0.750] 466
+Started game 467 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 467 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 234 - 0 - 233  [0.751] 467
+Started game 468 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 468 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 234 - 0 - 234  [0.750] 468
+Started game 469 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 469 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 235 - 0 - 234  [0.751] 469
+Started game 470 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 470 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 235 - 0 - 235  [0.750] 470
+Started game 471 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 471 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 236 - 0 - 235  [0.751] 471
+Started game 472 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 472 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 236 - 0 - 236  [0.750] 472
+Started game 473 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 473 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 237 - 0 - 236  [0.751] 473
+Started game 474 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 474 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 237 - 0 - 237  [0.750] 474
+Started game 475 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 475 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 238 - 0 - 237  [0.751] 475
+Started game 476 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 476 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 238 - 0 - 238  [0.750] 476
+Started game 477 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 477 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 239 - 0 - 238  [0.751] 477
+Started game 478 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 478 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 239 - 0 - 239  [0.750] 478
+Started game 479 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 479 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 240 - 0 - 239  [0.751] 479
+Started game 480 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 480 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 240 - 0 - 240  [0.750] 480
+Started game 481 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 481 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 241 - 0 - 240  [0.751] 481
+Started game 482 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 482 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 241 - 0 - 241  [0.750] 482
+Started game 483 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 483 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 242 - 0 - 241  [0.751] 483
+Started game 484 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 484 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 242 - 0 - 242  [0.750] 484
+Started game 485 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 485 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 243 - 0 - 242  [0.751] 485
+Started game 486 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 486 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 243 - 0 - 243  [0.750] 486
+Started game 487 of 1000 (Moss v0.2 vs Moss v0.1)
+Finished game 487 (Moss v0.2 vs Moss v0.1): 1-0 {White mates}
+Score of Moss v0.2 vs Moss v0.1: 244 - 0 - 243  [0.751] 487
+Started game 488 of 1000 (Moss v0.1 vs Moss v0.2)
+Finished game 488 (Moss v0.1 vs Moss v0.2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of Moss v0.2 vs Moss v0.1: 244 - 0 - 244  [0.750] 488
+Started game 489 of 1000 (Moss v0.2 vs Moss v0.1)
+Terminating process of engine Moss v0.1(1)
+Terminating process of engine Moss v0.2(0)
+Finished game 489 (Moss v0.2 vs Moss v0.1): * {No result}
+Score of Moss v0.2 vs Moss v0.1: 244 - 0 - 244  [0.750] 488
+...      Moss v0.2 playing White: 244 - 0 - 0  [1.000] 244
+...      Moss v0.2 playing Black: 0 - 0 - 244  [0.500] 244
+...      White vs Black: 244 - 0 - 244  [0.750] 488
+Elo difference: 190.8 +/- 20.6, LOS: 100.0 %, DrawRatio: 50.0 %
+SPRT: llr 0 (0.0%), lbound -inf, ubound inf
+
+Player: Moss v0.2
+   "Draw by 3-fold repetition": 244
+   "No result": 1
+   "Win: White mates": 244
+Player: Moss v0.1
+   "Draw by 3-fold repetition": 244
+   "Loss: White mates": 244
+   "No result": 1
+Finished match
