@@ -12,6 +12,8 @@ set(SOURCES
     src/uci.cpp
     src/search.cpp
     src/eval.cpp
+    src/zobrist.cpp
+    src/move_list.cpp
     )
 
 add_executable(main ${SOURCES})

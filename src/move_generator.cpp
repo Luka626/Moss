@@ -1,4 +1,5 @@
 #include "move_generator.hpp"
+#include "datatypes.hpp"
 #include <iomanip>
 
 MoveGenerator::MoveGenerator(Position *position_ptr) {
@@ -11,10 +12,11 @@ double MoveGenerator::divide(size_t depth) {
   std::cout << std::setprecision(0);
   MoveList move_list = MoveList();
   double nodes;
-  double all_nodes;
+  double all_nodes = 0;
 
   move_list = generate_legal_moves();
   for (size_t i = 0; i < move_list.size(); i++) {
+      zobrist_key old_key = position->z_key;
     position->make_move(move_list.at(i));
     nodes = perft(depth - 1);
     all_nodes += nodes;
@@ -22,6 +24,7 @@ double MoveGenerator::divide(size_t depth) {
       std::cout << move_list.at(i) << ": " << nodes << "\n";
     }
     position->undo_move(move_list.at(i));
+      zobrist_key new_key = position->z_key;
   }
   std::cout << "Nodes searched: " << all_nodes << std::endl;
   std::cout << std::scientific;
@@ -374,6 +377,7 @@ void MoveGenerator::generate_rook_moves(MoveList &move_list, bitboard bb) {
     add_capture_moves(move_list, capture_moves_bb, Pieces::ROOK, origin_square);
   }
 }
+
 void MoveGenerator::generate_bishop_moves(MoveList &move_list, bitboard bb) {
   while (bb) {
     Square origin_square = Utils::pop_bit(bb);

@@ -2,6 +2,7 @@
 #define MOVE_GENERATOR_HPP_
 
 #include "datatypes.hpp"
+#include "move_list.hpp"
 #include "position.hpp"
 #include "utils.hpp"
 #include <array>

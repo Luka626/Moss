@@ -1,5 +1,6 @@
 #include "position.hpp"
 #include "utils.hpp"
+#include "zobrist.hpp"
 #include <cstring>
 #include <sstream>
 
@@ -8,6 +9,40 @@ Position::Position() { set_board(Utils::STARTING_FEN_POSITION); };
 
 Position::Position(const std::string &fen) { set_board(fen); }
 
+zobrist_key Position::generate_key() {
+  zobrist_key key = 0ULL;
+
+  // todo : [ ] add castling rights and en passant and side to play hash
+  for (int k = 0; k < NCOLORS; k++) {
+    Colors side = (Colors)k;
+    for (int i = 0; i < NPIECES; i++) {
+      Pieces piece = (Pieces)i;
+      bitboard piece_bb = get_bitboard(side, piece);
+      while (piece_bb) {
+        Square sq = Utils::pop_bit(piece_bb);
+        key ^= Zobrist::PIECES[piece][side][sq];
+      }
+    }
+  }
+
+  for (int i = 0; i < 4; i++){
+      if (castling_flags[i]){
+          key ^= Zobrist::CASTLING[i];
+      }
+  }
+
+  if (en_passant_square != -1){
+      key ^= Utils::file(en_passant_square);
+  }
+
+  if (side_to_play == BLACK){
+      key ^= Zobrist::SIDE;
+  }
+
+  return key;
+}
+
+
 int Position::set_board(const std::string &fen) {
   ply = 1;
   for (int i = 0; i < 4; i++) {
@@ -15,6 +50,7 @@ int Position::set_board(const std::string &fen) {
     castling_history[ply][i] = false;
   };
   Utils::init();
+  Zobrist::init();
 
   for (auto &bb : pieces_bitboards) {
     bb = 0ULL;
@@ -150,10 +186,13 @@ int Position::set_board(const std::string &fen) {
   std::getline(iss, fen_token, ' ');
   ply = std::stoi(fen_token);
 
+  z_key = generate_key();
+
   return 0;
 };
 
 void Position::make_move(Move &move) {
+  key_history[ply] = z_key;
   en_passant_history[ply] = en_passant_square;
   for (int i = 0; i < 4; i++) {
     castling_history[ply][i] = castling_flags[i];
@@ -168,59 +207,79 @@ void Position::make_move(Move &move) {
   if (move.is_en_passant) {
     if (side_to_play == WHITE) {
       move.captured_piece = remove_piece((Square)(move.to + S));
+      z_key ^= Zobrist::PIECES[move.captured_piece][!side_to_play][move.to + S];
     } else {
       move.captured_piece = remove_piece((Square)(move.to + N));
+      z_key ^= Zobrist::PIECES[move.captured_piece][!side_to_play][move.to + N];
     }
   }
 
+  // zobrist keys are updated here for castle rights
   update_castling_rights(move.from, move.to, move.is_capture);
 
   if (move.is_castle) {
     bitboard rook_from = 0ULL;
     bitboard rook_to = 0ULL;
     bitboard rook_from_to = 0ULL;
+    Square rook_from_sq = a1;
+    Square rook_to_sq = a1;
     if (move.to == g1) {
-      rook_from = Utils::set_bit(h1);
-      rook_to = Utils::set_bit(f1);
+      rook_from_sq = h1;
+      rook_to_sq = f1;
     } else if (move.to == c1) {
-      rook_from = Utils::set_bit(a1);
-      rook_to = Utils::set_bit(d1);
+      rook_from_sq = a1;
+      rook_to_sq = d1;
     } else if (move.to == g8) {
-      rook_from = Utils::set_bit(h8);
-      rook_to = Utils::set_bit(f8);
+      rook_from_sq = h8;
+      rook_to_sq = f8;
     } else if (move.to == c8) {
-      rook_from = Utils::set_bit(a8);
-      rook_to = Utils::set_bit(d8);
+      rook_from_sq = a8;
+      rook_to_sq = d8;
     }
+    rook_from = Utils::set_bit(rook_from_sq);
+    rook_to = Utils::set_bit(rook_to_sq);
     rook_from_to = rook_from ^ rook_to;
     color_bitboards[side_to_play] ^= rook_from_to;
     pieces_bitboards[Pieces::ROOK] ^= rook_from_to;
+    z_key ^= Zobrist::PIECES[Pieces::ROOK][side_to_play][rook_from_sq];
+    z_key ^= Zobrist::PIECES[Pieces::ROOK][side_to_play][rook_to_sq];
   }
 
   if (!move.is_en_passant && move.is_capture) {
     move.captured_piece = remove_piece(move.to);
+    z_key ^= Zobrist::PIECES[move.captured_piece][!side_to_play][move.to];
   }
   if (move.is_double_push) {
     en_passant_square = (Square)((move.to + move.from) / 2);
+    z_key ^= Zobrist::EN_PASSANT[Utils::file(en_passant_square)];
   } else {
     en_passant_square = (Square)-1;
+    if (en_passant_history[ply - 1] != -1) {
+      z_key ^= Zobrist::EN_PASSANT[en_passant_history[ply - 1]];
+    }
   }
 
   if (!move.promotion) {
     pieces_bitboards[move.piece] ^= from_to_bitboard;
+    z_key ^= Zobrist::PIECES[move.piece][side_to_play][move.from];
+    z_key ^= Zobrist::PIECES[move.piece][side_to_play][move.to];
   } else {
     pieces_bitboards[move.piece] &= ~from_bitboard;
     pieces_bitboards[move.promotion] |= to_bitboard;
+    z_key ^= Zobrist::PIECES[move.piece][side_to_play][move.from];
+    z_key ^= Zobrist::PIECES[move.promotion][side_to_play][move.to];
   }
+
   color_bitboards[side_to_play] ^= from_to_bitboard;
   side_to_play = ~side_to_play;
 }
 
 void Position::undo_move(Move &move) {
-  en_passant_square = en_passant_history[ply-1];
+  en_passant_square = en_passant_history[ply - 1];
   for (int i = 0; i < 4; i++) {
-    castling_flags[i] = castling_history[ply-1][i];
+    castling_flags[i] = castling_history[ply - 1][i];
   }
+  z_key = key_history[ply - 1];
   ply--;
   bitboard from_bitboard = Utils::set_bit(move.to);
   bitboard to_bitboard = Utils::set_bit(move.from);

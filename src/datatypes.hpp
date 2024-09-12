@@ -5,6 +5,7 @@
 #include <ostream>
 
 typedef uint64_t bitboard;
+typedef uint64_t zobrist_key;
 
 const int NCOLORS = 2;
 enum Colors : int {
@@ -114,12 +115,13 @@ struct Move {
   Pieces piece;
   Square from;
   Square to;
-  bool is_capture;
+  bool is_capture = false;
   Pieces captured_piece;
   bool is_double_push;
   bool is_castle;
   bool is_en_passant;
   Pieces promotion;
+  int sort_score = 0;
 };
 std::ostream inline &operator<<(std::ostream &os, const Move &mv) {
   os << mv.from << mv.to;
@@ -128,22 +130,61 @@ std::ostream inline &operator<<(std::ostream &os, const Move &mv) {
   }
   return os;
 }
+bool inline operator==(const Move &lhs, const Move &rhs){
+    if (!(lhs.to == rhs.to)){
+        return false;
+    }
 
-class MoveList {
-private:
-  Move moves[128];
-  size_t count;
+    if (!(lhs.from == rhs.from)){
+        return false;
+    }
 
-public:
-  inline MoveList() { count = 0; }
-  inline size_t clear() {
-    count = 0;
-    return count;
-  }
-  inline void push_back(const Move &mv) { moves[count++] = mv; }
-  inline Move &at(const size_t index) { return moves[index]; }
-  inline size_t size() const { return count; }
-  inline bool empty() const { return count == 0; }
+    if (!(lhs.piece == rhs.piece)){
+        return false;
+    }
+
+    if (!(lhs.is_castle == rhs.is_castle)){
+        return false;
+    }
+    if (!(lhs.is_capture == rhs.is_capture)){
+        return false;
+    }
+    if (!(lhs.is_en_passant == rhs.is_en_passant)){
+        return false;
+    }
+    if (!(lhs.is_double_push == rhs.is_double_push)){
+        return false;
+    }
+
+    return true;
+}
+
+
+
+struct TT_Entry{
+    zobrist_key key;
+    size_t depth;
+    int evaluation;
+    bool exact;
+    bool upper_bound;
+    bool lower_bound;
+    Move best_move;
+
+    TT_Entry():key(0ULL),
+    depth(0),
+    evaluation(0),
+    exact(false),
+    upper_bound(false),
+    lower_bound(false),
+    best_move({}){}
+
+    TT_Entry(zobrist_key key, size_t depth, int evaluation, bool exact, bool upper_bound, bool lower_bound, Move best_move):
+        key(key),
+    depth(depth),
+    evaluation(evaluation),
+    exact(exact),
+    upper_bound(upper_bound),
+    lower_bound(lower_bound),
+    best_move(best_move){}
 };
-
 #endif

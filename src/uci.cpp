@@ -1,9 +1,9 @@
 #include "uci.hpp"
 #include "datatypes.hpp"
-#include "eval.hpp"
 #include "move_generator.hpp"
 #include "search.hpp"
 #include "utils.hpp"
+#include <climits>
 #include <sstream>
 #include <string>
 
@@ -37,6 +37,7 @@ void Uci::loop() {
       std::getline(iss, word, ' ');
       if (word == "startpos") {
         pos->set_board(Utils::STARTING_FEN_POSITION);
+
       } else if (word == "fen") {
         std::getline(iss, word);
         pos->set_board(word);
@@ -62,21 +63,17 @@ void Uci::loop() {
   }
 }
 
-void Uci::parse_go(const std::string &go) {
+void Uci::parse_go(const std::string &go) const {
   std::istringstream iss(go);
   std::string token;
   std::getline(iss, token, ' ');
-  int time;
-  int moves_remaining;
-
-  time = 10000;
-  moves_remaining = 40;
+  int time = INT_MAX;
+  int moves_remaining = 40;
 
   if (token == "perft") {
     std::getline(iss, token, ' ');
     move_gen->divide(std::stoi(token));
   } else {
-
     if (token == "wtime") {
       std::getline(iss, token, ' ');
       if (pos->side_to_play == WHITE) {

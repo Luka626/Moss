@@ -7,6 +7,9 @@
 - Hyperbolic quintessence sliding piece attack generation
 - Negamax depth-first search with alpha/beta pruning
 - Piece-square evaluation
+- Quiesence search
+- Move ordering: hash move -> captures
+- Zobrist hashing and transposition table
 
 ## To-Do, Priority:
 - [ ] Zobrist hashing

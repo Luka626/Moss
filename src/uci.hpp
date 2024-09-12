@@ -8,7 +8,7 @@ class Uci {
 public:
   Uci(Position *position_ptr, MoveGenerator *movegen_ptr);
   void loop();
-  void parse_go(const std::string &go);
+  void parse_go(const std::string &go) const;
 
 private:
   Position *pos;
