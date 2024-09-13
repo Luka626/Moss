@@ -1,4 +1,2 @@
-cutechess-cli -engine cmd=moss-v0.2-piece-square-tables name=moss-v0.2 -engine cmd=moss-v0.3-quiscense name=moss-v0.3 -each proto=uci tc=40/60 -rounds 100 >v0.2_v0.3_results.txt
+cutechess-cli -engine cmd=/home/luka/lchess/old_engines/moss-v0.6-mvv_lva name=moss-v0.6-mvv_lva -engine cmd=/home/luka/lchess/old_engines/moss-v0.5-bug_fixes name=moss-v0.5-bug_fixes -each proto=uci tc=160/60 -rounds 1000 -sprt elo0=0 elo1=10 alpha=0.05 beta=0.05 concurrency 4 -ratinginterval 10 >v0.6_v0.5_results.txt
 
-
-https://rustic-chess.org/progress/sprt_testing.html

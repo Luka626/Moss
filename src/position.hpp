@@ -29,18 +29,10 @@ public:
   zobrist_key generate_key();
   void make_move(Move &move);
   void undo_move(Move &move);
-  Pieces inline remove_piece(Square sq) {
+  void inline remove_piece(Pieces pc, Square sq) {
     bitboard to_remove = 1ULL << sq;
-    for (size_t piece = 0; piece < NPIECES; piece++) {
-      bitboard piece_bb = pieces_bitboards[piece];
-      if (piece_bb & to_remove) {
-        pieces_bitboards[piece] &= ~to_remove;
-        color_bitboards[~side_to_play] &= ~to_remove;
-        return (Pieces)piece;
-      };
-      // todo: add NOPIECE piecetype and return it here instead of a PAWN
-    }
-    return Pieces::PAWN;
+    pieces_bitboards[pc] &= ~to_remove;
+    color_bitboards[~side_to_play] &= ~to_remove;
   }
 
   void inline update_castling_rights(Square from, Square to, bool is_capture) {

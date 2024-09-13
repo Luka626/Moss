@@ -8,33 +8,34 @@
 - Negamax depth-first search with alpha/beta pruning
 - Piece-square evaluation
 - Quiesence search
-- Move ordering: hash move -> captures
+- Move ordering: PV move -> MVV-LVA
 - Zobrist hashing and transposition table
 
+
 ## To-Do, Priority:
-- [ ] Zobrist hashing
-- [ ] Transposition tables
-- [ ] iterative deepening
-- [ ] move ordering
-- [ ] quiscense search
-- [ ] piece mobility
-- [ ] PSQ tables blending based on total material
+- [x] Zobrist hashing
+- [x] Transposition tables
+- [x] iterative deepening
+- [x] move ordering
+- [x] quiscense search
+- [x] piece mobility
+- [x] PSQ tables blending based on total material
 - [ ] speed up move gen a little further
 
 ## To-Do Search
-- [ ] hash positions into trans table (https://www.chessprogramming.org/Zobrist_Hashing, https://www.chessprogramming.org/Transposition_Table)
-- [ ] quiscense search
+- [x] hash positions into trans table (https://www.chessprogramming.org/Zobrist_Hashing, https://www.chessprogramming.org/Transposition_Table)
+- [x] quiscense search
 - [ ] search extension
 - [ ] killer moves
 
 ## To-Do Performance
-- [ ] hashing
-- [ ] fix legal_move_generation (right now it loops over all moves)
+- [x] hashing
+- [x] fix legal_move_generation (right now it loops over all moves)
 - [ ] encode moves in a single INT
-- [ ] perform another round of profiling
+- [x] perform another round of profiling
 
 ## To-Do Evaluation
-- [ ] positional piece values
+- [x] positional piece values
 - [ ] piece mobility calculation
 - [ ] early game v. late game piece positions
 

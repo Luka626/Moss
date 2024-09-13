@@ -1,5 +1,6 @@
 #include "move_generator.hpp"
 #include "datatypes.hpp"
+#include <chrono>
 #include <iomanip>
 
 MoveGenerator::MoveGenerator(Position *position_ptr) {
@@ -8,25 +9,38 @@ MoveGenerator::MoveGenerator(Position *position_ptr) {
 };
 
 double MoveGenerator::divide(size_t depth) {
+  auto start_time = std::chrono::high_resolution_clock::now();
+
   std::cout << std::fixed;
   std::cout << std::setprecision(0);
   MoveList move_list = MoveList();
   double nodes;
   double all_nodes = 0;
 
-  move_list = generate_legal_moves();
+  move_list = generate_pseudo_legal_moves();
   for (size_t i = 0; i < move_list.size(); i++) {
-      zobrist_key old_key = position->z_key;
+    zobrist_key old_key = position->z_key;
     position->make_move(move_list.at(i));
+    if (!validate_gamestate()) {
+      position->undo_move(move_list.at(i));
+      continue;
+    }
     nodes = perft(depth - 1);
     all_nodes += nodes;
     if (nodes > 0) {
       std::cout << move_list.at(i) << ": " << nodes << "\n";
     }
     position->undo_move(move_list.at(i));
-      zobrist_key new_key = position->z_key;
+    zobrist_key new_key = position->z_key;
   }
-  std::cout << "Nodes searched: " << all_nodes << std::endl;
+  auto end_time = std::chrono::high_resolution_clock::now();
+  auto time = std::chrono::duration_cast<std::chrono::milliseconds>(end_time -
+                                                                    start_time);
+
+  std::cout << "Nodes searched:\t" << all_nodes << std::endl;
+  std::cout << "Time searched:\t" << time.count() << "ms" << std::endl;
+  std::cout << "Search speed:\t" << all_nodes / (time.count() / 1000.0) << "nps"
+            << std::endl;
   std::cout << std::scientific;
   return all_nodes;
 }
@@ -56,10 +70,10 @@ double MoveGenerator::perft(size_t depth) {
 bool MoveGenerator::validate_gamestate() {
   return !king_in_check(~position->side_to_play);
 }
-bool MoveGenerator::king_in_check(Colors side){
-    bitboard king_bb = position->get_bitboard(side, Pieces::KING);
-    Square king_square = Utils::pop_bit(king_bb);
-    return generate_attackers(king_square) & position->color_bitboards[~side]; 
+bool MoveGenerator::king_in_check(Colors side) {
+  bitboard king_bb = position->get_bitboard(side, Pieces::KING);
+  Square king_square = Utils::pop_bit(king_bb);
+  return generate_attackers(king_square) & position->color_bitboards[~side];
 }
 
 int MoveGenerator::generate_rank_attack(int occupancy, size_t file) {
@@ -165,17 +179,17 @@ MoveList MoveGenerator::generate_pseudo_legal_moves() {
   return pseudo_legal_moves;
 }
 
-MoveList MoveGenerator::generate_legal_moves(){
-    MoveList ps = generate_pseudo_legal_moves();
-    MoveList l = MoveList();
-    for (int i = 0; i<ps.size(); i++){
-        position->make_move(ps.at(i));
-        if (!king_in_check(~position->side_to_play)){
-            l.push_back(ps.at(i));
-        }
-        position->undo_move(ps.at(i));
+MoveList MoveGenerator::generate_legal_moves() {
+  MoveList ps = generate_pseudo_legal_moves();
+  MoveList l = MoveList();
+  for (int i = 0; i < ps.size(); i++) {
+    position->make_move(ps.at(i));
+    if (!king_in_check(~position->side_to_play)) {
+      l.push_back(ps.at(i));
     }
-    return l;
+    position->undo_move(ps.at(i));
+  }
+  return l;
 }
 
 void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
@@ -230,6 +244,8 @@ void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
         capture.from = origin_square;
         capture.to = destination_square;
         capture.is_capture = true;
+        capture.captured_piece =
+            get_opposing_piece_type(position->side_to_play, capture.to);
         if (Utils::rank(capture.to) == 7) {
           for (const auto &promotion_piece : promotion_pieces) {
             capture.promotion = promotion_piece;
@@ -253,6 +269,7 @@ void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
           en_passant.to = destination_square;
           en_passant.is_capture = true;
           en_passant.is_en_passant = true;
+          en_passant.captured_piece = PAWN;
           move_list.push_back(en_passant);
         }
       }
@@ -309,6 +326,8 @@ void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
         capture.from = origin_square;
         capture.to = destination_square;
         capture.is_capture = true;
+        capture.captured_piece =
+            get_opposing_piece_type(position->side_to_play, capture.to);
 
         if (Utils::rank(capture.to) == 0) {
           for (const auto &promotion_piece : promotion_pieces) {
@@ -330,6 +349,7 @@ void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
           en_passant.to = destination_square;
           en_passant.is_capture = true;
           en_passant.is_en_passant = true;
+          en_passant.captured_piece = PAWN;
           move_list.push_back(en_passant);
         }
       }
@@ -438,31 +458,29 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
       bitboard between = Utils::IN_BETWEEN[e1][rook_square];
       bitboard between_ex = between ^ Utils::set_bit(rook_square);
       between_ex = between_ex ^ Utils::set_bit(e1);
-      if ((between_ex & position->get_occupied()) != 0) {
-        between = 0ULL;
-      } else {
-        between = between ^ Utils::set_bit(rook_square);
-      }
 
-      bool is_path_attacked = false;
-      bitboard potential_attacked = Utils::IN_BETWEEN[king_target_square][e1];
+      if ((between_ex & position->get_occupied()) == 0) {
+        bool is_path_attacked = false;
+        bitboard potential_attacked = Utils::IN_BETWEEN[king_target_square][e1];
 
-      while (potential_attacked) {
-        Square intermediate_square = Utils::pop_bit(potential_attacked);
-        if ((generate_attackers(intermediate_square) &
-             position->color_bitboards[~position->side_to_play]) > 0) {
-          is_path_attacked = true;
-          break;
+        while (potential_attacked) {
+          Square intermediate_square = Utils::pop_bit(potential_attacked);
+          if ((generate_attackers(intermediate_square) &
+               position->color_bitboards[~position->side_to_play]) > 0) {
+            is_path_attacked = true;
+            break;
+          }
         }
-      }
 
-      if (!is_path_attacked && ((between_ex & position->get_occupied()) == 0)) {
-        Move w_kingside_castle = {};
-        w_kingside_castle.piece = KING;
-        w_kingside_castle.from = e1;
-        w_kingside_castle.to = king_target_square;
-        w_kingside_castle.is_castle = true;
-        move_list.push_back(w_kingside_castle);
+        if (!is_path_attacked &&
+            ((between_ex & position->get_occupied()) == 0)) {
+          Move w_kingside_castle = {};
+          w_kingside_castle.piece = KING;
+          w_kingside_castle.from = e1;
+          w_kingside_castle.to = king_target_square;
+          w_kingside_castle.is_castle = true;
+          move_list.push_back(w_kingside_castle);
+        }
       }
     }
     if (position->castling_flags[1]) {
@@ -472,31 +490,29 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
       bitboard between = Utils::IN_BETWEEN[e1][rook_square];
       bitboard between_ex = between ^ Utils::set_bit(rook_square);
       between_ex = between_ex ^ Utils::set_bit(e1);
-      if ((between_ex & position->get_occupied()) != 0) {
-        between = 0ULL;
-      } else {
-        between = between ^ Utils::set_bit(rook_square);
-      }
 
-      bool is_path_attacked = false;
-      bitboard potential_attacked = Utils::IN_BETWEEN[king_target_square][e1];
+      if ((between_ex & position->get_occupied()) == 0) {
+        bool is_path_attacked = false;
+        bitboard potential_attacked = Utils::IN_BETWEEN[king_target_square][e1];
 
-      while (potential_attacked) {
-        Square intermediate_square = Utils::pop_bit(potential_attacked);
-        if ((generate_attackers(intermediate_square) &
-             position->color_bitboards[~position->side_to_play]) > 0) {
-          is_path_attacked = true;
-          break;
+        while (potential_attacked) {
+          Square intermediate_square = Utils::pop_bit(potential_attacked);
+          if ((generate_attackers(intermediate_square) &
+               position->color_bitboards[~position->side_to_play]) > 0) {
+            is_path_attacked = true;
+            break;
+          }
         }
-      }
 
-      if (!is_path_attacked && ((between_ex & position->get_occupied()) == 0)) {
-        Move w_kingside_castle = {};
-        w_kingside_castle.piece = KING;
-        w_kingside_castle.from = e1;
-        w_kingside_castle.to = king_target_square;
-        w_kingside_castle.is_castle = true;
-        move_list.push_back(w_kingside_castle);
+        if (!is_path_attacked &&
+            ((between_ex & position->get_occupied()) == 0)) {
+          Move w_kingside_castle = {};
+          w_kingside_castle.piece = KING;
+          w_kingside_castle.from = e1;
+          w_kingside_castle.to = king_target_square;
+          w_kingside_castle.is_castle = true;
+          move_list.push_back(w_kingside_castle);
+        }
       }
     }
 
@@ -508,12 +524,7 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
       bitboard between = Utils::IN_BETWEEN[e8][rook_square];
       bitboard between_ex = between ^ Utils::set_bit(rook_square);
       between_ex = between_ex ^ Utils::set_bit(e8);
-      if ((between_ex & position->get_occupied()) != 0) {
-        between = 0ULL;
-      } else {
-        between = between ^ Utils::set_bit(rook_square);
-      }
-
+      if ((between_ex & position->get_occupied()) == 0) {
       bool is_path_attacked = false;
       bitboard potential_attacked = Utils::IN_BETWEEN[king_target_square][e8];
 
@@ -533,6 +544,8 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
         w_kingside_castle.to = king_target_square;
         w_kingside_castle.is_castle = true;
         move_list.push_back(w_kingside_castle);
+      }
+
       }
     }
     if (position->castling_flags[3]) {
@@ -542,12 +555,7 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
       bitboard between = Utils::IN_BETWEEN[e8][rook_square];
       bitboard between_ex = between ^ Utils::set_bit(rook_square);
       between_ex = between_ex ^ Utils::set_bit(e8);
-      if ((between_ex & position->get_occupied()) != 0) {
-        between = 0ULL;
-      } else {
-        between = between ^ Utils::set_bit(rook_square);
-      }
-
+      if ((between_ex & position->get_occupied()) == 0) {
       bool is_path_attacked = false;
       bitboard potential_attacked = Utils::IN_BETWEEN[king_target_square][e8];
 
@@ -567,6 +575,7 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
         w_kingside_castle.to = king_target_square;
         w_kingside_castle.is_castle = true;
         move_list.push_back(w_kingside_castle);
+      }
       }
     }
   }

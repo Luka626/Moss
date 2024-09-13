@@ -10,7 +10,7 @@
 
 class MoveGenerator {
 public:
-  MoveGenerator(Position * position_ptr);
+  MoveGenerator(Position *position_ptr);
   double perft(size_t depth);
   MoveList generate_pseudo_legal_moves();
   MoveList generate_legal_moves();
@@ -30,6 +30,15 @@ public:
   bitboard generate_attackers(Square sq);
   bitboard generate_pinned_pieces();
 
+  Pieces inline get_opposing_piece_type(Colors color, Square sq) {
+    for (int i = PAWN; i < NPIECES; i++) {
+      if (position->get_bitboard(~color, (Pieces)i) & Utils::set_bit(sq)) {
+        return (Pieces)i;
+      }
+    }
+    return PAWN;
+  }
+
   bitboard inline xray_rectilinear_attacks(bitboard occupancy,
                                            bitboard blockers, Square sq) {
     bitboard attacks = generate_rectilinear_attacks(occupancy, sq);
@@ -45,58 +54,59 @@ public:
 
   bitboard generate_rectilinear_attacks(bitboard occupancy, Square sq);
   bitboard generate_diagonal_attacks(bitboard occupancy, Square sq);
-// https://www.chessprogramming.org/Subtracting_a_Rook_from_a_Blocking_Piece
-bitboard inline hyperbola_quintessence(bitboard occupancy, Square sq,
-                                               bitboard mask) {
-  // exclude the slider from the mask
-  mask = mask & (~Utils::set_bit(sq));
-  bitboard x = Utils::set_bit(sq);
-  bitboard o = occupancy & mask;
-  return ((o - x) ^
-          Utils::reverse(Utils::reverse(o) - (0x8000000000000000ull >> sq))) &
-         mask;
-}
-void inline add_quiet_moves(MoveList &move_list, bitboard bb,
-                                    Pieces piece, Square origin) {
-  while (bb) {
-    Square destination_square = Utils::pop_bit(bb);
-    Move quiet_move = {};
-    quiet_move.piece = piece;
-    quiet_move.from = origin;
-    quiet_move.to = destination_square;
-    move_list.push_back(quiet_move);
+  // https://www.chessprogramming.org/Subtracting_a_Rook_from_a_Blocking_Piece
+  bitboard inline hyperbola_quintessence(bitboard occupancy, Square sq,
+                                         bitboard mask) {
+    // exclude the slider from the mask
+    mask = mask & (~Utils::set_bit(sq));
+    bitboard x = Utils::set_bit(sq);
+    bitboard o = occupancy & mask;
+    return ((o - x) ^
+            Utils::reverse(Utils::reverse(o) - (0x8000000000000000ull >> sq))) &
+           mask;
   }
-}
-
-void inline add_capture_moves(MoveList &move_list, bitboard bb,
-                                      Pieces piece, Square origin) {
-  while (bb) {
-    Square destination_square = Utils::pop_bit(bb);
-    Move capture = {};
-    capture.piece = piece;
-    capture.from = origin;
-    capture.to = destination_square;
-    capture.is_capture = true;
-    move_list.push_back(capture);
-  }
-}
-  void add_castling_moves(MoveList &moves_list);
-
-inline Move move_from_string(const std::string &str) {
-  MoveList moves = generate_pseudo_legal_moves();
-  for (size_t i = 0; i < moves.size(); i++) {
-    std::stringstream ss;
-    ss << moves.at(i);
-    std::string move_str = ss.str();
-    if (move_str == str) {
-      return moves.at(i);
+  void inline add_quiet_moves(MoveList &move_list, bitboard bb, Pieces piece,
+                              Square origin) {
+    while (bb) {
+      Square destination_square = Utils::pop_bit(bb);
+      Move quiet_move = {};
+      quiet_move.piece = piece;
+      quiet_move.from = origin;
+      quiet_move.to = destination_square;
+      move_list.push_back(quiet_move);
     }
   }
-  return Move();
-}
+
+  void inline add_capture_moves(MoveList &move_list, bitboard bb, Pieces piece,
+                                Square origin) {
+    while (bb) {
+      Square destination_square = Utils::pop_bit(bb);
+      Move capture = {};
+      capture.piece = piece;
+      capture.from = origin;
+      capture.to = destination_square;
+      capture.is_capture = true;
+        capture.captured_piece =
+            get_opposing_piece_type(position->side_to_play, capture.to);
+      move_list.push_back(capture);
+    }
+  }
+  void add_castling_moves(MoveList &moves_list);
+
+  inline Move move_from_string(const std::string &str) {
+    MoveList moves = generate_pseudo_legal_moves();
+    for (size_t i = 0; i < moves.size(); i++) {
+      std::stringstream ss;
+      ss << moves.at(i);
+      std::string move_str = ss.str();
+      if (move_str == str) {
+        return moves.at(i);
+      }
+    }
+    return Move();
+  }
 
 private:
-    
   Position *position;
   std::array<uint8_t, 512> RANK_ATTACKS;
 };

@@ -25,23 +25,22 @@ zobrist_key Position::generate_key() {
     }
   }
 
-  for (int i = 0; i < 4; i++){
-      if (castling_flags[i]){
-          key ^= Zobrist::CASTLING[i];
-      }
+  for (int i = 0; i < 4; i++) {
+    if (castling_flags[i]) {
+      key ^= Zobrist::CASTLING[i];
+    }
   }
 
-  if (en_passant_square != -1){
-      key ^= Utils::file(en_passant_square);
+  if (en_passant_square != -1) {
+    key ^= Utils::file(en_passant_square);
   }
 
-  if (side_to_play == BLACK){
-      key ^= Zobrist::SIDE;
+  if (side_to_play == BLACK) {
+    key ^= Zobrist::SIDE;
   }
 
   return key;
 }
-
 
 int Position::set_board(const std::string &fen) {
   ply = 1;
@@ -206,10 +205,10 @@ void Position::make_move(Move &move) {
 
   if (move.is_en_passant) {
     if (side_to_play == WHITE) {
-      move.captured_piece = remove_piece((Square)(move.to + S));
+      remove_piece(move.captured_piece, (Square)(move.to + S));
       z_key ^= Zobrist::PIECES[move.captured_piece][!side_to_play][move.to + S];
     } else {
-      move.captured_piece = remove_piece((Square)(move.to + N));
+      remove_piece(move.captured_piece, (Square)(move.to + N));
       z_key ^= Zobrist::PIECES[move.captured_piece][!side_to_play][move.to + N];
     }
   }
@@ -246,7 +245,7 @@ void Position::make_move(Move &move) {
   }
 
   if (!move.is_en_passant && move.is_capture) {
-    move.captured_piece = remove_piece(move.to);
+    remove_piece(move.captured_piece, move.to);
     z_key ^= Zobrist::PIECES[move.captured_piece][!side_to_play][move.to];
   }
   if (move.is_double_push) {

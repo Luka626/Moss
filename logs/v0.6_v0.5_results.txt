@@ -1,0 +1,43 @@
+Started game 1 of 1000 (moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes)
+Started game 2 of 1000 (moss-v0.5-bug_fixes vs moss-v0.6-mvv_lva)
+Started game 3 of 1000 (moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes)
+Started game 4 of 1000 (moss-v0.5-bug_fixes vs moss-v0.6-mvv_lva)
+Finished game 1 (moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes: 0 - 0 - 1  [0.500] 1
+Started game 5 of 1000 (moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes)
+Finished game 3 (moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes: 0 - 0 - 2  [0.500] 2
+Started game 6 of 1000 (moss-v0.5-bug_fixes vs moss-v0.6-mvv_lva)
+Finished game 2 (moss-v0.5-bug_fixes vs moss-v0.6-mvv_lva): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes: 0 - 0 - 3  [0.500] 3
+Started game 7 of 1000 (moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes)
+Finished game 4 (moss-v0.5-bug_fixes vs moss-v0.6-mvv_lva): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes: 0 - 0 - 4  [0.500] 4
+Started game 8 of 1000 (moss-v0.5-bug_fixes vs moss-v0.6-mvv_lva)
+Finished game 6 (moss-v0.5-bug_fixes vs moss-v0.6-mvv_lva): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes: 0 - 0 - 5  [0.500] 5
+Started game 9 of 1000 (moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes)
+Terminating process of engine moss-v0.5-bug_fixes(2)
+Finished game 7 (moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes): 1-0 {Black disconnects}
+Score of moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes: 1 - 0 - 5  [0.583] 6
+Finished game 8 (moss-v0.5-bug_fixes vs moss-v0.6-mvv_lva): * {No result}
+Score of moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes: 1 - 0 - 5  [0.583] 6
+Finished game 5 (moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes): * {No result}
+Score of moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes: 1 - 0 - 5  [0.583] 6
+Finished game 9 (moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes): * {No result}
+Score of moss-v0.6-mvv_lva vs moss-v0.5-bug_fixes: 1 - 0 - 5  [0.583] 6
+...      moss-v0.6-mvv_lva playing White: 1 - 0 - 2  [0.667] 3
+...      moss-v0.6-mvv_lva playing Black: 0 - 0 - 3  [0.500] 3
+...      White vs Black: 1 - 0 - 5  [0.583] 6
+Elo difference: 58.5 +/- 110.3, LOS: 84.1 %, DrawRatio: 83.3 %
+SPRT: llr 0.109 (3.7%), lbound -2.94, ubound 2.94
+
+Player: moss-v0.6-mvv_lva
+   "Draw by 3-fold repetition": 5
+   "No result": 3
+   "Win: Black disconnects": 1
+Player: moss-v0.5-bug_fixes
+   "Draw by 3-fold repetition": 5
+   "Loss: Black disconnects": 1
+   "No result": 3
+Finished match

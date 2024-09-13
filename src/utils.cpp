@@ -15,6 +15,17 @@ bitboard bpawn_attacks[64];
 
 bitboard IN_BETWEEN[64][64];
 
+// MVV_LVA[victim][attacker]
+int MVV_LVA[NPIECES][NPIECES] = {
+   //P   N   B   R   Q   K
+    {15, 14, 13, 12, 11, 10}, // P
+    {25, 24, 23, 22, 21, 20}, // N
+    {35, 34, 33, 32, 31, 30}, // B
+    {45, 44, 43, 42, 41, 40}, // R
+    {55, 54, 53, 52, 51, 50}, // Q
+    {0,  0,  0,  0,  0,  0},  // K
+};
+
 int WPAWN_POSITIONAL[NSQUARES] = {
     0, 0, 0, 0, 0, 0, 0, 0,
     5, 10, 10, -20, -20, 10, 10, 5,

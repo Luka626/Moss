@@ -13,7 +13,8 @@ zobrist_key SIDE;
 
 void Zobrist::init() {
   std::random_device rd;
-  std::mt19937_64 rand_engine(rd());
+  std::seed_seq sd{rd(), rd(), rd(), rd()};
+  std::mt19937_64 rand_engine(sd);
 
   for (int i = 0; i < NPIECES; i++) {
     for (int j = 0; j < NCOLORS; j++) {

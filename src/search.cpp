@@ -11,7 +11,7 @@ Search::Search(Position *position_ptr)
   nodes_searched = 0;
   best_move = {};
   hashfull = 0;
-  hashsize = 250 * 1024 * 1024 / sizeof(TT_Entry);
+  hashsize = 100 * 1024 * 1024 / sizeof(TT_Entry);
 
   transposition_table.reserve(hashsize);
   for (zobrist_key i = 0; i < (hashsize); i++) {
@@ -25,7 +25,7 @@ int Search::iterative_deepening(int time, int moves_remaining) {
   int depth = 1;
   int eval = 0;
 
-  time_limit = 0.75 * time / moves_remaining;
+  time_limit = 0.85 * time / moves_remaining;
   search_start = std::chrono::high_resolution_clock::now();
   search_done = false;
 
@@ -33,10 +33,11 @@ int Search::iterative_deepening(int time, int moves_remaining) {
     auto start_time = std::chrono::high_resolution_clock::now();
 
     eval = negamax_root(depth);
-    depth++;
-    if (!search_done){
-    best_move_overall = best_move;
+    if (!search_done) {
+      best_move_overall = best_move;
     }
+
+    depth++;
 
     auto end_time = std::chrono::high_resolution_clock::now();
     time_searched = std::chrono::duration_cast<std::chrono::milliseconds>(
@@ -86,17 +87,17 @@ TT_Entry Search::probe_TT(zobrist_key z_key, size_t depth, bool &was_found) {
 
 int Search::negamax_root(int depth) {
 
-    best_move = {};
+  best_move = {};
   int alpha = -INT_MAX;
   int beta = INT_MAX;
   int eval = -INT_MAX;
   depth_searched = depth;
 
-  MoveList moves = move_gen.generate_legal_moves();
+  MoveList moves = move_gen.generate_pseudo_legal_moves();
 
   bool was_found = false;
-  TT_Entry entry = probe_TT(pos->z_key, pos->ply, was_found);
-  if (was_found && entry.exact == true && !(entry.best_move == Move())) {
+  TT_Entry entry = probe_TT(pos->z_key, depth, was_found);
+  if ((was_found) && (entry.exact == true) && !(entry.best_move == Move())) {
     best_move = entry.best_move;
     alpha = entry.evaluation;
   }
@@ -105,12 +106,18 @@ int Search::negamax_root(int depth) {
   moves.sort_moves();
 
   zobrist_key move_key = pos->z_key;
-  size_t move_depth = pos->ply;
 
   for (int i = 0; i < moves.size(); i++) {
     Move mv = moves.at(i);
+    if (depth >= 8) {
+      std::cout << "info currmove " << mv << std::endl;
+    }
 
     pos->make_move(mv);
+    if (!move_gen.validate_gamestate()) {
+      pos->undo_move(mv);
+      continue;
+    }
     nodes_searched++;
     // recursive call
 
@@ -126,8 +133,7 @@ int Search::negamax_root(int depth) {
     // reset board before making different move
     pos->undo_move(mv);
   }
-
-  update_TT(move_key, move_depth, eval, false, false, true, best_move);
+  update_TT(move_key, depth, alpha, true, false, false, best_move);
 
   return alpha;
 }
@@ -136,7 +142,7 @@ int Search::negamax(int alpha, int beta, int depth) {
 
   int alpha_old = alpha;
 
-  if (nodes_searched & 1023) {
+  if (nodes_searched & 2046) {
     auto curr_time = std::chrono::high_resolution_clock::now();
     auto search_duration =
         std::chrono::duration_cast<std::chrono::milliseconds>(curr_time -
@@ -151,24 +157,18 @@ int Search::negamax(int alpha, int beta, int depth) {
   }
 
   bool was_found = false;
-  TT_Entry entry = probe_TT(pos->z_key, pos->ply, was_found);
+  TT_Entry entry = probe_TT(pos->z_key, depth, was_found);
   if (was_found) {
     if (entry.exact) {
       return entry.evaluation;
-    } else if (entry.lower_bound && (entry.evaluation <= alpha)) {
+    } else if (entry.upper_bound && (entry.evaluation <= alpha)) {
       return alpha;
-    } else if (entry.upper_bound && (entry.evaluation >= beta)) {
+    } else if (entry.lower_bound && (entry.evaluation >= beta)) {
       return beta;
     }
   }
 
-  int best_eval = -INT_MAX;
-  int eval = -INT_MAX;
-
-  MoveList moves = move_gen.generate_legal_moves();
-  moves.score_moves(entry.best_move);
-  moves.sort_moves();
-
+  MoveList moves = move_gen.generate_pseudo_legal_moves();
   if (moves.empty()) {
     if (move_gen.king_in_check(pos->side_to_play)) {
       return -INT_MAX + pos->ply;
@@ -177,14 +177,24 @@ int Search::negamax(int alpha, int beta, int depth) {
     }
   }
 
+  moves.score_moves(entry.best_move);
+  moves.sort_moves();
+
+  int best_eval = -INT_MAX;
+  int eval = -INT_MAX;
+  Move my_best_move = Move();
+  zobrist_key move_key = pos->z_key;
+
   for (int i = 0; i < moves.size(); i++) {
     // make move on board
     Move mv = moves.at(i);
 
     pos->make_move(mv);
+    if (!move_gen.validate_gamestate()) {
+      pos->undo_move(mv);
+      continue;
+    }
     nodes_searched++;
-    zobrist_key move_key = pos->z_key;
-    size_t move_depth = pos->ply;
     // recursive call
 
     eval = -negamax(-beta, -alpha, depth - 1);
@@ -193,22 +203,22 @@ int Search::negamax(int alpha, int beta, int depth) {
     pos->undo_move(mv);
 
     if (eval >= beta) {
-      update_TT(move_key, move_depth, eval, false, false, true, best_move);
+      update_TT(move_key, depth, eval, false, false, true, mv);
       return beta;
     }
 
     if (eval > best_eval) {
       best_eval = eval;
+      my_best_move = mv;
       if (eval > alpha) {
         alpha = eval;
       }
     }
-
-    if (alpha > alpha_old) {
-      update_TT(move_key, move_depth, best_eval, true, false, false, best_move);
-    } else {
-      update_TT(move_key, move_depth, alpha, false, true, false, best_move);
-    }
+  }
+  if (alpha > alpha_old) {
+    update_TT(move_key, depth, best_eval, true, false, false, my_best_move);
+  } else {
+    update_TT(move_key, depth, alpha, false, true, false, my_best_move);
   }
   return alpha;
 }
@@ -225,7 +235,7 @@ int Search::quiescence(int alpha, int beta) {
 
   int eval = stand_pat;
 
-  MoveList moves = move_gen.generate_legal_moves();
+  MoveList moves = move_gen.generate_pseudo_legal_moves();
   moves.score_moves(Move());
   moves.sort_moves();
 
@@ -243,6 +253,10 @@ int Search::quiescence(int alpha, int beta) {
     }
 
     pos->make_move(mv);
+    if (!move_gen.validate_gamestate()) {
+      pos->undo_move(mv);
+      continue;
+    }
     nodes_searched++;
     eval = -quiescence(-beta, -alpha);
     pos->undo_move(mv);
