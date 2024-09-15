@@ -1,0 +1,61 @@
+Started game 1 of 2000 (main vs moss-v0.4-TT)
+Started game 2 of 2000 (moss-v0.4-TT vs main)
+Started game 3 of 2000 (main vs moss-v0.4-TT)
+Started game 4 of 2000 (moss-v0.4-TT vs main)
+Finished game 4 (moss-v0.4-TT vs main): 0-1 {White makes an illegal move: a1a1}
+Score of main vs moss-v0.4-TT: 1 - 0 - 0  [1.000] 1
+Started game 5 of 2000 (main vs moss-v0.4-TT)
+Finished game 2 (moss-v0.4-TT vs main): 0-1 {White makes an illegal move: a1a1}
+Score of main vs moss-v0.4-TT: 2 - 0 - 0  [1.000] 2
+Started game 6 of 2000 (moss-v0.4-TT vs main)
+Finished game 3 (main vs moss-v0.4-TT): 1-0 {Black loses on time}
+Score of main vs moss-v0.4-TT: 3 - 0 - 0  [1.000] 3
+Started game 7 of 2000 (main vs moss-v0.4-TT)
+Finished game 1 (main vs moss-v0.4-TT): 1-0 {Black loses on time}
+Score of main vs moss-v0.4-TT: 4 - 0 - 0  [1.000] 4
+Started game 8 of 2000 (moss-v0.4-TT vs main)
+Finished game 5 (main vs moss-v0.4-TT): 1-0 {Black loses on time}
+Score of main vs moss-v0.4-TT: 5 - 0 - 0  [1.000] 5
+Started game 9 of 2000 (main vs moss-v0.4-TT)
+Finished game 6 (moss-v0.4-TT vs main): 0-1 {White loses on time}
+Score of main vs moss-v0.4-TT: 6 - 0 - 0  [1.000] 6
+Started game 10 of 2000 (moss-v0.4-TT vs main)
+Finished game 7 (main vs moss-v0.4-TT): 1-0 {Black loses on time}
+Score of main vs moss-v0.4-TT: 7 - 0 - 0  [1.000] 7
+Started game 11 of 2000 (main vs moss-v0.4-TT)
+Finished game 8 (moss-v0.4-TT vs main): 0-1 {White loses on time}
+Score of main vs moss-v0.4-TT: 8 - 0 - 0  [1.000] 8
+Started game 12 of 2000 (moss-v0.4-TT vs main)
+Terminating process of engine moss-v0.4-TT(6)
+Finished game 9 (main vs moss-v0.4-TT): 1-0 {Black disconnects}
+Score of main vs moss-v0.4-TT: 9 - 0 - 0  [1.000] 9
+Finished game 12 (moss-v0.4-TT vs main): * {No result}
+Score of main vs moss-v0.4-TT: 9 - 0 - 0  [1.000] 9
+...      main playing White: 5 - 0 - 0  [1.000] 5
+...      main playing Black: 4 - 0 - 0  [1.000] 4
+...      White vs Black: 5 - 4 - 0  [0.556] 9
+Elo difference: inf +/- nan, LOS: 99.9 %, DrawRatio: 0.0 %
+SPRT: llr 0.313 (10.6%), lbound -2.94, ubound 2.94
+Finished game 10 (moss-v0.4-TT vs main): * {No result}
+Score of main vs moss-v0.4-TT: 9 - 0 - 0  [1.000] 9
+Finished game 11 (main vs moss-v0.4-TT): * {No result}
+Score of main vs moss-v0.4-TT: 9 - 0 - 0  [1.000] 9
+...      main playing White: 5 - 0 - 0  [1.000] 5
+...      main playing Black: 4 - 0 - 0  [1.000] 4
+...      White vs Black: 5 - 4 - 0  [0.556] 9
+Elo difference: inf +/- nan, LOS: 99.9 %, DrawRatio: 0.0 %
+SPRT: llr 0.313 (10.6%), lbound -2.94, ubound 2.94
+
+Player: main
+   "No result": 3
+   "Win: Black disconnects": 1
+   "Win: Black loses on time": 4
+   "Win: White loses on time": 2
+   "Win: White makes an illegal move: a1a1": 2
+Player: moss-v0.4-TT
+   "Loss: Black disconnects": 1
+   "Loss: Black loses on time": 4
+   "Loss: White loses on time": 2
+   "Loss: White makes an illegal move: a1a1": 2
+   "No result": 3
+Finished match

@@ -8,36 +8,42 @@
 namespace Utils {
 
 // Constant masks used in other parts of the engine
-const bitboard RANK_MASK[8] = {
+constexpr bitboard RANK_MASK[8] = {
     0xFF,         0xFF00,         0xFF0000,         0xFF000000,
     0xFF00000000, 0xFF0000000000, 0xFF000000000000, 0xFF00000000000000};
-const bitboard FILE_MASK[8] = {0x0101010101010101, 0x202020202020202,
+constexpr bitboard FILE_MASK[8] = {0x0101010101010101, 0x202020202020202,
                                0x404040404040404,  0x808080808080808,
                                0x1010101010101010, 0x2020202020202020,
                                0x4040404040404040, 0x8080808080808080};
 //
 // Navigate [Index] <-> [Rank, File]
-inline size_t rank(Square sq) { return sq >> 3; }
-inline size_t file(Square sq) { return sq & 7; }
-inline Square get_square(size_t rank, size_t file) {
+constexpr size_t rank(Square sq) { return sq >> 3; }
+constexpr size_t file(Square sq) { return sq & 7; }
+constexpr Square get_square(size_t rank, size_t file) {
   return (Square)(8 * rank + file);
 }
+  Pieces inline get_piece_type(const Square sq) {
+    for (int i = PAWN; i < NPIECES; i++) {
+      if (position->pieces_bitboards[(Pieces)i] & Utils::set_bit(sq)) {
+        return (Pieces)i;
+      }
+    }
+    return PAWN;
+  }
 
 // Functions to return sliding piece masks from a given square
-const inline bitboard diagonal_mask(Square square) {
+constexpr inline bitboard diagonal_mask(Square square) {
   bitboard main_diag = 0x8040201008040201;
   int diag = (square & 7) - (square >> 3);
   return diag >= 0 ? main_diag >> diag * 8 : main_diag << -diag * 8;
 }
-const inline bitboard anti_diagonal_mask(Square square) {
+constexpr inline bitboard anti_diagonal_mask(Square square) {
   bitboard main_diag = 0x0102040810204080;
   int diag = 7 - (square & 7) - (square >> 3);
   return diag >= 0 ? main_diag >> diag * 8 : main_diag << -diag * 8;
 }
-const inline bitboard rank_mask(Square square) {
-  return RANK_MASK[rank(square)];
-}
-const inline bitboard file_mask(Square square) {
+constexpr bitboard rank_mask(Square square) { return RANK_MASK[rank(square)]; }
+constexpr inline bitboard file_mask(Square square) {
   return FILE_MASK[file(square)];
 }
 
@@ -83,32 +89,32 @@ void generate_king_attacks();
 void generate_in_between();
 
 // Functions to do bit operations on bitboards
-inline bitboard get_bit(bitboard bitboard, int index) {
+inline bitboard get_bit(const bitboard bitboard, const int index) {
   return bitboard & (1ULL << index);
 }
 
-inline void set_bit(bitboard &bitboard, int index) {
+inline void set_bit(bitboard &bitboard, const int index) {
   bitboard |= (1ULL << index);
 }
-inline bitboard set_bit(int index) { return 1ULL << index; }
+constexpr bitboard set_bit(const int index) { return 1ULL << index; }
 
-inline Square lsb(bitboard bb) {
+constexpr Square lsb(const bitboard bb) {
   return static_cast<Square>(__builtin_ctzll(bb));
 }
 
-inline size_t pop_count(bitboard bb){
-    // Brian Kernighan's Way
-   size_t count = 0;
-   while (bb) {
-       count++;
-       bb &= bb - 1; // reset LS1B
-   }
-   return count;
+constexpr size_t pop_count(bitboard bb) {
+  // Brian Kernighan's Way
+  size_t count = 0;
+  while (bb) {
+    count++;
+    bb &= bb - 1; // reset LS1B
+  }
+  return count;
 }
 
 // reverse bitboard by rotation, credit Antonin GAVREL on stackoverflow
 // https://stackoverflow.com/questions/2602823/in-c-c-whats-the-simplest-way-to-reverse-the-order-of-bits-in-a-byte
-inline bitboard reverse(bitboard bb) {
+constexpr bitboard reverse(bitboard bb) {
   bb =
       ((bb >> 8) & 0x00FF00FF00FF00FFULL) | ((bb << 8) & 0xFF00FF00FF00FF00ULL);
   bb = ((bb >> 16) & 0x0000FFFF0000FFFFULL) |
@@ -118,14 +124,14 @@ inline bitboard reverse(bitboard bb) {
   return bb;
 }
 
-inline Square pop_bit(bitboard &bb) {
+constexpr Square pop_bit(bitboard &bb) {
   Square output = lsb(bb);
   bb &= bb - 1;
   return output;
 }
 
 // Pretty print a single bitboard
-inline void print_bitboard(bitboard bitboard) {
+inline void print_bitboard(const bitboard bitboard) {
   std::cout << "\n";
   for (int rank = 7; rank >= 0; rank--) {
     std::cout << " " << rank + 1 << "  ";

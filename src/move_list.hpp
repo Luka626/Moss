@@ -9,19 +9,21 @@ private:
 
 public:
   inline MoveList() { count = 0; }
-  inline size_t clear() {
+  constexpr size_t clear() {
     count = 0;
     return count;
   }
   inline void push_back(const Move &mv) { moves[count++] = mv; }
   inline Move &at(const size_t index) { return moves[index]; }
-  inline size_t size() const { return count; }
-  inline bool empty() const { return count == 0; }
+  constexpr size_t size() const { return count; }
+  constexpr bool empty() const { return count == 0; }
   void score_moves(Move TT_move);
   void sort_moves();
 };
 
-struct CompareMoves{
-  inline bool operator()(Move mv1, Move mv2) const { return mv1.sort_score > mv2.sort_score;}
+struct CompareMoves {
+  inline bool operator()(Move mv1, Move mv2) const {
+    return mv1.sort_score > mv2.sort_score;
+  }
 };
 #endif

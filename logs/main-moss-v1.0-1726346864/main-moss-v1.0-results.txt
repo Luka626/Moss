@@ -1,0 +1,491 @@
+Started game 1 of 2000 (main vs moss-v1.0)
+Started game 2 of 2000 (moss-v1.0 vs main)
+Started game 3 of 2000 (main vs moss-v1.0)
+Started game 4 of 2000 (moss-v1.0 vs main)
+Finished game 2 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 0 - 0 - 1  [0.500] 1
+Started game 5 of 2000 (main vs moss-v1.0)
+Finished game 4 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 0 - 0 - 2  [0.500] 2
+Started game 6 of 2000 (moss-v1.0 vs main)
+Finished game 1 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 1 - 0 - 2  [0.667] 3
+Started game 7 of 2000 (main vs moss-v1.0)
+Finished game 3 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 2 - 0 - 2  [0.750] 4
+Started game 8 of 2000 (moss-v1.0 vs main)
+Finished game 6 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 2 - 0 - 3  [0.700] 5
+Started game 9 of 2000 (main vs moss-v1.0)
+Finished game 8 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 2 - 0 - 4  [0.667] 6
+Started game 10 of 2000 (moss-v1.0 vs main)
+Finished game 5 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 3 - 0 - 4  [0.714] 7
+Started game 11 of 2000 (main vs moss-v1.0)
+Finished game 7 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 4 - 0 - 4  [0.750] 8
+Started game 12 of 2000 (moss-v1.0 vs main)
+Finished game 10 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 4 - 0 - 5  [0.722] 9
+Started game 13 of 2000 (main vs moss-v1.0)
+Finished game 9 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 5 - 0 - 5  [0.750] 10
+...      main playing White: 5 - 0 - 0  [1.000] 5
+...      main playing Black: 0 - 0 - 5  [0.500] 5
+...      White vs Black: 5 - 0 - 5  [0.750] 10
+Elo difference: 190.8 +/- 162.0, LOS: 98.7 %, DrawRatio: 50.0 %
+SPRT: llr 0.412 (14.0%), lbound -2.94, ubound 2.94
+Started game 14 of 2000 (moss-v1.0 vs main)
+Finished game 12 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 5 - 0 - 6  [0.727] 11
+Started game 15 of 2000 (main vs moss-v1.0)
+Finished game 11 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 6 - 0 - 6  [0.750] 12
+Started game 16 of 2000 (moss-v1.0 vs main)
+Finished game 15 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 7 - 0 - 6  [0.769] 13
+Started game 17 of 2000 (main vs moss-v1.0)
+Finished game 14 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 7 - 0 - 7  [0.750] 14
+Started game 18 of 2000 (moss-v1.0 vs main)
+Finished game 13 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 8 - 0 - 7  [0.767] 15
+Started game 19 of 2000 (main vs moss-v1.0)
+Finished game 16 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 8 - 0 - 8  [0.750] 16
+Started game 20 of 2000 (moss-v1.0 vs main)
+Finished game 17 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 9 - 0 - 8  [0.765] 17
+Started game 21 of 2000 (main vs moss-v1.0)
+Finished game 18 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 9 - 0 - 9  [0.750] 18
+Started game 22 of 2000 (moss-v1.0 vs main)
+Finished game 20 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 9 - 0 - 10  [0.737] 19
+Started game 23 of 2000 (main vs moss-v1.0)
+Finished game 19 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 10 - 0 - 10  [0.750] 20
+...      main playing White: 10 - 0 - 0  [1.000] 10
+...      main playing Black: 0 - 0 - 10  [0.500] 10
+...      White vs Black: 10 - 0 - 10  [0.750] 20
+Elo difference: 190.8 +/- 107.0, LOS: 99.9 %, DrawRatio: 50.0 %
+SPRT: llr 1.07 (36.3%), lbound -2.94, ubound 2.94
+Started game 24 of 2000 (moss-v1.0 vs main)
+Finished game 22 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 10 - 0 - 11  [0.738] 21
+Started game 25 of 2000 (main vs moss-v1.0)
+Finished game 21 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 11 - 0 - 11  [0.750] 22
+Started game 26 of 2000 (moss-v1.0 vs main)
+Finished game 24 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 11 - 0 - 12  [0.739] 23
+Started game 27 of 2000 (main vs moss-v1.0)
+Finished game 23 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 12 - 0 - 12  [0.750] 24
+Started game 28 of 2000 (moss-v1.0 vs main)
+Finished game 26 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 12 - 0 - 13  [0.740] 25
+Started game 29 of 2000 (main vs moss-v1.0)
+Finished game 28 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 12 - 0 - 14  [0.731] 26
+Started game 30 of 2000 (moss-v1.0 vs main)
+Finished game 27 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 13 - 0 - 14  [0.741] 27
+Started game 31 of 2000 (main vs moss-v1.0)
+Finished game 25 (main vs moss-v1.0): 0-1 {Black mates}
+Score of main vs moss-v1.0: 13 - 1 - 14  [0.714] 28
+Started game 32 of 2000 (moss-v1.0 vs main)
+Finished game 30 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 13 - 1 - 15  [0.707] 29
+Started game 33 of 2000 (main vs moss-v1.0)
+Finished game 31 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 14 - 1 - 15  [0.717] 30
+...      main playing White: 14 - 1 - 0  [0.933] 15
+...      main playing Black: 0 - 0 - 15  [0.500] 15
+...      White vs Black: 14 - 1 - 15  [0.717] 30
+Elo difference: 161.2 +/- 88.3, LOS: 100.0 %, DrawRatio: 50.0 %
+SPRT: llr 1.06 (35.9%), lbound -2.94, ubound 2.94
+Started game 34 of 2000 (moss-v1.0 vs main)
+Finished game 32 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 14 - 1 - 16  [0.710] 31
+Started game 35 of 2000 (main vs moss-v1.0)
+Finished game 29 (main vs moss-v1.0): 0-1 {Black mates}
+Score of main vs moss-v1.0: 14 - 2 - 16  [0.688] 32
+Started game 36 of 2000 (moss-v1.0 vs main)
+Finished game 34 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 14 - 2 - 17  [0.682] 33
+Started game 37 of 2000 (main vs moss-v1.0)
+Finished game 33 (main vs moss-v1.0): 0-1 {Black mates}
+Score of main vs moss-v1.0: 14 - 3 - 17  [0.662] 34
+Started game 38 of 2000 (moss-v1.0 vs main)
+Finished game 35 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 15 - 3 - 17  [0.671] 35
+Started game 39 of 2000 (main vs moss-v1.0)
+Finished game 36 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 15 - 3 - 18  [0.667] 36
+Started game 40 of 2000 (moss-v1.0 vs main)
+Finished game 38 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 15 - 3 - 19  [0.662] 37
+Started game 41 of 2000 (main vs moss-v1.0)
+Finished game 37 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 16 - 3 - 19  [0.671] 38
+Started game 42 of 2000 (moss-v1.0 vs main)
+Finished game 40 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 16 - 3 - 20  [0.667] 39
+Started game 43 of 2000 (main vs moss-v1.0)
+Finished game 42 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 16 - 3 - 21  [0.662] 40
+...      main playing White: 16 - 3 - 0  [0.842] 19
+...      main playing Black: 0 - 0 - 21  [0.500] 21
+...      White vs Black: 16 - 3 - 21  [0.662] 40
+Elo difference: 117.2 +/- 74.5, LOS: 99.9 %, DrawRatio: 52.5 %
+SPRT: llr 0.905 (30.7%), lbound -2.94, ubound 2.94
+Started game 44 of 2000 (moss-v1.0 vs main)
+Finished game 39 (main vs moss-v1.0): 0-1 {Black mates}
+Score of main vs moss-v1.0: 16 - 4 - 21  [0.646] 41
+Started game 45 of 2000 (main vs moss-v1.0)
+Finished game 41 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 17 - 4 - 21  [0.655] 42
+Started game 46 of 2000 (moss-v1.0 vs main)
+Finished game 43 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 18 - 4 - 21  [0.663] 43
+Started game 47 of 2000 (main vs moss-v1.0)
+Finished game 46 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 18 - 4 - 22  [0.659] 44
+Started game 48 of 2000 (moss-v1.0 vs main)
+Finished game 45 (main vs moss-v1.0): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 18 - 4 - 23  [0.656] 45
+Started game 49 of 2000 (main vs moss-v1.0)
+Finished game 47 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 19 - 4 - 23  [0.663] 46
+Started game 50 of 2000 (moss-v1.0 vs main)
+Finished game 44 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 19 - 4 - 24  [0.660] 47
+Started game 51 of 2000 (main vs moss-v1.0)
+Finished game 48 (moss-v1.0 vs main): 1-0 {White mates}
+Score of main vs moss-v1.0: 19 - 5 - 24  [0.646] 48
+Started game 52 of 2000 (moss-v1.0 vs main)
+Finished game 49 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 20 - 5 - 24  [0.653] 49
+Started game 53 of 2000 (main vs moss-v1.0)
+Finished game 50 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 20 - 5 - 25  [0.650] 50
+...      main playing White: 20 - 4 - 1  [0.820] 25
+...      main playing Black: 0 - 1 - 24  [0.480] 25
+...      White vs Black: 21 - 4 - 25  [0.670] 50
+Elo difference: 107.5 +/- 68.8, LOS: 99.9 %, DrawRatio: 50.0 %
+SPRT: llr 0.937 (31.8%), lbound -2.94, ubound 2.94
+Started game 54 of 2000 (moss-v1.0 vs main)
+Finished game 51 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 21 - 5 - 25  [0.657] 51
+Started game 55 of 2000 (main vs moss-v1.0)
+Finished game 52 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 21 - 5 - 26  [0.654] 52
+Started game 56 of 2000 (moss-v1.0 vs main)
+Finished game 54 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 21 - 5 - 27  [0.651] 53
+Started game 57 of 2000 (main vs moss-v1.0)
+Finished game 53 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 22 - 5 - 27  [0.657] 54
+Started game 58 of 2000 (moss-v1.0 vs main)
+Finished game 55 (main vs moss-v1.0): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 22 - 5 - 28  [0.655] 55
+Started game 59 of 2000 (main vs moss-v1.0)
+Finished game 56 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 22 - 5 - 29  [0.652] 56
+Started game 60 of 2000 (moss-v1.0 vs main)
+Finished game 58 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 22 - 5 - 30  [0.649] 57
+Started game 61 of 2000 (main vs moss-v1.0)
+Finished game 57 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 23 - 5 - 30  [0.655] 58
+Started game 62 of 2000 (moss-v1.0 vs main)
+Finished game 59 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 24 - 5 - 30  [0.661] 59
+Started game 63 of 2000 (main vs moss-v1.0)
+Finished game 60 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 24 - 5 - 31  [0.658] 60
+...      main playing White: 24 - 4 - 2  [0.833] 30
+...      main playing Black: 0 - 1 - 29  [0.483] 30
+...      White vs Black: 25 - 4 - 31  [0.675] 60
+Elo difference: 113.9 +/- 61.2, LOS: 100.0 %, DrawRatio: 51.7 %
+SPRT: llr 1.29 (43.7%), lbound -2.94, ubound 2.94
+Started game 64 of 2000 (moss-v1.0 vs main)
+Finished game 62 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 24 - 5 - 32  [0.656] 61
+Started game 65 of 2000 (main vs moss-v1.0)
+Finished game 61 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 25 - 5 - 32  [0.661] 62
+Started game 66 of 2000 (moss-v1.0 vs main)
+Finished game 64 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 25 - 5 - 33  [0.659] 63
+Started game 67 of 2000 (main vs moss-v1.0)
+Finished game 63 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 26 - 5 - 33  [0.664] 64
+Started game 68 of 2000 (moss-v1.0 vs main)
+Finished game 65 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 27 - 5 - 33  [0.669] 65
+Started game 69 of 2000 (main vs moss-v1.0)
+Finished game 68 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 27 - 5 - 34  [0.667] 66
+Started game 70 of 2000 (moss-v1.0 vs main)
+Finished game 67 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 28 - 5 - 34  [0.672] 67
+Started game 71 of 2000 (main vs moss-v1.0)
+Finished game 66 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 28 - 5 - 35  [0.669] 68
+Started game 72 of 2000 (moss-v1.0 vs main)
+Finished game 70 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 28 - 5 - 36  [0.667] 69
+Started game 73 of 2000 (main vs moss-v1.0)
+Finished game 72 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 28 - 5 - 37  [0.664] 70
+...      main playing White: 28 - 4 - 2  [0.853] 34
+...      main playing Black: 0 - 1 - 35  [0.486] 36
+...      White vs Black: 29 - 4 - 37  [0.679] 70
+Elo difference: 118.6 +/- 55.5, LOS: 100.0 %, DrawRatio: 52.9 %
+SPRT: llr 1.67 (56.6%), lbound -2.94, ubound 2.94
+Started game 74 of 2000 (moss-v1.0 vs main)
+Finished game 69 (main vs moss-v1.0): 0-1 {Black mates}
+Score of main vs moss-v1.0: 28 - 6 - 37  [0.655] 71
+Started game 75 of 2000 (main vs moss-v1.0)
+Finished game 71 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 29 - 6 - 37  [0.660] 72
+Started game 76 of 2000 (moss-v1.0 vs main)
+Finished game 74 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 29 - 6 - 38  [0.658] 73
+Started game 77 of 2000 (main vs moss-v1.0)
+Finished game 73 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 30 - 6 - 38  [0.662] 74
+Started game 78 of 2000 (moss-v1.0 vs main)
+Finished game 76 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 30 - 6 - 39  [0.660] 75
+Started game 79 of 2000 (main vs moss-v1.0)
+Finished game 75 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 31 - 6 - 39  [0.664] 76
+Started game 80 of 2000 (moss-v1.0 vs main)
+Finished game 78 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 31 - 6 - 40  [0.662] 77
+Started game 81 of 2000 (main vs moss-v1.0)
+Finished game 77 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 32 - 6 - 40  [0.667] 78
+Started game 82 of 2000 (moss-v1.0 vs main)
+Finished game 80 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 32 - 6 - 41  [0.665] 79
+Started game 83 of 2000 (main vs moss-v1.0)
+Finished game 79 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 33 - 6 - 41  [0.669] 80
+...      main playing White: 33 - 5 - 2  [0.850] 40
+...      main playing Black: 0 - 1 - 39  [0.487] 40
+...      White vs Black: 34 - 5 - 41  [0.681] 80
+Elo difference: 122.0 +/- 53.0, LOS: 100.0 %, DrawRatio: 51.2 %
+SPRT: llr 1.89 (64.1%), lbound -2.94, ubound 2.94
+Started game 84 of 2000 (moss-v1.0 vs main)
+Finished game 82 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 33 - 6 - 42  [0.667] 81
+Started game 85 of 2000 (main vs moss-v1.0)
+Finished game 81 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 34 - 6 - 42  [0.671] 82
+Started game 86 of 2000 (moss-v1.0 vs main)
+Finished game 84 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 34 - 6 - 43  [0.669] 83
+Started game 87 of 2000 (main vs moss-v1.0)
+Finished game 83 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 35 - 6 - 43  [0.673] 84
+Started game 88 of 2000 (moss-v1.0 vs main)
+Finished game 86 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 35 - 6 - 44  [0.671] 85
+Started game 89 of 2000 (main vs moss-v1.0)
+Finished game 88 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 35 - 6 - 45  [0.669] 86
+Started game 90 of 2000 (moss-v1.0 vs main)
+Finished game 87 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 36 - 6 - 45  [0.672] 87
+Started game 91 of 2000 (main vs moss-v1.0)
+Finished game 85 (main vs moss-v1.0): 0-1 {Black mates}
+Score of main vs moss-v1.0: 36 - 7 - 45  [0.665] 88
+Started game 92 of 2000 (moss-v1.0 vs main)
+Finished game 89 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 37 - 7 - 45  [0.669] 89
+Started game 93 of 2000 (main vs moss-v1.0)
+Finished game 90 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 37 - 7 - 46  [0.667] 90
+...      main playing White: 37 - 6 - 2  [0.844] 45
+...      main playing Black: 0 - 1 - 44  [0.489] 45
+...      White vs Black: 38 - 6 - 46  [0.678] 90
+Elo difference: 120.4 +/- 50.0, LOS: 100.0 %, DrawRatio: 51.1 %
+SPRT: llr 2.08 (70.5%), lbound -2.94, ubound 2.94
+Started game 94 of 2000 (moss-v1.0 vs main)
+Finished game 91 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 38 - 7 - 46  [0.670] 91
+Started game 95 of 2000 (main vs moss-v1.0)
+Finished game 94 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 38 - 7 - 47  [0.668] 92
+Started game 96 of 2000 (moss-v1.0 vs main)
+Finished game 95 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 39 - 7 - 47  [0.672] 93
+Started game 97 of 2000 (main vs moss-v1.0)
+Finished game 93 (main vs moss-v1.0): 0-1 {Black mates}
+Score of main vs moss-v1.0: 39 - 8 - 47  [0.665] 94
+Started game 98 of 2000 (moss-v1.0 vs main)
+Finished game 92 (moss-v1.0 vs main): 1-0 {Black loses on time}
+Score of main vs moss-v1.0: 39 - 9 - 47  [0.658] 95
+Started game 99 of 2000 (main vs moss-v1.0)
+Finished game 96 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 39 - 9 - 48  [0.656] 96
+Started game 100 of 2000 (moss-v1.0 vs main)
+Finished game 97 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 40 - 9 - 48  [0.660] 97
+Started game 101 of 2000 (main vs moss-v1.0)
+Finished game 98 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 40 - 9 - 49  [0.658] 98
+Started game 102 of 2000 (moss-v1.0 vs main)
+Finished game 99 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 41 - 9 - 49  [0.662] 99
+Started game 103 of 2000 (main vs moss-v1.0)
+Finished game 100 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 41 - 9 - 50  [0.660] 100
+...      main playing White: 41 - 7 - 2  [0.840] 50
+...      main playing Black: 0 - 2 - 48  [0.480] 50
+...      White vs Black: 43 - 7 - 50  [0.680] 100
+Elo difference: 115.2 +/- 48.2, LOS: 100.0 %, DrawRatio: 50.0 %
+SPRT: llr 2.09 (70.9%), lbound -2.94, ubound 2.94
+Started game 104 of 2000 (moss-v1.0 vs main)
+Finished game 101 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 42 - 9 - 50  [0.663] 101
+Started game 105 of 2000 (main vs moss-v1.0)
+Finished game 102 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 42 - 9 - 51  [0.662] 102
+Started game 106 of 2000 (moss-v1.0 vs main)
+Finished game 103 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 43 - 9 - 51  [0.665] 103
+Started game 107 of 2000 (main vs moss-v1.0)
+Finished game 104 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 43 - 9 - 52  [0.663] 104
+Started game 108 of 2000 (moss-v1.0 vs main)
+Finished game 105 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 44 - 9 - 52  [0.667] 105
+Started game 109 of 2000 (main vs moss-v1.0)
+Finished game 106 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 44 - 9 - 53  [0.665] 106
+Started game 110 of 2000 (moss-v1.0 vs main)
+Finished game 108 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 44 - 9 - 54  [0.664] 107
+Started game 111 of 2000 (main vs moss-v1.0)
+Finished game 109 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 45 - 9 - 54  [0.667] 108
+Started game 112 of 2000 (moss-v1.0 vs main)
+Finished game 107 (main vs moss-v1.0): 0-1 {Black mates}
+Score of main vs moss-v1.0: 45 - 10 - 54  [0.661] 109
+Started game 113 of 2000 (main vs moss-v1.0)
+Finished game 110 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 45 - 10 - 55  [0.659] 110
+...      main playing White: 45 - 8 - 2  [0.836] 55
+...      main playing Black: 0 - 2 - 53  [0.482] 55
+...      White vs Black: 47 - 8 - 55  [0.677] 110
+Elo difference: 114.5 +/- 45.9, LOS: 100.0 %, DrawRatio: 50.0 %
+SPRT: llr 2.28 (77.5%), lbound -2.94, ubound 2.94
+Started game 114 of 2000 (moss-v1.0 vs main)
+Finished game 111 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 46 - 10 - 55  [0.662] 111
+Started game 115 of 2000 (main vs moss-v1.0)
+Finished game 114 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 46 - 10 - 56  [0.661] 112
+Started game 116 of 2000 (moss-v1.0 vs main)
+Finished game 113 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 47 - 10 - 56  [0.664] 113
+Started game 117 of 2000 (main vs moss-v1.0)
+Finished game 115 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 48 - 10 - 56  [0.667] 114
+Started game 118 of 2000 (moss-v1.0 vs main)
+Finished game 112 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 48 - 10 - 57  [0.665] 115
+Started game 119 of 2000 (main vs moss-v1.0)
+Finished game 116 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 48 - 10 - 58  [0.664] 116
+Started game 120 of 2000 (moss-v1.0 vs main)
+Finished game 117 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 49 - 10 - 58  [0.667] 117
+Started game 121 of 2000 (main vs moss-v1.0)
+Finished game 118 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 49 - 10 - 59  [0.665] 118
+Started game 122 of 2000 (moss-v1.0 vs main)
+Finished game 119 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 50 - 10 - 59  [0.668] 119
+Started game 123 of 2000 (main vs moss-v1.0)
+Finished game 120 (moss-v1.0 vs main): 1-0 {White mates}
+Score of main vs moss-v1.0: 50 - 11 - 59  [0.662] 120
+...      main playing White: 50 - 8 - 2  [0.850] 60
+...      main playing Black: 0 - 3 - 57  [0.475] 60
+...      White vs Black: 53 - 8 - 59  [0.688] 120
+Elo difference: 117.2 +/- 44.4, LOS: 100.0 %, DrawRatio: 49.2 %
+SPRT: llr 2.51 (85.2%), lbound -2.94, ubound 2.94
+Started game 124 of 2000 (moss-v1.0 vs main)
+Finished game 121 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 51 - 11 - 59  [0.665] 121
+Started game 125 of 2000 (main vs moss-v1.0)
+Finished game 122 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 51 - 11 - 60  [0.664] 122
+Started game 126 of 2000 (moss-v1.0 vs main)
+Finished game 124 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 51 - 11 - 61  [0.663] 123
+Started game 127 of 2000 (main vs moss-v1.0)
+Finished game 125 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 52 - 11 - 61  [0.665] 124
+Started game 128 of 2000 (moss-v1.0 vs main)
+Finished game 123 (main vs moss-v1.0): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 52 - 11 - 62  [0.664] 125
+Started game 129 of 2000 (main vs moss-v1.0)
+Finished game 126 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 52 - 11 - 63  [0.663] 126
+Started game 130 of 2000 (moss-v1.0 vs main)
+Finished game 127 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 53 - 11 - 63  [0.665] 127
+Started game 131 of 2000 (main vs moss-v1.0)
+Finished game 128 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 53 - 11 - 64  [0.664] 128
+Started game 132 of 2000 (moss-v1.0 vs main)
+Finished game 130 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 53 - 11 - 65  [0.663] 129
+Started game 133 of 2000 (main vs moss-v1.0)
+Finished game 129 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 54 - 11 - 65  [0.665] 130
+...      main playing White: 54 - 8 - 3  [0.854] 65
+...      main playing Black: 0 - 3 - 62  [0.477] 65
+...      White vs Black: 57 - 8 - 65  [0.688] 130
+Elo difference: 119.4 +/- 42.1, LOS: 100.0 %, DrawRatio: 50.0 %
+SPRT: llr 2.87 (97.5%), lbound -2.94, ubound 2.94
+Started game 134 of 2000 (moss-v1.0 vs main)
+Finished game 132 (moss-v1.0 vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v1.0: 54 - 11 - 66  [0.664] 131
+Started game 135 of 2000 (main vs moss-v1.0)
+Finished game 131 (main vs moss-v1.0): 1-0 {White mates}
+Score of main vs moss-v1.0: 55 - 11 - 66  [0.667] 132
+Finished game 134 (moss-v1.0 vs main): * {No result}
+Score of main vs moss-v1.0: 55 - 11 - 66  [0.667] 132
+Finished game 133 (main vs moss-v1.0): * {No result}
+Score of main vs moss-v1.0: 55 - 11 - 66  [0.667] 132
+Finished game 135 (main vs moss-v1.0): * {No result}
+Score of main vs moss-v1.0: 55 - 11 - 66  [0.667] 132
+...      main playing White: 55 - 8 - 3  [0.856] 66
+...      main playing Black: 0 - 3 - 63  [0.477] 66
+...      White vs Black: 58 - 8 - 66  [0.689] 132
+Elo difference: 120.4 +/- 41.8, LOS: 100.0 %, DrawRatio: 50.0 %
+SPRT: llr 2.95 (100.2%), lbound -2.94, ubound 2.94 - H1 was accepted
+
+Player: main
+   "Draw by 3-fold repetition": 66
+   "Loss: Black loses on time": 1
+   "Loss: Black mates": 8
+   "Loss: White mates": 2
+   "No result": 3
+   "Win: White mates": 55
+Player: moss-v1.0
+   "Draw by 3-fold repetition": 66
+   "Loss: White mates": 55
+   "No result": 3
+   "Win: Black loses on time": 1
+   "Win: Black mates": 8
+   "Win: White mates": 2
+Finished match

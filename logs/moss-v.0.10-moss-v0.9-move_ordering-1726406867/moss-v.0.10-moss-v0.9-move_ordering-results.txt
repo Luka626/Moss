@@ -1,0 +1,223 @@
+Started game 1 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Started game 2 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Started game 3 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Started game 4 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 2 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 1  [0.500] 1
+Started game 5 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 4 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 2  [0.500] 2
+Started game 6 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 1 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 3  [0.500] 3
+Finished game 3 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 4  [0.500] 4
+Started game 8 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Started game 7 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 5 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 5  [0.500] 5
+Started game 9 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 8 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 6  [0.500] 6
+Started game 10 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 7 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 7  [0.500] 7
+Started game 11 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 6 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 8  [0.500] 8
+Started game 12 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 9 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 9  [0.500] 9
+Started game 13 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 10 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 10  [0.500] 10
+...      moss-v.0.10 playing White: 0 - 0 - 5  [0.500] 5
+...      moss-v.0.10 playing Black: 0 - 0 - 5  [0.500] 5
+...      White vs Black: 0 - 0 - 10  [0.500] 10
+Elo difference: 0.0 +/- 0.0, LOS: nan %, DrawRatio: 100.0 %
+SPRT: llr -0.0552 (-1.9%), lbound -2.94, ubound 2.94
+Started game 14 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 11 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 11  [0.500] 11
+Started game 15 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 12 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 12  [0.500] 12
+Started game 16 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 14 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 13  [0.500] 13
+Started game 17 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 15 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 14  [0.500] 14
+Started game 18 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 16 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 15  [0.500] 15
+Started game 19 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 13 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 16  [0.500] 16
+Started game 20 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 17 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 17  [0.500] 17
+Started game 21 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 18 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 18  [0.500] 18
+Started game 22 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 19 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 19  [0.500] 19
+Started game 23 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 20 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 20  [0.500] 20
+...      moss-v.0.10 playing White: 0 - 0 - 10  [0.500] 10
+...      moss-v.0.10 playing Black: 0 - 0 - 10  [0.500] 10
+...      White vs Black: 0 - 0 - 20  [0.500] 20
+Elo difference: 0.0 +/- 0.0, LOS: nan %, DrawRatio: 100.0 %
+SPRT: llr -0.197 (-6.7%), lbound -2.94, ubound 2.94
+Started game 24 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 21 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 21  [0.500] 21
+Started game 25 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 24 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 22  [0.500] 22
+Started game 26 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 23 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 23  [0.500] 23
+Started game 27 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 22 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 24  [0.500] 24
+Started game 28 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 25 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 0 - 25  [0.500] 25
+Started game 29 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 26 (moss-v0.9-move_ordering vs moss-v.0.10): 1-0 {White mates}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 1 - 25  [0.481] 26
+Started game 30 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 27 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 1 - 26  [0.481] 27
+Started game 31 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 28 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 1 - 27  [0.482] 28
+Started game 32 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 29 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 1 - 28  [0.483] 29
+Started game 33 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 31 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 0 - 1 - 29  [0.483] 30
+...      moss-v.0.10 playing White: 0 - 0 - 16  [0.500] 16
+...      moss-v.0.10 playing Black: 0 - 1 - 13  [0.464] 14
+...      White vs Black: 1 - 0 - 29  [0.517] 30
+Elo difference: -11.6 +/- 22.3, LOS: 15.9 %, DrawRatio: 96.7 %
+SPRT: llr -0.76 (-25.8%), lbound -2.94, ubound 2.94
+Started game 34 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 30 (moss-v0.9-move_ordering vs moss-v.0.10): 0-1 {Black mates}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 1 - 29  [0.500] 31
+Started game 35 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 33 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 1 - 30  [0.500] 32
+Started game 36 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 32 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 1 - 31  [0.500] 33
+Started game 37 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 34 (moss-v0.9-move_ordering vs moss-v.0.10): 1-0 {White mates}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 31  [0.485] 34
+Started game 38 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 35 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 32  [0.486] 35
+Started game 39 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 36 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 33  [0.486] 36
+Started game 40 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 37 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 34  [0.486] 37
+Started game 41 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 38 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 35  [0.487] 38
+Started game 42 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 40 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 36  [0.487] 39
+Started game 43 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 39 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 37  [0.487] 40
+...      moss-v.0.10 playing White: 0 - 0 - 20  [0.500] 20
+...      moss-v.0.10 playing Black: 1 - 2 - 17  [0.475] 20
+...      White vs Black: 2 - 1 - 37  [0.512] 40
+Elo difference: -8.7 +/- 29.4, LOS: 28.2 %, DrawRatio: 92.5 %
+SPRT: llr -0.492 (-16.7%), lbound -2.94, ubound 2.94
+Started game 44 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 41 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 38  [0.488] 41
+Started game 45 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 42 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 39  [0.488] 42
+Started game 46 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 44 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 40  [0.488] 43
+Started game 47 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 43 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 41  [0.489] 44
+Started game 48 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 45 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 42  [0.489] 45
+Started game 49 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 46 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 43  [0.489] 46
+Started game 50 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 48 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 44  [0.489] 47
+Started game 51 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 47 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 45  [0.490] 48
+Started game 52 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 49 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 46  [0.490] 49
+Started game 53 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 50 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 47  [0.490] 50
+...      moss-v.0.10 playing White: 0 - 0 - 25  [0.500] 25
+...      moss-v.0.10 playing Black: 1 - 2 - 22  [0.480] 25
+...      White vs Black: 2 - 1 - 47  [0.510] 50
+Elo difference: -6.9 +/- 23.5, LOS: 28.2 %, DrawRatio: 94.0 %
+SPRT: llr -0.668 (-22.7%), lbound -2.94, ubound 2.94
+Started game 54 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 52 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 48  [0.490] 51
+Started game 55 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 51 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 49  [0.490] 52
+Started game 56 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 53 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 50  [0.491] 53
+Started game 57 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 54 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 51  [0.491] 54
+Started game 58 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 55 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 52  [0.491] 55
+Started game 59 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 56 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 53  [0.491] 56
+Started game 60 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 57 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 54  [0.491] 57
+Started game 61 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 58 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 55  [0.491] 58
+Started game 62 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 60 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 56  [0.492] 59
+Started game 63 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 59 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 57  [0.492] 60
+...      moss-v.0.10 playing White: 0 - 0 - 30  [0.500] 30
+...      moss-v.0.10 playing Black: 1 - 2 - 27  [0.483] 30
+...      White vs Black: 2 - 1 - 57  [0.508] 60
+Elo difference: -5.8 +/- 19.6, LOS: 28.2 %, DrawRatio: 95.0 %
+SPRT: llr -0.866 (-29.4%), lbound -2.94, ubound 2.94
+Started game 64 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 61 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 58  [0.492] 61
+Started game 65 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)
+Finished game 63 (moss-v.0.10 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 59  [0.492] 62
+Started game 66 of 2000 (moss-v0.9-move_ordering vs moss-v.0.10)
+Finished game 64 (moss-v0.9-move_ordering vs moss-v.0.10): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v.0.10 vs moss-v0.9-move_ordering: 1 - 2 - 60  [0.492] 63
+Started game 67 of 2000 (moss-v.0.10 vs moss-v0.9-move_ordering)

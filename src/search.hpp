@@ -10,26 +10,33 @@
 class Search {
 public:
   Search(Position *position_ptr);
-  int iterative_deepening(int time, int moves_remaining);
-  int negamax(int alpha, int beta, int depth);
-  int negamax_root(int depth);
-  int quiescence(int alpha, int beta);
-  bool update_TT(zobrist_key z_key, size_t depth, int evaluation, bool exact,
-                 bool upper_bound, bool lower_bound, Move best_move);
-  TT_Entry probe_TT(zobrist_key z_key, size_t depth, bool &was_found);
-
-  inline Move get_best_move() { return best_move_overall; };
+  int iterative_deepening(const int time, const int moves_remaining);
+  constexpr Move get_best_move() const { return best_move_overall; };
 
 private:
+  void info_to_uci(const int eval) const;
+  int negamax(int alpha, int beta, const int depth);
+  int negamax_root(const int depth);
+  int quiescence(int alpha, int beta);
+  bool update_TT(const zobrist_key z_key, const size_t depth,
+                 const int evaluation, const bool exact, const bool upper_bound,
+                 const bool lower_bound, const Move best_move);
+  TT_Entry probe_TT(const zobrist_key z_key, const size_t depth,
+                    bool &was_found);
+
+
   Move best_move_overall;
   Move best_move;
-  MoveGenerator move_gen;
-  Evaluator eval;
+  MoveGenerator *move_gen;
+  Evaluator *eval;
   Position *pos;
   int time_limit;
   std::chrono::time_point<std::chrono::high_resolution_clock> search_start;
+  std::chrono::time_point<std::chrono::high_resolution_clock> start_time;
   std::vector<TT_Entry> transposition_table;
+  std::vector<int> repitition_table;
   size_t hashsize;
+  size_t repetition_hashsize;
 
   // debug messages
   int nodes_searched;

@@ -1,9 +1,10 @@
 #include "eval.hpp"
+#include "datatypes.hpp"
 #include "utils.hpp"
 
 Evaluator::Evaluator(Position *position_ptr) { pos = position_ptr; }
 
-int Evaluator::evaluate() {
+int Evaluator::evaluate() const {
   int white_eval = 0;
   int black_eval = 0;
 
@@ -65,10 +66,8 @@ int Evaluator::evaluate() {
         break;
       }
     }
-
   }
   int perspective = (pos->side_to_play == WHITE) ? 1 : -1;
 
   return (white_eval + black_eval) * perspective;
 }
-

@@ -1,0 +1,42 @@
+Started game 1 of 2000 (main vs moss-v0.5-bug_fixes)
+Started game 2 of 2000 (moss-v0.5-bug_fixes vs main)
+Started game 3 of 2000 (main vs moss-v0.5-bug_fixes)
+Started game 4 of 2000 (moss-v0.5-bug_fixes vs main)
+Finished game 3 (main vs moss-v0.5-bug_fixes): 1-0 {Black makes an illegal move: a1a1}
+Score of main vs moss-v0.5-bug_fixes: 1 - 0 - 0  [1.000] 1
+Started game 5 of 2000 (main vs moss-v0.5-bug_fixes)
+Finished game 1 (main vs moss-v0.5-bug_fixes): 1-0 {Black makes an illegal move: a1a1}
+Score of main vs moss-v0.5-bug_fixes: 2 - 0 - 0  [1.000] 2
+Started game 6 of 2000 (moss-v0.5-bug_fixes vs main)
+Finished game 2 (moss-v0.5-bug_fixes vs main): 0-1 {White loses on time}
+Score of main vs moss-v0.5-bug_fixes: 3 - 0 - 0  [1.000] 3
+Started game 7 of 2000 (main vs moss-v0.5-bug_fixes)
+Finished game 4 (moss-v0.5-bug_fixes vs main): 0-1 {White loses on time}
+Score of main vs moss-v0.5-bug_fixes: 4 - 0 - 0  [1.000] 4
+Started game 8 of 2000 (moss-v0.5-bug_fixes vs main)
+Terminating process of engine moss-v0.5-bug_fixes(1)
+Finished game 6 (moss-v0.5-bug_fixes vs main): 0-1 {White disconnects}
+Score of main vs moss-v0.5-bug_fixes: 5 - 0 - 0  [1.000] 5
+Finished game 5 (main vs moss-v0.5-bug_fixes): * {No result}
+Score of main vs moss-v0.5-bug_fixes: 5 - 0 - 0  [1.000] 5
+Finished game 7 (main vs moss-v0.5-bug_fixes): * {No result}
+Score of main vs moss-v0.5-bug_fixes: 5 - 0 - 0  [1.000] 5
+Finished game 8 (moss-v0.5-bug_fixes vs main): * {No result}
+Score of main vs moss-v0.5-bug_fixes: 5 - 0 - 0  [1.000] 5
+...      main playing White: 2 - 0 - 0  [1.000] 2
+...      main playing Black: 3 - 0 - 0  [1.000] 3
+...      White vs Black: 2 - 3 - 0  [0.400] 5
+Elo difference: inf +/- nan, LOS: 98.7 %, DrawRatio: 0.0 %
+SPRT: llr 0.175 (6.0%), lbound -2.94, ubound 2.94
+
+Player: main
+   "No result": 3
+   "Win: Black makes an illegal move: a1a1": 2
+   "Win: White disconnects": 1
+   "Win: White loses on time": 2
+Player: moss-v0.5-bug_fixes
+   "Loss: Black makes an illegal move: a1a1": 2
+   "Loss: White disconnects": 1
+   "Loss: White loses on time": 2
+   "No result": 3
+Finished match

@@ -2,8 +2,10 @@
 #define POSITION_HPP_
 
 #include "datatypes.hpp"
+#include "utils.hpp"
 #include "zobrist.hpp"
 #include <string>
+#include <vector>
 
 class Position {
 public:
@@ -19,23 +21,33 @@ public:
   size_t halfmove_clock;
   size_t ply;
   zobrist_key z_key;
-  bool was_capture;
+  std::vector<zobrist_key> position_history;
 
   Position();
   Position(const std::string &fen);
 
   int set_board(const std::string &fen);
 
-  zobrist_key generate_key();
-  void make_move(Move &move);
-  void undo_move(Move &move);
-  void inline remove_piece(Pieces pc, Square sq) {
+  zobrist_key generate_key() const;
+  void make_move(const Move move);
+  void undo_move(const Move move);
+  Pieces inline get_piece_type(const Square sq) {
+    for (int i = PAWN; i < NPIECES; i++) {
+      if (pieces_bitboards[(Pieces)i] & Utils::set_bit(sq)) {
+        return (Pieces)i;
+      }
+    }
+    return PAWN;
+  }
+
+  void inline remove_piece(const Square sq) {
     bitboard to_remove = 1ULL << sq;
-    pieces_bitboards[pc] &= ~to_remove;
+    Pieces pc = pieces_bitboards[pc] &= ~to_remove;
     color_bitboards[~side_to_play] &= ~to_remove;
   }
 
-  void inline update_castling_rights(Square from, Square to, bool is_capture) {
+  void inline update_castling_rights(const Square from, const Square to,
+                                     const bool is_capture) {
     if (from == a1) {
       castling_flags[1] = false;
       z_key ^= Zobrist::CASTLING[1];
@@ -79,18 +91,22 @@ public:
   friend std::ostream &operator<<(std::ostream &os, const Position &pos);
 
   // useful getters
-  bitboard inline get_occupied() {
+  bitboard inline get_occupied() const {
     return color_bitboards[WHITE] | color_bitboards[BLACK];
   }
-  bitboard inline get_empty() { return ~get_occupied(); }
+  bitboard inline get_empty() const { return ~get_occupied(); }
 
-  bitboard inline get_enemy(Colors side) { return color_bitboards[~side]; }
-  bitboard inline get_enemy() { return color_bitboards[~(Colors)side_to_play]; }
+  bitboard inline get_enemy(const Colors &side) const {
+    return color_bitboards[~side];
+  }
+  bitboard inline get_enemy() const {
+    return color_bitboards[~(Colors)side_to_play];
+  }
 
-  bitboard inline get_bitboard(Colors color, Pieces piece) {
+  bitboard inline get_bitboard(const Colors color, const Pieces piece) const {
     return color_bitboards[color] & pieces_bitboards[piece];
   }
-  bitboard inline get_bitboard(Pieces piece) {
+  bitboard inline get_bitboard(const Pieces piece) const {
     return color_bitboards[side_to_play] & pieces_bitboards[piece];
   }
 

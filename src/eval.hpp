@@ -5,7 +5,7 @@
 class Evaluator {
 public:
   Evaluator(Position *position_ptr);
-  int evaluate();
+  int evaluate() const;
 
 private:
   Position *pos;

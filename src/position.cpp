@@ -5,11 +5,15 @@
 #include <sstream>
 
 // default constructor of a starting position
-Position::Position() { set_board(Utils::STARTING_FEN_POSITION); };
+Position::Position() {
+  set_board(Utils::STARTING_FEN_POSITION);
+};
 
-Position::Position(const std::string &fen) { set_board(fen); }
+Position::Position(const std::string &fen) {
+  set_board(fen);
+}
 
-zobrist_key Position::generate_key() {
+zobrist_key Position::generate_key() const {
   zobrist_key key = 0ULL;
 
   // todo : [ ] add castling rights and en passant and side to play hash
@@ -43,6 +47,7 @@ zobrist_key Position::generate_key() {
 }
 
 int Position::set_board(const std::string &fen) {
+
   ply = 1;
   for (int i = 0; i < 4; i++) {
     castling_flags[i] = false;
@@ -190,7 +195,7 @@ int Position::set_board(const std::string &fen) {
   return 0;
 };
 
-void Position::make_move(Move &move) {
+void Position::make_move(const Move move) {
   key_history[ply] = z_key;
   en_passant_history[ply] = en_passant_square;
   for (int i = 0; i < 4; i++) {
@@ -273,7 +278,7 @@ void Position::make_move(Move &move) {
   side_to_play = ~side_to_play;
 }
 
-void Position::undo_move(Move &move) {
+void Position::undo_move(const Move move) {
   en_passant_square = en_passant_history[ply - 1];
   for (int i = 0; i < 4; i++) {
     castling_flags[i] = castling_history[ply - 1][i];
@@ -330,7 +335,7 @@ void Position::undo_move(Move &move) {
 }
 
 // overrides << operator to "pretty" print chess position
-std::ostream &operator<<(std::ostream &os, const Position &pos) {
+std::ostream &operator<<(std::ostream &os, const Position &pos){
   os << "\nMove: " << pos.ply << ", " << pos.side_to_play << " to play\n";
   os << pos.castling_flags[0] << pos.castling_flags[1] << pos.castling_flags[2]
      << pos.castling_flags[3] << "\n"

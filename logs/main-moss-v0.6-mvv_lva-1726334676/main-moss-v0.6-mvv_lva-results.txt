@@ -1,0 +1,182 @@
+Started game 1 of 2000 (main vs moss-v0.6-mvv_lva)
+Started game 2 of 2000 (moss-v0.6-mvv_lva vs main)
+Started game 3 of 2000 (main vs moss-v0.6-mvv_lva)
+Started game 4 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 4 (moss-v0.6-mvv_lva vs main): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 1 - 0 - 0  [1.000] 1
+Started game 5 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 1 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 2 - 0 - 0  [1.000] 2
+Started game 6 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 3 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 3 - 0 - 0  [1.000] 3
+Started game 7 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 2 (moss-v0.6-mvv_lva vs main): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 4 - 0 - 0  [1.000] 4
+Started game 8 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 6 (moss-v0.6-mvv_lva vs main): 1-0 {White mates}
+Score of main vs moss-v0.6-mvv_lva: 4 - 1 - 0  [0.800] 5
+Started game 9 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 5 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 5 - 1 - 0  [0.833] 6
+Started game 10 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 7 (main vs moss-v0.6-mvv_lva): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 5 - 2 - 0  [0.714] 7
+Started game 11 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 8 (moss-v0.6-mvv_lva vs main): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 6 - 2 - 0  [0.750] 8
+Started game 12 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 9 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 7 - 2 - 0  [0.778] 9
+Started game 13 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 12 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 7 - 2 - 1  [0.750] 10
+...      main playing White: 4 - 1 - 0  [0.800] 5
+...      main playing Black: 3 - 1 - 1  [0.700] 5
+...      White vs Black: 5 - 4 - 1  [0.550] 10
+Elo difference: 190.8 +/- 658.3, LOS: 95.2 %, DrawRatio: 10.0 %
+SPRT: llr 0.166 (5.6%), lbound -2.94, ubound 2.94
+Started game 14 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 10 (moss-v0.6-mvv_lva vs main): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 8 - 2 - 1  [0.773] 11
+Started game 15 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 11 (main vs moss-v0.6-mvv_lva): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 8 - 3 - 1  [0.708] 12
+Started game 16 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 14 (moss-v0.6-mvv_lva vs main): 1-0 {White mates}
+Score of main vs moss-v0.6-mvv_lva: 8 - 4 - 1  [0.654] 13
+Started game 17 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 13 (main vs moss-v0.6-mvv_lva): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 8 - 5 - 1  [0.607] 14
+Started game 18 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 15 (main vs moss-v0.6-mvv_lva): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 8 - 6 - 1  [0.567] 15
+Started game 19 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 16 (moss-v0.6-mvv_lva vs main): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 9 - 6 - 1  [0.594] 16
+Started game 20 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 18 (moss-v0.6-mvv_lva vs main): 1-0 {White mates}
+Score of main vs moss-v0.6-mvv_lva: 9 - 7 - 1  [0.559] 17
+Started game 21 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 17 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 10 - 7 - 1  [0.583] 18
+Started game 22 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 20 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 10 - 7 - 2  [0.579] 19
+Started game 23 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 19 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 11 - 7 - 2  [0.600] 20
+...      main playing White: 6 - 4 - 0  [0.600] 10
+...      main playing Black: 5 - 3 - 2  [0.600] 10
+...      White vs Black: 9 - 9 - 2  [0.500] 20
+Elo difference: 70.4 +/- 158.3, LOS: 82.7 %, DrawRatio: 10.0 %
+SPRT: llr 0.121 (4.1%), lbound -2.94, ubound 2.94
+Started game 24 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 22 (moss-v0.6-mvv_lva vs main): 1-0 {White mates}
+Score of main vs moss-v0.6-mvv_lva: 11 - 8 - 2  [0.571] 21
+Started game 25 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 21 (main vs moss-v0.6-mvv_lva): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 11 - 9 - 2  [0.545] 22
+Started game 26 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 23 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 12 - 9 - 2  [0.565] 23
+Started game 27 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 24 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 12 - 9 - 3  [0.563] 24
+Started game 28 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 25 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 13 - 9 - 3  [0.580] 25
+Started game 29 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 26 (moss-v0.6-mvv_lva vs main): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 14 - 9 - 3  [0.596] 26
+Started game 30 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 28 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 14 - 9 - 4  [0.593] 27
+Started game 31 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 27 (main vs moss-v0.6-mvv_lva): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 14 - 10 - 4  [0.571] 28
+Started game 32 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 30 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 14 - 10 - 5  [0.569] 29
+Started game 33 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 29 (main vs moss-v0.6-mvv_lva): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 14 - 11 - 5  [0.550] 30
+...      main playing White: 8 - 7 - 0  [0.533] 15
+...      main playing Black: 6 - 4 - 5  [0.567] 15
+...      White vs Black: 12 - 13 - 5  [0.483] 30
+Elo difference: 34.9 +/- 118.3, LOS: 72.6 %, DrawRatio: 16.7 %
+SPRT: llr 0.089 (3.0%), lbound -2.94, ubound 2.94
+Started game 34 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 32 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 14 - 11 - 6  [0.548] 31
+Started game 35 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 31 (main vs moss-v0.6-mvv_lva): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 14 - 12 - 6  [0.531] 32
+Started game 36 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 33 (main vs moss-v0.6-mvv_lva): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 14 - 12 - 7  [0.530] 33
+Started game 37 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 34 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 14 - 12 - 8  [0.529] 34
+Started game 38 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 35 (main vs moss-v0.6-mvv_lva): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 14 - 13 - 8  [0.514] 35
+Started game 39 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 36 (moss-v0.6-mvv_lva vs main): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 15 - 13 - 8  [0.528] 36
+Started game 40 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 38 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 15 - 13 - 9  [0.527] 37
+Started game 41 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 37 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 16 - 13 - 9  [0.539] 38
+Started game 42 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 40 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 16 - 13 - 10  [0.538] 39
+Started game 43 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 39 (main vs moss-v0.6-mvv_lva): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 16 - 14 - 10  [0.525] 40
+...      main playing White: 9 - 10 - 1  [0.475] 20
+...      main playing Black: 7 - 4 - 9  [0.575] 20
+...      White vs Black: 13 - 17 - 10  [0.450] 40
+Elo difference: 17.4 +/- 95.5, LOS: 64.2 %, DrawRatio: 25.0 %
+SPRT: llr 0.0541 (1.8%), lbound -2.94, ubound 2.94
+Started game 44 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 42 (moss-v0.6-mvv_lva vs main): 1-0 {White mates}
+Score of main vs moss-v0.6-mvv_lva: 16 - 15 - 10  [0.512] 41
+Started game 45 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 41 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 17 - 15 - 10  [0.524] 42
+Started game 46 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 44 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 17 - 15 - 11  [0.523] 43
+Started game 47 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 43 (main vs moss-v0.6-mvv_lva): 0-1 {White loses on time}
+Score of main vs moss-v0.6-mvv_lva: 17 - 16 - 11  [0.511] 44
+Started game 48 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 46 (moss-v0.6-mvv_lva vs main): 1-0 {White mates}
+Score of main vs moss-v0.6-mvv_lva: 17 - 17 - 11  [0.500] 45
+Started game 49 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 45 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 18 - 17 - 11  [0.511] 46
+Started game 50 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 48 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 18 - 17 - 12  [0.511] 47
+Started game 51 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 47 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 19 - 17 - 12  [0.521] 48
+Started game 52 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 49 (main vs moss-v0.6-mvv_lva): 1-0 {Black loses on time}
+Score of main vs moss-v0.6-mvv_lva: 20 - 17 - 12  [0.531] 49
+Started game 53 of 2000 (main vs moss-v0.6-mvv_lva)
+Finished game 50 (moss-v0.6-mvv_lva vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.6-mvv_lva: 20 - 17 - 13  [0.530] 50
+...      main playing White: 13 - 11 - 1  [0.540] 25
+...      main playing Black: 7 - 6 - 12  [0.520] 25
+...      White vs Black: 19 - 18 - 13  [0.510] 50
+Elo difference: 20.9 +/- 84.5, LOS: 68.9 %, DrawRatio: 26.0 %
+SPRT: llr 0.0882 (3.0%), lbound -2.94, ubound 2.94
+Started game 54 of 2000 (moss-v0.6-mvv_lva vs main)
+Finished game 52 (moss-v0.6-mvv_lva vs main): 1-0 {White mates}
+Score of main vs moss-v0.6-mvv_lva: 20 - 18 - 13  [0.520] 51
+Started game 55 of 2000 (main vs moss-v0.6-mvv_lva)

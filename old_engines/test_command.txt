@@ -1,2 +1,0 @@
-cutechess-cli -engine cmd=/home/luka/lchess/old_engines/moss-v0.6-mvv_lva name=moss-v0.6-mvv_lva -engine cmd=/home/luka/lchess/old_engines/moss-v0.5-bug_fixes name=moss-v0.5-bug_fixes -each proto=uci tc=160/60 -rounds 1000 -sprt elo0=0 elo1=10 alpha=0.05 beta=0.05 concurrency 4 -ratinginterval 10 >v0.6_v0.5_results.txt
-

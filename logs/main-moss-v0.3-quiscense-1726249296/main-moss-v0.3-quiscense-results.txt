@@ -1,0 +1,171 @@
+Started game 1 of 2000 (main vs moss-v0.3-quiscense)
+Started game 2 of 2000 (moss-v0.3-quiscense vs main)
+Started game 3 of 2000 (main vs moss-v0.3-quiscense)
+Started game 4 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 3 (main vs moss-v0.3-quiscense): 1-0 {White mates}
+Score of main vs moss-v0.3-quiscense: 1 - 0 - 0  [1.000] 1
+Started game 5 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 4 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 2 - 0 - 0  [1.000] 2
+Started game 6 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 1 (main vs moss-v0.3-quiscense): 1-0 {White mates}
+Score of main vs moss-v0.3-quiscense: 3 - 0 - 0  [1.000] 3
+Started game 7 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 5 (main vs moss-v0.3-quiscense): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 3 - 0 - 1  [0.875] 4
+Started game 8 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 2 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 4 - 0 - 1  [0.900] 5
+Started game 9 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 6 (moss-v0.3-quiscense vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 4 - 0 - 2  [0.833] 6
+Started game 10 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 7 (main vs moss-v0.3-quiscense): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 4 - 0 - 3  [0.786] 7
+Started game 11 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 9 (main vs moss-v0.3-quiscense): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 4 - 0 - 4  [0.750] 8
+Started game 12 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 8 (moss-v0.3-quiscense vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 4 - 0 - 5  [0.722] 9
+Started game 13 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 10 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 5 - 0 - 5  [0.750] 10
+...      main playing White: 2 - 0 - 3  [0.700] 5
+...      main playing Black: 3 - 0 - 2  [0.800] 5
+...      White vs Black: 2 - 3 - 5  [0.450] 10
+Elo difference: 190.8 +/- 162.0, LOS: 98.7 %, DrawRatio: 50.0 %
+SPRT: llr 0.412 (14.0%), lbound -2.94, ubound 2.94
+Started game 14 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 12 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 6 - 0 - 5  [0.773] 11
+Started game 15 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 11 (main vs moss-v0.3-quiscense): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 6 - 0 - 6  [0.750] 12
+Started game 16 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 13 (main vs moss-v0.3-quiscense): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 6 - 0 - 7  [0.731] 13
+Started game 17 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 15 (main vs moss-v0.3-quiscense): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 6 - 0 - 8  [0.714] 14
+Started game 18 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 17 (main vs moss-v0.3-quiscense): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 6 - 0 - 9  [0.700] 15
+Started game 19 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 16 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 7 - 0 - 9  [0.719] 16
+Started game 20 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 14 (moss-v0.3-quiscense vs main): 1/2-1/2 {Draw by stalemate}
+Score of main vs moss-v0.3-quiscense: 7 - 0 - 10  [0.706] 17
+Started game 21 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 18 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 8 - 0 - 10  [0.722] 18
+Started game 22 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 22 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 9 - 0 - 10  [0.737] 19
+Started game 23 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 19 (main vs moss-v0.3-quiscense): 1-0 {White mates}
+Score of main vs moss-v0.3-quiscense: 10 - 0 - 10  [0.750] 20
+...      main playing White: 3 - 0 - 7  [0.650] 10
+...      main playing Black: 7 - 0 - 3  [0.850] 10
+...      White vs Black: 3 - 7 - 10  [0.400] 20
+Elo difference: 190.8 +/- 107.0, LOS: 99.9 %, DrawRatio: 50.0 %
+SPRT: llr 1.07 (36.3%), lbound -2.94, ubound 2.94
+Started game 24 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 21 (main vs moss-v0.3-quiscense): 1-0 {White mates}
+Score of main vs moss-v0.3-quiscense: 11 - 0 - 10  [0.762] 21
+Started game 25 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 20 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 12 - 0 - 10  [0.773] 22
+Started game 26 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 24 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 13 - 0 - 10  [0.783] 23
+Started game 27 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 26 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 14 - 0 - 10  [0.792] 24
+Started game 28 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 27 (main vs moss-v0.3-quiscense): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 14 - 0 - 11  [0.780] 25
+Started game 29 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 25 (main vs moss-v0.3-quiscense): 1-0 {White mates}
+Score of main vs moss-v0.3-quiscense: 15 - 0 - 11  [0.788] 26
+Started game 30 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 23 (main vs moss-v0.3-quiscense): 1-0 {White mates}
+Score of main vs moss-v0.3-quiscense: 16 - 0 - 11  [0.796] 27
+Started game 31 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 28 (moss-v0.3-quiscense vs main): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 16 - 0 - 12  [0.786] 28
+Started game 32 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 29 (main vs moss-v0.3-quiscense): 1/2-1/2 {Draw by 3-fold repetition}
+Score of main vs moss-v0.3-quiscense: 16 - 0 - 13  [0.776] 29
+Started game 33 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 30 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 17 - 0 - 13  [0.783] 30
+...      main playing White: 6 - 0 - 9  [0.700] 15
+...      main playing Black: 11 - 0 - 4  [0.867] 15
+...      White vs Black: 6 - 11 - 13  [0.417] 30
+Elo difference: 223.3 +/- 95.1, LOS: 100.0 %, DrawRatio: 43.3 %
+SPRT: llr 1.92 (65.4%), lbound -2.94, ubound 2.94
+Started game 34 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 31 (main vs moss-v0.3-quiscense): 1-0 {White mates}
+Score of main vs moss-v0.3-quiscense: 18 - 0 - 13  [0.790] 31
+Started game 35 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 33 (main vs moss-v0.3-quiscense): 1-0 {White mates}
+Score of main vs moss-v0.3-quiscense: 19 - 0 - 13  [0.797] 32
+Started game 36 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 34 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 20 - 0 - 13  [0.803] 33
+Started game 37 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 36 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 21 - 0 - 13  [0.809] 34
+Started game 38 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 32 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 22 - 0 - 13  [0.814] 35
+Started game 39 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 35 (main vs moss-v0.3-quiscense): 1-0 {White mates}
+Score of main vs moss-v0.3-quiscense: 23 - 0 - 13  [0.819] 36
+Started game 40 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 40 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 24 - 0 - 13  [0.824] 37
+Started game 41 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 39 (main vs moss-v0.3-quiscense): 1-0 {White mates}
+Score of main vs moss-v0.3-quiscense: 25 - 0 - 13  [0.829] 38
+Started game 42 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 38 (moss-v0.3-quiscense vs main): 1/2-1/2 {Draw by stalemate}
+Score of main vs moss-v0.3-quiscense: 25 - 0 - 14  [0.821] 39
+Started game 43 of 2000 (main vs moss-v0.3-quiscense)
+Finished game 37 (main vs moss-v0.3-quiscense): 1/2-1/2 {Draw by stalemate}
+Score of main vs moss-v0.3-quiscense: 25 - 0 - 15  [0.813] 40
+...      main playing White: 10 - 0 - 10  [0.750] 20
+...      main playing Black: 15 - 0 - 5  [0.875] 20
+...      White vs Black: 10 - 15 - 15  [0.438] 40
+Elo difference: 254.7 +/- 89.6, LOS: 100.0 %, DrawRatio: 37.5 %
+SPRT: llr 2.88 (98.0%), lbound -2.94, ubound 2.94
+Started game 44 of 2000 (moss-v0.3-quiscense vs main)
+Finished game 44 (moss-v0.3-quiscense vs main): 0-1 {Black mates}
+Score of main vs moss-v0.3-quiscense: 26 - 0 - 15  [0.817] 41
+Finished game 41 (main vs moss-v0.3-quiscense): * {No result}
+Score of main vs moss-v0.3-quiscense: 26 - 0 - 15  [0.817] 41
+Finished game 43 (main vs moss-v0.3-quiscense): * {No result}
+Score of main vs moss-v0.3-quiscense: 26 - 0 - 15  [0.817] 41
+Finished game 42 (moss-v0.3-quiscense vs main): * {No result}
+Score of main vs moss-v0.3-quiscense: 26 - 0 - 15  [0.817] 41
+...      main playing White: 10 - 0 - 10  [0.750] 20
+...      main playing Black: 16 - 0 - 5  [0.881] 21
+...      White vs Black: 10 - 16 - 15  [0.427] 41
+Elo difference: 260.0 +/- 89.8, LOS: 100.0 %, DrawRatio: 36.6 %
+SPRT: llr 2.98 (101.3%), lbound -2.94, ubound 2.94 - H1 was accepted
+
+Player: main
+   "Draw by 3-fold repetition": 12
+   "Draw by stalemate": 3
+   "No result": 3
+   "Win: Black mates": 16
+   "Win: White mates": 10
+Player: moss-v0.3-quiscense
+   "Draw by 3-fold repetition": 12
+   "Draw by stalemate": 3
+   "Loss: Black mates": 16
+   "Loss: White mates": 10
+   "No result": 3
+Finished match

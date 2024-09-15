@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 project(lchess VERSION 0.1)
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+
 include_directories(${PROJECT_SOURCE_DIR}/src)
 
 set(SOURCES
@@ -16,5 +18,5 @@ set(SOURCES
     src/move_list.cpp
     )
 
-add_executable(main ${SOURCES})
+add_executable(moss-v.0.10 ${SOURCES})
 
