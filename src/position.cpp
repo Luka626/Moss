@@ -153,7 +153,7 @@ int Position::set_board(const std::string &fen) {
   };
 
   std::getline(iss, fen_token, ' ');
-  for (int i = 0; i < std::strlen(fen_token.c_str()); i++) {
+  for (size_t i = 0; i < std::strlen(fen_token.c_str()); i++) {
     char ch = fen_token[i];
     switch (ch) {
     case ('K'):

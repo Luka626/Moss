@@ -6,9 +6,9 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 
-#set(CMAKE_CXX_FLAGS "-Wall -Wextra")
-#set(CMAKE_CXX_FLAGS_DEBUG "-g")
-#set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+set(CMAKE_CXX_FLAGS "-Wall -Wextra")
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 
@@ -26,5 +26,5 @@ set(SOURCES
     src/move_list.cpp
     )
 
-add_executable(moss-v.0.10 ${SOURCES})
+add_executable(moss-v0.10-movegen2 ${SOURCES})
 

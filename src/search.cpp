@@ -74,7 +74,7 @@ int Search::negamax_root(const int depth) {
 
   zobrist_key move_key = pos->z_key;
 
-  for (int i = 0; i < moves.size(); i++) {
+  for (size_t i = 0; i < moves.size(); i++) {
     Move mv = moves.at(i);
     if (depth >= 8) {
       std::cout << "info currmove " << mv << std::endl;
@@ -152,7 +152,7 @@ int Search::negamax(int alpha, int beta, const int depth) {
   Move my_best_move = Move();
   zobrist_key move_key = pos->z_key;
 
-  for (int i = 0; i < moves.size(); i++) {
+  for (size_t i = 0; i < moves.size(); i++) {
     // make move on board
     Move mv = moves.at(i);
 
@@ -216,7 +216,7 @@ int Search::quiescence(int alpha, int beta) {
   moves.score_moves(Move());
   moves.sort_moves();
 
-  for (int i = 0; i < moves.size(); i++) {
+  for (size_t i = 0; i < moves.size(); i++) {
     Move mv = moves.at(i);
 
     pos->make_move(mv);

@@ -4,7 +4,7 @@
 #include <climits>
 
 void MoveList::score_moves(Move TT_move) {
-  for (int i = 0; i < this->size(); i++) {
+  for (size_t i = 0; i < this->size(); i++) {
     Move *move = &this->moves[i];
     move->sort_score = move->piece;
 

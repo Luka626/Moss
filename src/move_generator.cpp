@@ -4,12 +4,12 @@
 #include <chrono>
 #include <iomanip>
 
-MoveGenerator::MoveGenerator(Position *position_ptr){
+MoveGenerator::MoveGenerator(Position *position_ptr) {
   position = position_ptr;
   initiate_rank_attacks();
 };
 
-double MoveGenerator::divide(const size_t depth){
+double MoveGenerator::divide(const size_t depth) {
   auto start_time = std::chrono::high_resolution_clock::now();
 
   std::cout << std::fixed;
@@ -20,7 +20,6 @@ double MoveGenerator::divide(const size_t depth){
 
   move_list = generate_pseudo_legal_moves();
   for (size_t i = 0; i < move_list.size(); i++) {
-    zobrist_key old_key = position->z_key;
     position->make_move(move_list.at(i));
     if (!validate_gamestate()) {
       position->undo_move(move_list.at(i));
@@ -32,7 +31,6 @@ double MoveGenerator::divide(const size_t depth){
       std::cout << move_list.at(i) << ": " << nodes << "\n";
     }
     position->undo_move(move_list.at(i));
-    zobrist_key new_key = position->z_key;
   }
   auto end_time = std::chrono::high_resolution_clock::now();
   auto time = std::chrono::duration_cast<std::chrono::milliseconds>(end_time -
@@ -46,7 +44,7 @@ double MoveGenerator::divide(const size_t depth){
   return all_nodes;
 }
 
-double MoveGenerator::perft(const size_t depth){
+double MoveGenerator::perft(const size_t depth) {
   MoveList move_list = MoveList();
   double nodes = 0;
 
@@ -71,13 +69,13 @@ double MoveGenerator::perft(const size_t depth){
 bool MoveGenerator::validate_gamestate() const {
   return !king_in_check(~position->side_to_play);
 }
-bool MoveGenerator::king_in_check(const Colors side) const{
+bool MoveGenerator::king_in_check(const Colors side) const {
   bitboard king_bb = position->get_bitboard(side, Pieces::KING);
   Square king_square = Utils::pop_bit(king_bb);
   return generate_attackers(king_square) & position->color_bitboards[~side];
 }
 
-int MoveGenerator::generate_rank_attack(int occupancy, size_t file) const{
+int MoveGenerator::generate_rank_attack(int occupancy, size_t file) const {
   int b;
   int x;
   int y = 0;
@@ -104,7 +102,7 @@ void MoveGenerator::initiate_rank_attacks() {
   }
 }
 
-bitboard MoveGenerator::generate_attackers(const Square sq) const{
+bitboard MoveGenerator::generate_attackers(const Square sq) const {
   bitboard wpawn_bb = position->get_bitboard(Colors::WHITE, Pieces::PAWN);
   bitboard bpawn_bb = position->get_bitboard(Colors::BLACK, Pieces::PAWN);
   bitboard knights_bb = position->pieces_bitboards[Pieces::KNIGHT];
@@ -180,7 +178,7 @@ MoveList MoveGenerator::generate_pseudo_legal_moves() {
   return pseudo_legal_moves;
 }
 
-MoveList MoveGenerator::generate_captures(){
+MoveList MoveGenerator::generate_captures() {
   MoveList captures = MoveList();
 
   bitboard pawn_bb = position->get_bitboard(Pieces::PAWN);
@@ -200,10 +198,10 @@ MoveList MoveGenerator::generate_captures(){
   return captures;
 }
 
-MoveList MoveGenerator::generate_legal_moves(){
+MoveList MoveGenerator::generate_legal_moves() {
   MoveList ps = generate_pseudo_legal_moves();
   MoveList l = MoveList();
-  for (int i = 0; i < ps.size(); i++) {
+  for (size_t i = 0; i < ps.size(); i++) {
     position->make_move(ps.at(i));
     if (!king_in_check(~position->side_to_play)) {
       l.push_back(ps.at(i));
@@ -265,8 +263,7 @@ void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
         capture.from = origin_square;
         capture.to = destination_square;
         capture.is_capture = true;
-        capture.captured_piece =
-            get_piece_type(capture.to);
+        capture.captured_piece = get_piece_type(capture.to);
         if (Utils::rank(capture.to) == 7) {
           for (const auto &promotion_piece : promotion_pieces) {
             capture.promotion = promotion_piece;
@@ -347,8 +344,7 @@ void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
         capture.from = origin_square;
         capture.to = destination_square;
         capture.is_capture = true;
-        capture.captured_piece =
-            get_piece_type(capture.to);
+        capture.captured_piece = get_piece_type(capture.to);
 
         if (Utils::rank(capture.to) == 0) {
           for (const auto &promotion_piece : promotion_pieces) {
@@ -393,8 +389,7 @@ void MoveGenerator::generate_pawn_captures(MoveList &move_list, bitboard bb) {
         capture.from = origin_square;
         capture.to = destination_square;
         capture.is_capture = true;
-        capture.captured_piece =
-            get_piece_type(capture.to);
+        capture.captured_piece = get_piece_type(capture.to);
         if (Utils::rank(capture.to) == 7) {
           for (const auto &promotion_piece : promotion_pieces) {
             capture.promotion = promotion_piece;
@@ -436,8 +431,7 @@ void MoveGenerator::generate_pawn_captures(MoveList &move_list, bitboard bb) {
         capture.from = origin_square;
         capture.to = destination_square;
         capture.is_capture = true;
-        capture.captured_piece =
-            get_piece_type(capture.to);
+        capture.captured_piece = get_piece_type(capture.to);
 
         if (Utils::rank(capture.to) == 0) {
           for (const auto &promotion_piece : promotion_pieces) {
@@ -600,7 +594,7 @@ void MoveGenerator::generate_queen_captures(MoveList &move_list, bitboard bb) {
   }
 }
 bitboard MoveGenerator::generate_rectilinear_attacks(const bitboard occupancy,
-                                                     const Square sq) const{
+                                                     const Square sq) const {
   // uses a routine from the CPW to generate rank attacks
   size_t file = Utils::file(sq);
   size_t rank = Utils::rank(sq);
@@ -621,7 +615,6 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
   if (position->side_to_play == WHITE) {
     if (position->castling_flags[0]) {
       Square rook_square = h1;
-      // Square rook_target_square = f1;
       Square king_target_square = g1;
 
       bitboard between = Utils::IN_BETWEEN[e1][rook_square];
@@ -654,7 +647,6 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
     }
     if (position->castling_flags[1]) {
       Square rook_square = a1;
-      Square rook_target_square = d1;
       Square king_target_square = c1;
       bitboard between = Utils::IN_BETWEEN[e1][rook_square];
       bitboard between_ex = between ^ Utils::set_bit(rook_square);
@@ -688,7 +680,6 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
   } else {
     if (position->castling_flags[2]) {
       Square rook_square = h8;
-      Square rook_target_square = f8;
       Square king_target_square = g8;
       bitboard between = Utils::IN_BETWEEN[e8][rook_square];
       bitboard between_ex = between ^ Utils::set_bit(rook_square);
@@ -719,7 +710,6 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
     }
     if (position->castling_flags[3]) {
       Square rook_square = a8;
-      Square rook_target_square = d8;
       Square king_target_square = c8;
       bitboard between = Utils::IN_BETWEEN[e8][rook_square];
       bitboard between_ex = between ^ Utils::set_bit(rook_square);
