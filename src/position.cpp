@@ -210,11 +210,11 @@ void Position::make_move(const Move move) {
 
   if (move.is_en_passant) {
     if (side_to_play == WHITE) {
-      remove_piece(move.captured_piece, (Square)(move.to + S));
-      z_key ^= Zobrist::PIECES[move.captured_piece][!side_to_play][move.to + S];
+      remove_pawn((Square)(move.to + S));
+      z_key ^= Zobrist::PIECES[Pieces::PAWN][!side_to_play][move.to + S];
     } else {
-      remove_piece(move.captured_piece, (Square)(move.to + N));
-      z_key ^= Zobrist::PIECES[move.captured_piece][!side_to_play][move.to + N];
+      remove_pawn((Square)(move.to + N));
+      z_key ^= Zobrist::PIECES[Pieces::PAWN][side_to_play][move.to + N];
     }
   }
 

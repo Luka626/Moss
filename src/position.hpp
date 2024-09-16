@@ -40,9 +40,14 @@ public:
     return PAWN;
   }
 
-  void inline remove_piece(const Square sq) {
+  void inline remove_piece(Pieces pc, const Square sq) {
     bitboard to_remove = 1ULL << sq;
-    Pieces pc = pieces_bitboards[pc] &= ~to_remove;
+    pieces_bitboards[pc] &= ~to_remove;
+    color_bitboards[~side_to_play] &= ~to_remove;
+  }
+  void inline remove_pawn(const Square sq) {
+    bitboard to_remove = 1ULL << sq;
+    pieces_bitboards[Pieces::PAWN] &= ~to_remove;
     color_bitboards[~side_to_play] &= ~to_remove;
   }
 

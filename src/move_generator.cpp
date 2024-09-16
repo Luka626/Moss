@@ -266,7 +266,7 @@ void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
         capture.to = destination_square;
         capture.is_capture = true;
         capture.captured_piece =
-            get_opposing_piece_type(position->side_to_play, capture.to);
+            get_piece_type(capture.to);
         if (Utils::rank(capture.to) == 7) {
           for (const auto &promotion_piece : promotion_pieces) {
             capture.promotion = promotion_piece;
@@ -394,7 +394,7 @@ void MoveGenerator::generate_pawn_captures(MoveList &move_list, bitboard bb) {
         capture.to = destination_square;
         capture.is_capture = true;
         capture.captured_piece =
-            get_opposing_piece_type(position->side_to_play, capture.to);
+            get_piece_type(capture.to);
         if (Utils::rank(capture.to) == 7) {
           for (const auto &promotion_piece : promotion_pieces) {
             capture.promotion = promotion_piece;
@@ -437,7 +437,7 @@ void MoveGenerator::generate_pawn_captures(MoveList &move_list, bitboard bb) {
         capture.to = destination_square;
         capture.is_capture = true;
         capture.captured_piece =
-            get_opposing_piece_type(position->side_to_play, capture.to);
+            get_piece_type(capture.to);
 
         if (Utils::rank(capture.to) == 0) {
           for (const auto &promotion_piece : promotion_pieces) {

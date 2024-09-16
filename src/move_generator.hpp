@@ -78,7 +78,7 @@ public:
       capture.to = destination_square;
       capture.is_capture = true;
       capture.captured_piece =
-          get_opposing_piece_type(position->side_to_play, capture.to);
+          get_piece_type(capture.to);
       move_list.push_back(capture);
     }
   }

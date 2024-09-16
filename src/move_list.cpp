@@ -17,11 +17,6 @@ void MoveList::score_moves(Move TT_move) {
     if (move->promotion){
         move->sort_score += 75;
     }
-
-    if (move->is_castle){
-        move->sort_score += 30;
-    }
-
   }
 }
 

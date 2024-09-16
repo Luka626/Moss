@@ -21,6 +21,8 @@ echo "Running SPRT between" $new_engine_name "and" $old_engine_name
 new_engine_cmd=$ENGINES_PATH/$new_engine_name
 old_engine_cmd=$ENGINES_PATH/$old_engine_name
 
+echo "Using bins: " $new_engine_cmd "and" $old_engine_cmd
+
 cutechess-cli \
     -engine cmd=$new_engine_cmd name=$new_engine_name \
     -engine cmd=$old_engine_cmd name=$old_engine_name \

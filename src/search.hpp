@@ -27,8 +27,8 @@ private:
 
   Move best_move_overall;
   Move best_move;
-  MoveGenerator *move_gen;
-  Evaluator *eval;
+  MoveGenerator move_gen;
+  Evaluator eval;
   Position *pos;
   int time_limit;
   std::chrono::time_point<std::chrono::high_resolution_clock> search_start;
@@ -36,7 +36,6 @@ private:
   std::vector<TT_Entry> transposition_table;
   std::vector<int> repitition_table;
   size_t hashsize;
-  size_t repetition_hashsize;
 
   // debug messages
   int nodes_searched;
