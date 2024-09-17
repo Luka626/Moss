@@ -5,7 +5,6 @@
 #include "utils.hpp"
 #include "zobrist.hpp"
 #include <string>
-#include <vector>
 
 class Position {
 public:
@@ -21,13 +20,13 @@ public:
   size_t halfmove_clock;
   size_t ply;
   zobrist_key z_key;
-  std::vector<zobrist_key> position_history;
 
   Position();
   Position(const std::string &fen);
 
   int set_board(const std::string &fen);
 
+  bool is_drawn() const;
   zobrist_key generate_key() const;
   void make_move(const Move move);
   void undo_move(const Move move);
@@ -53,43 +52,36 @@ public:
 
   void inline update_castling_rights(const Square from, const Square to,
                                      const bool is_capture) {
-    if (from == a1) {
-      castling_flags[1] = false;
-      z_key ^= Zobrist::CASTLING[1];
-    } else if (from == h1) {
-      castling_flags[0] = false;
-      z_key ^= Zobrist::CASTLING[0];
-    } else if (from == a8) {
-      castling_flags[3] = false;
-      z_key ^= Zobrist::CASTLING[3];
-    } else if (from == h8) {
-      castling_flags[2] = false;
-      z_key ^= Zobrist::CASTLING[2];
-    } else if (from == e1) {
-      castling_flags[0] = false;
-      castling_flags[1] = false;
-      z_key ^= Zobrist::CASTLING[0];
-      z_key ^= Zobrist::CASTLING[1];
-    } else if (from == e8) {
-      castling_flags[2] = false;
-      castling_flags[3] = false;
-      z_key ^= Zobrist::CASTLING[2];
-      z_key ^= Zobrist::CASTLING[3];
-    }
+    for (int i = 0; i < 4; ++i) {
+      if (castling_flags[i] == false) {
+        continue;
+      }
 
-    if (is_capture) {
-      if (to == a1) {
-        castling_flags[1] = false;
-        z_key ^= Zobrist::CASTLING[1];
-      } else if (to == h1) {
-        castling_flags[0] = false;
-        z_key ^= Zobrist::CASTLING[0];
-      } else if (to == a8) {
-        castling_flags[3] = false;
-        z_key ^= Zobrist::CASTLING[3];
-      } else if (to == h8) {
-        castling_flags[2] = false;
-        z_key ^= Zobrist::CASTLING[2];
+      switch (i) {
+      case 0:
+        if ((from == h1) || (from == e1) || (is_capture && (to == h1))) {
+          castling_flags[i] = false;
+          z_key ^= Zobrist::CASTLING[i];
+        }
+        break;
+      case 1:
+        if ((from == a1) || (from == e1) || (is_capture && (to == a1))) {
+          castling_flags[i] = false;
+          z_key ^= Zobrist::CASTLING[i];
+        }
+        break;
+      case 2:
+        if ((from == e8) || (from == h8) || (is_capture && (to == h8))) {
+          castling_flags[i] = false;
+          z_key ^= Zobrist::CASTLING[i];
+        }
+        break;
+      case 3:
+        if ((from == e8) || (from == a8) || (is_capture && (to == a8))) {
+          castling_flags[i] = false;
+          z_key ^= Zobrist::CASTLING[i];
+        }
+        break;
       }
     }
   }
@@ -116,8 +108,6 @@ public:
   }
 
 private:
-  zobrist_key key_history[256];
-  Square en_passant_history[256];
-  bool castling_history[256][4];
+  Undo_Info undo_info[256];
 };
 #endif

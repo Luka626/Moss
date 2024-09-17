@@ -1,5 +1,38 @@
 #!/bin/bash
 
+Help()
+{
+    echo "Script for automating self-play SPRT."
+    echo
+    echo "Syntax: sprt.sh <eng1> <eng2> [-b|r|h]"
+    echo "- Provide version number or name as arguments"
+    echo "Options:"
+    echo "b:     Blitz TC, 10s + 0.1s increment"
+    echo "r:     Rapid TC, 40 moves in 60 seconds"
+    echo "h:     Print this Help"
+    echo "By defualt, 'sprt' behaves as if '-b' were specified."
+    exit 1
+}
+
+
+tc="inf/10+0.2"
+
+while getopts ":brh" option; do
+    case $option in
+        b)
+            tc="inf/10+0.2";;
+        r)
+            tc="40/60";;
+        h)
+            Help
+            exit;;
+        \?)
+            echo "Error, invalid option."
+            Help
+            exit 1;;
+    esac
+done
+
 PROJECT_PATH=/home/luka/lchess
 ENGINES_PATH=$PROJECT_PATH/bin
 dt=$(date +%s)
@@ -26,7 +59,7 @@ echo "Using bins: " $new_engine_cmd "and" $old_engine_cmd
 cutechess-cli \
     -engine cmd=$new_engine_cmd name=$new_engine_name \
     -engine cmd=$old_engine_cmd name=$old_engine_name \
-    -each proto=uci tc=100/10 \
+    -each proto=uci tc=$tc \
     -rounds 2000 \
     -sprt elo0=0 elo1=10 alpha=0.05 beta=0.05 \
     -concurrency 4 \

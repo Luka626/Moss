@@ -6,7 +6,7 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 
-set(CMAKE_CXX_FLAGS "-Wall -Wextra")
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic")
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
@@ -26,5 +26,5 @@ set(SOURCES
     src/move_list.cpp
     )
 
-add_executable(moss-v0.10-movegen2 ${SOURCES})
+add_executable(moss-v0.11-three_fold_repitition_and_TT_fixed ${SOURCES})
 

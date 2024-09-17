@@ -19,11 +19,11 @@ private:
   int negamax_root(const int depth);
   int quiescence(int alpha, int beta);
   bool update_TT(const zobrist_key z_key, const size_t depth,
-                 const int evaluation, const bool exact, const bool upper_bound,
-                 const bool lower_bound, const Move best_move);
+                 const int evaluation, const NodeType type, const Move best_move);
   TT_Entry probe_TT(const zobrist_key z_key, const size_t depth,
                     bool &was_found);
-
+  TT_Entry probe_TT(const zobrist_key z_key, const size_t depth);
+  bool is_search_done();
 
   Move best_move_overall;
   Move best_move;

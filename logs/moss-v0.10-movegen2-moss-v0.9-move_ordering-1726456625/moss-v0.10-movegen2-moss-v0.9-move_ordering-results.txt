@@ -72,3 +72,307 @@ Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 10 - 3 - 7  [0.675] 20
 Elo difference: 127.0 +/- 134.6, LOS: 97.4 %, DrawRatio: 35.0 %
 SPRT: llr 0.32 (10.9%), lbound -2.94, ubound 2.94
 Started game 24 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 20 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 10 - 3 - 8  [0.667] 21
+Started game 25 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 22 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 10 - 3 - 9  [0.659] 22
+Started game 26 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 23 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 11 - 3 - 9  [0.674] 23
+Started game 27 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 25 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 12 - 3 - 9  [0.688] 24
+Started game 28 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 24 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 12 - 3 - 10  [0.680] 25
+Started game 29 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 27 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 13 - 3 - 10  [0.692] 26
+Started game 30 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 26 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 13 - 3 - 11  [0.685] 27
+Started game 31 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 29 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 13 - 3 - 12  [0.679] 28
+Started game 32 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 28 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 13 - 3 - 13  [0.672] 29
+Started game 33 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 31 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 14 - 3 - 13  [0.683] 30
+...      moss-v0.10-movegen2 playing White: 14 - 1 - 1  [0.906] 16
+...      moss-v0.10-movegen2 playing Black: 0 - 2 - 12  [0.429] 14
+...      White vs Black: 16 - 1 - 13  [0.750] 30
+Elo difference: 133.6 +/- 97.8, LOS: 99.6 %, DrawRatio: 43.3 %
+SPRT: llr 0.618 (21.0%), lbound -2.94, ubound 2.94
+Started game 34 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 33 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 15 - 3 - 13  [0.694] 31
+Started game 35 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 32 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 15 - 3 - 14  [0.688] 32
+Started game 36 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 30 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 15 - 3 - 15  [0.682] 33
+Started game 37 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 34 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 15 - 4 - 15  [0.662] 34
+Started game 38 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 35 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 16 - 4 - 15  [0.671] 35
+Started game 39 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 37 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 17 - 4 - 15  [0.681] 36
+Started game 40 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 36 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 0-1 {Black mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 18 - 4 - 15  [0.689] 37
+Started game 41 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 38 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 0-1 {Black mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 19 - 4 - 15  [0.697] 38
+Started game 42 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 40 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 19 - 4 - 16  [0.692] 39
+Started game 43 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 41 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 20 - 4 - 16  [0.700] 40
+...      moss-v0.10-movegen2 playing White: 18 - 1 - 1  [0.925] 20
+...      moss-v0.10-movegen2 playing Black: 2 - 3 - 15  [0.475] 20
+...      White vs Black: 21 - 3 - 16  [0.725] 40
+Elo difference: 147.2 +/- 87.6, LOS: 99.9 %, DrawRatio: 40.0 %
+SPRT: llr 0.867 (29.4%), lbound -2.94, ubound 2.94
+Started game 44 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 39 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 21 - 4 - 16  [0.707] 41
+Started game 45 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 43 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 22 - 4 - 16  [0.714] 42
+Started game 46 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 45 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 23 - 4 - 16  [0.721] 43
+Started game 47 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 44 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 23 - 4 - 17  [0.716] 44
+Started game 48 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 42 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 23 - 4 - 18  [0.711] 45
+Started game 49 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 47 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 24 - 4 - 18  [0.717] 46
+Started game 50 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 46 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 24 - 4 - 19  [0.713] 47
+Started game 51 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 48 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 24 - 4 - 20  [0.708] 48
+Started game 52 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 49 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 24 - 4 - 21  [0.704] 49
+Started game 53 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 51 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 25 - 4 - 21  [0.710] 50
+...      moss-v0.10-movegen2 playing White: 23 - 1 - 2  [0.923] 26
+...      moss-v0.10-movegen2 playing Black: 2 - 3 - 19  [0.479] 24
+...      White vs Black: 26 - 3 - 21  [0.730] 50
+Elo difference: 155.5 +/- 76.0, LOS: 100.0 %, DrawRatio: 42.0 %
+SPRT: llr 1.25 (42.3%), lbound -2.94, ubound 2.94
+Started game 54 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 50 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 25 - 4 - 22  [0.706] 51
+Started game 55 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 52 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 25 - 4 - 23  [0.702] 52
+Started game 56 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 53 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 26 - 4 - 23  [0.708] 53
+Started game 57 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 55 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 27 - 4 - 23  [0.713] 54
+Started game 58 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 57 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 28 - 4 - 23  [0.718] 55
+Started game 59 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 54 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 28 - 4 - 24  [0.714] 56
+Started game 60 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 56 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 28 - 4 - 25  [0.711] 57
+Started game 61 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 59 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 29 - 4 - 25  [0.716] 58
+Started game 62 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 60 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 29 - 4 - 26  [0.712] 59
+Started game 63 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 58 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1-0 {Black loses on time}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 29 - 5 - 26  [0.700] 60
+...      moss-v0.10-movegen2 playing White: 27 - 1 - 2  [0.933] 30
+...      moss-v0.10-movegen2 playing Black: 2 - 4 - 24  [0.467] 30
+...      White vs Black: 31 - 3 - 26  [0.733] 60
+Elo difference: 147.2 +/- 67.9, LOS: 100.0 %, DrawRatio: 43.3 %
+SPRT: llr 1.44 (49.0%), lbound -2.94, ubound 2.94
+Started game 64 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 61 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 29 - 5 - 27  [0.697] 61
+Started game 65 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 63 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 30 - 5 - 27  [0.702] 62
+Started game 66 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 64 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 0-1 {Black mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 31 - 5 - 27  [0.706] 63
+Started game 67 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 62 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1-0 {Black loses on time}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 31 - 6 - 27  [0.695] 64
+Started game 68 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 66 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 31 - 6 - 28  [0.692] 65
+Started game 69 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 67 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 32 - 6 - 28  [0.697] 66
+Started game 70 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 65 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 33 - 6 - 28  [0.701] 67
+Started game 71 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 68 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 33 - 6 - 29  [0.699] 68
+Started game 72 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 69 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 34 - 6 - 29  [0.703] 69
+Started game 73 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 71 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 35 - 6 - 29  [0.707] 70
+...      moss-v0.10-movegen2 playing White: 32 - 1 - 3  [0.931] 36
+...      moss-v0.10-movegen2 playing Black: 3 - 5 - 26  [0.471] 34
+...      White vs Black: 37 - 4 - 29  [0.736] 70
+Elo difference: 153.1 +/- 64.2, LOS: 100.0 %, DrawRatio: 41.4 %
+SPRT: llr 1.69 (57.3%), lbound -2.94, ubound 2.94
+Started game 74 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 70 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 35 - 6 - 30  [0.704] 71
+Started game 75 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 72 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 35 - 6 - 31  [0.701] 72
+Started game 76 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 73 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 36 - 6 - 31  [0.705] 73
+Started game 77 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 74 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 36 - 6 - 32  [0.703] 74
+Started game 78 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 75 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 37 - 6 - 32  [0.707] 75
+Started game 79 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 76 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 37 - 6 - 33  [0.704] 76
+Started game 80 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 77 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 38 - 6 - 33  [0.708] 77
+Started game 81 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 79 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 39 - 6 - 33  [0.712] 78
+Started game 82 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 81 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 40 - 6 - 33  [0.715] 79
+Started game 83 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 78 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 40 - 6 - 34  [0.713] 80
+...      moss-v0.10-movegen2 playing White: 37 - 1 - 3  [0.939] 41
+...      moss-v0.10-movegen2 playing Black: 3 - 5 - 31  [0.474] 39
+...      White vs Black: 42 - 4 - 34  [0.738] 80
+Elo difference: 157.7 +/- 59.1, LOS: 100.0 %, DrawRatio: 42.5 %
+SPRT: llr 2.09 (71.1%), lbound -2.94, ubound 2.94
+Started game 84 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 80 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 0-1 {Black mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 41 - 6 - 34  [0.716] 81
+Started game 85 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 83 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 42 - 6 - 34  [0.720] 82
+Started game 86 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 85 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 43 - 6 - 34  [0.723] 83
+Started game 87 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 82 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 43 - 6 - 35  [0.720] 84
+Started game 88 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 84 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 43 - 6 - 36  [0.718] 85
+Started game 89 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 87 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 44 - 6 - 36  [0.721] 86
+Started game 90 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 88 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 0-1 {Black mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 45 - 6 - 36  [0.724] 87
+Started game 91 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 86 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 45 - 6 - 37  [0.722] 88
+Started game 92 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 89 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 46 - 6 - 37  [0.725] 89
+Started game 93 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 91 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 47 - 6 - 37  [0.728] 90
+...      moss-v0.10-movegen2 playing White: 42 - 1 - 3  [0.946] 46
+...      moss-v0.10-movegen2 playing Black: 5 - 5 - 34  [0.500] 44
+...      White vs Black: 47 - 6 - 37  [0.728] 90
+Elo difference: 170.8 +/- 56.7, LOS: 100.0 %, DrawRatio: 41.1 %
+SPRT: llr 2.57 (87.2%), lbound -2.94, ubound 2.94
+Started game 94 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 93 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 48 - 6 - 37  [0.731] 91
+Started game 95 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 90 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 48 - 6 - 38  [0.728] 92
+Started game 96 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 92 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 0-1 {Black mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 49 - 6 - 38  [0.731] 93
+Started game 97 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 95 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 50 - 6 - 38  [0.734] 94
+Started game 98 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 94 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 50 - 6 - 39  [0.732] 95
+Started game 99 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 97 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 51 - 6 - 39  [0.734] 96
+Started game 100 of 2000 (moss-v0.9-move_ordering vs moss-v0.10-movegen2)
+Finished game 96 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 51 - 6 - 40  [0.732] 97
+Started game 101 of 2000 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering)
+Finished game 99 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): 1-0 {White mates}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 52 - 6 - 40  [0.735] 98
+Finished game 100 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): * {No result}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 52 - 6 - 40  [0.735] 98
+Finished game 98 (moss-v0.9-move_ordering vs moss-v0.10-movegen2): * {No result}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 52 - 6 - 40  [0.735] 98
+...      moss-v0.10-movegen2 playing White: 46 - 1 - 3  [0.950] 50
+...      moss-v0.10-movegen2 playing Black: 6 - 5 - 37  [0.510] 48
+...      White vs Black: 51 - 7 - 40  [0.724] 98
+Elo difference: 176.9 +/- 54.4, LOS: 100.0 %, DrawRatio: 40.8 %
+SPRT: llr 2.95 (100.0%), lbound -2.94, ubound 2.94 - H1 was accepted
+Finished game 101 (moss-v0.10-movegen2 vs moss-v0.9-move_ordering): * {No result}
+Score of moss-v0.10-movegen2 vs moss-v0.9-move_ordering: 52 - 6 - 40  [0.735] 98
+...      moss-v0.10-movegen2 playing White: 46 - 1 - 3  [0.950] 50
+...      moss-v0.10-movegen2 playing Black: 6 - 5 - 37  [0.510] 48
+...      White vs Black: 51 - 7 - 40  [0.724] 98
+Elo difference: 176.9 +/- 54.4, LOS: 100.0 %, DrawRatio: 40.8 %
+SPRT: llr 2.95 (100.0%), lbound -2.94, ubound 2.94 - H1 was accepted
+
+Player: moss-v0.10-movegen2
+   "Draw by 3-fold repetition": 39
+   "Draw by timeout": 1
+   "Loss: Black loses on time": 3
+   "Loss: White loses on time": 1
+   "Loss: White mates": 2
+   "No result": 3
+   "Win: Black mates": 6
+   "Win: White mates": 46
+Player: moss-v0.9-move_ordering
+   "Draw by 3-fold repetition": 39
+   "Draw by timeout": 1
+   "Loss: Black mates": 6
+   "Loss: White mates": 46
+   "No result": 3
+   "Win: Black loses on time": 3
+   "Win: White loses on time": 1
+   "Win: White mates": 2
+Finished match

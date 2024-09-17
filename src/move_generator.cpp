@@ -740,3 +740,4 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
     }
   }
 }
+

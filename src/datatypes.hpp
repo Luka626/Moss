@@ -1,6 +1,7 @@
 #ifndef DATATYPES_H_
 #define DATATYPES_H_
 
+#include <climits>
 #include <cstdint>
 #include <ostream>
 
@@ -130,61 +131,60 @@ std::ostream inline &operator<<(std::ostream &os, const Move &mv) {
   }
   return os;
 }
-bool inline operator==(const Move &lhs, const Move &rhs){
-    if (!(lhs.to == rhs.to)){
-        return false;
-    }
+bool inline operator==(const Move &lhs, const Move &rhs) {
+  if (!(lhs.to == rhs.to)) {
+    return false;
+  }
 
-    if (!(lhs.from == rhs.from)){
-        return false;
-    }
+  if (!(lhs.from == rhs.from)) {
+    return false;
+  }
 
-    if (!(lhs.piece == rhs.piece)){
-        return false;
-    }
+  if (!(lhs.piece == rhs.piece)) {
+    return false;
+  }
 
-    if (!(lhs.is_castle == rhs.is_castle)){
-        return false;
-    }
-    if (!(lhs.is_capture == rhs.is_capture)){
-        return false;
-    }
-    if (!(lhs.is_en_passant == rhs.is_en_passant)){
-        return false;
-    }
-    if (!(lhs.is_double_push == rhs.is_double_push)){
-        return false;
-    }
+  if (!(lhs.is_castle == rhs.is_castle)) {
+    return false;
+  }
+  if (!(lhs.is_capture == rhs.is_capture)) {
+    return false;
+  }
+  if (!(lhs.is_en_passant == rhs.is_en_passant)) {
+    return false;
+  }
+  if (!(lhs.is_double_push == rhs.is_double_push)) {
+    return false;
+  }
 
-    return true;
+  return true;
 }
 
-
-
-struct TT_Entry{
-    zobrist_key key;
-    size_t depth;
-    int evaluation;
-    bool exact;
-    bool upper_bound;
-    bool lower_bound;
-    Move best_move;
-
-    TT_Entry():key(0ULL),
-    depth(0),
-    evaluation(0),
-    exact(false),
-    upper_bound(false),
-    lower_bound(false),
-    best_move({}){}
-
-    TT_Entry(zobrist_key key, size_t depth, int evaluation, bool exact, bool upper_bound, bool lower_bound, Move best_move):
-        key(key),
-    depth(depth),
-    evaluation(evaluation),
-    exact(exact),
-    upper_bound(upper_bound),
-    lower_bound(lower_bound),
-    best_move(best_move){}
+struct Undo_Info {
+  zobrist_key key;
+  int halfmove_clock;
+  Square en_passant_square;
+  bool castling_flags[4];
 };
+
+const int NNODETYPES = 3;
+enum NodeType : int { EXACT, LOWER, UPPER, NONETYPE };
+
+struct TT_Entry {
+  zobrist_key key;
+  size_t depth;
+  int evaluation;
+  NodeType type;
+  Move best_move;
+
+  TT_Entry()
+      : key(0ULL), depth(0), evaluation(0), type(NONETYPE), best_move(Move()) {}
+
+  TT_Entry(zobrist_key key, size_t depth, int evaluation, NodeType node_type,
+           Move best_move)
+      : key(key), depth(depth), evaluation(evaluation), type(node_type),
+        best_move(best_move) {}
+};
+
+enum Scores : int { DRAW = 0, CHECKMATE = -INT_MAX };
 #endif
