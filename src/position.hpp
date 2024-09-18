@@ -30,6 +30,8 @@ public:
   zobrist_key generate_key() const;
   void make_move(const Move move);
   void undo_move(const Move move);
+  void make_null_move();
+  void undo_null_move();
   Pieces inline get_piece_type(const Square sq) {
     for (int i = PAWN; i < NPIECES; i++) {
       if (pieces_bitboards[(Pieces)i] & Utils::set_bit(sq)) {

@@ -188,6 +188,39 @@ int Position::set_board(const std::string &fen) {
   return 0;
 };
 
+void Position::make_null_move() {
+  undo_info[ply].key = z_key;
+  undo_info[ply].en_passant_square = en_passant_square;
+  undo_info[ply].halfmove_clock = halfmove_clock;
+  for (int i = 0; i < 4; ++i) {
+    undo_info[ply].castling_flags[i] = castling_flags[i];
+  }
+
+  if (undo_info[ply].en_passant_square != -1) {
+    en_passant_square = (Square)-1;
+    z_key ^= Zobrist::EN_PASSANT[Utils::file(undo_info[ply].en_passant_square)];
+  }
+
+  halfmove_clock = 0;
+
+  side_to_play = ~side_to_play;
+  z_key ^= Zobrist::SIDE;
+
+  ++ply;
+}
+
+void Position::undo_null_move() {
+  ply--;
+
+  Undo_Info last_move_info = undo_info[ply];
+  en_passant_square = last_move_info.en_passant_square;
+  for (int i = 0; i < 4; ++i) {
+    castling_flags[i] = last_move_info.castling_flags[i];
+  }
+  z_key = last_move_info.key;
+  halfmove_clock = last_move_info.halfmove_clock;
+  side_to_play = ~side_to_play;
+}
 void Position::make_move(const Move move) {
   undo_info[ply].key = z_key;
   undo_info[ply].en_passant_square = en_passant_square;
@@ -207,6 +240,11 @@ void Position::make_move(const Move move) {
     } else {
       remove_pawn((Square)(move.to + N));
       z_key ^= Zobrist::PIECES[Pieces::PAWN][~side_to_play][move.to + N];
+    }
+    if (undo_info[ply].en_passant_square != -1) {
+      en_passant_square = (Square)-1;
+      z_key ^=
+          Zobrist::EN_PASSANT[Utils::file(undo_info[ply].en_passant_square)];
     }
   }
 
@@ -245,10 +283,9 @@ void Position::make_move(const Move move) {
     z_key ^= Zobrist::PIECES[move.captured_piece][~side_to_play][move.to];
   }
 
-  if (undo_info[ply].en_passant_square != -1){
-  en_passant_square = (Square)-1;
-    z_key ^=
-        Zobrist::EN_PASSANT[Utils::file(undo_info[ply].en_passant_square)];
+  if (undo_info[ply].en_passant_square != -1) {
+    en_passant_square = (Square)-1;
+    z_key ^= Zobrist::EN_PASSANT[Utils::file(undo_info[ply].en_passant_square)];
   }
 
   if (move.is_double_push) {
@@ -256,30 +293,29 @@ void Position::make_move(const Move move) {
     z_key ^= Zobrist::EN_PASSANT[Utils::file(en_passant_square)];
   }
 
-if (!move.promotion) {
-  pieces_bitboards[move.piece] ^= from_to_bitboard;
-  z_key ^= Zobrist::PIECES[move.piece][side_to_play][move.from];
-  z_key ^= Zobrist::PIECES[move.piece][side_to_play][move.to];
-} else {
-  pieces_bitboards[move.piece] &= ~from_bitboard;
-  pieces_bitboards[move.promotion] |= to_bitboard;
-  z_key ^= Zobrist::PIECES[move.piece][side_to_play][move.from];
-  z_key ^= Zobrist::PIECES[move.promotion][side_to_play][move.to];
-}
+  if (!move.promotion) {
+    pieces_bitboards[move.piece] ^= from_to_bitboard;
+    z_key ^= Zobrist::PIECES[move.piece][side_to_play][move.from];
+    z_key ^= Zobrist::PIECES[move.piece][side_to_play][move.to];
+  } else {
+    pieces_bitboards[move.piece] &= ~from_bitboard;
+    pieces_bitboards[move.promotion] |= to_bitboard;
+    z_key ^= Zobrist::PIECES[move.piece][side_to_play][move.from];
+    z_key ^= Zobrist::PIECES[move.promotion][side_to_play][move.to];
+  }
 
-if ((move.piece == Pieces::PAWN) || (move.is_capture)) {
-  halfmove_clock = 0;
-} else {
-  ++halfmove_clock;
-}
+  if ((move.piece == Pieces::PAWN) || (move.is_capture)) {
+    halfmove_clock = 0;
+  } else {
+    ++halfmove_clock;
+  }
 
-// Update color bb, switch side to play
-color_bitboards[side_to_play] ^= from_to_bitboard;
-side_to_play = ~side_to_play;
-z_key ^= Zobrist::SIDE;
+  // Update color bb, switch side to play
+  color_bitboards[side_to_play] ^= from_to_bitboard;
+  side_to_play = ~side_to_play;
+  z_key ^= Zobrist::SIDE;
 
-++ply;
-
+  ++ply;
 }
 
 void Position::undo_move(const Move move) {

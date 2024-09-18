@@ -10,32 +10,25 @@
 - Quiesence search
 - Move ordering: PV move -> MVV-LVA
 - Zobrist hashing and transposition table
-
+- Null move pruning
 
 ## To-Do, Priority:
-- [x] Zobrist hashing
-- [x] Transposition tables
-- [x] iterative deepening
-- [x] move ordering
-- [x] quiscense search
-- [x] piece mobility
-- [x] PSQ tables blending based on total material
-- [ ] speed up move gen a little further
+- [ ] check search extension
+- [ ] killer moves
+- [ ] store and pretty print PV
+- [ ] LMR
+- [ ] lategame PST eval
+- [ ] support UCI::"stop"
+
 
 ## To-Do Search
-- [x] hash positions into trans table (https://www.chessprogramming.org/Zobrist_Hashing, https://www.chessprogramming.org/Transposition_Table)
-- [x] quiscense search
 - [ ] search extension
 - [ ] killer moves
 
 ## To-Do Performance
-- [x] hashing
-- [x] fix legal_move_generation (right now it loops over all moves)
 - [ ] encode moves in a single INT
-- [x] perform another round of profiling
 
 ## To-Do Evaluation
-- [x] positional piece values
 - [ ] piece mobility calculation
 - [ ] early game v. late game piece positions
 
@@ -45,6 +38,20 @@
 - https://www.chessprogramming.org/Main_Page
 
 #### Done (to-do graveyard)
+- [x] positional piece values
+- [x] perform another round of profiling
+- [x] Zobrist hashing
+- [x] Transposition tables
+- [x] iterative deepening
+- [x] move ordering
+- [x] quiscense search
+- [x] piece mobility
+- [x] PSQ tables blending based on total material
+- [x] speed up move gen a little further
+- [x] hash positions into trans table (https://www.chessprogramming.org/Zobrist_Hashing, https://www.chessprogramming.org/Transposition_Table)
+- [x] quiscense search
+- [x] hashing
+- [x] fix legal_move_generation (right now it loops over all moves)
 - [x] cutechess-cli for version testing
 - [x] piece-square evaluation
 - [x] implement piece values

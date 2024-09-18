@@ -26,5 +26,5 @@ set(SOURCES
     src/move_list.cpp
     )
 
-add_executable(moss-v0.11-three_fold_repitition_and_TT_fixed ${SOURCES})
+    add_executable(moss-v0.12_null_move_reduction ${SOURCES})
 

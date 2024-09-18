@@ -12,9 +12,9 @@ constexpr bitboard RANK_MASK[8] = {
     0xFF,         0xFF00,         0xFF0000,         0xFF000000,
     0xFF00000000, 0xFF0000000000, 0xFF000000000000, 0xFF00000000000000};
 constexpr bitboard FILE_MASK[8] = {0x0101010101010101, 0x202020202020202,
-                               0x404040404040404,  0x808080808080808,
-                               0x1010101010101010, 0x2020202020202020,
-                               0x4040404040404040, 0x8080808080808080};
+                                   0x404040404040404,  0x808080808080808,
+                                   0x1010101010101010, 0x2020202020202020,
+                                   0x4040404040404040, 0x8080808080808080};
 //
 // Navigate [Index] <-> [Rank, File]
 inline size_t rank(Square sq) { return sq >> 3; }
@@ -36,9 +36,7 @@ inline bitboard anti_diagonal_mask(Square square) {
 }
 
 inline bitboard rank_mask(Square square) { return RANK_MASK[rank(square)]; }
-inline bitboard file_mask(Square square) {
-  return FILE_MASK[file(square)];
-}
+inline bitboard file_mask(Square square) { return FILE_MASK[file(square)]; }
 
 const std::string STARTING_FEN_POSITION =
     "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";

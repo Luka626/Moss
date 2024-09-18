@@ -1,0 +1,326 @@
+Started game 1 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Started game 2 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Started game 3 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Started game 4 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 4 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 0 - 0 - 1  [0.500] 1
+Started game 5 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 3 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 0 - 1 - 1  [0.250] 2
+Started game 6 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 2 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 1 - 1 - 1  [0.500] 3
+Started game 7 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 1 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 2 - 1 - 1  [0.625] 4
+Started game 8 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 6 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 3 - 1 - 1  [0.700] 5
+Started game 9 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 5 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 4 - 1 - 1  [0.750] 6
+Started game 10 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 9 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 4 - 1 - 2  [0.714] 7
+Started game 11 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 7 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 4 - 1 - 3  [0.688] 8
+Started game 12 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 8 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 5 - 1 - 3  [0.722] 9
+Started game 13 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 11 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 6 - 1 - 3  [0.750] 10
+...      moss-v0.11-three_fold_repitition playing White: 3 - 1 - 2  [0.667] 6
+...      moss-v0.11-three_fold_repitition playing Black: 3 - 0 - 1  [0.875] 4
+...      White vs Black: 3 - 4 - 3  [0.450] 10
+Elo difference: 190.8 +/- 256.0, LOS: 97.1 %, DrawRatio: 30.0 %
+SPRT: llr 0.228 (7.7%), lbound -2.94, ubound 2.94
+Started game 14 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 13 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 6 - 1 - 4  [0.727] 11
+Started game 15 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 10 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 7 - 1 - 4  [0.750] 12
+Started game 16 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 12 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 8 - 1 - 4  [0.769] 13
+Started game 17 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 15 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 8 - 1 - 5  [0.750] 14
+Started game 18 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 14 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 9 - 1 - 5  [0.767] 15
+Started game 19 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 16 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 10 - 1 - 5  [0.781] 16
+Started game 20 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 17 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 11 - 1 - 5  [0.794] 17
+Started game 21 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 18 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 12 - 1 - 5  [0.806] 18
+Started game 22 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 19 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 13 - 1 - 5  [0.816] 19
+Started game 23 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 21 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 14 - 1 - 5  [0.825] 20
+...      moss-v0.11-three_fold_repitition playing White: 6 - 1 - 4  [0.727] 11
+...      moss-v0.11-three_fold_repitition playing Black: 8 - 0 - 1  [0.944] 9
+...      White vs Black: 6 - 9 - 5  [0.425] 20
+Elo difference: 269.4 +/- 182.7, LOS: 100.0 %, DrawRatio: 25.0 %
+SPRT: llr 0.648 (22.0%), lbound -2.94, ubound 2.94
+Started game 24 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 20 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 1/2-1/2 {Draw by insufficient mating material}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 14 - 1 - 6  [0.810] 21
+Started game 25 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 22 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 15 - 1 - 6  [0.818] 22
+Started game 26 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 25 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 16 - 1 - 6  [0.826] 23
+Started game 27 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 23 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by insufficient mating material}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 16 - 1 - 7  [0.813] 24
+Started game 28 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 27 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 16 - 1 - 8  [0.800] 25
+Started game 29 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 24 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 1/2-1/2 {Draw by stalemate}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 16 - 1 - 9  [0.788] 26
+Started game 30 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 26 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 17 - 1 - 9  [0.796] 27
+Started game 31 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 29 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 17 - 1 - 10  [0.786] 28
+Started game 32 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 28 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 18 - 1 - 10  [0.793] 29
+Started game 33 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 30 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 19 - 1 - 10  [0.800] 30
+...      moss-v0.11-three_fold_repitition playing White: 7 - 1 - 7  [0.700] 15
+...      moss-v0.11-three_fold_repitition playing Black: 12 - 0 - 3  [0.900] 15
+...      White vs Black: 7 - 13 - 10  [0.400] 30
+Elo difference: 240.8 +/- 115.8, LOS: 100.0 %, DrawRatio: 33.3 %
+SPRT: llr 1.14 (38.8%), lbound -2.94, ubound 2.94
+Started game 34 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 32 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 20 - 1 - 10  [0.806] 31
+Started game 35 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 33 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 21 - 1 - 10  [0.813] 32
+Started game 36 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 35 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 21 - 1 - 11  [0.803] 33
+Started game 37 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 31 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 22 - 1 - 11  [0.809] 34
+Started game 38 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 36 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 23 - 1 - 11  [0.814] 35
+Started game 39 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 38 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 23 - 2 - 11  [0.792] 36
+Started game 40 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 37 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 24 - 2 - 11  [0.797] 37
+Started game 41 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 34 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 25 - 2 - 11  [0.803] 38
+Started game 42 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 42 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 26 - 2 - 11  [0.808] 39
+Started game 43 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 41 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 27 - 2 - 11  [0.813] 40
+...      moss-v0.11-three_fold_repitition playing White: 11 - 1 - 8  [0.750] 20
+...      moss-v0.11-three_fold_repitition playing Black: 16 - 1 - 3  [0.875] 20
+...      White vs Black: 12 - 17 - 11  [0.438] 40
+Elo difference: 254.7 +/- 109.4, LOS: 100.0 %, DrawRatio: 27.5 %
+SPRT: llr 1.35 (45.7%), lbound -2.94, ubound 2.94
+Started game 44 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 39 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 28 - 2 - 11  [0.817] 41
+Started game 45 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 40 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 29 - 2 - 11  [0.821] 42
+Started game 46 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 44 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 30 - 2 - 11  [0.826] 43
+Started game 47 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 45 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 30 - 2 - 12  [0.818] 44
+Started game 48 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 43 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 30 - 2 - 13  [0.811] 45
+Started game 49 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 47 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 30 - 2 - 14  [0.804] 46
+Started game 50 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 48 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 31 - 2 - 14  [0.809] 47
+Started game 51 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 49 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 31 - 2 - 15  [0.802] 48
+Started game 52 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 52 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 31 - 2 - 16  [0.796] 49
+Started game 53 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 50 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 32 - 2 - 16  [0.800] 50
+...      moss-v0.11-three_fold_repitition playing White: 12 - 1 - 12  [0.720] 25
+...      moss-v0.11-three_fold_repitition playing Black: 20 - 1 - 4  [0.880] 25
+...      White vs Black: 13 - 21 - 16  [0.420] 50
+Elo difference: 240.8 +/- 88.9, LOS: 100.0 %, DrawRatio: 32.0 %
+SPRT: llr 1.85 (62.9%), lbound -2.94, ubound 2.94
+Started game 54 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 51 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 32 - 2 - 17  [0.794] 51
+Started game 55 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 46 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 33 - 2 - 17  [0.798] 52
+Started game 56 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 54 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 34 - 2 - 17  [0.802] 53
+Started game 57 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 56 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 35 - 2 - 17  [0.806] 54
+Started game 58 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 55 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 36 - 2 - 17  [0.809] 55
+Started game 59 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 53 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 37 - 2 - 17  [0.813] 56
+Started game 60 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 57 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 38 - 2 - 17  [0.816] 57
+Started game 61 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 58 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 39 - 2 - 17  [0.819] 58
+Started game 62 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 60 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 40 - 2 - 17  [0.822] 59
+Started game 63 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 59 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 40 - 3 - 17  [0.808] 60
+...      moss-v0.11-three_fold_repitition playing White: 15 - 2 - 13  [0.717] 30
+...      moss-v0.11-three_fold_repitition playing Black: 25 - 1 - 4  [0.900] 30
+...      White vs Black: 16 - 27 - 17  [0.408] 60
+Elo difference: 250.0 +/- 85.8, LOS: 100.0 %, DrawRatio: 28.3 %
+SPRT: llr 2.05 (69.6%), lbound -2.94, ubound 2.94
+Started game 64 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 61 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by insufficient mating material}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 40 - 3 - 18  [0.803] 61
+Started game 65 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 64 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 41 - 3 - 18  [0.806] 62
+Started game 66 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 65 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 41 - 3 - 19  [0.802] 63
+Started game 67 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 62 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 41 - 3 - 20  [0.797] 64
+Started game 68 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 63 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 41 - 3 - 21  [0.792] 65
+Started game 69 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 67 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 41 - 3 - 22  [0.788] 66
+Started game 70 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 68 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 42 - 3 - 22  [0.791] 67
+Started game 71 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 66 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 43 - 3 - 22  [0.794] 68
+Started game 72 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 70 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 44 - 3 - 22  [0.797] 69
+Started game 73 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 69 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 45 - 3 - 22  [0.800] 70
+...      moss-v0.11-three_fold_repitition playing White: 16 - 2 - 17  [0.700] 35
+...      moss-v0.11-three_fold_repitition playing Black: 29 - 1 - 5  [0.900] 35
+...      White vs Black: 17 - 31 - 22  [0.400] 70
+Elo difference: 240.8 +/- 74.8, LOS: 100.0 %, DrawRatio: 31.4 %
+SPRT: llr 2.56 (87.1%), lbound -2.94, ubound 2.94
+Started game 74 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 71 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 46 - 3 - 22  [0.803] 71
+Started game 75 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 72 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 46 - 4 - 22  [0.792] 72
+Started game 76 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 75 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 46 - 4 - 23  [0.788] 73
+Started game 77 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 77 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 46 - 4 - 24  [0.784] 74
+Started game 78 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 76 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 47 - 4 - 24  [0.787] 75
+Started game 79 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 73 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 48 - 4 - 24  [0.789] 76
+Started game 80 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 74 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 49 - 4 - 24  [0.792] 77
+Started game 81 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 78 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 50 - 4 - 24  [0.795] 78
+Started game 82 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 80 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 51 - 4 - 24  [0.797] 79
+Started game 83 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 79 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 52 - 4 - 24  [0.800] 80
+...      moss-v0.11-three_fold_repitition playing White: 19 - 2 - 19  [0.713] 40
+...      moss-v0.11-three_fold_repitition playing Black: 33 - 2 - 5  [0.887] 40
+...      White vs Black: 21 - 35 - 24  [0.412] 80
+Elo difference: 240.8 +/- 71.3, LOS: 100.0 %, DrawRatio: 30.0 %
+SPRT: llr 2.75 (93.6%), lbound -2.94, ubound 2.94
+Started game 84 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 82 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 53 - 4 - 24  [0.802] 81
+Started game 85 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 81 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 54 - 4 - 24  [0.805] 82
+Started game 86 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 83 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): 1-0 {White mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 55 - 4 - 24  [0.807] 83
+Started game 87 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 84 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 0-1 {Black mates}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 56 - 4 - 24  [0.810] 84
+Finished game 86 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): * {No result}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 56 - 4 - 24  [0.810] 84
+Finished game 85 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): * {No result}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 56 - 4 - 24  [0.810] 84
+Finished game 87 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2): * {No result}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 56 - 4 - 24  [0.810] 84
+...      moss-v0.11-three_fold_repitition playing White: 21 - 2 - 19  [0.726] 42
+...      moss-v0.11-three_fold_repitition playing Black: 35 - 2 - 5  [0.893] 42
+...      White vs Black: 23 - 37 - 24  [0.417] 84
+Elo difference: 251.4 +/- 71.3, LOS: 100.0 %, DrawRatio: 28.6 %
+SPRT: llr 2.96 (100.6%), lbound -2.94, ubound 2.94 - H1 was accepted
+
+Player: moss-v0.11-three_fold_repitition
+   "Draw by 3-fold repetition": 20
+   "Draw by insufficient mating material": 3
+   "Draw by stalemate": 1
+   "Loss: Black mates": 2
+   "Loss: White mates": 2
+   "No result": 3
+   "Win: Black mates": 35
+   "Win: White mates": 21
+Player: moss-v0.10-movegen2
+   "Draw by 3-fold repetition": 20
+   "Draw by insufficient mating material": 3
+   "Draw by stalemate": 1
+   "Loss: Black mates": 35
+   "Loss: White mates": 21
+   "No result": 3
+   "Win: Black mates": 2
+   "Win: White mates": 2
+Finished match

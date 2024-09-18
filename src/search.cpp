@@ -30,7 +30,7 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
   search_start = std::chrono::high_resolution_clock::now();
   search_done = false;
 
-  while (!search_done && depth <= 64) {
+  while (!search_done & (depth <= 64)) {
     start_time = std::chrono::high_resolution_clock::now();
 
     best_eval = negamax_root(depth);
@@ -68,7 +68,7 @@ int Search::negamax_root(const int depth) {
 
   for (size_t i = 0; i < moves.size(); i++) {
     Move mv = moves.at(i);
-    if (depth >= 8 && depth <= 20) {
+    if (depth >= 10 && depth <= 20) {
       std::cout << "info currmove " << mv << std::endl;
     }
 
@@ -78,18 +78,14 @@ int Search::negamax_root(const int depth) {
       continue;
     }
     nodes_searched++;
-    // recursive call
 
-    eval = -negamax(-beta, -alpha, depth - 1);
+    eval = -negamax(-beta, -alpha, depth - 1, true);
 
-    // if a recursive search returns a stronger move
-    // we save the parent of that subtree as best
-    if (((eval > alpha) && (!search_done)) || ((i == 0) && search_done)) {
+    if ((eval > alpha) && ((!search_done) || ((i == 0) && search_done))) {
       alpha = eval;
       best_move = moves.at(i);
     }
 
-    // reset board before making different move
     pos->undo_move(mv);
   }
   update_TT(move_key, depth, alpha, NodeType::EXACT, best_move);
@@ -97,7 +93,7 @@ int Search::negamax_root(const int depth) {
   return alpha;
 }
 
-int Search::negamax(int alpha, int beta, const int depth) {
+int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
   if (is_search_done()) {
     return Scores::DRAW;
   }
@@ -122,12 +118,26 @@ int Search::negamax(int alpha, int beta, const int depth) {
     }
   }
 
+  zobrist_key move_key = pos->z_key;
   int alpha_old = alpha;
   int current_move = 0;
   int best_eval = -INT_MAX;
-  int eval = -INT_MAX;
   Move my_best_move = Move();
-  zobrist_key move_key = pos->z_key;
+
+  if (!move_gen.king_in_check(pos->side_to_play) & null_allowed &
+          (depth >= NULL_MOVE_REDUCTION + 1) &&
+      (eval.evaluate() >= beta - 50)) {
+    pos->make_null_move();
+    int nm_eval =
+        -negamax(-beta, -beta + 1, depth - NULL_MOVE_REDUCTION-1, false);
+    pos->undo_null_move();
+
+    if (nm_eval >= beta) {
+      return beta;
+    }
+  }
+
+  int eval = -INT_MAX;
 
   MoveList moves = move_gen.generate_pseudo_legal_moves();
   moves.score_moves(entry.best_move);
@@ -146,7 +156,7 @@ int Search::negamax(int alpha, int beta, const int depth) {
     nodes_searched++;
     // recursive call
 
-    eval = -negamax(-beta, -alpha, depth - 1);
+    eval = -negamax(-beta, -alpha, depth - 1, true);
 
     // undo to reset board
     pos->undo_move(mv);
@@ -168,6 +178,7 @@ int Search::negamax(int alpha, int beta, const int depth) {
     if (move_gen.king_in_check(pos->side_to_play)) {
       return Scores::CHECKMATE + pos->ply;
     } else {
+        std::cout << *pos << std::endl;
       return Scores::DRAW;
     }
   }

@@ -1,0 +1,13 @@
+Started game 1 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Started game 2 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Started game 3 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Started game 4 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 2 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 0 - 0 - 1  [0.500] 1
+Started game 5 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)
+Finished game 4 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 0 - 0 - 2  [0.500] 2
+Started game 6 of 2000 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition)
+Finished game 6 (moss-v0.10-movegen2 vs moss-v0.11-three_fold_repitition): 1/2-1/2 {Draw by 3-fold repetition}
+Score of moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2: 0 - 0 - 3  [0.500] 3
+Started game 7 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.10-movegen2)

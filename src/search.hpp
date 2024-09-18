@@ -15,7 +15,7 @@ public:
 
 private:
   void info_to_uci(const int eval) const;
-  int negamax(int alpha, int beta, const int depth);
+  int negamax(int alpha, int beta, const int depth, bool null_allowed);
   int negamax_root(const int depth);
   int quiescence(int alpha, int beta);
   bool update_TT(const zobrist_key z_key, const size_t depth,
@@ -43,6 +43,7 @@ private:
   size_t depth_searched;
   bool search_done;
   size_t hashfull;
+  const int NULL_MOVE_REDUCTION = 2;
 };
 
 #endif

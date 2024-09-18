@@ -28,26 +28,9 @@ public:
     return PAWN;
   }
 
-  bitboard inline xray_rectilinear_attacks(const bitboard occupancy,
-                                           const bitboard blockers,const Square sq) const{
-    bitboard attacks = generate_rectilinear_attacks(occupancy, sq);
-    attacks &= blockers;
-    return attacks ^ generate_rectilinear_attacks(occupancy ^ blockers, sq);
-  }
-  bitboard inline xray_diagonal_attacks(const bitboard occupancy, const bitboard blockers,
-                                        const Square sq) {
-    bitboard attacks = generate_diagonal_attacks(occupancy, sq);
-    attacks &= blockers;
-    return attacks ^ generate_diagonal_attacks(occupancy ^ blockers, sq);
-  }
-
-  bitboard generate_rectilinear_attacks(const bitboard occupancy,
-                                        const Square sq) const;
-  bitboard generate_diagonal_attacks(const bitboard occupancy, const Square sq) const;
   // https://www.chessprogramming.org/Subtracting_a_Rook_from_a_Blocking_Piece
   bitboard inline hyperbola_quintessence(const bitboard occupancy,
-                                         const Square sq,
-                                         const bitboard mask) const {
+                                         const Square sq, const bitboard mask) const{
     // exclude the slider from the mask
     bitboard mask_ex = mask & (~Utils::set_bit(sq));
     bitboard x = Utils::set_bit(sq);
@@ -56,6 +39,25 @@ public:
             Utils::reverse(Utils::reverse(o) - (0x8000000000000000ull >> sq))) &
            mask_ex;
   }
+  bitboard inline xray_rectilinear_attacks(const bitboard occupancy,
+                                           const bitboard blockers,
+                                           const Square sq) const {
+    bitboard attacks = generate_rectilinear_attacks(occupancy, sq);
+    attacks &= blockers;
+    return attacks ^ generate_rectilinear_attacks(occupancy ^ blockers, sq);
+  }
+  bitboard inline xray_diagonal_attacks(const bitboard occupancy,
+                                        const bitboard blockers,
+                                        const Square sq) {
+    bitboard attacks = generate_diagonal_attacks(occupancy, sq);
+    attacks &= blockers;
+    return attacks ^ generate_diagonal_attacks(occupancy ^ blockers, sq);
+  }
+
+  bitboard generate_rectilinear_attacks(const bitboard occupancy,
+                                        const Square sq) const;
+  bitboard generate_diagonal_attacks(const bitboard occupancy,
+                                     const Square sq) const;
   void inline add_quiet_moves(MoveList &move_list, bitboard bb,
                               const Pieces piece, const Square origin) {
     while (bb) {
@@ -77,8 +79,7 @@ public:
       capture.from = origin;
       capture.to = destination_square;
       capture.is_capture = true;
-      capture.captured_piece =
-          get_piece_type(capture.to);
+      capture.captured_piece = get_piece_type(capture.to);
       move_list.push_back(capture);
     }
   }
