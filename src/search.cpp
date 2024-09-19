@@ -6,23 +6,39 @@
 #include <limits.h>
 
 Search::Search(Position *position_ptr)
-    : move_gen((position_ptr)), eval((position_ptr)) {
-  pos = position_ptr;
-  search_start = std::chrono::high_resolution_clock::now();
-  search_done = false;
-  killer_moves.resize(MAX_DEPTH * 2, {Move(), Move()});
-  pv.resize(1, Move());
-  nodes_searched = 0;
-  hashfull = 0;
+    : move_gen((position_ptr)), eval((position_ptr)), pos(position_ptr) {
   search_age = 0;
+}
+
+void Search::new_search() {
+  search_start = std::chrono::high_resolution_clock::now();
+  start_time = std::chrono::high_resolution_clock::now();
+  search_done = false;
+
+  nodes_searched = 0;
+  depth_searched = 0;
+  time_searched = 0;
+  time_limit = 0;
+
+  hashfull = 0;
+
+  best_move_overall = Move();
+  best_move = Move();
+  killer_moves.resize(MAX_DEPTH * 2, {Move(), Move()});
+}
+
+void Search::new_game() {
+    search_age = 0;
+    new_search();
 }
 
 int Search::iterative_deepening(const int time, const int moves_remaining) {
   ++search_age;
   int depth = 1;
+  int eval = -INT_MAX;
   int best_eval = -INT_MAX;
 
-  time_limit = 0.65 * time / moves_remaining;
+  time_limit = 0.95 * time / moves_remaining;
   search_start = std::chrono::high_resolution_clock::now();
   search_done = false;
 
@@ -30,9 +46,11 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
     depth_searched = depth;
     start_time = std::chrono::high_resolution_clock::now();
 
-    pv.resize(depth, Move());
-    best_eval = negamax_root(depth, best_eval);
-    best_move_overall = best_move;
+    eval = negamax_root(depth);
+    if (best_move) {
+      best_eval = eval;
+      best_move_overall = best_move;
+    }
     depth++;
 
     auto end_time = std::chrono::high_resolution_clock::now();
@@ -45,20 +63,20 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
   return best_eval;
 }
 
-int Search::negamax_root(const int depth, int old_best) {
+int Search::negamax_root(const int depth) {
   if (is_search_done()) {
     return Scores::DRAW;
   }
 
   TT_Entry entry = probe_TT(pos->z_key, depth);
-  best_move = entry.best_move;
+  best_move = Move();
   int alpha = -INT_MAX;
   int beta = INT_MAX;
   int eval = -INT_MAX;
 
   MoveList moves = move_gen.generate_pseudo_legal_moves();
 
-  moves.score_moves(best_move, killer_moves[pos->ply].killer1,
+  moves.score_moves(entry.best_move, killer_moves[pos->ply].killer1,
                     killer_moves[pos->ply].killer2);
   moves.sort_moves();
 
@@ -82,15 +100,7 @@ int Search::negamax_root(const int depth, int old_best) {
     if ((eval > alpha) & !search_done) {
       alpha = eval;
       best_move = mv;
-      pv.at(depth_searched - depth) = mv;
     }
-
-    if ((eval > alpha) & (i == 0) & search_done){
-        alpha = old_best;
-        best_move = mv;
-      pv.at(depth_searched - depth) = mv;
-    }
-
 
     pos->undo_move(mv);
   }
@@ -177,7 +187,6 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
     if (eval > best_eval) {
       best_eval = eval;
       my_best_move = mv;
-      pv.at(depth_searched - depth) = mv;
       if (eval > alpha) {
         alpha = eval;
       }
@@ -252,21 +261,21 @@ int Search::quiescence(int alpha, int beta) {
 bool Search::update_TT(const zobrist_key z_key, const size_t depth,
                        const int evaluation, const NodeType type,
                        const Move best_move) {
-  zobrist_key idx = z_key % Utils::HASHSIZE;
+  zobrist_key idx = z_key % Utils::TT.size();
 
   if (search_done) {
     return false;
   }
-  if ((Utils::TT[idx].age == search_age) & (depth <= Utils::TT[idx].depth)) {
+  if ((Utils::TT.at(idx).age == search_age) & (depth < Utils::TT.at(idx).depth)) {
     return false;
   }
 
-  Utils::TT[idx].key = z_key;
-  Utils::TT[idx].depth = depth;
-  Utils::TT[idx].evaluation = evaluation;
-  Utils::TT[idx].type = type;
-  Utils::TT[idx].best_move = best_move;
-  Utils::TT[idx].age = search_age;
+  Utils::TT.at(idx).key = z_key;
+  Utils::TT.at(idx).depth = depth;
+  Utils::TT.at(idx).evaluation = evaluation;
+  Utils::TT.at(idx).type = type;
+  Utils::TT.at(idx).best_move = best_move;
+  Utils::TT.at(idx).age = search_age;
   hashfull++;
   return true;
 }
@@ -278,8 +287,8 @@ TT_Entry Search::probe_TT(const zobrist_key z_key, const size_t depth) {
 TT_Entry Search::probe_TT(const zobrist_key z_key, const size_t depth,
                           bool &was_found) {
 
-  zobrist_key idx = z_key % Utils::HASHSIZE;
-  TT_Entry entry = Utils::TT[idx];
+  zobrist_key idx = z_key % Utils::TT.size();
+  TT_Entry entry = Utils::TT.at(idx);
 
   if (entry.age != search_age) {
     was_found = false;
@@ -300,22 +309,6 @@ TT_Entry Search::probe_TT(const zobrist_key z_key, const size_t depth,
   return entry;
 }
 
-void Search::info_to_uci(const int eval) const {
-  double nps = nodes_searched / (time_searched / 1000.0);
-  std::cout << "info";
-  std::cout << " depth " << depth_searched;
-  std::cout << " score cp " << eval;
-  std::cout << " nodes " << nodes_searched;
-  std::cout << " nps " << nps;
-  std::cout << " hashfull " << hashfull * 1000 / Utils::HASHSIZE;
-  std::cout << " time " << time_searched;
-  std::cout << " pv ";
-  for (auto mv : pv) {
-    std::cout << mv << " ";
-  }
-  std::cout << std::endl;
-}
-
 bool Search::is_search_done() {
   if ((nodes_searched & 2048) == 0) {
     auto curr_time = std::chrono::high_resolution_clock::now();
@@ -330,6 +323,10 @@ bool Search::is_search_done() {
 }
 
 void Search::store_killer(Move mv) {
+  if (search_done) {
+    return;
+  }
+
   if (mv.is_capture) {
     return;
   }
@@ -340,4 +337,32 @@ void Search::store_killer(Move mv) {
   Move tmp = killer_moves[pos->ply].killer1;
   killer_moves[pos->ply].killer2 = tmp;
   killer_moves[pos->ply].killer1 = mv;
+}
+
+void Search::info_to_uci(const int eval) {
+  double nps = nodes_searched / (time_searched / 1000.0);
+  std::cout << "info";
+  std::cout << " depth " << depth_searched;
+  std::cout << " score cp " << eval;
+  std::cout << " nodes " << nodes_searched;
+  std::cout << " nps " << nps;
+  std::cout << " hashfull " << hashfull * 1000 / Utils::TT.size();
+  std::cout << " time " << time_searched;
+  std::cout << " pv " << best_move_overall;
+
+  /*
+  std::vector<Move> pv = {};
+  TT_Entry entry = probe_TT(pos->z_key, 0);
+  while (entry.best_move) {
+    pv.push_back(entry.best_move);
+    std::cout << entry.best_move << "  ";
+    pos->make_move(entry.best_move);
+    entry = probe_TT(pos->z_key, 0);
+  }
+  for (std::vector<Move>::reverse_iterator riter = pv.rbegin(); riter !=
+  pv.rend(); ++riter){ Move mv = *riter; if (mv){ pos->undo_move(mv);
+    }
+  }
+  */
+  std::cout << std::endl;
 }

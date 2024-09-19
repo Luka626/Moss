@@ -6,20 +6,23 @@
 #include <sstream>
 
 // default constructor of a starting position
-Position::Position() {
-  Utils::init();
-  Zobrist::init();
-    set_board(Utils::STARTING_FEN_POSITION); };
+Position::Position() : Position(Utils::STARTING_FEN_POSITION){};
 
 Position::Position(const std::string &fen) {
-  Utils::init();
-  Zobrist::init();
-    set_board(fen); }
+  z_key = 0;
+  halfmove_clock = 0;
+  set_board(fen);
+  undo_info.resize(128, Undo_Info());
+}
+
+void Position::new_game(){
+    z_key = 0;
+    halfmove_clock = 0;
+}
 
 zobrist_key Position::generate_key() const {
   zobrist_key key = 0ULL;
 
-  // todo : [ ] add castling rights and en passant and side to play hash
   for (int k = 0; k < NCOLORS; k++) {
     Colors side = (Colors)k;
     for (int i = 0; i < NPIECES; ++i) {
@@ -52,6 +55,7 @@ zobrist_key Position::generate_key() const {
 int Position::set_board(const std::string &fen) {
 
   ply = 1;
+  last_move = Move();
   for (int i = 0; i < 4; ++i) {
     castling_flags[i] = false;
   };
@@ -228,6 +232,7 @@ void Position::make_move(const Move move) {
   undo_info[ply].key = z_key;
   undo_info[ply].en_passant_square = en_passant_square;
   undo_info[ply].halfmove_clock = halfmove_clock;
+  undo_info[ply].last_move = last_move;
   for (int i = 0; i < 4; ++i) {
     undo_info[ply].castling_flags[i] = castling_flags[i];
   }
@@ -318,6 +323,8 @@ void Position::make_move(const Move move) {
   side_to_play = ~side_to_play;
   z_key ^= Zobrist::SIDE;
 
+  last_move = move;
+
   ++ply;
 }
 
@@ -331,6 +338,7 @@ void Position::undo_move(const Move move) {
   }
   z_key = last_move_info.key;
   halfmove_clock = last_move_info.halfmove_clock;
+  last_move = last_move_info.last_move;
 
   bitboard from_bitboard = Utils::set_bit(move.to);
   bitboard to_bitboard = Utils::set_bit(move.from);
@@ -391,7 +399,7 @@ bool Position::is_drawn() const {
     if (halfmove_clock == 0) {
       return false;
     } else {
-      if ((undo_info[i].key == z_key) && (++repititions == 1)) {
+      if ((undo_info[i].key == z_key) && ((++repititions) == 1)) {
         return true;
       }
     }

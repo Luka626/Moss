@@ -2,9 +2,9 @@
 #define UTILS_HPP_
 
 #include "datatypes.hpp"
-#include <array>
 #include <iostream>
 #include <string>
+#include <vector>
 
 namespace Utils {
 
@@ -57,7 +57,7 @@ extern bitboard bpawn_attacks[64];
 extern bitboard IN_BETWEEN[64][64];
 
 const size_t HASHSIZE = 128 * 1024 * 1024 / sizeof(TT_Entry);
-extern TT_Entry TT[HASHSIZE];
+extern std::vector<TT_Entry> TT;
 
 extern int MVV_LVA[NPIECES][NPIECES];
 

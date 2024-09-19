@@ -11,6 +11,7 @@
 class MoveGenerator {
 public:
   MoveGenerator(Position *position_ptr);
+  void new_game();
   double perft(const size_t depth);
   MoveList generate_pseudo_legal_moves();
   MoveList generate_legal_moves();

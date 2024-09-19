@@ -15,7 +15,7 @@ bitboard bpawn_attacks[64];
 
 bitboard IN_BETWEEN[64][64];
 
-TT_Entry TT[HASHSIZE];
+std::vector<TT_Entry> TT;
 
 // MVV_LVA[victim][attacker]
 int MVV_LVA[NPIECES][NPIECES] = {
@@ -98,9 +98,7 @@ void Utils::init() {
   MATERIAL_VALUE[QUEEN] = 800;
   MATERIAL_VALUE[KING] = 20000;
 
-  for (size_t i = 0; i < HASHSIZE; i++) {
-    TT[i] = TT_Entry();
-  }
+  TT.resize(HASHSIZE, TT_Entry());
 }
 
 void Utils::generate_in_between() {
@@ -179,7 +177,7 @@ void Utils::generate_bpawn_jumps() {
 void Utils::generate_knight_attacks() {
   // generate a bitboard array containing all valid knight moves from all
   // squares
-  for (size_t i = a1; i <= NSQUARES; i++) {
+  for (size_t i = a1; i < NSQUARES; i++) {
     int starting_rank = rank((Square)i);
     int starting_file = file((Square)i);
 
@@ -200,7 +198,7 @@ void Utils::generate_knight_attacks() {
 }
 
 void Utils::generate_king_attacks() {
-  for (size_t i = a1; i <= NSQUARES; i++) {
+  for (size_t i = a1; i < NSQUARES; i++) {
     int starting_rank = rank((Square)i);
     int starting_file = file((Square)i);
 
@@ -221,7 +219,7 @@ void Utils::generate_king_attacks() {
 }
 
 void Utils::generate_wpawn_attacks() {
-  for (size_t i = a1; i <= NSQUARES; i++) {
+  for (size_t i = a1; i < NSQUARES; i++) {
     int starting_rank = rank((Square)i);
     int starting_file = file((Square)i);
 
@@ -242,12 +240,12 @@ void Utils::generate_wpawn_attacks() {
 }
 
 void Utils::generate_bpawn_attacks() {
-  for (size_t i = a1; i <= NSQUARES; i++) {
+  for (size_t i = a1; i < NSQUARES; i++) {
     int starting_rank = rank((Square)i);
     int starting_file = file((Square)i);
 
     for (int j = 0; j < 2; j++) {
-      int target_square = i + bpawn_jumps[j];
+      Square target_square =(Square) (i + bpawn_jumps[j]);
       if ((target_square < a1) || (target_square > h8)) {
         continue;
       };

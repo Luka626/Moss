@@ -9,6 +9,10 @@ MoveGenerator::MoveGenerator(Position *position_ptr) {
   initiate_rank_attacks();
 };
 
+void MoveGenerator::new_game(){
+    initiate_rank_attacks();
+}
+
 double MoveGenerator::divide(const size_t depth) {
   auto start_time = std::chrono::high_resolution_clock::now();
 

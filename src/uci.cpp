@@ -8,9 +8,12 @@
 #include <sstream>
 #include <string>
 
-Uci::Uci(Position *position_ptr, MoveGenerator *movegen_ptr) {
+Uci::Uci(Position *position_ptr, MoveGenerator *movegen_ptr,
+         Search *search_ptr) {
   pos = position_ptr;
   move_gen = movegen_ptr;
+  search = search_ptr;
+  new_game();
 }
 
 void Uci::loop() {
@@ -39,7 +42,6 @@ void Uci::loop() {
       if (word == "startpos") {
         pos->set_board(Utils::STARTING_FEN_POSITION);
 
-
       } else if (word == "fen") {
         std::getline(iss, word);
         pos->set_board(word);
@@ -58,6 +60,9 @@ void Uci::loop() {
     }
     if (word == "print") {
       std::cout << *pos << std::endl;
+    }
+    if (word == "ucinewgame"){
+        new_game();
     }
     if (word == "quit") {
       break;
@@ -101,12 +106,19 @@ void Uci::parse_go(const std::string &go) const {
     move_gen->divide(std::stoi(token));
   } else {
 
-    Search search = Search(pos);
-    search.iterative_deepening(time, moves_remaining);
-    std::cout << "bestmove " << search.get_best_move();
-    if (search.get_ponder()) {
-      std::cout << " ponder " << search.get_ponder();
-    }
+    search->new_search();
+    search->iterative_deepening(time, moves_remaining);
+    std::cout << "bestmove " << search->get_best_move();
     std::cout << std::endl;
   }
+  
+}
+
+void Uci::new_game(){
+    Zobrist::init();
+    Utils::init();
+    pos->new_game();
+    move_gen->new_game();
+    search->new_game();
+
 }

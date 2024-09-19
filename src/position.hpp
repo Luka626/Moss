@@ -24,6 +24,7 @@ public:
   Position();
   Position(const std::string &fen);
 
+  void new_game();
   int set_board(const std::string &fen);
 
   bool is_drawn() const;
@@ -90,6 +91,7 @@ public:
   friend std::ostream &operator<<(std::ostream &os, const Position &pos);
 
   // useful getters
+  Move inline get_last_move() const { return last_move; }
   bitboard inline get_occupied() const {
     return color_bitboards[WHITE] | color_bitboards[BLACK];
   }
@@ -110,6 +112,7 @@ public:
   }
 
 private:
-  Undo_Info undo_info[256];
+  std::vector<Undo_Info> undo_info;
+  Move last_move;
 };
 #endif

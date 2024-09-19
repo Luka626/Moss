@@ -169,10 +169,11 @@ bool inline operator==(const Move &lhs, const Move &rhs) {
 }
 
 struct Undo_Info {
-  zobrist_key key;
-  int halfmove_clock;
-  Square en_passant_square;
-  bool castling_flags[4];
+  zobrist_key key = 0ULL;
+  int halfmove_clock = 0ULL;
+  Square en_passant_square = a1;
+  bool castling_flags[4] = {true, true, true, true};
+  Move last_move = Move();
 };
 
 const int NNODETYPES = 3;

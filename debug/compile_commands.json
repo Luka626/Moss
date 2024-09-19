@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/luka/Moss/debug",
+  "command": "/usr/bin/c++  -I/home/luka/Moss/src -Wall -Wextra -Wpedantic -Werror  -ggdb3 -o CMakeFiles/moss.dir/src/main.cpp.o -c /home/luka/Moss/src/main.cpp",
+  "file": "/home/luka/Moss/src/main.cpp"
+},
+{
+  "directory": "/home/luka/Moss/debug",
+  "command": "/usr/bin/c++  -I/home/luka/Moss/src -Wall -Wextra -Wpedantic -Werror  -ggdb3 -o CMakeFiles/moss.dir/src/move_generator.cpp.o -c /home/luka/Moss/src/move_generator.cpp",
+  "file": "/home/luka/Moss/src/move_generator.cpp"
+},
+{
+  "directory": "/home/luka/Moss/debug",
+  "command": "/usr/bin/c++  -I/home/luka/Moss/src -Wall -Wextra -Wpedantic -Werror  -ggdb3 -o CMakeFiles/moss.dir/src/position.cpp.o -c /home/luka/Moss/src/position.cpp",
+  "file": "/home/luka/Moss/src/position.cpp"
+},
+{
+  "directory": "/home/luka/Moss/debug",
+  "command": "/usr/bin/c++  -I/home/luka/Moss/src -Wall -Wextra -Wpedantic -Werror  -ggdb3 -o CMakeFiles/moss.dir/src/utils.cpp.o -c /home/luka/Moss/src/utils.cpp",
+  "file": "/home/luka/Moss/src/utils.cpp"
+},
+{
+  "directory": "/home/luka/Moss/debug",
+  "command": "/usr/bin/c++  -I/home/luka/Moss/src -Wall -Wextra -Wpedantic -Werror  -ggdb3 -o CMakeFiles/moss.dir/src/uci.cpp.o -c /home/luka/Moss/src/uci.cpp",
+  "file": "/home/luka/Moss/src/uci.cpp"
+},
+{
+  "directory": "/home/luka/Moss/debug",
+  "command": "/usr/bin/c++  -I/home/luka/Moss/src -Wall -Wextra -Wpedantic -Werror  -ggdb3 -o CMakeFiles/moss.dir/src/search.cpp.o -c /home/luka/Moss/src/search.cpp",
+  "file": "/home/luka/Moss/src/search.cpp"
+},
+{
+  "directory": "/home/luka/Moss/debug",
+  "command": "/usr/bin/c++  -I/home/luka/Moss/src -Wall -Wextra -Wpedantic -Werror  -ggdb3 -o CMakeFiles/moss.dir/src/eval.cpp.o -c /home/luka/Moss/src/eval.cpp",
+  "file": "/home/luka/Moss/src/eval.cpp"
+},
+{
+  "directory": "/home/luka/Moss/debug",
+  "command": "/usr/bin/c++  -I/home/luka/Moss/src -Wall -Wextra -Wpedantic -Werror  -ggdb3 -o CMakeFiles/moss.dir/src/zobrist.cpp.o -c /home/luka/Moss/src/zobrist.cpp",
+  "file": "/home/luka/Moss/src/zobrist.cpp"
+},
+{
+  "directory": "/home/luka/Moss/debug",
+  "command": "/usr/bin/c++  -I/home/luka/Moss/src -Wall -Wextra -Wpedantic -Werror  -ggdb3 -o CMakeFiles/moss.dir/src/move_list.cpp.o -c /home/luka/Moss/src/move_list.cpp",
+  "file": "/home/luka/Moss/src/move_list.cpp"
+}
+]
