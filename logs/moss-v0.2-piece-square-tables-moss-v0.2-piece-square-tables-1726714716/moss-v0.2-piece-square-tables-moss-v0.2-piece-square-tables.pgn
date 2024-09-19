@@ -1,0 +1,64 @@
+[Event "?"]
+[Site "?"]
+[Date "2024.09.18"]
+[Round "1"]
+[White "moss-v0.2-piece-square-tables"]
+[Black "moss-v0.2-piece-square-tables"]
+[Result "1-0"]
+[GameDuration "00:00:00"]
+[GameEndTime "2024-09-18T22:58:36.798 EDT"]
+[GameStartTime "2024-09-18T22:58:36.284 EDT"]
+[PlyCount "0"]
+[Termination "abandoned"]
+[TimeControl "40/60"]
+
+{Black disconnects} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "2024.09.18"]
+[Round "2"]
+[White "moss-v0.2-piece-square-tables"]
+[Black "moss-v0.2-piece-square-tables"]
+[Result "*"]
+[GameDuration "00:00:00"]
+[GameEndTime "2024-09-18T22:58:36.798 EDT"]
+[GameStartTime "2024-09-18T22:58:36.288 EDT"]
+[PlyCount "0"]
+[Termination "unterminated"]
+[TimeControl "40/60"]
+
+{No result} *
+
+[Event "?"]
+[Site "?"]
+[Date "2024.09.18"]
+[Round "3"]
+[White "moss-v0.2-piece-square-tables"]
+[Black "moss-v0.2-piece-square-tables"]
+[Result "0-1"]
+[GameDuration "00:00:00"]
+[GameEndTime "2024-09-18T22:58:36.798 EDT"]
+[GameStartTime "2024-09-18T22:58:36.291 EDT"]
+[PlyCount "0"]
+[Termination "abandoned"]
+[TimeControl "40/60"]
+
+{White disconnects} 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "2024.09.18"]
+[Round "4"]
+[White "moss-v0.2-piece-square-tables"]
+[Black "moss-v0.2-piece-square-tables"]
+[Result "0-1"]
+[GameDuration "00:00:00"]
+[GameEndTime "2024-09-18T22:58:36.798 EDT"]
+[GameStartTime "2024-09-18T22:58:36.293 EDT"]
+[PlyCount "0"]
+[Termination "abandoned"]
+[TimeControl "40/60"]
+
+{White disconnects} 0-1
+

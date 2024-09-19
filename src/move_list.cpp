@@ -1,21 +1,29 @@
 #include "move_list.hpp"
 #include "utils.hpp"
 #include <algorithm>
-#include <climits>
 
-void MoveList::score_moves(Move TT_move) {
+void MoveList::score_moves(Move TT_move, Move killer1, Move killer2) {
   for (size_t i = 0; i < this->size(); i++) {
     Move *move = &this->moves[i];
-    move->sort_score = move->piece;
+    move->sort_score = 0;
 
     if (*move == TT_move) {
-      move->sort_score = INT_MAX/8;
-    } else if (move->is_capture) {
-      move->sort_score += Utils::MVV_LVA[move->captured_piece][move->piece];
+      move->sort_score = MoveScores::TTMOVE;
     }
 
-    if (move->promotion > 0){
-        move->sort_score += Utils::MVV_LVA[move->promotion][Pieces::PAWN];
+    if (move->is_capture) {
+      move->sort_score = Utils::MVV_LVA[move->captured_piece][move->piece];
+    } else {
+    if (*move == killer1) {
+      move->sort_score = MoveScores::KILLER1;
+    }
+    if (*move == killer2) {
+      move->sort_score = MoveScores::KILLER2;
+    }
+    }
+
+    if (move->promotion > 0) {
+      move->sort_score = Utils::MVV_LVA[move->promotion][Pieces::PAWN];
     }
   }
 }

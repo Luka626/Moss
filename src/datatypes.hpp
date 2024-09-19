@@ -112,6 +112,8 @@ std::ostream inline &operator<<(std::ostream &os, const Square &sq) {
   os << file_ch << rank_ch;
   return os;
 };
+
+
 struct Move {
   Pieces piece;
   Square from;
@@ -123,6 +125,12 @@ struct Move {
   bool is_en_passant;
   Pieces promotion;
   int sort_score = 0;
+explicit inline operator bool() const{
+    return !((piece == PAWN)
+            && (from == a1)
+            && (to == a1)
+            && (sort_score == 0));
+}
 };
 std::ostream inline &operator<<(std::ostream &os, const Move &mv) {
   os << mv.from << mv.to;
@@ -186,5 +194,14 @@ struct TT_Entry {
         best_move(best_move) {}
 };
 
-enum Scores : int { DRAW = 0, CHECKMATE = -INT_MAX };
+enum Scores : int { 
+    DRAW = 0,
+    CHECKMATE = -INT_MAX
+};
+
+struct KillerMoves {
+    Move killer1;
+    Move killer2;
+};
+
 #endif

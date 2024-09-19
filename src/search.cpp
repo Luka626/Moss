@@ -12,13 +12,10 @@ Search::Search(Position *position_ptr)
   nodes_searched = 0;
   best_move = {};
   hashfull = 0;
-  hashsize = 128 * 1024 * 1024 / sizeof(TT_Entry);
+  hashsize = 512 * 1024 * 1024 / sizeof(TT_Entry);
 
-  transposition_table.reserve(hashsize);
-  for (zobrist_key i = 0; i < (hashsize); i++) {
-    TT_Entry entry = TT_Entry();
-    transposition_table.push_back(entry);
-  }
+  killer_moves.resize(MAX_DEPTH * 2, {Move(), Move()});
+  transposition_table.resize(hashsize, TT_Entry());
 }
 
 int Search::iterative_deepening(const int time, const int moves_remaining) {
@@ -30,9 +27,11 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
   search_start = std::chrono::high_resolution_clock::now();
   search_done = false;
 
-  while (!search_done & (depth <= 64)) {
+  while (!search_done & (depth <= MAX_DEPTH)) {
+    depth_searched = depth;
     start_time = std::chrono::high_resolution_clock::now();
 
+    pv.resize(depth, Move());
     best_eval = negamax_root(depth);
     best_move_overall = best_move;
     depth++;
@@ -57,11 +56,11 @@ int Search::negamax_root(const int depth) {
   int alpha = -INT_MAX;
   int beta = INT_MAX;
   int eval = -INT_MAX;
-  depth_searched = depth;
 
   MoveList moves = move_gen.generate_pseudo_legal_moves();
 
-  moves.score_moves(best_move);
+  moves.score_moves(best_move, killer_moves[pos->ply].killer1,
+                    killer_moves[pos->ply].killer2);
   moves.sort_moves();
 
   zobrist_key move_key = pos->z_key;
@@ -84,6 +83,7 @@ int Search::negamax_root(const int depth) {
     if ((eval > alpha) && ((!search_done) || ((i == 0) && search_done))) {
       alpha = eval;
       best_move = moves.at(i);
+      pv.at(depth_searched - depth) = best_move;
     }
 
     pos->undo_move(mv);
@@ -114,6 +114,7 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
     } else if ((entry.type == NodeType::UPPER) && (entry.evaluation < alpha)) {
       return alpha;
     } else if ((entry.type == NodeType::LOWER) && (entry.evaluation >= beta)) {
+      store_killer(entry.best_move);
       return beta;
     }
   }
@@ -129,7 +130,7 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
       (eval.evaluate() >= beta - 50)) {
     pos->make_null_move();
     int nm_eval =
-        -negamax(-beta, -beta + 1, depth - NULL_MOVE_REDUCTION-1, false);
+        -negamax(-beta, -beta + 1, depth - NULL_MOVE_REDUCTION - 1, false);
     pos->undo_null_move();
 
     if (nm_eval >= beta) {
@@ -140,7 +141,8 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
   int eval = -INT_MAX;
 
   MoveList moves = move_gen.generate_pseudo_legal_moves();
-  moves.score_moves(entry.best_move);
+  moves.score_moves(entry.best_move, killer_moves[pos->ply].killer1,
+                    killer_moves[pos->ply].killer2);
   moves.sort_moves();
 
   for (size_t i = 0; i < moves.size(); i++) {
@@ -163,12 +165,14 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
 
     if (eval >= beta) {
       update_TT(move_key, depth, eval, NodeType::LOWER, mv);
+      store_killer(mv);
       return beta;
     }
 
     if (eval > best_eval) {
       best_eval = eval;
       my_best_move = mv;
+      pv.at(depth_searched - depth) = mv;
       if (eval > alpha) {
         alpha = eval;
       }
@@ -211,7 +215,8 @@ int Search::quiescence(int alpha, int beta) {
   int eval = stand_pat;
 
   MoveList moves = move_gen.generate_captures();
-  moves.score_moves(Move());
+  moves.score_moves(Move(), killer_moves[pos->ply].killer1,
+                    killer_moves[pos->ply].killer2);
   moves.sort_moves();
 
   for (size_t i = 0; i < moves.size(); i++) {
@@ -277,10 +282,18 @@ TT_Entry Search::probe_TT(const zobrist_key z_key, const size_t depth,
 
 void Search::info_to_uci(const int eval) const {
   double nps = nodes_searched / (time_searched / 1000.0);
-  std::cout << "info depth " << depth_searched << " score cp " << eval
-            << " nodes " << nodes_searched << " nps " << nps << " hashfull "
-            << hashfull * 1000 / hashsize << " time " << time_searched << " pv "
-            << best_move_overall << std::endl;
+  std::cout << "info";
+  std::cout << " depth " << depth_searched;
+  std::cout << " score cp " << eval;
+  std::cout << " nodes " << nodes_searched;
+  std::cout << " nps " << nps;
+  std::cout << " hashfull " << hashfull * 1000 / hashsize;
+  std::cout << " time " << time_searched;
+  std::cout << " pv ";
+  for (auto mv : pv) {
+    std::cout << mv << " ";
+  }
+  std::cout << std::endl;
 }
 
 bool Search::is_search_done() {
@@ -294,4 +307,17 @@ bool Search::is_search_done() {
     }
   }
   return search_done;
+}
+
+void Search::store_killer(Move mv) {
+  if (mv.is_capture) {
+    return;
+  }
+  if (mv == killer_moves[pos->ply].killer1) {
+    return;
+  }
+
+  Move tmp = killer_moves[pos->ply].killer1;
+  killer_moves[pos->ply].killer2 = tmp;
+  killer_moves[pos->ply].killer1 = mv;
 }

@@ -11,7 +11,14 @@ class Search {
 public:
   Search(Position *position_ptr);
   int iterative_deepening(const int time, const int moves_remaining);
-  constexpr Move get_best_move() const { return best_move_overall; };
+  Move get_best_move() const { return best_move_overall; };
+  Move inline get_ponder() const {
+      if (pv.size() <= 1){
+          return Move();
+      }
+      return pv.at(1);
+  };
+  
 
 private:
   void info_to_uci(const int eval) const;
@@ -24,6 +31,7 @@ private:
                     bool &was_found);
   TT_Entry probe_TT(const zobrist_key z_key, const size_t depth);
   bool is_search_done();
+  void store_killer(Move mv);
 
   Move best_move_overall;
   Move best_move;
@@ -35,7 +43,12 @@ private:
   std::chrono::time_point<std::chrono::high_resolution_clock> start_time;
   std::vector<TT_Entry> transposition_table;
   std::vector<int> repitition_table;
+  std::vector<Move> pv;
+  std::vector<KillerMoves> killer_moves;
   size_t hashsize;
+
+  const int NULL_MOVE_REDUCTION = 2;
+  const int MAX_DEPTH = 64;
 
   // debug messages
   int nodes_searched;
@@ -43,7 +56,7 @@ private:
   size_t depth_searched;
   bool search_done;
   size_t hashfull;
-  const int NULL_MOVE_REDUCTION = 2;
+
 };
 
 #endif

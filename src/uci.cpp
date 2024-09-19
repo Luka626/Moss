@@ -3,6 +3,7 @@
 #include "move_generator.hpp"
 #include "search.hpp"
 #include "utils.hpp"
+#include <cctype>
 #include <climits>
 #include <sstream>
 #include <string>
@@ -70,9 +71,10 @@ void Uci::parse_go(const std::string &go) const {
   int time = INT_MAX;
   int moves_remaining = 40;
 
-  if (token == "perft") {
-    std::getline(iss, token, ' ');
-    move_gen->divide(std::stoi(token));
+  if (isdigit(token[0])) {
+    int multiplier = std::stoi(token);
+    time = 100 * multiplier;
+    moves_remaining = 1;
   } else {
     if (token == "wtime") {
       std::getline(iss, token, ' ');
@@ -92,9 +94,18 @@ void Uci::parse_go(const std::string &go) const {
       std::getline(iss, token, ' ');
       moves_remaining = std::stoi(token);
     }
+  }
+  if (token == "perft") {
+    std::getline(iss, token, ' ');
+    move_gen->divide(std::stoi(token));
+  } else {
 
     Search search = Search(pos);
     search.iterative_deepening(time, moves_remaining);
-    std::cout << "bestmove " << search.get_best_move() << std::endl;
+    std::cout << "bestmove " << search.get_best_move();
+    if (search.get_ponder()) {
+      std::cout << " ponder " << search.get_ponder();
+    }
+    std::cout << std::endl;
   }
 }

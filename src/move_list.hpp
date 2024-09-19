@@ -7,6 +7,13 @@ private:
   Move moves[128];
   size_t count;
 
+  enum MoveScores : int {
+    TTMOVE = 250,
+    KILLER1 = 100,
+    KILLER2 = 50,
+    MVV_LVA_OFFSET = 150,
+  };
+
 public:
   inline MoveList() { count = 0; }
   constexpr size_t clear() {
@@ -17,7 +24,7 @@ public:
   inline Move &at(const size_t index) { return moves[index]; }
   constexpr size_t size() const { return count; }
   constexpr bool empty() const { return count == 0; }
-  void score_moves(Move TT_move);
+  void score_moves(Move TT_move, Move killer1, Move killer2);
   void sort_moves();
 };
 

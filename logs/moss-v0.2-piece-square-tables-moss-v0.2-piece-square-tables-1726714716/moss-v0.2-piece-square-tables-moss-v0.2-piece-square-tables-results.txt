@@ -1,0 +1,4 @@
+Started game 1 of 2000 (moss-v0.2-piece-square-tables vs moss-v0.2-piece-square-tables)
+Started game 2 of 2000 (moss-v0.2-piece-square-tables vs moss-v0.2-piece-square-tables)
+Started game 3 of 2000 (moss-v0.2-piece-square-tables vs moss-v0.2-piece-square-tables)
+Started game 4 of 2000 (moss-v0.2-piece-square-tables vs moss-v0.2-piece-square-tables)

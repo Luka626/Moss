@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(lchess VERSION 0.1)
+project(Moss VERSION 0.13)
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
@@ -26,5 +26,4 @@ set(SOURCES
     src/move_list.cpp
     )
 
-    add_executable(moss-v0.12_null_move_reduction ${SOURCES})
-
+    add_executable(moss-v0.13-killer_moves ${SOURCES})

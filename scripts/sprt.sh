@@ -33,7 +33,7 @@ while getopts ":brh" option; do
     esac
 done
 
-PROJECT_PATH=/home/luka/lchess
+PROJECT_PATH=/home/luka/Moss
 ENGINES_PATH=$PROJECT_PATH/bin
 dt=$(date +%s)
 
