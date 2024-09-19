@@ -15,7 +15,7 @@ Help()
 }
 
 
-tc="inf/10+0.2"
+tc="40/60"
 
 while getopts ":brh" option; do
     case $option in

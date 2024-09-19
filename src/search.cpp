@@ -178,7 +178,6 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
     if (move_gen.king_in_check(pos->side_to_play)) {
       return Scores::CHECKMATE + pos->ply;
     } else {
-        std::cout << *pos << std::endl;
       return Scores::DRAW;
     }
   }

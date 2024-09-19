@@ -14,8 +14,8 @@ void MoveList::score_moves(Move TT_move) {
       move->sort_score += Utils::MVV_LVA[move->captured_piece][move->piece];
     }
 
-    if (move->promotion){
-        move->sort_score += 75;
+    if (move->promotion > 0){
+        move->sort_score += Utils::MVV_LVA[move->promotion][Pieces::PAWN];
     }
   }
 }

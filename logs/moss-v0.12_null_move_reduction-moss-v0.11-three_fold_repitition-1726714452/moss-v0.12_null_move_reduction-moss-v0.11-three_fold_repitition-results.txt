@@ -1,0 +1,4 @@
+Started game 1 of 2000 (moss-v0.12_null_move_reduction vs moss-v0.11-three_fold_repitition)
+Started game 2 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.12_null_move_reduction)
+Started game 3 of 2000 (moss-v0.12_null_move_reduction vs moss-v0.11-three_fold_repitition)
+Started game 4 of 2000 (moss-v0.11-three_fold_repitition vs moss-v0.12_null_move_reduction)
