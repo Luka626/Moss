@@ -1,6 +1,7 @@
 #include "search.hpp"
 #include "datatypes.hpp"
 #include "move_generator.hpp"
+#include "utils.hpp"
 #include <chrono>
 #include <limits.h>
 
@@ -9,17 +10,14 @@ Search::Search(Position *position_ptr)
   pos = position_ptr;
   search_start = std::chrono::high_resolution_clock::now();
   search_done = false;
-  nodes_searched = 0;
-  best_move = {};
-  hashfull = 0;
-  hashsize = 512 * 1024 * 1024 / sizeof(TT_Entry);
-
   killer_moves.resize(MAX_DEPTH * 2, {Move(), Move()});
-  transposition_table.resize(hashsize, TT_Entry());
+  nodes_searched = 0;
+  hashfull = 0;
+  search_age = 0;
 }
 
 int Search::iterative_deepening(const int time, const int moves_remaining) {
-
+  ++search_age;
   int depth = 1;
   int best_eval = -INT_MAX;
 
@@ -114,7 +112,6 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
     } else if ((entry.type == NodeType::UPPER) && (entry.evaluation < alpha)) {
       return alpha;
     } else if ((entry.type == NodeType::LOWER) && (entry.evaluation >= beta)) {
-      store_killer(entry.best_move);
       return beta;
     }
   }
@@ -247,19 +244,23 @@ int Search::quiescence(int alpha, int beta) {
 bool Search::update_TT(const zobrist_key z_key, const size_t depth,
                        const int evaluation, const NodeType type,
                        const Move best_move) {
-  zobrist_key idx = z_key % transposition_table.size();
+  zobrist_key idx = z_key % Utils::HASHSIZE;
 
-  if ((depth > transposition_table[idx].depth) && (!search_done)) {
-    transposition_table[idx].key = z_key;
-    transposition_table[idx].depth = depth;
-    transposition_table[idx].evaluation = evaluation;
-    transposition_table[idx].type = type;
-    transposition_table[idx].best_move = best_move;
-    hashfull++;
-    return true;
-  } else {
+  if (search_done) {
     return false;
   }
+  if ((Utils::TT[idx].age == search_age) & (depth <= Utils::TT[idx].depth)) {
+    return false;
+  }
+
+  Utils::TT[idx].key = z_key;
+  Utils::TT[idx].depth = depth;
+  Utils::TT[idx].evaluation = evaluation;
+  Utils::TT[idx].type = type;
+  Utils::TT[idx].best_move = best_move;
+  Utils::TT[idx].age = search_age;
+  hashfull++;
+  return true;
 }
 
 TT_Entry Search::probe_TT(const zobrist_key z_key, const size_t depth) {
@@ -269,14 +270,25 @@ TT_Entry Search::probe_TT(const zobrist_key z_key, const size_t depth) {
 TT_Entry Search::probe_TT(const zobrist_key z_key, const size_t depth,
                           bool &was_found) {
 
-  zobrist_key idx = z_key % transposition_table.size();
-  TT_Entry entry = transposition_table[idx];
+  zobrist_key idx = z_key % Utils::HASHSIZE;
+  TT_Entry entry = Utils::TT[idx];
 
-  if ((entry.key == z_key) && (entry.depth > depth)) {
-    was_found = true;
-  } else {
+  if (entry.age != search_age) {
     was_found = false;
+    return TT_Entry();
   }
+
+  if (entry.key != z_key) {
+    was_found = false;
+    return TT_Entry();
+  }
+
+  if (entry.depth <= depth) {
+    was_found = false;
+    return entry;
+  }
+
+  was_found = true;
   return entry;
 }
 
@@ -287,7 +299,7 @@ void Search::info_to_uci(const int eval) const {
   std::cout << " score cp " << eval;
   std::cout << " nodes " << nodes_searched;
   std::cout << " nps " << nps;
-  std::cout << " hashfull " << hashfull * 1000 / hashsize;
+  std::cout << " hashfull " << hashfull * 1000 / Utils::HASHSIZE;
   std::cout << " time " << time_searched;
   std::cout << " pv ";
   for (auto mv : pv) {

@@ -2,6 +2,7 @@
 #define UTILS_HPP_
 
 #include "datatypes.hpp"
+#include <array>
 #include <iostream>
 #include <string>
 
@@ -55,6 +56,9 @@ extern bitboard bpawn_attacks[64];
 
 extern bitboard IN_BETWEEN[64][64];
 
+const size_t HASHSIZE = 128 * 1024 * 1024 / sizeof(TT_Entry);
+extern TT_Entry TT[HASHSIZE];
+
 extern int MVV_LVA[NPIECES][NPIECES];
 
 extern int WPAWN_POSITIONAL[NSQUARES];
@@ -68,6 +72,7 @@ extern int MATERIAL_VALUE[NPIECES];
 // Init function where we define all the extern attributes
 void init();
 
+void clear_TT();
 void generate_knight_jumps();
 void generate_king_jumps();
 void generate_wpawn_jumps();

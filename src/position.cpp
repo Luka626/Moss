@@ -2,14 +2,19 @@
 #include "datatypes.hpp"
 #include "utils.hpp"
 #include "zobrist.hpp"
-#include <cassert>
 #include <cstring>
 #include <sstream>
 
 // default constructor of a starting position
-Position::Position() { set_board(Utils::STARTING_FEN_POSITION); };
+Position::Position() {
+  Utils::init();
+  Zobrist::init();
+    set_board(Utils::STARTING_FEN_POSITION); };
 
-Position::Position(const std::string &fen) { set_board(fen); }
+Position::Position(const std::string &fen) {
+  Utils::init();
+  Zobrist::init();
+    set_board(fen); }
 
 zobrist_key Position::generate_key() const {
   zobrist_key key = 0ULL;
@@ -50,8 +55,6 @@ int Position::set_board(const std::string &fen) {
   for (int i = 0; i < 4; ++i) {
     castling_flags[i] = false;
   };
-  Utils::init();
-  Zobrist::init();
 
   for (auto &bb : pieces_bitboards) {
     bb = 0ULL;

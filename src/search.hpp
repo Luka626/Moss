@@ -41,11 +41,12 @@ private:
   int time_limit;
   std::chrono::time_point<std::chrono::high_resolution_clock> search_start;
   std::chrono::time_point<std::chrono::high_resolution_clock> start_time;
-  std::vector<TT_Entry> transposition_table;
+
+  size_t search_age;
+
   std::vector<int> repitition_table;
   std::vector<Move> pv;
   std::vector<KillerMoves> killer_moves;
-  size_t hashsize;
 
   const int NULL_MOVE_REDUCTION = 2;
   const int MAX_DEPTH = 64;

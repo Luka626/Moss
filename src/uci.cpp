@@ -39,6 +39,7 @@ void Uci::loop() {
       if (word == "startpos") {
         pos->set_board(Utils::STARTING_FEN_POSITION);
 
+
       } else if (word == "fen") {
         std::getline(iss, word);
         pos->set_board(word);
