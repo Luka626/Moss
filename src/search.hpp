@@ -23,7 +23,7 @@ public:
 private:
   void info_to_uci(const int eval) const;
   int negamax(int alpha, int beta, const int depth, bool null_allowed);
-  int negamax_root(const int depth);
+  int negamax_root(const int depth, int old_best);
   int quiescence(int alpha, int beta);
   bool update_TT(const zobrist_key z_key, const size_t depth,
                  const int evaluation, const NodeType type, const Move best_move);
@@ -49,7 +49,7 @@ private:
   std::vector<KillerMoves> killer_moves;
 
   const int NULL_MOVE_REDUCTION = 2;
-  const int MAX_DEPTH = 64;
+  const int MAX_DEPTH = 128;
 
   // debug messages
   int nodes_searched;

@@ -11,6 +11,7 @@ Search::Search(Position *position_ptr)
   search_start = std::chrono::high_resolution_clock::now();
   search_done = false;
   killer_moves.resize(MAX_DEPTH * 2, {Move(), Move()});
+  pv.resize(1, Move());
   nodes_searched = 0;
   hashfull = 0;
   search_age = 0;
@@ -30,7 +31,7 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
     start_time = std::chrono::high_resolution_clock::now();
 
     pv.resize(depth, Move());
-    best_eval = negamax_root(depth);
+    best_eval = negamax_root(depth, best_eval);
     best_move_overall = best_move;
     depth++;
 
@@ -44,7 +45,7 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
   return best_eval;
 }
 
-int Search::negamax_root(const int depth) {
+int Search::negamax_root(const int depth, int old_best) {
   if (is_search_done()) {
     return Scores::DRAW;
   }
@@ -78,11 +79,18 @@ int Search::negamax_root(const int depth) {
 
     eval = -negamax(-beta, -alpha, depth - 1, true);
 
-    if ((eval > alpha) && ((!search_done) || ((i == 0) && search_done))) {
+    if ((eval > alpha) & !search_done) {
       alpha = eval;
-      best_move = moves.at(i);
-      pv.at(depth_searched - depth) = best_move;
+      best_move = mv;
+      pv.at(depth_searched - depth) = mv;
     }
+
+    if ((eval > alpha) & (i == 0) & search_done){
+        alpha = old_best;
+        best_move = mv;
+      pv.at(depth_searched - depth) = mv;
+    }
+
 
     pos->undo_move(mv);
   }
