@@ -1,0 +1,3 @@
+/home/luka/Moss/release/CMakeFiles/moss.dir
+/home/luka/Moss/release/CMakeFiles/edit_cache.dir
+/home/luka/Moss/release/CMakeFiles/rebuild_cache.dir
