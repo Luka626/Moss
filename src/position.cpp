@@ -5,19 +5,17 @@
 #include <cstring>
 #include <sstream>
 
-// default constructor of a starting position
-Position::Position() : Position(Utils::STARTING_FEN_POSITION){};
+Position::Position() { new_game(); }
 
-Position::Position(const std::string &fen) {
+void Position::new_game() {
+  ply = 0;
   z_key = 0;
   halfmove_clock = 0;
-  set_board(fen);
-  undo_info.resize(128, Undo_Info());
-}
+  undo_info.resize(Utils::MAX_PLY, Undo_Info());
+  ply = 1;
+  last_move = Move();
 
-void Position::new_game(){
-    z_key = 0;
-    halfmove_clock = 0;
+  set_board(Utils::STARTING_FEN_POSITION);
 }
 
 zobrist_key Position::generate_key() const {
@@ -54,8 +52,6 @@ zobrist_key Position::generate_key() const {
 
 int Position::set_board(const std::string &fen) {
 
-  ply = 1;
-  last_move = Move();
   for (int i = 0; i < 4; ++i) {
     castling_flags[i] = false;
   };
@@ -67,6 +63,7 @@ int Position::set_board(const std::string &fen) {
     bb = 0ULL;
   };
 
+  side_to_play = WHITE;
   std::istringstream iss(fen);
   std::string fen_token;
 

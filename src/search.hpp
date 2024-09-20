@@ -6,10 +6,11 @@
 #include "move_generator.hpp"
 #include "position.hpp"
 #include <chrono>
+#include <memory>
 #include <vector>
 class Search {
 public:
-  Search(Position *position_ptr);
+  Search(std::shared_ptr<Position> position_ptr);
   void new_game();
   int iterative_deepening(const int time, const int moves_remaining);
   void new_search();
@@ -30,9 +31,9 @@ private:
 
   Move best_move_overall;
   Move best_move;
-  MoveGenerator move_gen;
-  Evaluator eval;
-  Position *pos;
+  std::unique_ptr<MoveGenerator> move_gen;
+  std::unique_ptr<Evaluator> eval;
+  std::shared_ptr<Position> pos;
   int time_limit;
   std::chrono::time_point<std::chrono::high_resolution_clock> search_start;
   std::chrono::time_point<std::chrono::high_resolution_clock> start_time;
@@ -42,7 +43,7 @@ private:
   std::vector<KillerMoves> killer_moves;
 
   const int NULL_MOVE_REDUCTION = 2;
-  const int MAX_DEPTH = 256;
+  const int MAX_DEPTH = 64;
 
   // debug messages
   int nodes_searched;

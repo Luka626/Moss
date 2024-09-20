@@ -4,18 +4,19 @@
 #include "move_generator.hpp"
 #include "position.hpp"
 #include "search.hpp"
+#include <memory>
 
 class Uci {
 public:
-  Uci(Position *position_ptr, MoveGenerator *movegen_ptr, Search *search_ptr);
+  Uci(std::shared_ptr<Position> position_ptr);
   void loop();
   void parse_go(const std::string &go) const;
   void new_game();
 
 private:
-  Position *pos;
-  MoveGenerator *move_gen;
-  Search *search;
+  std::shared_ptr<Position> pos;
+  std::unique_ptr<MoveGenerator> move_gen;
+  std::unique_ptr<Search> search;
 
 }; // namespace UCI
 

@@ -1,12 +1,14 @@
 #include "search.hpp"
 #include "datatypes.hpp"
+#include "eval.hpp"
 #include "move_generator.hpp"
 #include "utils.hpp"
 #include <chrono>
 #include <limits.h>
+#include <memory>
 
-Search::Search(Position *position_ptr)
-    : move_gen((position_ptr)), eval((position_ptr)), pos(position_ptr) {
+Search::Search(std::shared_ptr<Position> position_ptr)
+    : move_gen(std::make_unique<MoveGenerator>(position_ptr)), eval(std::make_unique<Evaluator>(position_ptr)), pos(position_ptr) {
   search_age = 0;
 }
 
@@ -24,11 +26,13 @@ void Search::new_search() {
 
   best_move_overall = Move();
   best_move = Move();
-  killer_moves.resize(MAX_DEPTH * 2, {Move(), Move()});
+  killer_moves.clear();
+  killer_moves.resize(Utils::MAX_PLY, {Move(), Move()});
 }
 
 void Search::new_game() {
     search_age = 0;
+    move_gen->new_game();
     new_search();
 }
 
@@ -42,7 +46,7 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
   search_start = std::chrono::high_resolution_clock::now();
   search_done = false;
 
-  while (!search_done & (depth <= MAX_DEPTH)) {
+  while (!search_done & (depth < MAX_DEPTH)) {
     depth_searched = depth;
     start_time = std::chrono::high_resolution_clock::now();
 
@@ -74,10 +78,10 @@ int Search::negamax_root(const int depth) {
   int beta = INT_MAX;
   int eval = -INT_MAX;
 
-  MoveList moves = move_gen.generate_pseudo_legal_moves();
+  MoveList moves = move_gen->generate_pseudo_legal_moves();
 
-  moves.score_moves(entry.best_move, killer_moves[pos->ply].killer1,
-                    killer_moves[pos->ply].killer2);
+  moves.score_moves(entry.best_move, killer_moves.at(pos->ply).killer1,
+                    killer_moves.at(pos->ply).killer2);
   moves.sort_moves();
 
   zobrist_key move_key = pos->z_key;
@@ -89,7 +93,7 @@ int Search::negamax_root(const int depth) {
     }
 
     pos->make_move(mv);
-    if (!move_gen.validate_gamestate()) {
+    if (!move_gen->validate_gamestate()) {
       pos->undo_move(mv);
       continue;
     }
@@ -140,9 +144,9 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
   int best_eval = -INT_MAX;
   Move my_best_move = Move();
 
-  if (!move_gen.king_in_check(pos->side_to_play) & null_allowed &
+  if (!move_gen->king_in_check(pos->side_to_play) & null_allowed &
           (depth >= NULL_MOVE_REDUCTION + 1) &&
-      (eval.evaluate() >= beta - 50)) {
+      (eval->evaluate() >= beta - 50)) {
     pos->make_null_move();
     int nm_eval =
         -negamax(-beta, -beta + 1, depth - NULL_MOVE_REDUCTION - 1, false);
@@ -155,9 +159,9 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
 
   int eval = -INT_MAX;
 
-  MoveList moves = move_gen.generate_pseudo_legal_moves();
-  moves.score_moves(entry.best_move, killer_moves[pos->ply].killer1,
-                    killer_moves[pos->ply].killer2);
+  MoveList moves = move_gen->generate_pseudo_legal_moves();
+  moves.score_moves(entry.best_move, killer_moves.at(pos->ply).killer1,
+                    killer_moves.at(pos->ply).killer2);
   moves.sort_moves();
 
   for (size_t i = 0; i < moves.size(); i++) {
@@ -165,7 +169,7 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
     Move mv = moves.at(i);
 
     pos->make_move(mv);
-    if (!move_gen.validate_gamestate()) {
+    if (!move_gen->validate_gamestate()) {
       pos->undo_move(mv);
       continue;
     }
@@ -193,7 +197,7 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
     }
   }
   if (current_move <= 0) {
-    if (move_gen.king_in_check(pos->side_to_play)) {
+    if (move_gen->king_in_check(pos->side_to_play)) {
       return Scores::CHECKMATE + pos->ply;
     } else {
       return Scores::DRAW;
@@ -217,7 +221,7 @@ int Search::quiescence(int alpha, int beta) {
     return Scores::DRAW;
   }
 
-  int stand_pat = eval.evaluate();
+  int stand_pat = eval->evaluate();
 
   if (stand_pat >= beta) {
     return beta;
@@ -228,16 +232,16 @@ int Search::quiescence(int alpha, int beta) {
 
   int eval = stand_pat;
 
-  MoveList moves = move_gen.generate_captures();
-  moves.score_moves(Move(), killer_moves[pos->ply].killer1,
-                    killer_moves[pos->ply].killer2);
+  MoveList moves = move_gen->generate_captures();
+  moves.score_moves(Move(), killer_moves.at(pos->ply).killer1,
+                    killer_moves.at(pos->ply).killer2);
   moves.sort_moves();
 
   for (size_t i = 0; i < moves.size(); i++) {
     Move mv = moves.at(i);
 
     pos->make_move(mv);
-    if (!move_gen.validate_gamestate()) {
+    if (!move_gen->validate_gamestate()) {
       pos->undo_move(mv);
       continue;
     }
@@ -330,13 +334,13 @@ void Search::store_killer(Move mv) {
   if (mv.is_capture) {
     return;
   }
-  if (mv == killer_moves[pos->ply].killer1) {
+  if (mv == killer_moves.at(pos->ply).killer1) {
     return;
   }
 
-  Move tmp = killer_moves[pos->ply].killer1;
-  killer_moves[pos->ply].killer2 = tmp;
-  killer_moves[pos->ply].killer1 = mv;
+  Move tmp = killer_moves.at(pos->ply).killer1;
+  killer_moves.at(pos->ply).killer2 = tmp;
+  killer_moves.at(pos->ply).killer1 = mv;
 }
 
 void Search::info_to_uci(const int eval) {

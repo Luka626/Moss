@@ -2,12 +2,13 @@
 #define EVAL_HPP_
 
 #include "position.hpp"
+#include <memory>
 class Evaluator {
 public:
-  Evaluator(Position *position_ptr);
+  Evaluator(std::shared_ptr<Position> position_ptr);
   int evaluate() const;
 
 private:
-  Position *pos;
+  std::shared_ptr<Position> pos;
 };
 #endif

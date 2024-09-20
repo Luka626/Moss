@@ -4,9 +4,10 @@
 #include "datatypes.hpp"
 #include "utils.hpp"
 #include "zobrist.hpp"
+#include <memory>
 #include <string>
 
-class Position {
+class Position : std::enable_shared_from_this<Position> {
 public:
   // 6 piece and 2 color bitboards describe piece arrangement
   bitboard pieces_bitboards[NPIECES];
@@ -22,8 +23,6 @@ public:
   zobrist_key z_key;
 
   Position();
-  Position(const std::string &fen);
-
   void new_game();
   int set_board(const std::string &fen);
 

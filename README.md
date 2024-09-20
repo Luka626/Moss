@@ -14,8 +14,8 @@
 
 ## To-Do, Priority:
 - [ ] check search extension
-- [ ] killer moves
-- [ ] store and pretty print PV
+- [x] killer moves
+- [ ] store and pretty print P-V
 - [ ] LMR
 - [ ] lategame PST eval
 - [ ] support UCI::"stop"
@@ -23,7 +23,7 @@
 
 ## To-Do Search
 - [ ] search extension
-- [ ] killer moves
+- [x] killer moves
 
 ## To-Do Performance
 - [ ] encode moves in a single INT

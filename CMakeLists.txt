@@ -8,7 +8,7 @@ endif()
 set(CMAKE_DEBUG_POSTFIX d)
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic -Werror ")
-set(CMAKE_CXX_FLAGS_DEBUG "-ggdb3")
+set(CMAKE_CXX_FLAGS_DEBUG "-fsanitize=address -ggdb3")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)

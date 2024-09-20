@@ -4,7 +4,7 @@ Help()
 {
     echo "Script for automating self-play SPRT."
     echo
-    echo "Syntax: sprt.sh <eng1> <eng2> [-b|r|h]"
+    echo "Syntax: sprt.sh [-b|r|h] <eng1> <eng2>"
     echo "- Provide version number or name as arguments"
     echo "Options:"
     echo "b:     Blitz TC, 10s + 0.1s increment"
@@ -37,8 +37,8 @@ PROJECT_PATH=/home/luka/Moss
 ENGINES_PATH=$PROJECT_PATH/bin
 dt=$(date +%s)
 
-new_engine_version=$1
-old_engine_version=$2
+new_engine_version=$2
+old_engine_version=$3
 
 new_engine_name=$(ls $PROJECT_PATH/bin | grep $new_engine_version -m 1)
 old_engine_name=$(ls $PROJECT_PATH/bin | grep $old_engine_version -m 1)
@@ -59,7 +59,6 @@ echo "Using bins: " $new_engine_cmd "and" $old_engine_cmd
 cutechess-cli \
     -engine cmd=$new_engine_cmd name=$new_engine_name \
     -engine cmd=$old_engine_cmd name=$old_engine_name \
-    -debug \
     -each proto=uci tc=$tc \
     -rounds 2000 \
     -sprt elo0=0 elo1=10 alpha=0.05 beta=0.05 \

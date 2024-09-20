@@ -6,11 +6,12 @@
 #include "position.hpp"
 #include "utils.hpp"
 #include <array>
+#include <memory>
 #include <sstream>
 
 class MoveGenerator {
 public:
-  MoveGenerator(Position *position_ptr);
+  MoveGenerator(std::shared_ptr<Position> position_ptr);
   void new_game();
   double perft(const size_t depth);
   MoveList generate_pseudo_legal_moves();
@@ -22,7 +23,7 @@ public:
 
   Pieces inline get_piece_type(const Square sq) {
     for (int i = PAWN; i < NPIECES; i++) {
-      if (position->pieces_bitboards[(Pieces)i] & Utils::set_bit(sq)) {
+      if (pos->pieces_bitboards[(Pieces)i] & Utils::set_bit(sq)) {
         return (Pieces)i;
       }
     }
@@ -118,7 +119,8 @@ private:
   void initiate_rank_attacks();
   bitboard generate_attackers(const Square sq) const;
   bitboard generate_pinned_pieces();
-  Position *position;
+
+  std::shared_ptr<Position> pos;
   std::array<uint8_t, 512> RANK_ATTACKS;
 };
 #endif

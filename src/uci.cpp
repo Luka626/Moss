@@ -5,14 +5,14 @@
 #include "utils.hpp"
 #include <cctype>
 #include <climits>
+#include <memory>
 #include <sstream>
 #include <string>
 
-Uci::Uci(Position *position_ptr, MoveGenerator *movegen_ptr,
-         Search *search_ptr) {
-  pos = position_ptr;
-  move_gen = movegen_ptr;
-  search = search_ptr;
+Uci::Uci(std::shared_ptr<Position> position_ptr)
+    : pos(position_ptr),
+      move_gen(std::make_unique<MoveGenerator>(position_ptr)),
+      search(std::make_unique<Search>(position_ptr)) {
   new_game();
 }
 
@@ -61,8 +61,8 @@ void Uci::loop() {
     if (word == "print") {
       std::cout << *pos << std::endl;
     }
-    if (word == "ucinewgame"){
-        new_game();
+    if (word == "ucinewgame") {
+      new_game();
     }
     if (word == "quit") {
       break;
@@ -87,15 +87,15 @@ void Uci::parse_go(const std::string &go) const {
       if (pos->side_to_play == WHITE) {
         time = std::stoi(token);
       }
+      std::getline(iss, token, ' ');
     }
-    std::getline(iss, token, ' ');
     if (token == "btime") {
       std::getline(iss, token, ' ');
       if (pos->side_to_play == BLACK) {
         time = std::stoi(token);
       }
-    }
     std::getline(iss, token, ' ');
+    }
     if (token == "movestogo") {
       std::getline(iss, token, ' ');
       moves_remaining = std::stoi(token);
@@ -105,20 +105,17 @@ void Uci::parse_go(const std::string &go) const {
     std::getline(iss, token, ' ');
     move_gen->divide(std::stoi(token));
   } else {
-
     search->new_search();
     search->iterative_deepening(time, moves_remaining);
     std::cout << "bestmove " << search->get_best_move();
     std::cout << std::endl;
   }
-  
 }
 
-void Uci::new_game(){
-    Zobrist::init();
-    Utils::init();
-    pos->new_game();
-    move_gen->new_game();
-    search->new_game();
-
+void Uci::new_game() {
+  Zobrist::init();
+  Utils::init();
+  pos->new_game();
+  move_gen->new_game();
+  search->new_game();
 }

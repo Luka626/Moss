@@ -41,7 +41,8 @@ inline bitboard file_mask(Square square) { return FILE_MASK[file(square)]; }
 
 const std::string STARTING_FEN_POSITION =
     "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
-
+static const size_t MAX_DEPTH = 64;
+static const size_t MAX_PLY = 512;
 // Extern means declared here but defined in utils.cpp
 extern bitboard knight_attacks[64];
 extern int knight_jumps[8];

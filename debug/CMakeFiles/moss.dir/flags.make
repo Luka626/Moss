@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/luka/Moss/src
 
-CXX_FLAGS = -Wall -Wextra -Wpedantic -Werror  -ggdb3
+CXX_FLAGS = -Wall -Wextra -Wpedantic -Werror  -fsanitize=address -ggdb3
 

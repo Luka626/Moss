@@ -1,14 +1,10 @@
-#include "search.hpp"
 #include "uci.hpp"
+#include <memory>
 
 int main() {
-  Position pos = Position();
+  auto pos = std::make_shared<Position>();
 
-  MoveGenerator move_gen = MoveGenerator(&pos);
-  Search sch = Search(&pos);
-
-  Uci uci = Uci(&pos, &move_gen, &sch);
-
+  Uci uci = Uci(pos);
 
   uci.loop();
 
