@@ -29,4 +29,4 @@ set(SOURCES
 
     add_executable(moss ${SOURCES})
     set_target_properties(moss PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
-    set_property(TARGET moss PROPERTY VERSION "0.13-killer_moves")
+    set_property(TARGET moss PROPERTY VERSION "0.14")

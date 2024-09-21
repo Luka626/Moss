@@ -10,9 +10,7 @@ MoveGenerator::MoveGenerator(std::shared_ptr<Position> position_ptr) {
   initiate_rank_attacks();
 };
 
-void MoveGenerator::new_game(){
-    initiate_rank_attacks();
-}
+void MoveGenerator::new_game() { initiate_rank_attacks(); }
 
 double MoveGenerator::divide(const size_t depth) {
   auto start_time = std::chrono::high_resolution_clock::now();
@@ -65,9 +63,9 @@ double MoveGenerator::perft(const size_t depth) {
 
   for (size_t i = 0; i < move_list.size(); i++) {
     pos->make_move(move_list.at(i));
-    if (!validate_gamestate()){
-        pos->undo_move(move_list.at(i));
-        continue;
+    if (!validate_gamestate()) {
+      pos->undo_move(move_list.at(i));
+      continue;
     }
     nodes += perft(depth - 1);
     pos->undo_move(move_list.at(i));
@@ -120,10 +118,8 @@ bitboard MoveGenerator::generate_attackers(const Square sq) const {
   bitboard queens_bb = pos->pieces_bitboards[Pieces::QUEEN];
   bitboard kings_bb = pos->pieces_bitboards[Pieces::KING];
 
-  bitboard rect_attacks =
-      generate_rectilinear_attacks(pos->get_occupied(), sq);
-  bitboard diag_attacks =
-      generate_diagonal_attacks(pos->get_occupied(), sq);
+  bitboard rect_attacks = generate_rectilinear_attacks(pos->get_occupied(), sq);
+  bitboard diag_attacks = generate_diagonal_attacks(pos->get_occupied(), sq);
 
   return ((Utils::wpawn_attacks[sq] & bpawn_bb) |
           (Utils::bpawn_attacks[sq] & wpawn_bb) |
@@ -136,15 +132,13 @@ bitboard MoveGenerator::generate_attackers(const Square sq) const {
 bitboard MoveGenerator::generate_pinned_pieces() {
   bitboard pinned = 0ULL;
   bitboard king = pos->get_bitboard(Pieces::KING);
-  bitboard opp_rooks =
-      pos->get_bitboard(~pos->side_to_play, Pieces::ROOK);
-  bitboard opp_queens =
-      pos->get_bitboard(~pos->side_to_play, Pieces::QUEEN);
+  bitboard opp_rooks = pos->get_bitboard(~pos->side_to_play, Pieces::ROOK);
+  bitboard opp_queens = pos->get_bitboard(~pos->side_to_play, Pieces::QUEEN);
   bitboard opp_rect_attackers = opp_rooks | opp_queens;
 
   bitboard pinners = xray_rectilinear_attacks(
-      pos->get_occupied(),
-      pos->color_bitboards[pos->side_to_play], Utils::pop_bit(king));
+      pos->get_occupied(), pos->color_bitboards[pos->side_to_play],
+      Utils::pop_bit(king));
   pinners &= opp_rect_attackers;
   while (pinners) {
     Square sq = Utils::pop_bit(pinners);
@@ -152,12 +146,11 @@ bitboard MoveGenerator::generate_pinned_pieces() {
               pos->color_bitboards[pos->side_to_play];
   }
 
-  bitboard opp_bishops =
-      pos->get_bitboard(~pos->side_to_play, Pieces::BISHOP);
+  bitboard opp_bishops = pos->get_bitboard(~pos->side_to_play, Pieces::BISHOP);
   bitboard opp_diag_attackers = opp_queens | opp_bishops;
-  pinners = xray_diagonal_attacks(
-      pos->get_occupied(),
-      pos->color_bitboards[pos->side_to_play], Utils::pop_bit(king));
+  pinners = xray_diagonal_attacks(pos->get_occupied(),
+                                  pos->color_bitboards[pos->side_to_play],
+                                  Utils::pop_bit(king));
   pinners &= opp_diag_attackers;
   while (pinners) {
     Square sq = Utils::pop_bit(pinners);
@@ -643,8 +636,7 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
           }
         }
 
-        if (!is_path_attacked &&
-            ((between_ex & pos->get_occupied()) == 0)) {
+        if (!is_path_attacked && ((between_ex & pos->get_occupied()) == 0)) {
           Move w_kingside_castle = {};
           w_kingside_castle.piece = KING;
           w_kingside_castle.from = e1;
@@ -674,8 +666,7 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
           }
         }
 
-        if (!is_path_attacked &&
-            ((between_ex & pos->get_occupied()) == 0)) {
+        if (!is_path_attacked && ((between_ex & pos->get_occupied()) == 0)) {
           Move w_kingside_castle = {};
           w_kingside_castle.piece = KING;
           w_kingside_castle.from = e1;
@@ -706,8 +697,7 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
           }
         }
 
-        if (!is_path_attacked &&
-            ((between_ex & pos->get_occupied()) == 0)) {
+        if (!is_path_attacked && ((between_ex & pos->get_occupied()) == 0)) {
           Move w_kingside_castle = {};
           w_kingside_castle.piece = KING;
           w_kingside_castle.from = e8;
@@ -736,8 +726,7 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
           }
         }
 
-        if (!is_path_attacked &&
-            ((between_ex & pos->get_occupied()) == 0)) {
+        if (!is_path_attacked && ((between_ex & pos->get_occupied()) == 0)) {
           Move w_kingside_castle = {};
           w_kingside_castle.piece = KING;
           w_kingside_castle.from = e8;

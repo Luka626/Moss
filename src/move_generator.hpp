@@ -122,5 +122,8 @@ private:
 
   std::shared_ptr<Position> pos;
   std::array<uint8_t, 512> RANK_ATTACKS;
+
+
+
 };
 #endif

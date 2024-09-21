@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "../bin/mossd"
-  "../bin/mossd-0.13-killer_moves"
+  "../bin/mossd-0.14"
   "../bin/mossd.pdb"
   "CMakeFiles/moss.dir/src/eval.cpp.o"
   "CMakeFiles/moss.dir/src/eval.cpp.o.d"

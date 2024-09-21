@@ -389,6 +389,8 @@ void Position::undo_move(const Move move) {
 bool Position::is_drawn() const {
   int repititions = 0;
   if (halfmove_clock >= 50) {
+
+      
     return true;
   }
 
@@ -396,7 +398,7 @@ bool Position::is_drawn() const {
     if (halfmove_clock == 0) {
       return false;
     } else {
-      if ((undo_info[i].key == z_key) && ((++repititions) == 1)) {
+      if ((undo_info[i].key == z_key) && ((++repititions) == 2)) {
         return true;
       }
     }

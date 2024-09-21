@@ -193,7 +193,7 @@ struct TT_Entry {
   TT_Entry(zobrist_key key, size_t depth, int evaluation, NodeType node_type,
            Move best_move, size_t age)
       : key(key), depth(depth), evaluation(evaluation), type(node_type),
-        best_move(best_move), age(age) {}
+        best_move(best_move), age(age)  {}
 };
 
 enum Scores : int { 

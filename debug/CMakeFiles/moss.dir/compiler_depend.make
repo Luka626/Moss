@@ -1347,7 +1347,8 @@ CMakeFiles/moss.dir/src/search.cpp.o: ../src/search.cpp \
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
-  ../src/eval.hpp \
+  ../src/move_generator.hpp \
+  ../src/move_list.hpp \
   ../src/position.hpp \
   ../src/utils.hpp \
   /usr/include/c++/11/iostream \
@@ -1383,10 +1384,9 @@ CMakeFiles/moss.dir/src/search.cpp.o: ../src/search.cpp \
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
-  ../src/move_generator.hpp \
-  ../src/move_list.hpp \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
+  ../src/eval.hpp \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/limits \

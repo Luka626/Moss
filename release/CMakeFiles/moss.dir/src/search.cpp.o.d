@@ -158,7 +158,8 @@ CMakeFiles/moss.dir/src/search.cpp.o: /home/luka/Moss/src/search.cpp \
  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
- /usr/include/c++/11/bits/ostream.tcc /home/luka/Moss/src/eval.hpp \
+ /usr/include/c++/11/bits/ostream.tcc \
+ /home/luka/Moss/src/move_generator.hpp /home/luka/Moss/src/move_list.hpp \
  /home/luka/Moss/src/position.hpp /home/luka/Moss/src/utils.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/vector \
@@ -184,9 +185,8 @@ CMakeFiles/moss.dir/src/search.cpp.o: /home/luka/Moss/src/search.cpp \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h \
- /home/luka/Moss/src/move_generator.hpp /home/luka/Moss/src/move_list.hpp \
- /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
+ /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc /home/luka/Moss/src/eval.hpp \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/limits /usr/include/c++/11/ctime \
  /usr/include/c++/11/bits/parse_numbers.h
