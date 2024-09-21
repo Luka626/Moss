@@ -11,6 +11,7 @@ void Position::new_game() {
   ply = 0;
   z_key = 0;
   halfmove_clock = 0;
+  undo_info.clear();
   undo_info.resize(Utils::MAX_PLY, Undo_Info());
   ply = 1;
   last_move = Move();

@@ -44,7 +44,7 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
   TT_Entry old_entry = probe_TT(pos->z_key, depth_searched);
   best_move = old_entry.best_move;
 
-  time_limit = time / moves_remaining;
+  time_limit = time / (moves_remaining + 1);
   search_start = std::chrono::high_resolution_clock::now();
 
   while (!search_done & (depth_searched < Utils::MAX_DEPTH)) {
@@ -70,7 +70,7 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
       }
       nodes_searched++;
 
-      if (i > 0) {
+      if (i > 10000) {
         root_eval = -negamax(-alpha - 1, -alpha, depth_searched - 1, true);
         if ((root_eval > alpha) & (root_eval < beta)) {
           root_eval = -negamax(-beta, -alpha, depth_searched - 1, true);
@@ -80,16 +80,17 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
       }
 
       pos->undo_move(mv);
-      if (search_done){
-          break;
+      if (search_done) {
+        break;
       }
 
       if (root_eval > alpha) {
         alpha = root_eval;
         best_move = mv;
-        update_TT(pos->z_key, depth_searched, root_eval, NodeType::EXACT, mv);
       }
     }
+
+    update_TT(pos->z_key, depth_searched, root_eval, NodeType::EXACT, best_move);
 
     TT_Entry root_entry = probe_TT(pos->z_key, depth_searched);
     best_move = root_entry.best_move;
@@ -112,10 +113,10 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
   int alpha_old = alpha;
   bool was_found = false;
   TT_Entry entry = probe_TT(pos->z_key, depth, was_found);
-  if (was_found & ((int)entry.depth >= depth)) {
+  if (was_found) {
     if (entry.type == NodeType::EXACT) {
       return entry.evaluation;
-    } else if ((entry.type == NodeType::UPPER) && (entry.evaluation <= alpha)) {
+    } else if ((entry.type == NodeType::UPPER) && (entry.evaluation < alpha)) {
       return alpha;
     } else if ((entry.type == NodeType::LOWER) && (entry.evaluation >= beta)) {
       return beta;
@@ -159,8 +160,7 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
     current_move++;
     nodes_searched++;
 
-    // PVS - negascout of TT move
-    if (i > 0) {
+    if (i > 1000) {
       eval = -negamax(-alpha - 1, -alpha, depth - 1, true);
       if ((alpha < eval) & (beta > eval)) {
         // need to re-search since we failed-high
@@ -168,7 +168,6 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
       }
     }
 
-    // full search all other moves
     else {
       eval = -negamax(-beta, -alpha, depth - 1, true);
     }
@@ -180,7 +179,7 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
     }
     if (eval >= beta) {
       store_killer(mv);
-      update_TT(move_key, depth, best_eval, NodeType::LOWER, my_best_move);
+      update_TT(move_key, depth, eval, NodeType::LOWER, mv);
       return beta;
     }
 
@@ -201,11 +200,11 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
     }
   }
 
-    if (best_eval < alpha_old) {
-      update_TT(move_key, depth, best_eval, NodeType::EXACT, my_best_move);
-    } else {
-      update_TT(move_key, depth, best_eval, NodeType::UPPER, my_best_move);
-    }
+  if (best_eval < alpha_old) {
+    update_TT(move_key, depth, best_eval, NodeType::EXACT, my_best_move);
+  } else {
+    update_TT(move_key, depth, alpha, NodeType::UPPER, my_best_move);
+  }
   return alpha;
 }
 
@@ -242,8 +241,8 @@ int Search::quiescence(int alpha, int beta) {
 
     eval = -quiescence(-beta, -alpha);
     pos->undo_move(mv);
-    if (search_done){
-        return Scores::DRAW;
+    if (search_done) {
+      return Scores::DRAW;
     }
 
     if (eval >= beta) {
@@ -268,20 +267,31 @@ bool Search::update_TT(const zobrist_key z_key, const size_t depth,
   }
 
   bool younger = (search_age > Utils::TT.at(idx).age);
-  bool force = (type == NodeType::EXACT) & (Utils::TT.at(idx).type != NodeType::EXACT);
-
-  if ((Utils::TT.at(idx).depth > depth) & !younger & !force) {
-    return false;
+  /*
+  bool force = (type == NodeType::EXACT) & (Utils::TT.at(idx).type != EXACT);
+  if (force) {
+    Utils::TT.at(idx).key = z_key;
+    Utils::TT.at(idx).depth = depth;
+    Utils::TT.at(idx).evaluation = evaluation;
+    Utils::TT.at(idx).type = type;
+    Utils::TT.at(idx).best_move = best_move;
+    Utils::TT.at(idx).age = search_age;
+    hashfull++;
+    return true;
+  }
+*/
+  if (younger | (Utils::TT.at(idx).depth <= depth)) {
+    Utils::TT.at(idx).key = z_key;
+    Utils::TT.at(idx).depth = depth;
+    Utils::TT.at(idx).evaluation = evaluation;
+    Utils::TT.at(idx).type = type;
+    Utils::TT.at(idx).best_move = best_move;
+    Utils::TT.at(idx).age = search_age;
+    hashfull++;
+    return true;
   }
 
-  Utils::TT.at(idx).key = z_key;
-  Utils::TT.at(idx).depth = depth;
-  Utils::TT.at(idx).evaluation = evaluation;
-  Utils::TT.at(idx).type = type;
-  Utils::TT.at(idx).best_move = best_move;
-  Utils::TT.at(idx).age = search_age;
-  hashfull++;
-  return true;
+  return false;
 }
 
 TT_Entry Search::probe_TT(const zobrist_key z_key, const size_t depth) {
@@ -358,8 +368,7 @@ void Search::info_to_uci(const int eval) {
     pos->make_move(entry.best_move);
     entry = probe_TT(pos->z_key, 0);
   }
-  for (auto riter = pv.rbegin();
-       riter.base() != pv.begin(); ++riter) {
+  for (auto riter = pv.rbegin(); riter.base() != pv.begin(); ++riter) {
     Move mv = *riter;
     if (mv) {
       pos->undo_move(mv);

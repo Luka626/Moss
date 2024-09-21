@@ -98,7 +98,7 @@ void Utils::init() {
   MATERIAL_VALUE[QUEEN] = 800;
   MATERIAL_VALUE[KING] = 20000;
 
-  TT.resize(HASHSIZE, TT_Entry());
+  clear_TT();
 }
 
 void Utils::generate_in_between() {
@@ -261,7 +261,6 @@ void Utils::generate_bpawn_attacks() {
 }
 
 void Utils::clear_TT() {
-  for (size_t i = 0; i < Utils::HASHSIZE; i++) {
-    Utils::TT[i] = TT_Entry();
-  }
+    TT.clear();
+  TT.resize(HASHSIZE, TT_Entry());
 }
