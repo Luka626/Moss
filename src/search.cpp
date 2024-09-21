@@ -186,7 +186,7 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
 
     if (eval > best_eval) {
       best_eval = eval;
-      best_move = mv;
+      my_best_move = mv;
       if (eval > alpha) {
         alpha = eval;
       }
@@ -352,14 +352,14 @@ void Search::info_to_uci(const int eval) {
 
   std::vector<Move> pv = {};
   TT_Entry entry = probe_TT(pos->z_key, 0);
-  while (entry.best_move && entry.type == NodeType::EXACT) {
+  while (entry.best_move && pv.size() < depth_searched) {
     pv.push_back(entry.best_move);
     std::cout << entry.best_move << "  ";
     pos->make_move(entry.best_move);
     entry = probe_TT(pos->z_key, 0);
   }
-  for (std::vector<Move>::reverse_iterator riter = pv.rbegin();
-       riter != pv.rend(); ++riter) {
+  for (auto riter = pv.rbegin();
+       riter.base() != pv.begin(); ++riter) {
     Move mv = *riter;
     if (mv) {
       pos->undo_move(mv);

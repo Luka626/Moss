@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "../bin/moss"
-  "../bin/moss-0.14"
+  "../bin/moss-0.14_PVS"
   "../bin/moss.pdb"
   "CMakeFiles/moss.dir/src/eval.cpp.o"
   "CMakeFiles/moss.dir/src/eval.cpp.o.d"

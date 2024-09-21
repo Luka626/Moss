@@ -3,19 +3,19 @@
 ## Features
 - Bitboard representation
 - Full FEN notation support
+- Fully UCI-compliant
 - ~5 million node/second move generation
 - Hyperbolic quintessence sliding piece attack generation
 - Negamax depth-first search with alpha/beta pruning
 - Piece-square evaluation
 - Quiesence search
-- Move ordering: PV move -> MVV-LVA
+- Move ordering: Hash move -> MVV-LVA
 - Zobrist hashing and transposition table
 - Null move pruning
+- Principal Variation Search (PVS)
 
 ## To-Do, Priority:
 - [ ] check search extension
-- [x] killer moves
-- [ ] store and pretty print P-V
 - [ ] LMR
 - [ ] lategame PST eval
 - [ ] support UCI::"stop"
@@ -23,7 +23,6 @@
 
 ## To-Do Search
 - [ ] search extension
-- [x] killer moves
 
 ## To-Do Performance
 - [ ] encode moves in a single INT
@@ -38,6 +37,10 @@
 - https://www.chessprogramming.org/Main_Page
 
 #### Done (to-do graveyard)
+- [x] PVS
+- [x] killer moves
+- [x] store and pretty print P-V
+- [x] killer moves
 - [x] positional piece values
 - [x] perform another round of profiling
 - [x] Zobrist hashing
