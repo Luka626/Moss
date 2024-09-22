@@ -70,7 +70,7 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
       }
       nodes_searched++;
 
-      if (i > 10000) {
+      if (i > 0) {
         root_eval = -negamax(-alpha - 1, -alpha, depth_searched - 1, true);
         if ((root_eval > alpha) & (root_eval < beta)) {
           root_eval = -negamax(-beta, -alpha, depth_searched - 1, true);
@@ -88,6 +88,7 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
         alpha = root_eval;
         best_move = mv;
       }
+    
     }
 
     update_TT(pos->z_key, depth_searched, root_eval, NodeType::EXACT, best_move);
@@ -160,11 +161,11 @@ int Search::negamax(int alpha, int beta, const int depth, bool null_allowed) {
     current_move++;
     nodes_searched++;
 
-    if (i > 1000) {
+    if (i > 0) {
       eval = -negamax(-alpha - 1, -alpha, depth - 1, true);
-      if ((alpha < eval) & (beta > eval)) {
+      if ((alpha < eval) & (eval < beta)) {
         // need to re-search since we failed-high
-        eval = -negamax(-beta, -eval, depth - 1, true);
+        eval = -negamax(-beta, -alpha, depth - 1, true);
       }
     }
 
