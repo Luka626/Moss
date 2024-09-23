@@ -129,6 +129,30 @@ moss/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/moss.dir/build.make CMakeFiles/moss.dir/build
 .PHONY : moss/fast
 
+src/attack_tables.o: src/attack_tables.cpp.o
+.PHONY : src/attack_tables.o
+
+# target to build an object file
+src/attack_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moss.dir/build.make CMakeFiles/moss.dir/src/attack_tables.cpp.o
+.PHONY : src/attack_tables.cpp.o
+
+src/attack_tables.i: src/attack_tables.cpp.i
+.PHONY : src/attack_tables.i
+
+# target to preprocess a source file
+src/attack_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moss.dir/build.make CMakeFiles/moss.dir/src/attack_tables.cpp.i
+.PHONY : src/attack_tables.cpp.i
+
+src/attack_tables.s: src/attack_tables.cpp.s
+.PHONY : src/attack_tables.s
+
+# target to generate assembly for a file
+src/attack_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moss.dir/build.make CMakeFiles/moss.dir/src/attack_tables.cpp.s
+.PHONY : src/attack_tables.cpp.s
+
 src/eval.o: src/eval.cpp.o
 .PHONY : src/eval.o
 
@@ -354,6 +378,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... moss"
+	@echo "... src/attack_tables.o"
+	@echo "... src/attack_tables.i"
+	@echo "... src/attack_tables.s"
 	@echo "... src/eval.o"
 	@echo "... src/eval.i"
 	@echo "... src/eval.s"

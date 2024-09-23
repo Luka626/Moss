@@ -25,8 +25,9 @@ set(SOURCES
     src/eval.cpp
     src/zobrist.cpp
     src/move_list.cpp
+    src/attack_tables.cpp
     )
 
     add_executable(moss ${SOURCES})
     set_target_properties(moss PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
-    set_property(TARGET moss PROPERTY VERSION "0.14_PVS")
+    set_property(TARGET moss PROPERTY VERSION "0.15_refactoring_only")

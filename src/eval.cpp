@@ -7,7 +7,7 @@ Evaluator::Evaluator(std::shared_ptr<Position> position_ptr)
     : pos(position_ptr) {}
 
 // Evaluation entry point
-int Evaluator::evaluate() const {
+auto Evaluator::evaluate() const -> int{
   int eval = 0;
   for (int i = PAWN; i < NPIECES; i++) {
     Pieces piece = static_cast<Pieces>(i);
@@ -22,21 +22,22 @@ int Evaluator::evaluate() const {
 
 // Simplified piece-based evaluation
 // Adds material and PST evals
-int Evaluator::piece_evaluation(const Colors side, const Pieces piece) const {
+auto Evaluator::piece_evaluation(const Colors side, const Pieces piece) const
+    -> int {
   bitboard pieces_bb = pos->get_bitboard(side, piece);
   return material_evaluation(piece, pieces_bb) +
          pst_evaluation(side, piece, pieces_bb);
 }
 
 // Sums material value of a piece bitboard
-int Evaluator::material_evaluation(const Pieces piece,
-                                   const bitboard bb) const {
+auto Evaluator::material_evaluation(const Pieces piece, const bitboard bb) const
+    -> int {
   return Utils::pop_count(bb) * MATERIAL_VALUE[piece];
 }
 
 // Returns piece-square table evaluation of a piece bitboard
-int Evaluator::pst_evaluation(const Colors side, const Pieces piece,
-                              bitboard bb) const {
+auto Evaluator::pst_evaluation(const Colors side, const Pieces piece,
+                               bitboard bb) const -> int {
   int evaluation = 0;
   while (bb) {
     Square square = Utils::pop_bit(bb);

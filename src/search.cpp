@@ -60,7 +60,7 @@ int Search::iterative_deepening(const int time, const int moves_remaining) {
     for (size_t i = 0; i < moves.size(); i++) {
       Move mv = moves.at(i);
       if (depth_searched >= 10) {
-        std::cout << "info currmove " << mv << std::endl;
+        std::cout << "info currmove " << mv << "\n";
       }
 
       pos->make_move(mv);
@@ -375,5 +375,5 @@ void Search::info_to_uci(const int eval) {
       pos->undo_move(mv);
     }
   }
-  std::cout << std::endl;
+  std::cout << "\n";
 }

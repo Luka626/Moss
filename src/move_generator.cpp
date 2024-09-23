@@ -1,15 +1,20 @@
 #include "move_generator.hpp"
+#include "attack_tables.hpp"
 #include "datatypes.hpp"
 #include "utils.hpp"
 #include <chrono>
 #include <iomanip>
 #include <memory>
 
-MoveGenerator::MoveGenerator(std::shared_ptr<Position> position_ptr) : pos(position_ptr) {
-  initiate_rank_attacks();
+MoveGenerator::MoveGenerator(std::shared_ptr<Position> position_ptr)
+    : pos(position_ptr) {
+  new_game();
 };
 
-void MoveGenerator::new_game() { initiate_rank_attacks(); }
+void MoveGenerator::new_game() {
+  AttackTables::init();
+  initiate_rank_attacks();
+}
 
 double MoveGenerator::divide(const size_t depth) {
   auto start_time = std::chrono::high_resolution_clock::now();
@@ -38,8 +43,8 @@ double MoveGenerator::divide(const size_t depth) {
   auto time = std::chrono::duration_cast<std::chrono::milliseconds>(end_time -
                                                                     start_time);
 
-  std::cout << "Nodes searched:\t" << all_nodes << std::endl;
-  std::cout << "Time searched:\t" << time.count() << "ms" << std::endl;
+  std::cout << "Nodes searched:\t" << all_nodes << "\n";
+  std::cout << "Time searched:\t" << time.count() << "ms\n";
   std::cout << "Search speed:\t" << all_nodes / (time.count() / 1000.0) << "nps"
             << std::endl;
   std::cout << std::scientific;
@@ -120,11 +125,11 @@ bitboard MoveGenerator::generate_attackers(const Square sq) const {
   bitboard rect_attacks = generate_rectilinear_attacks(pos->get_occupied(), sq);
   bitboard diag_attacks = generate_diagonal_attacks(pos->get_occupied(), sq);
 
-  return ((Utils::wpawn_attacks[sq] & bpawn_bb) |
-          (Utils::bpawn_attacks[sq] & wpawn_bb) |
-          (Utils::knight_attacks[sq] & knights_bb) |
-          (Utils::king_attacks[sq] & kings_bb) | (diag_attacks & bishops_bb) |
-          (rect_attacks & rooks_bb) |
+  return ((AttackTables::W_PAWN.ATTACKS[sq] & bpawn_bb) |
+          (AttackTables::B_PAWN.ATTACKS[sq] & wpawn_bb) |
+          (AttackTables::KNIGHT.ATTACKS[sq] & knights_bb) |
+          (AttackTables::KING.ATTACKS[sq] & kings_bb) |
+          (diag_attacks & bishops_bb) | (rect_attacks & rooks_bb) |
           ((diag_attacks | rect_attacks) & queens_bb));
 }
 
@@ -255,7 +260,7 @@ void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
     bitboard origin_bb = bb;
     while (origin_bb) {
       Square origin_square = Utils::pop_bit(origin_bb);
-      bitboard pawn_attacks = Utils::wpawn_attacks[origin_square];
+      bitboard pawn_attacks = AttackTables::W_PAWN.ATTACKS[origin_square];
       bitboard capture_moves_bb = pawn_attacks & pos->get_enemy();
       while (capture_moves_bb) {
         Square destination_square = Utils::pop_bit(capture_moves_bb);
@@ -333,7 +338,7 @@ void MoveGenerator::generate_pawn_moves(MoveList &move_list, bitboard bb) {
     bitboard origin_bb = bb;
     while (origin_bb) {
       Square origin_square = Utils::pop_bit(origin_bb);
-      bitboard pawn_attacks = Utils::bpawn_attacks[origin_square];
+      bitboard pawn_attacks = AttackTables::B_PAWN.ATTACKS[origin_square];
       if (pawn_attacks) {
       };
 
@@ -381,7 +386,7 @@ void MoveGenerator::generate_pawn_captures(MoveList &move_list, bitboard bb) {
     bitboard origin_bb = bb;
     while (origin_bb) {
       Square origin_square = Utils::pop_bit(origin_bb);
-      bitboard pawn_attacks = Utils::wpawn_attacks[origin_square];
+      bitboard pawn_attacks = AttackTables::W_PAWN.ATTACKS[origin_square];
       bitboard capture_moves_bb = pawn_attacks & pos->get_enemy();
       while (capture_moves_bb) {
         Square destination_square = Utils::pop_bit(capture_moves_bb);
@@ -423,7 +428,7 @@ void MoveGenerator::generate_pawn_captures(MoveList &move_list, bitboard bb) {
     bitboard origin_bb = bb;
     while (origin_bb) {
       Square origin_square = Utils::pop_bit(origin_bb);
-      bitboard pawn_attacks = Utils::bpawn_attacks[origin_square];
+      bitboard pawn_attacks = AttackTables::B_PAWN.ATTACKS[origin_square];
       bitboard capture_moves_bb = pawn_attacks & pos->get_enemy();
       while (capture_moves_bb) {
         Square destination_square = Utils::pop_bit(capture_moves_bb);
@@ -466,7 +471,7 @@ void MoveGenerator::generate_knight_moves(MoveList &move_list, bitboard bb) {
 
   while (bb) {
     Square origin_square = Utils::pop_bit(bb);
-    bitboard knight_moves = Utils::knight_attacks[origin_square];
+    bitboard knight_moves = AttackTables::KNIGHT.ATTACKS[origin_square];
 
     bitboard quiet_moves_bb = knight_moves & pos->get_empty();
     bitboard capture_moves_bb = knight_moves & pos->get_enemy();
@@ -481,7 +486,7 @@ void MoveGenerator::generate_knight_captures(MoveList &move_list, bitboard bb) {
 
   while (bb) {
     Square origin_square = Utils::pop_bit(bb);
-    bitboard knight_moves = Utils::knight_attacks[origin_square];
+    bitboard knight_moves = AttackTables::KNIGHT.ATTACKS[origin_square];
 
     bitboard capture_moves_bb = knight_moves & pos->get_enemy();
     add_capture_moves(move_list, capture_moves_bb, Pieces::KNIGHT,
@@ -491,7 +496,7 @@ void MoveGenerator::generate_knight_captures(MoveList &move_list, bitboard bb) {
 
 void MoveGenerator::generate_king_moves(MoveList &move_list, bitboard bb) {
   Square origin_square = Utils::pop_bit(bb);
-  bitboard king_moves = Utils::king_attacks[origin_square];
+  bitboard king_moves = AttackTables::KING.ATTACKS[origin_square];
 
   bitboard quiet_moves_bb = king_moves & pos->get_empty();
   bitboard capture_moves_bb = king_moves & pos->get_enemy();
@@ -503,7 +508,7 @@ void MoveGenerator::generate_king_moves(MoveList &move_list, bitboard bb) {
 
 void MoveGenerator::generate_king_captures(MoveList &move_list, bitboard bb) {
   Square origin_square = Utils::pop_bit(bb);
-  bitboard king_moves = Utils::king_attacks[origin_square];
+  bitboard king_moves = AttackTables::KING.ATTACKS[origin_square];
 
   bitboard capture_moves_bb = king_moves & pos->get_enemy();
 
@@ -737,4 +742,3 @@ void MoveGenerator::add_castling_moves(MoveList &move_list) {
     }
   }
 }
-

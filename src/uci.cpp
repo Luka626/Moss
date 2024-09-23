@@ -28,8 +28,8 @@ void Uci::loop() {
     std::getline(iss, word, ' ');
 
     if (word == "uci") {
-      std::cout << "id name lChess 0.1" << std::endl;
-      std::cout << "id author Luka Andjelic" << std::endl;
+      std::cout << "id name lChess 0.1\n";
+      std::cout << "id author Luka Andjelic\n";
       std::cout << "uciok" << std::endl;
     }
 

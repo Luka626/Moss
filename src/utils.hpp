@@ -48,21 +48,6 @@ inline bitboard anti_diagonal_mask(Square square) {
   return diag >= 0 ? main_diag >> diag * 8 : main_diag << -diag * 8;
 }
 
-/////////////////////
-/** ATTACK TABLES **/
-/////////////////////
-extern int knight_jumps[8];
-extern int king_jumps[8];
-extern int wpawn_jumps[2];
-extern int bpawn_jumps[2];
-
-extern bitboard wpawn_attacks[64];
-extern bitboard bpawn_attacks[64];
-extern bitboard king_attacks[64];
-extern bitboard knight_attacks[64];
-
-extern bitboard IN_BETWEEN[64][64];
-
 /////////////////////////
 /* Transposition Table */
 /////////////////////////
@@ -72,6 +57,7 @@ extern std::vector<TT_Entry> TT;
 ///////////////////////////////
 /* Bitboard Helper Functions */
 ///////////////////////////////
+extern bitboard IN_BETWEEN[64][64];
 inline bitboard get_bit(const bitboard bitboard, const int index) {
   return bitboard & (1ULL << index);
 }
@@ -121,15 +107,10 @@ inline void print_bitboard(const bitboard bitboard) {
 /* Initialize Static Tables */
 //////////////////////////////
 void init();
-void clear_TT();
-void generate_knight_jumps();
-void generate_king_jumps();
-void generate_wpawn_jumps();
-void generate_bpawn_jumps();
-void generate_bpawn_attacks();
-void generate_wpawn_attacks();
-void generate_knight_attacks();
-void generate_king_attacks();
+void inline clear_TT() {
+  TT.clear();
+  TT.resize(HASHSIZE, TT_Entry());
+}
 void generate_in_between();
 
 } // namespace Utils

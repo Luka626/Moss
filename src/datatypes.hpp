@@ -44,6 +44,13 @@ enum Square : int {
   a8, b8, c8, d8, e8, f8, g8, h8,
   /* NSQUARES = 64, */
 };
+inline Square& operator++(Square& sq){
+    int square_int = static_cast<int>(sq);
+    ++square_int;
+    sq = static_cast<Square>(square_int);
+    return sq;
+}
+
 std::ostream inline &operator<<(std::ostream &os, const Square &sq) {
   int file = sq & 7;
   int rank = sq >> 3;

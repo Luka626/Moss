@@ -414,8 +414,7 @@ std::ostream &operator<<(std::ostream &os, const Position &pos) {
   os << pos.castling_flags[0] << pos.castling_flags[1] << pos.castling_flags[2]
      << pos.castling_flags[3] << "\n"
      << pos.en_passant_square << "\n"
-     << pos.halfmove_clock << "\n"
-     << std::endl;
+     << pos.halfmove_clock << "\n";
   for (int rank = 7; rank >= 0; rank--) {
     os << " " << rank + 1 << "  ";
     for (int file = 0; file <= 7; file++) {

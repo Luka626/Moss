@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/luka/Moss/src/attack_tables.cpp" "CMakeFiles/moss.dir/src/attack_tables.cpp.o" "gcc" "CMakeFiles/moss.dir/src/attack_tables.cpp.o.d"
   "/home/luka/Moss/src/eval.cpp" "CMakeFiles/moss.dir/src/eval.cpp.o" "gcc" "CMakeFiles/moss.dir/src/eval.cpp.o.d"
   "/home/luka/Moss/src/main.cpp" "CMakeFiles/moss.dir/src/main.cpp.o" "gcc" "CMakeFiles/moss.dir/src/main.cpp.o.d"
   "/home/luka/Moss/src/move_generator.cpp" "CMakeFiles/moss.dir/src/move_generator.cpp.o" "gcc" "CMakeFiles/moss.dir/src/move_generator.cpp.o.d"

@@ -43,5 +43,10 @@
   "directory": "/home/luka/Moss/debug",
   "command": "/usr/bin/c++  -I/home/luka/Moss/src -Wall -Wextra -Wpedantic -Werror  -fsanitize=address -ggdb3 -o CMakeFiles/moss.dir/src/move_list.cpp.o -c /home/luka/Moss/src/move_list.cpp",
   "file": "/home/luka/Moss/src/move_list.cpp"
+},
+{
+  "directory": "/home/luka/Moss/debug",
+  "command": "/usr/bin/c++  -I/home/luka/Moss/src -Wall -Wextra -Wpedantic -Werror  -fsanitize=address -ggdb3 -o CMakeFiles/moss.dir/src/attack_tables.cpp.o -c /home/luka/Moss/src/attack_tables.cpp",
+  "file": "/home/luka/Moss/src/attack_tables.cpp"
 }
 ]
