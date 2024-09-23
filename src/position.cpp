@@ -388,13 +388,12 @@ void Position::undo_move(const Move move) {
 }
 
 bool Position::is_drawn() const {
-  int repititions = 0;
+    // 
   if (halfmove_clock >= 50) {
-
-      
     return true;
   }
 
+  int repititions = 0;
   for (size_t i = ply; i > 2; i = i - 2) {
     if (halfmove_clock == 0) {
       return false;
@@ -407,6 +406,7 @@ bool Position::is_drawn() const {
 
   return false;
 }
+
 
 // overrides << operator to "pretty" print chess position
 std::ostream &operator<<(std::ostream &os, const Position &pos) {

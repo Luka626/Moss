@@ -17,66 +17,7 @@ bitboard IN_BETWEEN[64][64];
 
 std::vector<TT_Entry> TT;
 
-// MVV_LVA[victim][attacker]
-int MVV_LVA[NPIECES][NPIECES] = {
-    // P   N   B   R   Q   K
-    {15, 14, 13, 12, 11, 10}, // P
-    {25, 24, 23, 22, 21, 20}, // N
-    {35, 34, 33, 32, 31, 30}, // B
-    {45, 44, 43, 42, 41, 40}, // R
-    {55, 54, 53, 52, 51, 50}, // Q
-    {0, 0, 0, 0, 0, 0},       // K
-};
-
-int WPAWN_POSITIONAL[NSQUARES] = {
-    0,  0,  0,   0,  0,  0,   0,  0,  5,  10, 10, -20, -20, 10, 10, 5,
-    5,  -5, -10, 0,  0,  -10, -5, 5,  0,  0,  0,  20,  20,  0,  0,  0,
-    5,  5,  10,  25, 25, 10,  5,  5,  10, 10, 20, 30,  30,  20, 10, 10,
-    50, 50, 50,  50, 50, 50,  50, 50, 0,  0,  0,  0,   0,   0,  0,  0};
-
-int WKNIGHT_POSITIONAL[NSQUARES] = {
-    -50, -40, -30, -30, -30, -30, -40, -50, -40, -20, 0,   5,   5,
-    0,   -20, -40, -30, 5,   10,  15,  15,  10,  5,   -30, -30, 0,
-    15,  20,  20,  15,  0,   -30, -30, 5,   15,  20,  20,  15,  5,
-    -30, -30, 0,   10,  15,  15,  10,  0,   -30, -40, -20, 0,   0,
-    0,   0,   -20, -40, -50, -40, -30, -30, -30, -30, -40, -50,
-};
-
-int WBISHOP_POSITIONAL[NSQUARES] = {
-    -20, -10, -10, -10, -10, -10, -10, -20, -10, 5,   0,   0,   0,
-    0,   5,   -10, -10, 10,  10,  10,  10,  10,  10,  -10, -10, 0,
-    10,  10,  10,  10,  0,   -10, -10, 5,   5,   10,  10,  5,   5,
-    -10, -10, 0,   5,   10,  10,  5,   0,   -10, -10, 0,   0,   0,
-    0,   0,   0,   -10, -20, -10, -10, -10, -10, -10, -10, -20,
-};
-
-int WROOK_POSITIONAL[NSQUARES] = {
-    0,  0,  0,  5,  5,  0,  0,  0 - 5, 0, 0, 0, 0, 0, 0, -5, -5,
-    0,  0,  0,  0,  0,  0,  -5, -5,    0, 0, 0, 0, 0, 0, -5, -5,
-    0,  0,  0,  0,  0,  0,  -5, -5,    0, 0, 0, 0, 0, 0, -5, 5,
-    10, 10, 10, 10, 10, 10, 5,  0,     0, 0, 0, 0, 0, 0, 0,
-
-};
-int WQUEEN_POSITIONAL[NSQUARES] = {
-    -20, -10, -10, -5,  -5,  -10, -10, -20 - 10, 0,   5,   0,   0, 0,
-    0,   -10, -10, 5,   5,   5,   5,   5,        0,   -10, 0,   0, 5,
-    5,   5,   5,   0,   -5,  -5,  0,   5,        5,   5,   5,   0, -5,
-    -10, 0,   5,   5,   5,   5,   0,   -10,      -10, 0,   0,   0, 0,
-    0,   0,   -10, -20, -10, -10, -5,  -5,       -10, -10, -20,
-
-};
-
-int WKING_POSITIONAL[NSQUARES] = {
-    20,  30,  10,  0,   0,   10,  30,  20,  20,  20,  0,   0,   0,
-    0,   20,  20,  -10, -20, -20, -20, -20, -20, -20, -10, -20, -30,
-    -30, -40, -40, -30, -30, -20, -30, -40, -40, -50, -50, -40, -40,
-    -30, -30, -40, -40, -50, -50, -40, -40, -30, -30, -40, -40, -50,
-    -50, -40, -40, -30, -30, -40, -40, -50, -50, -40, -40, -30,
-};
-
-int MATERIAL_VALUE[NPIECES];
-} // namespace Utils
-
+}
 void Utils::init() {
   generate_bpawn_jumps();
   generate_wpawn_jumps();
@@ -91,12 +32,6 @@ void Utils::init() {
 
   generate_in_between();
 
-  MATERIAL_VALUE[PAWN] = 100;
-  MATERIAL_VALUE[KNIGHT] = 310;
-  MATERIAL_VALUE[BISHOP] = 330;
-  MATERIAL_VALUE[ROOK] = 500;
-  MATERIAL_VALUE[QUEEN] = 800;
-  MATERIAL_VALUE[KING] = 20000;
 
   clear_TT();
 }
@@ -245,7 +180,7 @@ void Utils::generate_bpawn_attacks() {
     int starting_file = file((Square)i);
 
     for (int j = 0; j < 2; j++) {
-      Square target_square =(Square) (i + bpawn_jumps[j]);
+      Square target_square = (Square)(i + bpawn_jumps[j]);
       if ((target_square < a1) || (target_square > h8)) {
         continue;
       };
@@ -261,6 +196,6 @@ void Utils::generate_bpawn_attacks() {
 }
 
 void Utils::clear_TT() {
-    TT.clear();
+  TT.clear();
   TT.resize(HASHSIZE, TT_Entry());
 }

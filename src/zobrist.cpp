@@ -9,8 +9,6 @@ zobrist_key EN_PASSANT[8];
 zobrist_key SIDE;
 } // namespace Zobrist
 
-
-
 void Zobrist::init() {
   std::random_device rd;
   std::seed_seq sd{rd(), rd(), rd(), rd()};

@@ -5,8 +5,7 @@
 #include <iomanip>
 #include <memory>
 
-MoveGenerator::MoveGenerator(std::shared_ptr<Position> position_ptr) {
-  pos = position_ptr;
+MoveGenerator::MoveGenerator(std::shared_ptr<Position> position_ptr) : pos(position_ptr) {
   initiate_rank_attacks();
 };
 

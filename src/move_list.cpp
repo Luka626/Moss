@@ -1,5 +1,4 @@
 #include "move_list.hpp"
-#include "utils.hpp"
 #include <algorithm>
 
 void MoveList::score_moves(Move TT_move, Move killer1, Move killer2) {
@@ -8,7 +7,7 @@ void MoveList::score_moves(Move TT_move, Move killer1, Move killer2) {
     move->sort_score = 0;
 
     if (move->is_capture) {
-      move->sort_score = Utils::MVV_LVA[move->captured_piece][move->piece];
+      move->sort_score = MVV_LVA[move->captured_piece][move->piece];
     } else {
       if (*move == killer1) {
         move->sort_score = MoveScores::KILLER1;
@@ -23,7 +22,7 @@ void MoveList::score_moves(Move TT_move, Move killer1, Move killer2) {
     }
 
     if (move->promotion > 0) {
-      move->sort_score = Utils::MVV_LVA[move->promotion][Pieces::PAWN];
+      move->sort_score = MVV_LVA[move->promotion][Pieces::PAWN];
     }
   }
 }
