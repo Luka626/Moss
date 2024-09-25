@@ -2,11 +2,7 @@
 #include <memory>
 
 int main() {
-  auto pos = std::make_shared<Position>();
-
-  Uci uci = Uci(pos);
-
-  uci.loop();
-
+  auto uci = std::make_unique<Uci>(Uci());
+  uci->loop();
   return 0;
 }

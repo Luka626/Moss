@@ -23,6 +23,7 @@ public:
   zobrist_key z_key;
 
   Position();
+
   void new_game();
   int set_board(const std::string &fen);
 

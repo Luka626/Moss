@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "../bin/mossd"
-  "../bin/mossd-0.15_refactoring_only"
+  "../bin/mossd-0.16_refactoring_only"
   "../bin/mossd.pdb"
   "CMakeFiles/moss.dir/src/attack_tables.cpp.o"
   "CMakeFiles/moss.dir/src/attack_tables.cpp.o.d"

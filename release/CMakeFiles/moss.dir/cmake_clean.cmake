@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "../bin/moss"
-  "../bin/moss-0.15_refactoring_only"
+  "../bin/moss-0.16_LMR"
   "../bin/moss.pdb"
   "CMakeFiles/moss.dir/src/attack_tables.cpp.o"
   "CMakeFiles/moss.dir/src/attack_tables.cpp.o.d"

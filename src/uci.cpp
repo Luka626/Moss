@@ -9,10 +9,10 @@
 #include <sstream>
 #include <string>
 
-Uci::Uci(std::shared_ptr<Position> position_ptr)
-    : pos(position_ptr),
-      move_gen(std::make_unique<MoveGenerator>(position_ptr)),
-      search(std::make_unique<Search>(position_ptr)) {
+Uci::Uci()
+    : pos(std::make_shared<Position>()),
+      move_gen(std::make_unique<MoveGenerator>(pos)),
+      search(std::make_unique<Search>(pos)) {
   new_game();
 }
 

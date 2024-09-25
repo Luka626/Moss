@@ -8,7 +8,7 @@
 
 class Uci {
 public:
-  Uci(std::shared_ptr<Position> position_ptr);
+  Uci();
   void loop();
   void parse_go(const std::string &go) const;
   void new_game();

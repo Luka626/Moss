@@ -26,7 +26,7 @@ private:
   int negamax(int alpha, int beta, const int depth, bool null_allowed);
   int negamax_root(const int depth);
   int quiescence(int alpha, int beta);
-  bool is_search_done();
+  bool is_search_done() const;
   void store_killer(Move mv);
 
   Move best_move;
