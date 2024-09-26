@@ -1,4 +1,6 @@
 # Moss - C++ Chess Engine
+Challenge me on Lichess!
+https://lichess.org/@/moss_bot
 
 ## Features
 - Bitboard representation
