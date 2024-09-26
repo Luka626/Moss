@@ -13,10 +13,10 @@
 - Zobrist hashing and transposition table
 - Null move pruning
 - Principal Variation Search (PVS)
+- Late Move Reductions
 
 ## To-Do, Priority:
 - [ ] check search extension
-- [ ] LMR
 - [ ] lategame PST eval
 - [ ] support UCI::"stop"
 
