@@ -81,6 +81,10 @@ void Uci::parse_go(const std::string &go) const {
     int multiplier = std::stoi(token);
     time = 100 * multiplier;
     moves_remaining = 1;
+  } else if (token == "movetime") {
+      std::getline(iss, token, ' ');
+      time = std::stoi(token);
+      moves_remaining = 1;
   } else {
     if (token == "wtime") {
       std::getline(iss, token, ' ');
